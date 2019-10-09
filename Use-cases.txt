@@ -1,0 +1,110 @@
+Use Cases:
+
+
+Use case: Download de musica e videos
+Ator: User registado 
+Pré Condição: Ator está logged in
+Pós Condição: A musica foi descarregada
+Fluxo normal:
+    1- Ator escolhe a musica
+    2- Sistema verifica se a musica pertence ao User
+    3- Mensagem de Sucesso
+Fluxo Alternativo:
+    ???
+Fluxo de exceção:
+    2.1- Sistema verifica que a musica não pertence ao utilizador
+    2.2- Mensagem de erro 
+
+-------------------------------------------------------------------------------------------------
+Use case: Upload de musica e videos
+Ator: User registado 
+Pré Condição: Ator está logged in
+Pós Condição: A musica foi carregada
+Fluxo normal:
+    1- Ator insere as musicas
+    2- Sistema verifica duplicaçoes e formato
+    3- Sistema coloca as musicas nas suas bibliotecas 
+    4- Sistema classifica as musicas
+    5- Verifica users com conteúdo em comum
+    6- Adiciona users com conteúdo em comum á lista de potenciais amigos
+    7- Mensagem de Sucesso
+Fluxo Alternativo 1:
+    2.1- Sistema deteta duplicaçoes
+    2.2- Sistema envia mensagem de aviso
+    2.3- (5)
+Fluxo Alternativo 2:
+    5.1- Não tem conteúdo em comum com outros utilizadores
+    5.2- (7)
+Fluxo de exceção:
+    2.1- Sistema deteta formato Errado
+    2.2- Mensagem de Erro
+-------------------------------------------------------------------------------------------------------
+Use case: Login
+Ator: User registado/ convidado / Admin
+Pré Condição: Sistema está livre
+Pós Condição: Utilizador autenticado e conectado ao sistema
+Fluxo normal:
+    1- Sistema apresenta o tipo de Login
+    2- User escolhe o registado e introduz credenciais
+    3- Sistema valida credenciais
+    4- Sistema apresenta as bibliotecas
+Fluxo Alternativo 1:
+    2.1- User escolhe convidado
+    2.2- (4)
+Fluxo Alternativo 2:
+    2.1- User escolhe administrador
+    2.2- (3)
+    2.3- Sistema apresenta as permissões
+Fluxo de exceção:
+    2.1- Sistema não valida as credenciais
+    2.2- Mensagem de erro
+-------------------------------------------------------------------------------------------------------
+Use case: Alterar género
+Ator: User registado
+Pré Condição:Ator está logged in
+Pós Condição:O género foi alterado
+Fluxo Normal:
+     1- Ator escolhe a música que pretende mudar de género
+     2- Sistema verifica se a musica pertence ao utilizador
+     3- Ator insere o género que quer mudar
+     4- Sistema verifica se já não é o género da música
+     5- Sistema muda o género da música
+Fluxo de Exceção:
+    2.1- Sistema verifica que a musica não pertence ao utilizador
+    2.2- Mensagem de erro 
+    4.1- Sistema verifica que a música já está classificada com aquele género
+    4.2- Mensagem de alerta que o género não mudou
+--------------------------------------------------------------------------------------------------------
+Use case: Definir palavra-chave
+Ator: User registado
+Pré-condição:Ator está logged in 
+Pós-condição:A palavra passe foi alterada 
+Fluxo Normal: 
+    1- Ator insere a palavra-passe antiga
+    2- Sistema verifica se a palavra-passe está correta	
+    3- Ator insere uma palavra com oito ou mais caracteres
+    4- Sistema verifica se a pass é permitida
+    5- Sistema confirma a pass nova	
+    6- Sistema muda a pass 
+   
+Fluxo de Exceção 1:
+   2.1- Sistema deteta que a pass está incorreta
+   2.2- Mensagem de erro
+Fluxo de Exceção 2:
+   4.1- Sistema deteta que a palavra tem menos de oito caracteres 
+   4.2-Mensagem de erro
+Fluxo de Exceção 3:
+   5.1-Sistema verifica que a palavra passe não é igual
+   5.2-Mensagem de erro
+   
+   
+
+
+
+
+
+
+
+
+
+
