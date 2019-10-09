@@ -30,8 +30,9 @@ Fluxo normal:
     7- Mensagem de Sucesso
 Fluxo Alternativo 1:
     2.1- Sistema deteta duplicaçoes
-    2.2- Sistema envia mensagem de aviso
-    2.3- (5)
+    2.2- Sistema adiciona o user aos donos da musica
+    2.3- Sistema envia mensagem de aviso
+    2.4- (5)
 Fluxo Alternativo 2:
     5.1- Não tem conteúdo em comum com outros utilizadores
     5.2- (7)
@@ -47,7 +48,7 @@ Fluxo normal:
     1- Sistema apresenta o tipo de Login
     2- User escolhe o registado e introduz credenciais
     3- Sistema valida credenciais
-    4- Sistema apresenta as bibliotecas
+    4- Sistema apresenta as bibliotecas disponiveis
 Fluxo Alternativo 1:
     2.1- User escolhe convidado
     2.2- (4)
@@ -81,9 +82,9 @@ Pré-condição:Ator está logged in
 Pós-condição:A palavra passe foi alterada 
 Fluxo Normal: 
     1- Ator insere a palavra-passe antiga
-    2- Sistema verifica se a palavra-passe está correta	
+    2- Sistema verifica que a palavra-passe está correta	
     3- Ator insere uma palavra com oito ou mais caracteres
-    4- Sistema verifica se a pass é permitida
+    4- Sistema verifica que a pass é permitida
     5- Sistema confirma a pass nova	
     6- Sistema muda a pass 
    
@@ -96,14 +97,91 @@ Fluxo de Exceção 2:
 Fluxo de Exceção 3:
    5.1-Sistema verifica que a palavra passe não é igual
    5.2-Mensagem de erro
-   
-   
+-------------------------------------------------------------------------------------------------------------------
+Use Case: Reproduzir musica/Video
+Ator: User registado/convidado
+Pré-Condição: Ator está logged in
+Pós-Condição: Media Reproduz
+Fluxo Normal:
+    1-Sistema apresenta as bibliotecas disponiveis
+    2-Ator escolhe a biblioteca
+    3-Ator seleciona a musica/Video
+    4-Sistema apresenta opçoes
+    5-User seleciona Reproduzir
+    6-Sistema Reproduz
+--------------------------------------------------------------------------------------------------------------------------
+Use Case:Adicionar (a) playlists
+Ator: User registado
+Pré-Condição: Ator está logged in
+Pós-Condição: Sistema de bibliotecas alterado
+Fluxo Normal:
+    1- User seleciona uma musica
+    2- Sistema apresenta opçoes
+    3- User seleciona adicionar a playlist
+    4- Sistema apresenta as playlist onde pode adicionar
+    5- User escolhe a playlist
+    6- Sistema adiciona a musica
+    7- Mensagem de Sucesso
+Fluxo Alternativo 1:
+    2.1- User seleciona criar nova playlist
+    2.2- Sistema pede nome da playlist
+    2.3- User insere
+    2.4- Sistema cria playlist
+    2.5- (6)
+Fluxo Alternativo 2:
+    2.1- User seleciona criar nova playlist baseada em género
+    2.2- Sistema cria playlist com o nome do género
+    2.3- Sistema adiciona todas as musicas com o mesmo género á playlist
+    2.4- (7)
 
-
-
-
-
-
+-----------------------------------------------------------------------------------------------------------
+Use Case:Remover (de) playlists
+Ator: User registado
+Pré-Condição: Ator está logged in
+Pós-Condição: Sistema de bibliotecas alterado
+Fluxo Normal:
+    1- User seleciona uma musica
+    2- Sistema apresenta opçoes
+    3- User seleciona remover da playlist
+    4- Sistema verifica que o user está na biblioteca pessoal
+    5- Sistema verifica que a musica é unicamente do user
+    6- Sistema remove a musica de todas as bibliotecas
+    7- Sistema verifica que não existem playlists vazias
+    8- Mensagem de sucesso
+Fluxo Alternativo 1:
+    3.1- Sistema verifica que user não está na biblioteca pessoal
+    3.2- Sistema remove a musica da playlist
+    3.3- (7)
+Fluxo Alternativo 2:
+    5.1- Sistema verifica que a musica não é unicamente do user
+    5.2- Sistema remove o user dos donos da musica
+    5.3- Sistema remove a musica das playlists do user
+    5.4- (7)
+Fluxo Alternativo 3:
+    7.1- Sistema verifica que existem playlists vazias
+    7.2- Sistema remove as playlists vazias
+    7.3- (8)
+------------------------------------------------------------------------------------------------------
+Use Case: Criar conta
+Ator: Admin
+Pré-Condição: Ator está logged in
+Pós-Condição:   Conta ++
+Fluxo Normal:
+    1- User seleciona adicionar conta
+    2- Sistema apresenta formulário de criar conta
+    3- User coloca email e nome da conta a criar
+    4- Sistema gera uma password e envia ao email
+    5- Sistema adiciona a conta
+    6- Mensagem de sucesso
+Fluxo de Exceção 1:
+    3.1- Nome já existe
+    3.2- Mensagem de erro
+Fluxo de Exceção 2:
+    3.1- Email já existe
+    3.2- Mensagem de erro
+Fluxo de Exceção 3:
+    3.1- Email é inválido
+    3.2- Mensagem de erro
 
 
 
