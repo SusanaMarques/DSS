@@ -10,11 +10,12 @@ public class Main extends Application {
 
 
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("sem_sessao_inic.fxml"));
         primaryStage.setTitle("Stopify");
         primaryStage.setScene(new Scene(root, 550, 550));
         primaryStage.show();
     }
+
 
 
     public static void main(String[] args) {
