@@ -9,8 +9,6 @@ Fluxo normal:
     1- Ator escolhe a musica
     2- Sistema verifica se a musica pertence ao User
     3- Mensagem de Sucesso
-Fluxo Alternativo:
-    ???
 Fluxo de exceção:
     2.1- Sistema verifica que a musica não pertence ao utilizador
     2.2- Mensagem de erro 
