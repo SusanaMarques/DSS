@@ -12,8 +12,8 @@
             <Font name="System Font" size="96.0" />
          </font>
       </Label>
-      <Button fx:id="conv" layoutX="34.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #800000#800000; -fx-background-radius: 10;" text="CONVIDADO" textFill="WHITE" />
-      <Button fx:id="reg" layoutX="203.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #800000#800000; -fx-background-radius: 10;" text="REGISTADO" textFill="WHITE" />
-      <Button fx:id="admin" layoutX="373.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #800000#800000; -fx-background-radius: 10;" text="ADMIN" textFill="WHITE" />
+      <Button fx:id="conv" layoutX="34.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction_Main" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #800000#800000; -fx-background-radius: 10;" text="CONVIDADO" textFill="WHITE" />
+      <Button fx:id="reg" layoutX="203.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction_Main" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #800000#800000; -fx-background-radius: 10;" text="REGISTADO" textFill="WHITE" />
+      <Button fx:id="admin" layoutX="373.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleButtonAction_Main" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #800000#800000; -fx-background-radius: 10;" text="ADMIN" textFill="WHITE" />
    </children>
 </Pane>
