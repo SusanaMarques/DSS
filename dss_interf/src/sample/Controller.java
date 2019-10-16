@@ -11,7 +11,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.layout.Pane;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -20,31 +19,56 @@ import javafx.scene.Node;
 
 public class Controller implements Initializable
 {
-    @FXML Pane apMain;
+
 
     @FXML
-    private void handleButtonAction(ActionEvent event)
-    {
-        try
-        {
+private void handleButtonAction_Main(ActionEvent event)
+{
+    try {
+        Button tempButton = (Button) event.getSource();
+        switch (tempButton.getId()) {
 
-            Button tempButton = (Button)event.getSource();
-                    String fpath = "inic_" + tempButton.getId() + ".fxml";
-                    Parent inic_c_Parent = FXMLLoader.load(getClass().getResource(fpath));
-                    Scene inic_c_Scene = new Scene(inic_c_Parent);
+            case ("conv"):
+            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("inic_conv.fxml"));
+            Scene inic_c_Scene = new Scene(inic_c_Parent);
 
 
-                    //this line gets stage information
-                    Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    window.setScene(inic_c_Scene);
-                    window.show();
+            //this line gets stage information
+            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            window.setScene(inic_c_Scene);
+            window.show();
+            break;
 
-            }
+            case ("admin"):
 
-        catch (IOException ex) {
-            Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+                Parent login_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
+                Scene login_Scene = new Scene(login_Parent);
+
+
+                //this line gets stage information
+                Stage windoww = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                windoww.setScene(login_Scene);
+                windoww.show();
+            break;
+
+            case ("reg"):
+                Parent loginn_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
+                Scene loginn_Scene = new Scene(loginn_Parent);
+
+
+                //this line gets stage information
+                Stage windowww = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                windowww.setScene(loginn_Scene);
+                windowww.show();
+                break;
+
         }
     }
+
+    catch (IOException ex) {
+        Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+    }
+}
 
 
     @Override
