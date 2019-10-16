@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sem_sessao_inic.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("mediacenter.fxml"));
         primaryStage.setTitle("Stopify");
         primaryStage.setScene(new Scene(root, 550, 550));
         primaryStage.show();

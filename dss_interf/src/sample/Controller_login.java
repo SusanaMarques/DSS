@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.layout.Pane;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -27,7 +26,7 @@ public class Controller_login implements Initializable {
             switch (tempButton.getId()) {
 
                 case ("login"):
-                    Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("inic_reg.fxml"));
+                    Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("Utilizador_Registado.fxml"));
                     Scene inic_c_Scene = new Scene(inic_c_Parent);
 
 
