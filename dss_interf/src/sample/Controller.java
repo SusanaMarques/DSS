@@ -20,16 +20,16 @@ import javafx.scene.Node;
 public class Controller implements Initializable
 {
 
+    Utilizador a = new Utilizador(0);
+
+
 
     @FXML
-private void handleButtonAction_Main(ActionEvent event)
-{
-    try {
-        Button tempButton = (Button) event.getSource();
-        switch (tempButton.getId()) {
+private Utilizador handleButtonAction_Conv(ActionEvent event) {
 
-            case ("conv"):
-            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("inic_conv.fxml"));
+        try {
+
+            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("convidado.fxml"));
             Scene inic_c_Scene = new Scene(inic_c_Parent);
 
 
@@ -37,38 +37,69 @@ private void handleButtonAction_Main(ActionEvent event)
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
             window.setScene(inic_c_Scene);
             window.show();
-            break;
-
-            case ("admin"):
-
-                Parent login_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
-                Scene login_Scene = new Scene(login_Parent);
-
-
-                //this line gets stage information
-                Stage windoww = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                windoww.setScene(login_Scene);
-                windoww.show();
-            break;
-
-            case ("reg"):
-                Parent loginn_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
-                Scene loginn_Scene = new Scene(loginn_Parent);
-
-
-                //this line gets stage information
-                Stage windowww = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                windowww.setScene(loginn_Scene);
-                windowww.show();
-                break;
 
         }
+     catch(IOException ex) {
+         Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+
+     }
+            return a;
+
     }
 
-    catch (IOException ex) {
-        Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+    @FXML
+    private Utilizador handleButtonAction_Admin(ActionEvent event)
+    {
+        a.setDesignação(1);
+        try {
+
+            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
+            Scene inic_c_Scene = new Scene(inic_c_Parent);
+
+
+            //this line gets stage information
+            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            window.setScene(inic_c_Scene);
+            window.show();
+
+
+        }
+     catch(IOException ex){
+                Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+
+            }
+            return a;
+
+
     }
-}
+
+    @FXML
+    private Utilizador handleButtonAction_Reg(ActionEvent event)
+    {
+        a.setDesignação(2);
+        try {
+
+            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
+            Scene inic_c_Scene = new Scene(inic_c_Parent);
+
+
+            //this line gets stage information
+            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            window.setScene(inic_c_Scene);
+            window.show();
+
+        }
+     catch(IOException ex){
+                Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+
+            }
+            return a;
+
+
+    }
+
+
+
 
 
     @Override

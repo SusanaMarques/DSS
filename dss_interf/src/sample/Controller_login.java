@@ -17,24 +17,44 @@ import javafx.scene.Node;
 
 public class Controller_login implements Initializable {
 
+
+
+    Utilizador a = new Utilizador(2);
+
     @FXML
     private void handleButtonAction_login(ActionEvent event)
     {
+
 
         try {
             Button tempButton = (Button) event.getSource();
             switch (tempButton.getId()) {
 
                 case ("login"):
-                    Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("Utilizador_Registado.fxml"));
-                    Scene inic_c_Scene = new Scene(inic_c_Parent);
+
+                    if(a.getDesignação()==2) {
+
+                        Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("Utilizador_Registado.fxml"));
+                        Scene inic_c_Scene = new Scene(inic_c_Parent);
 
 
-                    //this line gets stage information
-                    Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    window.setScene(inic_c_Scene);
-                    window.show();
-                    break;
+                        //this line gets stage information
+                        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                        window.setScene(inic_c_Scene);
+                        window.show();
+                        break;
+                    }
+
+                    else {
+                        Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("Administrador.fxml"));
+                        Scene inic_c_Scene = new Scene(inic_c_Parent);
+
+
+                        //this line gets stage information
+                        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                        window.setScene(inic_c_Scene);
+                        window.show();
+                    }
 
 
             }
