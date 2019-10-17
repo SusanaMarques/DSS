@@ -11,7 +11,7 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="198.0" layoutX="37.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="472.0" />
-      <Button layoutX="22.0" layoutY="53.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="Download" textFill="WHITE" />
+      <Button layoutX="22.0" layoutY="53.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="Upload" textFill="WHITE" />
       <Text layoutX="183.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formato válido" wrappingWidth="110.4248046875">
          <font>
             <Font size="17.0" />
@@ -24,12 +24,18 @@
       </Text>
       <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="161.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@36-362966_checkmark-comments-check-mark.png" />
+            <Image url="@c.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="161.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@36-362966_checkmark-comments-check-mark.png" />
+            <Image url="@c.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="510.0" layoutY="6.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="34.0" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="506.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@890784-200.png" />
          </image>
       </ImageView>
    </children>

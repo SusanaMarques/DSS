@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f61300da-14f1-431e-8fd0-a332c84500e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sample/Adição_Sucesso.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Alterar_Genero.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Amigos.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Erro_Email.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Erro_Género.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Erro_UserExistente.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Potenciais_Amigos.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Remoção_Sucesso.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Upload_Sucesso.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/player.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/playlist_escolha.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/dss_interf/sample/playlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dss_interf/sample/playlist.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Alterar_Password.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Alterar_Password.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Conteudo_Existente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Conteudo_Existente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Criar_Conta.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Criar_Conta.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Download_Sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Download_Sucesso.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Erro_Download.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Erro_Download.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Formato_Desconhecido.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Formato_Desconhecido.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/opcoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/opcoes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/playlist.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/playlist.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,7 +23,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/playlist_escolha.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
@@ -96,7 +73,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/playlist.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor" />
@@ -180,7 +157,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571334150450" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571335379940" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -232,12 +209,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571296024033</updated>
       <workItem from="1571296025582" duration="4345000" />
-      <workItem from="1571328125928" duration="4604000" />
+      <workItem from="1571328125928" duration="5361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8949000" />
+    <option name="totallyTimeSpent" value="9706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -406,14 +383,6 @@
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/playlist_escolha.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Adição_Sucesso.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -421,10 +390,6 @@
           <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Alterar_Genero.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Erro_Email.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -449,6 +414,18 @@
     <entry file="file://$PROJECT_DIR$/src/sample/playlist.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Alterar_Genero.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/playlist_escolha.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
