@@ -19,87 +19,44 @@ import javafx.scene.Node;
 
 public class Controller implements Initializable
 {
+    private Model model;
+    private View view;
+    private int buttonid;
 
-    Utilizador a = new Utilizador(0);
-
-
+    public Controller(){
+        model=new Model();
+        view=new View();
+    }
 
     @FXML
-private Utilizador handleButtonAction_Conv(ActionEvent event) {
+    private void handleButtonAction_Conv(ActionEvent event) {
 
-        try {
+        view.printPage("convidado", (Node) event.getSource());
+        model.setUserT(0);
+    }
 
-            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("convidado.fxml"));
-            Scene inic_c_Scene = new Scene(inic_c_Parent);
-
-
-            //this line gets stage information
-            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            window.setScene(inic_c_Scene);
-            window.show();
-
-        }
-     catch(IOException ex) {
-         Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
-
-     }
-            return a;
+    @FXML
+    private void handleButtonAction_Admin(ActionEvent event) {
+        view.printPage("login", (Node) event.getSource());
+        model.setUserT(1);
 
     }
 
     @FXML
-    private Utilizador handleButtonAction_Admin(ActionEvent event)
-    {
-        a.setDesignação(1);
-        try {
-
-            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
-            Scene inic_c_Scene = new Scene(inic_c_Parent);
-
-
-            //this line gets stage information
-            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            window.setScene(inic_c_Scene);
-            window.show();
-
-
-        }
-     catch(IOException ex){
-                Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
-
-            }
-            return a;
-
-
+    private void handleButtonAction_Reg(ActionEvent event) {
+        view.printPage("login", (Node) event.getSource());
+        model.setUserT(2);
     }
 
     @FXML
-    private Utilizador handleButtonAction_Reg(ActionEvent event)
-    {
-        a.setDesignação(2);
-        try {
+    private void handleButtonAction_Login(ActionEvent event) {
+        if(!model.checkLogin()) view.printPage("Erro_Credenciais", (Node) event.getSource());
+        else{
 
-            Parent inic_c_Parent = FXMLLoader.load(getClass().getResource("login.fxml"));
-            Scene inic_c_Scene = new Scene(inic_c_Parent);
-
-
-            //this line gets stage information
-            Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            window.setScene(inic_c_Scene);
-            window.show();
-
-        }
-     catch(IOException ex){
-                Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
-
-            }
-            return a;
-
-
+        if (model.getUserT() == 1) view.printPage("Utilizador_Registado", (Node) event.getSource());
+            else{view.printPage("Administrador", (Node) event.getSource());}
     }
-
-
-
+    }
 
 
     @Override
