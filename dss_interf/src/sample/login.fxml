@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -21,5 +23,11 @@
       <PasswordField layoutX="214.0" layoutY="230.0" prefHeight="45.0" prefWidth="230.0" />
       <Button fx:id="login" layoutX="203.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleButtonAction_login" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="LOG IN" textFill="WHITE" />
       <TextField layoutX="214.0" layoutY="145.0" prefHeight="45.0" prefWidth="230.0" />
+      <Button layoutX="510.0" layoutY="5.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="34.0" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="506.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@890784-200.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
