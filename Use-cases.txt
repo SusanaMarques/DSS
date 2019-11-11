@@ -32,10 +32,10 @@ Cenário: O Ricardo liga-se ao Media Center
 Pré Condição: Sistema está livre
 Pós Condição: Utilizador autenticado e conectado ao sistema
 Fluxo normal:
-    1- Sistema apresenta o tipo de Login
+    1- Sistema disponibiliza os tipos de Login
     2- Utilizador escolhe o registado e introduz credenciais
     3- Sistema valida credenciais
-    4- Sistema apresenta o perfil do utilizador
+    4- Sistema conecta o utilizador
 
 Fluxo de exceção: [Credenciais inválidas]
     2.1- Mensagem de erro
@@ -56,7 +56,7 @@ Fluxo de Exceção 1: [O conteúdo não pertence ao utilizador]
     2.1- Mensagem de erro 
 Fluxo de Exceção 2: [A categoria inserida é igual á inicial]
     4.1- Mensagem de aviso
-----------------TODO----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 Use case: Editar perfil
 Descrição: Utilizador altera a sua password
 Cenário: O Manuel define a sua palavra-pass
@@ -89,9 +89,12 @@ Pré-Condição: Sistema está livre
 Pós-Condição: Conteúdo é reproduzido
 Fluxo Normal:
     1- Ator seleciona o conteúdo a reproduzir
-    4- Sistema apresenta opçoes relativas ao conteudo
-    5- Utilizador seleciona Reproduzir
-    6- Sistema Reproduz
+    2- Sistema apresenta opçoes relativas ao conteudo
+    3- Utilizador seleciona Reproduzir
+    4- Sistema Reproduz
+Fluxo Alternativo: [seleção de reprodução aleatória]
+    3.1- Utilizador seleciona reproduzir no modo aleatório
+    3.2- (4)
 --------------------------------------------------------------------------------------------------------------------------
 Use Case:Adicionar (a) playlists
 Descrição: O utilizador cria playlists aleatórias ou com base na categoria ou no artista de um conteúdo
@@ -107,7 +110,7 @@ Fluxo Normal:
     5- Utilizador escolhe a playlist
     6- Sistema adiciona o conteúdo
     7- Mensagem de Sucesso
-Fluxo Alternativo 1:[Criação de nova playlist]
+Fluxo Alternativo 1:[Criação de nova playlist] (passo 2)
     2.1- Utilizador seleciona criar nova playlist
     2.2- Sistema pede nome da playlist
     2.3- Utilizador insere o nome da playlist
@@ -124,7 +127,7 @@ Fluxo Alternativo 3: [Criação de uma nova playlist baseada em artista]
     2.3- Sistema adiciona todo o conteúdo com o mesmo artista á playlist
     2.4- (7)
 
--------------------------------^TODO^-----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
 Use Case: Remover conteúdo
 Descrição: Utilizador remove conteúdo de uma playlist ou das bibliotecas, apagando as playlists caso fiquem vazias
 Cenário:
@@ -175,6 +178,37 @@ Fluxo de Exceção 2:
 Fluxo de Exceção 3:
     3.1- Email é inválido
     3.2- Mensagem de erro
+
+------------------------------------------------------------------------------------------------------
+Use Case: Logout
+Ator: Utilizador registado / Admin
+Descrição: O utilizador termina sessão
+Cenário: O Ricardo desliga-se do Media Center
+Pré Condição: O sistema está ligado com a conta do utilizador em questão
+Pós Condição: Utilizador desconectado do sistema
+Fluxo normal:
+    1- Utilizador seleciona término de sessão
+    2- Sistema desconecta o utilizador
+
+------------------------------------------------------------------------------------------------------
+Use Case: Eliminar perfil
+Ator: Utilizador registado / Admin
+Descrição: O utilizador elimina uma conta
+Cenário: O Ricardo, como utilizador registado, elimina permanentemente a sua conta / A Paula, como Admin, elimina permanentemente a conta de um utilizador
+Pré Condição: O utilizador tem sessão iniciada
+Pós Condição:Uma conta foi removida do sistema
+Fluxo normal: [Utilizador registado remove conta]
+    1- Utilizador seleciona remover conta
+    2- Sistema disconecta o utilizador
+    3- Sistema remove a conta permanentemente
+
+Fluxo Alternativo: [Admin remove conta]
+    1.1- Sistema pede o email da conta a apagar
+    1.2- Verifica se a conta existe
+    1.3- (4)
+
+Fluxo de Excessão: [A conta não existe no sistema]
+    1.2.1- Mensagem de erro
 
 
 
