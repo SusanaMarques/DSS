@@ -27,27 +27,32 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="592.0" prefWidth="419.0">
                <children>
-                  <Button layoutX="173.0" layoutY="364.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
-                  <ImageView fitHeight="207.0" fitWidth="253.0" layoutX="89.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@Music-icon.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="138.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hold Up - Beyoncé" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="83.0" layoutY="415.0" stroke="BLACK" strokeType="INSIDE" width="225.0" />
-                  <Text layoutX="84.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+                  <Text layoutX="138.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hold Up - Beyoncé" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="83.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="225.0" />
+                  <Text layoutX="84.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
                      <font>
                         <Font size="7.0" />
                      </font>
                   </Text>
-                  <Button layoutX="213.0" layoutY="364.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
-                  <Button layoutX="133.0" layoutY="364.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
+                  <Button layoutX="208.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
+                  <Button layoutX="174.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
+                  <Button layoutX="141.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
+                  <ImageView fitHeight="49.0" fitWidth="192.0" layoutX="123.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@player.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="178.0" fitWidth="192.0" layoutX="100.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@music.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
-      <Button layoutX="545.0" layoutY="6.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="34.0" />
-      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="541.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="542.0" layoutY="6.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="34.0" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="538.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@890784-200.png" />
          </image>

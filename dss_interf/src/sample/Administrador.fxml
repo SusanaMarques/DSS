@@ -8,13 +8,13 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="296.0" layoutX="81.0" layoutY="200.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="396.0" />
       <Button layoutX="121.0" layoutY="389.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="PERMISSÃO 2" textFill="WHITE" />
-      <Button layoutX="121.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="CRIAR CONTA" textFill="WHITE" />
+      <Button layoutX="121.0" layoutY="259.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="CRIAR CONTA" textFill="WHITE" />
       <Button layoutX="121.0" layoutY="323.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="136.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="PERMISSÃO 1" textFill="WHITE" />
-      <Button layoutX="482.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Logout" textFill="WHITE" />
+      <Button layoutX="463.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction_logout_admin" prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Logout" textFill="WHITE" />
       <ImageView fitHeight="124.0" fitWidth="140.0" layoutX="78.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@avatar-icon.png" />

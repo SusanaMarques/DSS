@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Label layoutX="199.0" layoutY="75.0" prefHeight="19.0" prefWidth="76.0" style="-fx-font-weight: bold;" text="CONVIDADO" />
       <ImageView fitHeight="124.0" fitWidth="140.0" layoutX="68.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
@@ -17,7 +17,7 @@
             <Image url="@avatar-icon.png" />
          </image>
       </ImageView>
-      <Button layoutX="516.0" layoutY="13.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Logout" textFill="WHITE" />
+      <Button layoutX="506.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleButtonAction_logout_conv" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Logout" textFill="WHITE" />
       <Pane layoutX="56.0" layoutY="168.0" prefHeight="340.0" prefWidth="526.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="319.0" layoutX="9.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="479.0" />

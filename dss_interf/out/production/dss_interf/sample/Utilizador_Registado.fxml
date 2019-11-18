@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_registado">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Button layoutX="197.0" layoutY="105.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Amigos" textFill="WHITE" />
       <Button layoutX="271.0" layoutY="105.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="119.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Potenciais Amigos" textFill="WHITE" />
@@ -19,7 +19,7 @@
             <Image url="@avatar-icon.png" />
          </image>
       </ImageView>
-      <Button layoutX="511.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Logout" textFill="WHITE" />
+      <Button layoutX="492.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction_logout_registado" prefHeight="27.0" prefWidth="76.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Logout" textFill="WHITE" />
       <Pane layoutX="57.0" layoutY="220.0" prefHeight="217.0" prefWidth="448.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="178.0" layoutX="25.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="415.0" />

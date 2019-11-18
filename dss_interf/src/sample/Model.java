@@ -8,9 +8,11 @@ public class Model {
     public void setUserT(int id){
         idType=id;
     }
+
     public int getUserT(){
         return idType;
     }
+
     public boolean checkLogin(){
         return true;
     }

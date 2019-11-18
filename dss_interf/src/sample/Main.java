@@ -8,9 +8,13 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("mediacenter.fxml"));
+
+        FXMLLoader loader =new FXMLLoader(getClass().getResource("mediacenter.fxml")) ;
+        Parent root = loader.load();
         primaryStage.setTitle("Stopify");
         primaryStage.setScene(new Scene(root, 550, 550));
         primaryStage.show();
@@ -19,7 +23,6 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        Controller control = new Controller();
         launch(args);
 
 
