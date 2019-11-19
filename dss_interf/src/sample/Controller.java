@@ -1,18 +1,11 @@
 package sample;
 
-
-
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.Parent;
-
 
 
 public class Controller implements Initializable
@@ -33,7 +26,7 @@ public class Controller implements Initializable
 
 
     /**
-     * método que trata do evento clique no botão convidado
+     * método que trata do evento: clique no botão convidado na página inicial
      * @param evento 
      */
     @FXML
@@ -43,6 +36,10 @@ public class Controller implements Initializable
 
     }
 
+    /**
+     * método que trata do evento clique: no botão admin na página inicial
+     * @param evento
+     */
     @FXML
     private void handleButtonAction_Admin(ActionEvent event) {
 
@@ -52,37 +49,10 @@ public class Controller implements Initializable
 
     }
 
-
-    //
-    @FXML
-    private void handleButtonAction_logout_conv(ActionEvent event) {
-        this.model.setUserT(0);
-        this.view.printPage((Node) event.getSource(),"mediacenter");
-
-        //free de todas as coisas
-    }
-
-
-    //
-    @FXML
-    private void handleButtonAction_logout_admin(ActionEvent event) {
-        this.model.setUserT(0);
-        this.view.printPage((Node) event.getSource(),"mediacenter");
-
-        //free de todas as coisas
-    }
-
-    //
-    @FXML
-    private void handleButtonAction_logout_registado(ActionEvent event) {
-        this.model.setUserT(0);
-        this.view.printPage((Node) event.getSource(),"mediacenter");
-
-        //free de todas as coisas
-    }
-
-
-
+    /**
+     * método que trata do evento: clique no botão registado na página inicial
+     * @param evento
+     */
     @FXML
     private void handleButtonAction_Reg(ActionEvent event) {
         this.model.setUserT(2);
@@ -91,6 +61,41 @@ public class Controller implements Initializable
 
     }
 
+
+    /**
+     * método que trata do evento: clique no botão logout na página inicial do convidado
+     * @param evento
+     */
+    @FXML
+    private void handleButtonAction_logout_conv(ActionEvent event) {
+        this.view.printPage((Node) event.getSource(),"mediacenter");
+
+    }
+
+
+    /**
+     * método que trata do evento: clique no botão logout na página inicial do admin
+     * @param evento
+     */
+    @FXML
+    private void handleButtonAction_logout_admin(ActionEvent event) {
+        this.view.printPage((Node) event.getSource(),"mediacenter");
+    }
+
+    /**
+     * método que trata do evento: clique no botão logout na página inicial do convidado
+     * @param evento
+     */
+    @FXML
+    private void handleButtonAction_logout_registado(ActionEvent event) {
+        this.view.printPage((Node) event.getSource(),"mediacenter");
+    }
+
+
+    /**
+     * método que trata do evento: clique no botão login
+     * @param evento
+     */
     @FXML
     private void handleButtonAction_Login(ActionEvent event) {
         if(!this.model.checkLogin()) this.view.printPage((Node) event.getSource(),"Erro_Credenciais");
@@ -99,6 +104,16 @@ public class Controller implements Initializable
         if (this.model.getUserT() == 1) this.view.printPage((Node) event.getSource(),"Utilizador_Registado");
             else{this.view.printPage((Node) event.getSource(),"Administrador");}
     }
+    }
+
+
+    /**
+     * método que trata do evento: clique no botão "retroceder" na página do login
+     * @param evento
+     */
+    @FXML
+    private void handleButtonAction_goback(ActionEvent event) {
+        this.view.printPage((Node) event.getSource(),"mediacenter");
     }
 
 
