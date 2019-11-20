@@ -1,4 +1,5 @@
 # Desenvolvimento de Sistema de Software
 
+Software Systems Development project: UML diagrams and developping of a media player
 
-made with :heart: by [Maria](https://github.com/mariajbp) & [Hugo](https://github.com/hchexy) & [Susana](https://github.com/SusanaMarques)
+made by [Maria](https://github.com/mariajbp) & [Hugo](https://github.com/hchexy) & [Susana](https://github.com/SusanaMarques)
