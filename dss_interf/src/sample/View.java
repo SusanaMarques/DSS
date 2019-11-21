@@ -1,12 +1,10 @@
 package sample;
 
 
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 
 public class View {
@@ -14,20 +12,14 @@ public class View {
     public View() {
     }
 
-    public void printPage(Node node, String id) {
-        FXMLLoader l;
-        try {
-            l=new FXMLLoader(getClass().getResource(id + ".fxml"));
+    public void printPage(Node node, Parent root) {
 
-
-            Scene inic_c_Scene = new Scene (l.load());
+            Scene inic_c_Scene = new Scene (root);
             //this line gets stage information
             Stage window = (Stage) node.getScene().getWindow();
             window.setScene(inic_c_Scene);
             window.show();
-        }
-        catch (IOException exception) {
-        }
+
 
 
     }

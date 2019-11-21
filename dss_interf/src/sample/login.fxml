@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_login">
    <children>
       <Label layoutX="97.0" layoutY="127.0" prefHeight="80.0" prefWidth="185.0" style="-fx-font-weight: bold;" text="USERNAME:">
          <font>
@@ -24,7 +24,7 @@
       <Button fx:id="login" layoutX="203.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleButtonAction_Login" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="LOG IN" textFill="WHITE" />
       <TextField layoutX="214.0" layoutY="145.0" prefHeight="45.0" prefWidth="230.0" />
       <Button layoutX="510.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonAction_goback" prefHeight="21.0" prefWidth="34.0" />
-      <ImageView disable="true" fitHeight="42.0" fitWidth="45.0" layoutX="506.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="42.0" fitWidth="45.0" layoutX="506.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@890784-200.png" />
          </image>
