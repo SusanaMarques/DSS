@@ -1,12 +1,15 @@
 package sample;
 
+
 public class Model {
-    int idType;
+
+    //tipo de utilizador: administrador:1; registado:2
+    private int idType;
 
     public Model(){}
 
-    public void setUserT(int id){
-        idType=id;
+    public void setUserT(int idUser){
+        idType=idUser;
     }
 
     public int getUserT(){
@@ -16,4 +19,6 @@ public class Model {
     public boolean checkLogin(){
         return true;
     }
+
+
 }

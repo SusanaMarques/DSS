@@ -9,9 +9,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Conv">
    <children>
-      <Label layoutX="199.0" layoutY="75.0" prefHeight="19.0" prefWidth="76.0" style="-fx-font-weight: bold;" text="CONVIDADO" />
+      <Label layoutX="199.0" layoutY="75.0" prefHeight="19.0" prefWidth="92.0" style="-fx-font-weight: bold;" text="CONVIDADO" />
       <ImageView fitHeight="124.0" fitWidth="140.0" layoutX="68.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@avatar-icon.png" />
@@ -21,7 +21,7 @@
       <Pane layoutX="56.0" layoutY="168.0" prefHeight="340.0" prefWidth="526.0">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="319.0" layoutX="9.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="479.0" />
-            <ListView layoutX="11.0" layoutY="42.0" prefHeight="294.0" prefWidth="473.0" />
+            <ListView fx:id="list" layoutX="11.0" layoutY="42.0" onMouseClicked="#handleButtonAction_Reproduzir" prefHeight="294.0" prefWidth="473.0" />
             <Button layoutX="3.0" layoutY="14.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="Biblioteca Geral" textFill="WHITE" />
          </children>
       </Pane>

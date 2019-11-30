@@ -39,10 +39,20 @@ public class Controller_login {
 
             if (this.model.getUserT() == 2) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
                 Parent root = l.load();
+                // set model e view do Controller_Regist
+                Controller_Regist control = l.getController();
+                control.setM(model);
+                control.setV(view);
+
                 this.view.printPage((Node) event.getSource(),root);}
             else{
                 FXMLLoader l=new FXMLLoader(getClass().getResource( "administrador.fxml"));
                 Parent root = l.load();
+
+                // set model e view do Controller_Admin
+                Controller_Admin control = l.getController();
+                control.setM(model);
+                control.setV(view);
                 this.view.printPage((Node) event.getSource(),root);}
         }
     }
@@ -57,6 +67,8 @@ public class Controller_login {
         Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
     }
+
+
 
     @FXML private void initialize() {
 

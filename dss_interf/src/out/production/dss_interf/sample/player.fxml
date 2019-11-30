@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Player">
    <children>
-      <SplitPane dividerPositions="0.29797979797979796" layoutY="-5.0" prefHeight="587.0" prefWidth="585.0">
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="550.0" prefWidth="550.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="588.0" prefWidth="172.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="171.0">
                <children>
-                  <ListView layoutY="52.0" prefHeight="559.0" prefWidth="181.0" />
+                  <ListView layoutX="-7.0" layoutY="53.0" prefHeight="550.0" prefWidth="172.0" />
                   <Text fill="#686868" layoutX="46.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist" wrappingWidth="80.06201171875">
                      <font>
                         <Font size="17.0" />
@@ -25,37 +27,33 @@
                   </Text>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="592.0" prefWidth="419.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="550.0">
                <children>
-                  <Text layoutX="138.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hold Up - Beyoncé" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="83.0" layoutY="406.0" stroke="BLACK" strokeType="INSIDE" width="225.0" />
-                  <Text layoutX="84.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
-                  <Button layoutX="208.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
-                  <Button layoutX="174.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
-                  <Button layoutX="141.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" />
-                  <ImageView fitHeight="49.0" fitWidth="192.0" layoutX="123.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@player.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="178.0" fitWidth="192.0" layoutX="100.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+                  <Text fx:id="t" layoutX="138.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Button layoutX="208.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" textFill="WHITE" />
+                  <Button layoutX="174.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleButtonAction_buttonreproduz" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" text="||" textFill="WHITE" />
+                  <Button layoutX="141.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" textFill="WHITE" />
+                  <ImageView disable="true" fitHeight="170.0" fitWidth="178.0" layoutX="104.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@music.png" />
+                     </image>
+                  </ImageView>
+                  <MediaView fx:id="v" fitHeight="200.0" fitWidth="300.0" layoutX="-8.0" layoutY="-8.0" x="41.0" y="121.0">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </MediaView>
+                  <Slider layoutX="42.0" layoutY="419.0" onMouseDragged="#handleButtonAction_timeslider" onMousePressed="#handleButtonAction_timeslider" prefHeight="15.0" prefWidth="294.0" />
+                  <Slider layoutX="342.0" layoutY="73.0" majorTickUnit="10.0" minorTickCount="1" onMouseDragged="#handleButtonAction_volume" onMousePressed="#handleButtonAction_volume" orientation="VERTICAL" value="100.0" />
+                  <Button layoutX="333.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButtonAction_goback_player" prefHeight="20.0" prefWidth="34.0" />
+                  <ImageView disable="true" fitHeight="42.0" fitWidth="45.0" layoutX="329.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@890784-200.png" />
                      </image>
                   </ImageView>
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
-      <Button layoutX="542.0" layoutY="6.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="34.0" />
-      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="538.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@890784-200.png" />
-         </image>
-      </ImageView>
    </children>
 </Pane>

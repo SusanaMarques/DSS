@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Regist">
    <children>
       <Button layoutX="197.0" layoutY="105.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Amigos" textFill="WHITE" />
       <Button layoutX="271.0" layoutY="105.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="119.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Potenciais Amigos" textFill="WHITE" />
@@ -24,7 +24,7 @@
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="178.0" layoutX="25.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="415.0" />
             <Button layoutX="19.0" layoutY="7.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="As minhas playlists" textFill="WHITE" />
-            <Button fx:id="geral" layoutX="65.0" layoutY="57.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Geral" textFill="WHITE" />
+            <Button fx:id="geral" layoutX="65.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleButtonAction_Reproduzir" prefHeight="42.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Geral" textFill="WHITE" />
             <Button layoutX="151.0" layoutY="58.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Pop" textFill="WHITE" />
             <Button layoutX="236.0" layoutY="58.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Rock" textFill="WHITE" />
             <Button layoutX="65.0" layoutY="110.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="76.0" style="-fx-background-color: #000000;" text="Playlist 1" textFill="WHITE" />

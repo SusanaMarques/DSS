@@ -37,12 +37,11 @@ public class Controller implements Initializable
     @FXML
     private void handleButtonAction_Admin(ActionEvent event) throws IOException {
 
+        //indica que o utilizador é um administrador
         this.model.setUserT(1);
         FXMLLoader l=new FXMLLoader(getClass().getResource( "login.fxml"));
         Parent root = l.load();
-        Controller_login control =l.getController();
-        control.setModell(model);
-        control.setVieww(view);
+        setmodel_view(l);
         this.view.printPage((Node) event.getSource(),root);
 
 
@@ -54,53 +53,27 @@ public class Controller implements Initializable
      */
     @FXML
     private void handleButtonAction_Reg(ActionEvent event) throws IOException {
+        //indica que o utilizador é um registado
         this.model.setUserT(2);
         FXMLLoader l=new FXMLLoader(getClass().getResource( "login.fxml"));
         Parent root = l.load();
+        setmodel_view(l);
+        this.view.printPage((Node) event.getSource(),root);
+
+
+    }
+
+    //sets model e view no Controller_login
+    /**
+     * método que inicia o model e a view do Controller_login com o model e a view do Controller
+     * set model e view do Controller_login
+     * @param l
+     */
+    private void setmodel_view(FXMLLoader l){
         Controller_login control = l.getController();
         control.setModell(model);
         control.setVieww(view);
-        this.view.printPage((Node) event.getSource(),root);
-
-
     }
-
-
-    /**
-     * método que trata do evento: clique no botão logout na página inicial do convidado
-     * @param event
-     */
-    @FXML
-    private void handleButtonAction_logout_conv(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
-
-    }
-
-
-    /**
-     * método que trata do evento: clique no botão logout na página inicial do admin
-     * @param event
-     */
-    @FXML
-    private void handleButtonAction_logout_admin(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
-    }
-
-    /**
-     * método que trata do evento: clique no botão logout na página inicial do convidado
-     * @param event
-     */
-    @FXML
-    private void handleButtonAction_logout_registado(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
-    }
-
 
 
 

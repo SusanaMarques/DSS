@@ -12,6 +12,7 @@ public class View {
     public View() {
     }
 
+
     public void printPage(Node node, Parent root) {
 
             Scene inic_c_Scene = new Scene (root);
@@ -20,7 +21,7 @@ public class View {
             window.setScene(inic_c_Scene);
             window.show();
 
-
-
     }
+
+
 }
