@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../dss_interf/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/media_center.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/META-INF/dss_interf.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/dss_interf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/dss_interf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/890784-200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Adição_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Alterar_Password.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Criar_Conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Download_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Erro_Download.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Erro_Email.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Erro_UserExistente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Music-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Potenciais_Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Remoção_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/avatar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/out/production/dss_interf/sample/playlist_escolha.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/890784-200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Adição_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Alterar_Password.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Controller_Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Controller_Conv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Controller_Regist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Controller_login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Criar_Conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Download_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Erro_Download.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Erro_Email.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Erro_UserExistente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Music-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Player$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Potenciais_Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Remoção_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Utilizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/avatar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/dss_interf/sample/playlist_escolha.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/Controller_login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/alt_pass.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/avatar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/criar_conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/erro_cred.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/inic_admin.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/inic_conv.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/inic_reg.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/out/production/untitled/sample/sem_sessao_inic.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/Administrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/Conteudo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/GestaoConteudo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/GestaoUtilizador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/MC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/Musica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/Utilizador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/UtilizadorRegistado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Business/Video.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Database/AdmnistradorDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Database/ConteudoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Database/PlaylistDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Database/ProprietariosDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Database/UtilizadorRegistadoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/890784-200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Adição_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Alterar_Password.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Controller_Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Controller_Conv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Controller_Regist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Controller_login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Criar_Conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Download_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Erro_Download.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Erro_Email.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Erro_UserExistente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Music-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Potenciais_Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Remoção_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/avatar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/Presentation/playlist_escolha.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/dss_interf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/META-INF/dss_interf.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/dss_interf.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/890784-200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Adição_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Alterar_Password.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Controller_Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Controller_Conv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Controller_Regist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Controller_login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Criar_Conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Download_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Erro_Download.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Erro_Email.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Erro_UserExistente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Music-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Player$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Potenciais_Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Remoção_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/avatar-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/src/out/production/dss_interf/sample/playlist_escolha.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dss_interf/untitled.iml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#196#197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Business/Utilizador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/Connect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/business</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/business/Utilizador.java" />
+        <option value="$PROJECT_DIR$/src/business/Utilizadorregistado.java" />
+        <option value="$PROJECT_DIR$/src/business/Administrador.java" />
+        <option value="$PROJECT_DIR$/src/business/UtilizadorRegistado.java" />
+        <option value="$PROJECT_DIR$/src/business/Conteudo.java" />
+        <option value="$PROJECT_DIR$/src/business/Player.java" />
+        <option value="$PROJECT_DIR$/src/business/MC.java" />
+        <option value="$PROJECT_DIR$/src/business/Video.java" />
+        <option value="$PROJECT_DIR$/src/DAOs/ConteudoDAO.java" />
+        <option value="$PROJECT_DIR$/src/DAOs/AdmnistradorDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/Connection.java" />
+        <option value="$PROJECT_DIR$/src/Database/Connect.java" />
+        <option value="$PROJECT_DIR$/src/Database/AdmnistradorDAO.java" />
+        <option value="$PROJECT_DIR$/src/Business/Utilizador.java" />
+        <option value="$PROJECT_DIR$/src/Database/AdministradorDAO.java" />
+        <option value="$PROJECT_DIR$/src/Business/Administrador.java" />
+        <option value="$PROJECT_DIR$/src/Database/ProprietariosDAO.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="822" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
+              <item name="media_center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
+              <item name="media_center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
+              <item name="media_center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
+              <item name="media_center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575221079682" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Presentation.Main" />
+      <module name="media_center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="" />
+      <created>1575088370923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575088370923</updated>
+      <workItem from="1575088375982" duration="136000" />
+      <workItem from="1575199510307" duration="2154000" />
+      <workItem from="1575217538965" duration="1018000" />
+      <workItem from="1575218905344" duration="1856000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5164000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24930556" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32902467" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Presentation/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Presentation/Controller_Conv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/UtilizadorRegistado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Conteudo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/MC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/PlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/GestaoConteudo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/GestaoUtilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Musica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Video.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/ConteudoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Utilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javafx</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>dss_interf</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-8.0.18</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
