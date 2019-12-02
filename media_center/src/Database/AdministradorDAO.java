@@ -53,27 +53,59 @@ public class AdministradorDAO implements Map<String,Administrador>
         return res;
     }
 
-    @Override //completar
-    public boolean containsValue(Object o) { return true; }
-
     @Override
-    public Administrador get(Object o) {
-        Administrador admin = new Administrador();
-        return admin;
+    public boolean containsValue(Object o) {
+        boolean res = false;
+
+        if(o.getClass().getName().equals("Business.Administrador")){
+            Administrador a = (Administrador) o;
+            int id = a.getId();
+            Administrador admin = this.get(id);
+            if(admin.equals(a)){ res=true; }
+        }
+        return res;
     }
 
     @Override
-    public Administrador put(String k, Administrador a) {
+    public Administrador get(Object o) {
+        Administrador a = new Administrador();
+
+        try{
+            c = Connect.connect();
+            PreparedStatement ps = c.prepareStatement("SELECT * FROM Administrador WHERE idAdministrador = ?");
+            ps.setString(1,(String) o);
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()){
+                a.setId(rs.getInt("IdAdministrador"));
+                a.setNome(rs.getNString("Nome"));
+                a.setEmail(rs.getNString("Email"));
+                a.setPassword(rs.getNString("Password"));
+            }
+        }
+        catch(Exception e){
+            System.out.printf(e.getMessage());
+        }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return a;
+    }
+
+    @Override
+    public Administrador put(String k, Administrador v) {
         Administrador admin;
 
         if(this.containsKey(k)){
             admin = this.get(k);
         }
-        else admin = a;
+        else admin = v;
         try{
             c = Connect.connect();
 
-            //PreparedStatement ps = c.prepareStatement(???)
+            PreparedStatement ps = c.prepareStatement("INSERT INTO Administrador (idAdministrador,Nome,Email,Password) VALUES (?,?,?,?)");
+            ps.setString(1,k);
+            ps.setString(2,v.getNome());
+            ps.setString(3,v.getEmail());
+            ps.setString(3,v.getPassword());
+            ps.executeUpdate();
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
@@ -85,7 +117,7 @@ public class AdministradorDAO implements Map<String,Administrador>
 
     @Override
     public void putAll(Map<? extends String, ? extends Administrador> map) {
-        for(Administrador admin : map.values()) { put(admin.getId(), admin); }
+        for(Administrador admin : map.values()) { put(admin.getEmail(), admin); }
     }
 
     @Override

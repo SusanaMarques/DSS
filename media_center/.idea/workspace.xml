@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Utilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,43 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Business/Utilizador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1133">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Business/Video.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/Connect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -62,50 +41,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="1755">
+              <caret line="119" column="70" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Presentation/Adição_Sucesso.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Presentation/Administrador.fxml">
-          <provider selected="true" editor-type-id="text-editor" />
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Presentation/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-373">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Business/Conteudo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Business/GestaoUtilizador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -146,14 +86,15 @@
         <option value="$PROJECT_DIR$/src/Database/Connection.java" />
         <option value="$PROJECT_DIR$/src/Database/Connect.java" />
         <option value="$PROJECT_DIR$/src/Database/AdmnistradorDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/AdministradorDAO.java" />
-        <option value="$PROJECT_DIR$/src/Business/Administrador.java" />
         <option value="$PROJECT_DIR$/src/Database/ProprietariosDAO.java" />
         <option value="$PROJECT_DIR$/src/Database/ConteudoDAO.java" />
         <option value="$PROJECT_DIR$/src/Database/PlaylistDAO.java" />
         <option value="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" />
-        <option value="$PROJECT_DIR$/src/Business/Utilizador.java" />
         <option value="$PROJECT_DIR$/src/Business/Conteudo.java" />
+        <option value="$PROJECT_DIR$/src/Business/Administrador.java" />
+        <option value="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" />
+        <option value="$PROJECT_DIR$/src/Business/Utilizador.java" />
+        <option value="$PROJECT_DIR$/src/Database/AdministradorDAO.java" />
       </list>
     </option>
   </component>
@@ -186,7 +127,7 @@
               <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
               <item name="media_center" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,12 +193,12 @@
       <workItem from="1575217538965" duration="1018000" />
       <workItem from="1575218905344" duration="3924000" />
       <workItem from="1575278415447" duration="146000" />
-      <workItem from="1575278629230" duration="522000" />
+      <workItem from="1575278629230" duration="5473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7900000" />
+    <option name="totallyTimeSpent" value="12851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -336,24 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/UtilizadorRegistado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Business/Musica.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -406,13 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Utilizador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Presentation/Adição_Sucesso.fxml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -445,10 +361,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/UtilizadorRegistado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Business/Utilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="1755">
+          <caret line="119" column="70" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

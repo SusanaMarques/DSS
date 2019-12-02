@@ -23,7 +23,7 @@ public class Utilizador
     }
 
     /**
-     * Construtor da classe Componente com paramêtros.
+     * Construtor da classe Utilizador com paramêtros.
      * @param id        id do utilizador
      * @param nome      nome do utilizador
      * @param email     email do utilizador
@@ -73,6 +73,11 @@ public class Utilizador
      */
     public String getPassword(){return this.password;}
 
+    /**
+     * Método que altera o id de um utilizador
+     * @param id    Novo id do utilizador
+     */
+    public void setId(int id){this.id = id;}
 
     /**
      * Método que altera o nome de um utilizador
@@ -92,6 +97,14 @@ public class Utilizador
      */
     public void setPassword(String p){this.password = p;}
 
+    /**
+     * Método que altera a password de um utilizador
+     * @return    Cópia do utilizador
+     */
+    public Utilizador clone() {
+        Utilizador u =  new Utilizador(this);
+        return u;
+    }
 
     /**
      * Método equals da classe Componente.
