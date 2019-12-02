@@ -61,7 +61,7 @@ public class AdministradorDAO implements Map<String,Administrador>
             Administrador a = (Administrador) o;
             int id = a.getId();
             Administrador admin = this.get(id);
-            if(admin.equals(a)){ res=true; }
+            if(admin.equals(a)){ res = true; }
         }
         return res;
     }
