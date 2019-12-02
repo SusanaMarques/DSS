@@ -31,11 +31,13 @@ public class UtilizadorRegistado extends Utilizador
      */
     public UtilizadorRegistado(Utilizador u)
     {
+
         super(u.getId(), u.getNome(), u.getEmail(), u.getPassword());
+
     }
 
     /**
-     * Método que altera a password de um utilizador
+     * Construtor por cópia da classe UtilizadorRegistado.
      * @return    Cópia do utilizador
      */
     public UtilizadorRegistado clone() {

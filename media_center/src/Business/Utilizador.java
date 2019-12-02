@@ -1,5 +1,9 @@
 package Business;
 
+
+/**
+ * Representação da classe Utilizador, subclasse de Utilizador
+ **/
 public class Utilizador
 {
     /** Id do utilizador **/
@@ -98,7 +102,7 @@ public class Utilizador
     public void setPassword(String p){this.password = p;}
 
     /**
-     * Método que altera a password de um utilizador
+     * Método que cria a cópia de um objeto
      * @return    Cópia do utilizador
      */
     public Utilizador clone() {
