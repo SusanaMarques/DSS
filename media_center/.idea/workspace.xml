@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Business/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Conteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Musica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Utilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Video.java" afterDir="false" />
-    </list>
+    <list default="true" id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +192,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575312404005" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575312431421" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -253,12 +247,12 @@
       <workItem from="1575217538965" duration="1018000" />
       <workItem from="1575218905344" duration="3924000" />
       <workItem from="1575278415447" duration="146000" />
-      <workItem from="1575278629230" duration="8975000" />
+      <workItem from="1575278629230" duration="9003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16353000" />
+    <option name="totallyTimeSpent" value="16381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
