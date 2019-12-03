@@ -71,6 +71,7 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         UtilizadorRegistado u = new UtilizadorRegistado();
 
         try{
+            c = Connect.connect();
             PreparedStatement ps = null;
             if(o instanceof String) {
                 ps = c.prepareStatement("SELECT * FROM UtilizadorRegistado WHERE email = ?");
