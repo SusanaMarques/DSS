@@ -71,9 +71,7 @@ public class AdministradorDAO implements Map<String,Administrador>
         Administrador a = new Administrador();
 
         try{
-            System.out.println("cheagay");
             c = Connect.connect();
-            System.out.println("cheagay2");
             PreparedStatement ps = null;
             if(o instanceof String) {
                 ps = c.prepareStatement("SELECT * FROM Administrador WHERE email = ?");
@@ -83,16 +81,10 @@ public class AdministradorDAO implements Map<String,Administrador>
                 ps = c.prepareStatement("SELECT * FROM Administrador WHERE idAdministrador = ?");
                 ps.setInt(1, (Integer) o);
             }
-
-            System.out.println("cheagay3");
             ResultSet rs = ps.executeQuery();
-
             System.out.println(rs.toString());
-
-            System.out.println("cheagay4");
             if(rs.next()){
 
-                System.out.println("cheagay5");
                 a.setId(rs.getInt("idAdministrador"));
                 a.setNome(rs.getNString("nome"));
                 a.setEmail(rs.getNString("email"));

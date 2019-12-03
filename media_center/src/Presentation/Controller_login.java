@@ -51,7 +51,7 @@ public class Controller_login {
      */
     @FXML
     private void handleButtonAction_Login(ActionEvent event) throws IOException {
-         if(!this.mod email, pass)) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
+         if(!this.model.iniciarSessao(email, pass)) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
             Parent root = l.load();
             this.view.printPage((Node) event.getSource(),root);
          }
