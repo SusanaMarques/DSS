@@ -3,6 +3,8 @@ package Presentation;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import Business.MC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +16,7 @@ import javafx.scene.Parent;
 public class Controller implements Initializable
 {
 
-    private Model model = new Model();
+    private MC model = new MC();
     private View view = new View();
 
 

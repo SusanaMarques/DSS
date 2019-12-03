@@ -1,21 +1,25 @@
 package Presentation;
 
 
+import Business.MC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
 public class Controller_login {
 
-    private Model model;
+    private MC model;
     private View view;
+    private String email;
+    private String pass;
 
 
-    public void setModell(Model m){
+    public void setModell(MC m){
         this.model=m;
 
     }
@@ -26,12 +30,28 @@ public class Controller_login {
     }
 
     /**
+     * método que trata do evento: insere mail
+     * @param event
+     */
+    @FXML
+    private void handleButtonAction_Mail(ActionEvent event) throws IOException {
+        email =((TextField) event.getSource()).getText();
+        }
+
+    @FXML
+    private void handleButtonAction_Pass(ActionEvent event) throws IOException {
+        pass =((TextField) event.getSource()).getText();
+    }
+
+
+
+    /**
      * método que trata do evento: clique no botão login
      * @param event
      */
     @FXML
     private void handleButtonAction_Login(ActionEvent event) throws IOException {
-         if(!this.model.checkLogin()) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
+         if(!this.mod email, pass)) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
             Parent root = l.load();
             this.view.printPage((Node) event.getSource(),root);
          }
@@ -46,7 +66,7 @@ public class Controller_login {
 
                 this.view.printPage((Node) event.getSource(),root);}
             else{
-                FXMLLoader l=new FXMLLoader(getClass().getResource( "administrador.fxml"));
+                FXMLLoader l=new FXMLLoader(getClass().getResource( "Administrador.fxml"));
                 Parent root = l.load();
 
                 // set model e view do Controller_Admin

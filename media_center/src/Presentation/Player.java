@@ -1,4 +1,5 @@
 package Presentation;
+import Business.MC;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -18,7 +19,7 @@ import java.io.IOException;
 
 public class Player {
 
-    private Model model;
+    private MC model;
     private View view;
     private MediaPlayer player;
 
@@ -28,7 +29,7 @@ public class Player {
     @FXML
     private Text t;
 
-    public void setM(Model m) {
+    public void setM(MC m) {
         this.model = m;
 
     }
