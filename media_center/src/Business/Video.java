@@ -49,6 +49,12 @@ public class Video extends Conteudo
     public String getRealizador() { return this.realizador; }
 
     /**
+     * Método que altera o realizador do conteudo
+     * @param r  Nova categoria do conteudo
+     */
+    public void setRealizador(String r){this.realizador = r;}
+
+    /**
      * Construtor por cópia da classe Video.
      * @return    Cópia do objeto Video
      */

@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
+/**
 public class PlaylistMusicaDAO implements Map<Integer, Musica>
 {
     private Connection c;
@@ -65,12 +65,44 @@ public class PlaylistMusicaDAO implements Map<Integer, Musica>
     @Override //UNFINISHED
     public Musica get(Object o) {
         Musica m = new Musica();
+        try {
+            c = Connect.connect();
+            PreparedStatement ps = c.prepareStatement("SELECT * FROM PlaylistMusica WHERE idPlaylist = ?");
+            ps.setString(1, (String) o);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                m.setId(rs.getInt("idPlaylist9"));
+                m.setNome(rs.getNString("nomePlaylist"));
+                m.setDuracao(rs.getDouble("idUtilizador"));
+                m.setFormato(rs.getNString("idMusica"));
+            }
+        } catch (Exception e) { System.out.printf(e.getMessage()); }
+        finally { try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); }
+        }
         return m;
     }
 
-    @Override //UNFINISHED
+    @Override
     public Musica put(Integer k, Musica v) {
-        Musica m = new Musica();
+        Musica m;
+
+        if(this.containsKey(k)){
+            m = this.get(k);
+        }
+        else m = v;
+        try{
+            c = Connect.connect();
+
+            PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica(idPlaylist,NomePlaylist,idUtilizador,idMusica) VALUES (?,?,?,?)");
+            ps.setInt(1,k);
+            ps.setString(2,v.getNome());
+            ps.setDouble(3,v.getDuracao());
+            ps.setString(3,v.getFormato());
+            ps.setString(4, v.getCategoria());
+            ps.executeUpdate();
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return m;
     }
 
@@ -136,4 +168,4 @@ public class PlaylistMusicaDAO implements Map<Integer, Musica>
         for(Integer k : keys){ map.put(k,this.get(k));}
         return map.entrySet();
     }
-}
+} **/

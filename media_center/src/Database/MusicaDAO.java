@@ -79,20 +79,14 @@ public class MusicaDAO implements Map<Integer, Musica> {
             ps.setString(1, (String) o);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                m.setId(rs.getInt("IdMusica"));
-                m.setNome(rs.getNString("Nome"));
-                m.setDuracao(rs.getDouble("Duracao"));
-                m.setFormato(rs.getNString("Formato"));
-                m.setCategoria(rs.getNString("Categoria"));
+                m.setId(rs.getInt("idMusica"));
+                m.setNome(rs.getNString("nome"));
+                m.setDuracao(rs.getDouble("duracao"));
+                m.setFormato(rs.getNString("formato"));
+                m.setCategoria(rs.getNString("categoria"));
             }
-        } catch (Exception e) {
-            System.out.printf(e.getMessage());
-        } finally {
-            try {
-                Connect.close(c);
-            } catch (Exception e) {
-                System.out.printf(e.getMessage());
-            }
+        } catch (Exception e) { System.out.printf(e.getMessage()); }
+        finally { try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); }
         }
         return m;
     }

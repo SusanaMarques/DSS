@@ -62,32 +62,52 @@ public class VideoDAO implements Map<Integer, Video>
         return res;
     }
 
-    @Override //UNFINISHED
+    @Override
     public Video get(Object o) {
         Video v = new Video();
 
-        try{
+        try {
             c = Connect.connect();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM Video WHERE idVideo = ?");
             ps.setString(1, (String) o);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                v.setId(rs.getInt("IdMusica"));
-                v.setNome(rs.getNString("Nome"));
-                v.setDuracao(rs.getDouble("Duracao"));
-                v.setFormato(rs.getNString("Formato"));
-                v.setCategoria(rs.getNString("Categoria"));
+                v.setId(rs.getInt("idVideo"));
+                v.setNome(rs.getNString("nome"));
+                v.setDuracao(rs.getDouble("duracao"));
+                v.setFormato(rs.getNString("formato"));
+                v.setCategoria(rs.getNString("categoria"));
+                v.setRealizador(rs.getNString("realizador"));
             }
+        } catch (Exception e) { System.out.printf(e.getMessage()); } finally {
+            try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); }
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return v;
     }
 
-    @Override //UNFINISHED
+    @Override
     public Video put(Integer k, Video v) {
-        Video vd = new Video();
-        return vd;
+        Video video;
+
+        if(this.containsKey(k)){
+            video = this.get(k);
+        }
+        else video = v;
+        try{
+            c = Connect.connect();
+
+            PreparedStatement ps = c.prepareStatement("INSERT INTO Musica(idVideo,Nome,Duracao,Formato, Categoria,Realizador) VALUES (?,?,?,?,?,?)");
+            ps.setInt(1,k);
+            ps.setString(2,v.getNome());
+            ps.setDouble(3,v.getDuracao());
+            ps.setString(3,v.getFormato());
+            ps.setString(4, v.getCategoria());
+            ps.setString(5, v.getRealizador());
+            ps.executeUpdate();
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return video;
     }
 
     @Override
