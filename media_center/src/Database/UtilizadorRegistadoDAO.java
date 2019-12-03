@@ -107,7 +107,7 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         try{
             c = Connect.connect();
 
-            PreparedStatement ps = c.prepareStatement("INSERT INTO UtilizadorRegistado (idAdministrador,Nome,Email,Password, idBiblioteca) VALUES (?,?,?,?,?)");
+            PreparedStatement ps = c.prepareStatement("INSERT INTO UtilizadorRegistado (idUtilizador,Nome,Email,Password, idBiblioteca) VALUES (?,?,?,?,?)");
             ps.setString(1,k);
             ps.setString(2,v.getNome());
             ps.setString(3,v.getEmail());

@@ -89,8 +89,6 @@ public class AdministradorDAO implements Map<String,Administrador>
                 a.setNome(rs.getNString("nome"));
                 a.setEmail(rs.getNString("email"));
                 a.setPassword(rs.getNString("password"));
-                System.out.println("email"+a.getEmail());
-                System.out.println("pass"+a.getPassword());
             }
         }
         catch(Exception e){

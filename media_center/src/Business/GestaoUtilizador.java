@@ -6,7 +6,7 @@ import Database.UtilizadorRegistadoDAO;
 import java.util.Map;
 
 public class GestaoUtilizador {
-    private Map<String,Administrador> admins = new AdministradorDAO ();
+    private Map<String,Administrador> admins = new AdministradorDAO();
     private Map<String,UtilizadorRegistado> users = new UtilizadorRegistadoDAO();
 
 
