@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
+import javafx.stage.Popup;
 
 import java.io.IOException;
 
@@ -86,6 +87,13 @@ public class Controller_login {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
         Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
+
+
+
+
+
+
+
     }
 
 

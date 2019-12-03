@@ -1,12 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="">
+    <list default="true" id="6cc3bae7-a150-4685-b568-46f6b0384f58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/META-INF/media_center.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Criar_Conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Download_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Erro_Download.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Potenciais_Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Upload_Sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Upload_Sucesso.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-audio-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-circled-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-fast-forward-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-itunes-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-mp3-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-music-folder-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-pause-button-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-playlist-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-shuffle-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-skip-to-start-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-speaker-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-stop-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-video-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/mediacenter.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/playlist_escolha.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/79111620_2185462364887515_9070575070606262272_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller_Regist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Controller_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller_login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Criar_Conta.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Download_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Erro_Download.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Potenciais_Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Upload_Sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Upload_Sucesso.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Utilizador_Registado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/convidado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-audio-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-circled-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-fast-forward-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-mp3-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-music-folder-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-pause-button-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-playlist-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-shuffle-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-skip-to-start-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-speaker-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-stop-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-video-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/mediacenter.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/player.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/playlist_escolha.fxml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,88 +84,48 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/media_center$Main.ic" NAME="Main Coverage Results" MODIFIED="1575375490443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Database.*</FILTER>
-    </SUITE>
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Presentation/Controller_upload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-555">
-              <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Presentation/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>containsK</find>
-      <find>get</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/business</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Presentation/Controller_login.java" />
-        <option value="$PROJECT_DIR$/src/Database/Connect.java" />
-        <option value="$PROJECT_DIR$/src/Database/PlaylisytMusicaDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/ArtistasDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" />
-        <option value="$PROJECT_DIR$/src/Business/Video.java" />
-        <option value="$PROJECT_DIR$/src/Database/VideoDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/MusicaDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java" />
-        <option value="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" />
-        <option value="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/AdministradorDAO.java" />
-        <option value="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" />
-        <option value="$PROJECT_DIR$/src/Business/MC.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/Main.java" />
-        <option value="$PROJECT_DIR$/src/Presentation/View.java" />
-        <option value="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="799" />
   </component>
-  <component name="ProjectId" id="1URXm6JDprkTDRzwyVxq8fwnuNk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,55 +142,26 @@
               <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
               <item name="media_center" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="media_center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="media_center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Presentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575404378418" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
@@ -178,13 +178,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Presentation.Main" />
       <module name="media_center" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Database.*" />
+          <option name="PATTERN" value="Presentation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,314 +196,72 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="" />
-      <created>1575088370923</created>
+      <changelist id="6cc3bae7-a150-4685-b568-46f6b0384f58" name="Default Changelist" comment="" />
+      <created>1575407543882</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575088370923</updated>
-      <workItem from="1575088375982" duration="136000" />
-      <workItem from="1575199510307" duration="2154000" />
-      <workItem from="1575217538965" duration="1018000" />
-      <workItem from="1575218905344" duration="3924000" />
-      <workItem from="1575278415447" duration="146000" />
-      <workItem from="1575278629230" duration="10027000" />
-      <workItem from="1575320407755" duration="114000" />
-      <workItem from="1575320543094" duration="28000" />
-      <workItem from="1575320589051" duration="263000" />
-      <workItem from="1575375223941" duration="1478000" />
-      <workItem from="1575383065220" duration="9708000" />
+      <updated>1575407543882</updated>
+      <workItem from="1575407547085" duration="216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11186000" />
+    <option name="totallyTimeSpent" value="216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="799" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25972223" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32802126" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49861112" visible="true" weight="0.20211516" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32891566" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013889" side_tool="true" weight="0.20211516" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="308" y="58" width="800" height="677" key="#Project_Structure" timestamp="1575320628272">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="308" y="58" width="800" height="677" key="#Project_Structure/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575320628272" />
-    <state x="171" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575320701505">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="171" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575320701505" />
-    <state x="496" y="154" width="735" height="484" key="FileChooserDialogImpl" timestamp="1575320833134">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="496" y="154" width="735" height="484" key="FileChooserDialogImpl/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575320833134" />
-    <state x="196" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1575320835017">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="196" y="27" width="1024" height="741" key="SettingsEditor/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575320835017" />
-    <state x="380" y="293" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1575320799321">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="380" y="293" width="646" height="208" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575320799321" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Business/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/Presentation/Controller_upload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Utilizador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1388">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ConteudoDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/Connect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ArtistasDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Controller_login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/login.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/890784-200.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/GestaoUtilizador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/GestaoConteudo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Presentation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Utilizador_Registado.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10" />
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/MC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <element signature="e#398#399#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/MusicaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="114" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/VideoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="103" column="44" selection-start-line="103" selection-start-column="44" selection-end-line="103" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="90" column="57" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Conteudo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="94" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Musica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/UtilizadorRegistado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555">
-          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -526,7 +282,6 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -538,7 +293,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javafx</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -562,12 +316,22 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>media_center</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
@@ -575,7 +339,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>tika-app-1.22</last-edited>
+          <last-edited>mysql-connector-java-8.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

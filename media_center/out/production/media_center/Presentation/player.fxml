@@ -13,40 +13,43 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Player">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Player">
    <children>
-      <SplitPane dividerPositions="0.29797979797979796" prefHeight="550.0" prefWidth="550.0">
+      <SplitPane dividerPositions="0.19471488178025034" prefHeight="700.0" prefWidth="1331.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="171.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1000.0">
                <children>
-                  <ListView layoutX="-7.0" layoutY="53.0" prefHeight="550.0" prefWidth="172.0" />
-                  <Text fill="#686868" layoutX="46.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist" wrappingWidth="80.06201171875">
+                  <ListView layoutX="-7.0" layoutY="-3.0" prefHeight="700.0" prefWidth="265.0" />
+                  <Text fill="#686868" layoutX="28.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist" wrappingWidth="142.06201171875">
                      <font>
-                        <Font size="17.0" />
+                        <Font size="30.0" />
                      </font>
                   </Text>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="550.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1000.0">
                <children>
                   <Text fx:id="t" layoutX="138.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-                  <Button layoutX="208.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" textFill="WHITE" />
-                  <Button layoutX="174.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleButtonAction_buttonreproduz" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" text="||" textFill="WHITE" />
-                  <Button layoutX="141.0" layoutY="351.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: #000000;" textFill="WHITE" />
-                  <ImageView disable="true" fitHeight="170.0" fitWidth="178.0" layoutX="104.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                  <Button layoutX="545.0" layoutY="456.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="64.0" style="-fx-background-color: #000000;" textFill="WHITE" />
+                  <Button layoutX="480.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleButtonAction_buttonreproduz" prefHeight="59.0" prefWidth="71.0" style="-fx-background-color: #000000;" text="||" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font></Button>
+                  <Button layoutX="416.0" layoutY="456.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="64.0" style="-fx-background-color: #000000;" textFill="WHITE" />
+                  <ImageView disable="true" fitHeight="258.0" fitWidth="276.0" layoutX="351.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@music.png" />
                      </image>
                   </ImageView>
-                  <MediaView fx:id="v" fitHeight="200.0" fitWidth="300.0" layoutX="-8.0" layoutY="-8.0" x="41.0" y="121.0">
+                  <MediaView fx:id="v" fitHeight="300.0" fitWidth="300.0" layoutX="289.0" layoutY="-11.0" x="41.0" y="121.0">
                      <viewport>
                         <Rectangle2D />
                      </viewport>
                   </MediaView>
-                  <Slider layoutX="42.0" layoutY="419.0" onMouseDragged="#handleButtonAction_timeslider" onMousePressed="#handleButtonAction_timeslider" prefHeight="15.0" prefWidth="294.0" />
-                  <Slider layoutX="342.0" layoutY="73.0" majorTickUnit="10.0" minorTickCount="1" onMouseDragged="#handleButtonAction_volume" onMousePressed="#handleButtonAction_volume" orientation="VERTICAL" value="100.0" />
-                  <Button layoutX="333.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleButtonAction_goback_player" prefHeight="20.0" prefWidth="34.0" />
-                  <ImageView disable="true" fitHeight="42.0" fitWidth="45.0" layoutX="329.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                  <Slider layoutX="151.0" layoutY="578.0" onMouseDragged="#handleButtonAction_timeslider" onMousePressed="#handleButtonAction_timeslider" prefHeight="35.0" prefWidth="818.0" />
+                  <Slider layoutX="934.0" layoutY="56.0" majorTickUnit="10.0" minorTickCount="1" onMouseDragged="#handleButtonAction_volume" onMousePressed="#handleButtonAction_volume" orientation="VERTICAL" prefHeight="325.0" prefWidth="87.0" value="100.0" />
+                  <Button layoutX="870.0" layoutY="57.0" mnemonicParsing="false" onAction="#handleButtonAction_goback_player" prefHeight="59.0" prefWidth="55.0" />
+                  <ImageView disable="true" fitHeight="59.0" fitWidth="48.0" layoutX="870.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@890784-200.png" />
                      </image>
