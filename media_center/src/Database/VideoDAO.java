@@ -69,14 +69,14 @@ public class VideoDAO implements Map<Integer, Video>
         try{
             c = Connect.connect();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM Video WHERE idVideo = ?");
-            ps.setString(1,(String) o);
+            ps.setString(1, (String) o);
             ResultSet rs = ps.executeQuery();
-            if(rs.next()){
+            if (rs.next()) {
                 v.setId(rs.getInt("IdMusica"));
                 v.setNome(rs.getNString("Nome"));
                 v.setDuracao(rs.getDouble("Duracao"));
                 v.setFormato(rs.getNString("Formato"));
-                //m.setArtista
+                v.setCategoria(rs.getNString("Categoria"));
             }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }

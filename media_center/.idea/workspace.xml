@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742b8400-aef4-484b-810a-4b82f1db34ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Database/ArtistasDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../baseDeDados/DSS.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/Connect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/ConteudoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ArtistasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ArtistasDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Database/MusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/MusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/PlaylistDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/VideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Controller_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller_login.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,30 +27,61 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="256">
+              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="122" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="-139">
+              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/ArtistasDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database/MusicaDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="86" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2942#2943#0" expanded="true" />
+                <element signature="e#3006#3007#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Database/ArtistasDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/Database/VideoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="194">
+              <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,6 +96,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>containsK</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -95,10 +115,14 @@
         <option value="$PROJECT_DIR$/src/Presentation/Controller_login.java" />
         <option value="$PROJECT_DIR$/src/Database/Connect.java" />
         <option value="$PROJECT_DIR$/src/Database/AdministradorDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/VideoDAO.java" />
-        <option value="$PROJECT_DIR$/src/Database/MusicaDAO.java" />
         <option value="$PROJECT_DIR$/src/Database/PlaylisytMusicaDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/ArtistasDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/MusicaDAO.java" />
         <option value="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" />
+        <option value="$PROJECT_DIR$/src/Database/VideoDAO.java" />
       </list>
     </option>
   </component>
@@ -113,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,12 +153,19 @@
               <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
               <item name="media_center" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
+              <item name="media_center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Database" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -226,17 +256,18 @@
       <workItem from="1575320543094" duration="28000" />
       <workItem from="1575320589051" duration="263000" />
       <workItem from="1575375223941" duration="1478000" />
+      <workItem from="1575383065220" duration="2382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1478000" />
+    <option name="totallyTimeSpent" value="3860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25972223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25972223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -314,25 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/VideoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="148" column="1" selection-start-line="148" selection-start-column="1" selection-end-line="148" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Business/Administrador.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -368,13 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Business/Musica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Business/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -403,45 +408,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ConteudoDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Database/ConteudoDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/UtilizadorRegistadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Database/ArtistasDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/AdministradorDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-773">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="256">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="122" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/MusicaDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Business/Musica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2573">
-          <caret line="180" column="1" lean-forward="true" selection-start-line="180" selection-start-column="1" selection-end-line="180" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#2942#2943#0" expanded="true" />
-            <element signature="e#3006#3007#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="765">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#872#873#0" expanded="true" />
@@ -450,24 +479,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Database/MusicaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="349">
+          <caret line="76" column="12" lean-forward="true" selection-start-line="76" selection-start-column="12" selection-end-line="86" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2942#2943#0" expanded="true" />
+            <element signature="e#3006#3007#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/Database/VideoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database/ArtistasDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="194">
+          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

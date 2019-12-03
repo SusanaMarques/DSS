@@ -69,7 +69,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
         return res;
     }
 
-    @Override //UNFINISHED
+    @Override
     public Musica get(Object o) {
         Musica m = new Musica();
 
@@ -83,7 +83,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
                 m.setNome(rs.getNString("Nome"));
                 m.setDuracao(rs.getDouble("Duracao"));
                 m.setFormato(rs.getNString("Formato"));
-                //m.setArtista
+                m.setCategoria(rs.getNString("Categoria"));
             }
         } catch (Exception e) {
             System.out.printf(e.getMessage());
@@ -97,9 +97,27 @@ public class MusicaDAO implements Map<Integer, Musica> {
         return m;
     }
 
-    @Override //UNFINISHED
+    @Override
     public Musica put(Integer k, Musica v) {
-        Musica m = new Musica();
+        Musica m;
+
+        if(this.containsKey(k)){
+            m = this.get(k);
+        }
+        else m = v;
+        try{
+            c = Connect.connect();
+
+            PreparedStatement ps = c.prepareStatement("INSERT INTO Musica(idMusica,Nome,Duracao,Formato, Categoria) VALUES (?,?,?,?,?)");
+            ps.setInt(1,k);
+            ps.setString(2,v.getNome());
+            ps.setDouble(3,v.getDuracao());
+            ps.setString(3,v.getFormato());
+            ps.setString(4, v.getCategoria());
+            ps.executeUpdate();
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return m;
     }
 

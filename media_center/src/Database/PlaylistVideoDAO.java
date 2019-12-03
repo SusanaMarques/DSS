@@ -1,5 +1,6 @@
 package Database;
 /**
+import Business.Musica;
 import Business.Video;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,20 +15,5 @@ public class PlaylistVideoDAO implements Map<Integer, Video>
 {
     Connection c;
 
-    @Override
-    public int size() {
-        int s = -1;
-        try {
-            c = Connect.connect();
-            PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM PlaylistVideo");
-            ResultSet rs = stm.executeQuery();
-            if(rs.next()) {
-                s = rs.getInt(1);
-            }
-        }
-        catch (Exception e) { throw new NullPointerException(e.getMessage()); }
-        finally { Connect.close(c); }
-        return s;
-    }
-}
-**/
+
+} **/
