@@ -16,7 +16,7 @@ public class Main extends Application {
         FXMLLoader loader =new FXMLLoader(getClass().getResource("mediacenter.fxml")) ;
         Parent root = loader.load();
         primaryStage.setTitle("Stopify");
-        primaryStage.setScene(new Scene(root, 1440, 900));
+        primaryStage.setScene(new Scene(root, 1000, 700));
         primaryStage.show();
     }
 

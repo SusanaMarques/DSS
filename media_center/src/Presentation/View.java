@@ -15,7 +15,7 @@ public class View {
 
     public void printPage(Node node, Parent root) {
 
-            Scene inic_c_Scene = new Scene (root, 1440, 900);
+            Scene inic_c_Scene = new Scene (root, 1000, 700);
             //this line gets stage information
             Stage window = (Stage) node.getScene().getWindow();
             window.setScene(inic_c_Scene);
