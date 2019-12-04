@@ -11,15 +11,14 @@ public class GestaoUtilizador {
 
 
 
-    public boolean iniciarSessao(String email, String pass, int idOp){
+    public void iniciarSessao(String email, String pass, int idOp) throws CredenciaisInvalidasException {
         Utilizador u;
         boolean ret = false;
         if(idOp == 1) u=admins.get(email);
             else u=users.get(email);
             boolean e = u.getEmail().equals(email);
             boolean p = u.getPassword().equals(pass);
-            System.out.println(u.getPassword() + "/" + pass );
-        if( e && p ) ret =true;
-        return ret;
+        if( !(e && p) ) throw new CredenciaisInvalidasException();
+
     }
 }

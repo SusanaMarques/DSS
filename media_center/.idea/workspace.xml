@@ -2,83 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cc3bae7-a150-4685-b568-46f6b0384f58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_22.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Musica.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/Musica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/Connect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/META-INF/media_center.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Amigos.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Criar_Conta.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Download_Sucesso.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Erro_Download.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Potenciais_Amigos.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Upload_Sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Upload_Sucesso.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-audio-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-circled-play-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-fast-forward-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-itunes-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-mp3-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-music-folder-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-pause-button-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-play-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-playlist-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-shuffle-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-skip-to-start-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-speaker-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-stop-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/icons8-video-file-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/mediacenter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/playlist_escolha.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/79111620_2185462364887515_9070575070606262272_n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Amigos.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/Connect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller_Regist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Presentation/Controller_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller_login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Criar_Conta.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Download_Sucesso.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Erro_Download.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Potenciais_Amigos.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Upload_Sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Upload_Sucesso.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/convidado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-audio-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-circled-play-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-fast-forward-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-mp3-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-music-folder-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-pause-button-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-play-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-playlist-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-shuffle-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-skip-to-start-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-speaker-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-stop-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/icons8-video-file-96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/mediacenter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Presentation/playlist_escolha.fxml" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,73 +35,27 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Presentation/Controller_upload.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Presentation/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="799" />
+  <component name="ProjectId" id="1UURGEVfFG7EprnUWlmrGRwAWlE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="media_center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="media_center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="media_center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="media_center" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -164,17 +65,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Business" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Business" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -196,6 +93,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -207,148 +116,37 @@
       <option name="presentableId" value="Default" />
       <updated>1575407543882</updated>
       <workItem from="1575407547085" duration="216000" />
+      <workItem from="1575409090820" duration="8204000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="799" extended-state="0" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Controller_upload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Presentation/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>mysql-connector-java-8.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575409119822">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1293.741@67.27.1293.741" timestamp="1575409119822" />
+    <state width="1253" height="243" key="GridCell.Tab.0.bottom" timestamp="1575417510097">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1247" height="67" key="GridCell.Tab.0.bottom/67.27.1293.741@67.27.1293.741" timestamp="1575415646843" />
+    <state width="1253" height="243" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1575417510097" />
+    <state width="1253" height="243" key="GridCell.Tab.0.center" timestamp="1575417510097">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1247" height="67" key="GridCell.Tab.0.center/67.27.1293.741@67.27.1293.741" timestamp="1575415646842" />
+    <state width="1253" height="243" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1575417510097" />
+    <state width="1253" height="243" key="GridCell.Tab.0.left" timestamp="1575417510097">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1247" height="67" key="GridCell.Tab.0.left/67.27.1293.741@67.27.1293.741" timestamp="1575415646841" />
+    <state width="1253" height="243" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1575417510097" />
+    <state width="1253" height="243" key="GridCell.Tab.0.right" timestamp="1575417510097">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1247" height="67" key="GridCell.Tab.0.right/67.27.1293.741@67.27.1293.741" timestamp="1575415646842" />
+    <state width="1253" height="243" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1575417510097" />
   </component>
 </project>

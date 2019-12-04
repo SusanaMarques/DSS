@@ -1,4 +1,5 @@
 package Presentation;
+import Business.FormatoDesconhecidoException;
 import Business.MC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -82,13 +83,15 @@ public class Controller_Regist {
         FileChooser fileChooser;
         fileChooser = new FileChooser();
         File file = fileChooser.showOpenDialog(node.getScene().getWindow());
-      //  model.uploadConteudo(file);
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "Upload_Sucesso.fxml"));
-        Parent root = l.load();
-        Controller_upload up = l.getController();
-        up.setM(model);
-        up.setV(view);
-        this.view.printPage((Node) event.getSource(),root);
+        try {
+            this.model.uploadConteudo(file.toURI().toURL().toExternalForm());
+            FXMLLoader l = new FXMLLoader(getClass().getResource("Upload_Sucesso.fxml"));
+            Parent root = l.load();
+            Controller_upload up = l.getController();
+            up.setM(this.model);
+            up.setV(view);
+            this.view.printPage((Node) event.getSource(), root);
+        } catch (FormatoDesconhecidoException e){}
     }
 
 

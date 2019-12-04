@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 public class Connect
 {
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "12345678";
+    private static final String PASSWORD = "2684";
     private static final String URL = "localhost";
     private static final String SCHEMA = "MC";
 

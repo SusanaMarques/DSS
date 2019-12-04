@@ -1,6 +1,7 @@
 package Presentation;
 
 
+import Business.CredenciaisInvalidasException;
 import Business.MC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -52,12 +53,8 @@ public class Controller_login {
      */
     @FXML
     private void handleButtonAction_Login(ActionEvent event) throws IOException {
-         if(!this.model.iniciarSessao(email, pass)) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
-            Parent root = l.load();
-            this.view.printPage((Node) event.getSource(),root);
-         }
-        else{
-
+        try{
+            model.iniciarSessao(email, pass);
             if (this.model.getUserT() == 2) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
                 Parent root = l.load();
                 // set model e view do Controller_Regist
@@ -75,7 +72,10 @@ public class Controller_login {
                 control.setM(model);
                 control.setV(view);
                 this.view.printPage((Node) event.getSource(),root);}
-        }
+        } catch (CredenciaisInvalidasException e) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
+                Parent root = l.load();
+                this.view.printPage((Node) event.getSource(),root);
+            }
     }
 
     /**

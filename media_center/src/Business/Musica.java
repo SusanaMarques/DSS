@@ -5,6 +5,7 @@ package Business;
  **/
 public class Musica extends Conteudo
 {
+    private String artista;
     /**
      * Construtor da classe Musica  sem parâmetros.
      */
@@ -21,9 +22,10 @@ public class Musica extends Conteudo
      * @param formato     formato do conteudo
      * @param categoria   categoria do conteudo
      */
-    public Musica(int id, String nome, double duracao, String formato, String categoria)
+    public Musica(int id, String nome,String artist ,double duracao, String formato, String categoria)
     {
         super(id,nome,duracao,formato,categoria);
+        artista=artist;
     }
 
     /**
