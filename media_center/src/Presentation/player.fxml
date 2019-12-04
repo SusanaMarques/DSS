@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Player">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Player">
    <children>
       <SplitPane dividerPositions="0.19471488178025034" prefHeight="700.0" prefWidth="1331.0" style="-fx-background-color: #ffffff;">
         <items>
@@ -53,7 +53,7 @@
                         <Font size="25.0" />
                      </font>
                   </Button>
-                  <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="1028.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="1028.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@img/icons8-undo-96.png" />
                      </image>

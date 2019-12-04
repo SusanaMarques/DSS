@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Admin">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Admin">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="314.0" layoutX="111.0" layoutY="259.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="775.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="99.0" layoutX="-37.0" layoutY="67.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="1063.0" />
@@ -22,7 +22,7 @@
       </ImageView>
       <Label layoutX="116.0" layoutY="128.0" prefHeight="27.0" prefWidth="136.0" style="-fx-font-weight: bold;" text="ADMINISTRADOR" textFill="#c521ff" />
       <Button layoutX="103.0" layoutY="246.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissões" textFill="WHITE" />
-      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="953.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="953.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-undo-96.png" />
          </image>

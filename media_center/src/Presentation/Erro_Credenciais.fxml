@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_upload">
    <children>
       <Label layoutX="424.0" layoutY="338.0" style="-fx-font-weight: bold;" text="CREDENCIAIS ERRADAS !" textFill="#c30aa4">
          <font>
@@ -24,7 +24,7 @@
             <Font size="25.0" />
          </font>
       </Button>
-      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="958.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="958.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-undo-96.png" />
          </image>

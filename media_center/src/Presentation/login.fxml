@@ -7,15 +7,15 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_login">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_login">
    <children>
-      <Button fx:id="login" layoutX="434.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleButtonAction_Login" prefHeight="64.0" prefWidth="134.0" style="-fx-background-color: #fafafa; -fx-background-radius: 10;" text="Iniciar Sessão" textFill="#c30aa4">
+      <Button fx:id="login" layoutX="434.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleButtonAction_Login" prefHeight="64.0" prefWidth="142.0" style="-fx-background-color: #fafafa; -fx-background-radius: 10;" text="Iniciar Sessão" textFill="#c30aa4">
          <font>
             <Font size="17.0" />
          </font></Button>
       <TextField layoutX="380.0" layoutY="262.0" onAction="#handleButtonAction_Mail" prefHeight="42.0" prefWidth="313.0" />
       <Button layoutX="927.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction_goback" prefHeight="53.0" prefWidth="59.0" style="-fx-background-color: #ffffff;" />
-      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="940.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="940.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-undo-96.png" />
          </image>
@@ -30,6 +30,6 @@
             <Image url="@img/icons8-key-96.png" />
          </image>
       </ImageView>
-      <TextField layoutX="380.0" layoutY="334.0" onAction="#handleButtonAction_Mail" prefHeight="42.0" prefWidth="313.0" />
+      <TextField layoutX="380.0" layoutY="334.0" onAction="#handleButtonAction_Pass" prefHeight="42.0" prefWidth="313.0" />
    </children>
 </Pane>

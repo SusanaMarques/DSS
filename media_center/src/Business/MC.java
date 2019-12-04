@@ -3,15 +3,10 @@ package Business;
 import javafx.collections.MapChangeListener;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.stage.FileChooser;
-
-import java.io.*;
 import java.net.MalformedURLException;
 import java.time.Duration;
+import java.util.StringTokenizer;
 
-import javax.sound.sampled.UnsupportedAudioFileException;
-
-import static javax.sound.sampled.AudioSystem.getAudioFileFormat;
 
 public class MC {
     private GestaoConteudo gc = new GestaoConteudo();
@@ -22,7 +17,7 @@ public class MC {
     private String artist;
     private String title;
     private String categoria;
-    private int duracao=0;
+    private double duracao=0.0;
     //tipo de utilizador: administrador:1; registado:2
 
 
@@ -31,7 +26,7 @@ public class MC {
 
     public void iniciarSessao(String mail, String pass) throws CredenciaisInvalidasException {
 
-            gu.iniciarSessao(mail, pass, idType);
+        gu.iniciarSessao(mail, pass, idType);
 
     }
 
@@ -41,17 +36,20 @@ public class MC {
     }
 
     public void uploadConteudo(String p) throws FormatoDesconhecidoException, MalformedURLException, ConteudoDuplicadoException {
-        String path[] = f.toURI().toURL().toExternalForm().split(".", 2);
-        char type;
-        Conteudo c;
         System.out.println(p);
+        StringTokenizer tokens = new StringTokenizer( p,".");
+        tokens.nextToken();
+        String type = tokens.nextToken();
+        System.out.println(type);
+        char t;
+        Conteudo c;
 
         //----------------------------------------------------------------
         Media media = new Media(p);
         MediaPlayer player = new MediaPlayer(media);
         media.getMetadata().addListener((MapChangeListener<String, Object>) change -> {
-            if (change.wasAdded()) listnerHandle(change.getKey(),change.getValueAdded());
-            }
+                    if (change.wasAdded()) listnerHandle(change.getKey(),change.getValueAdded());
+                }
         );
 
 
@@ -62,38 +60,37 @@ public class MC {
         if(artist == null)artist = "Britney Spears";
         if(categoria== null) categoria = "Pop";
         if(album== null) album = "In The Zone";
+        if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
+        else if (type.equals("mp4")){t='v'; c = new Video();}
+        else throw new FormatoDesconhecidoException();
 
-        if (path[1].equals("mp3")){type='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
-       else if (path[1].equals("mp4")){type='v'; c = new Video();}
-       else throw new FormatoDesconhecidoException();
-
-        if(!gc.verificaDuplicacoes(c,type)) throw new ConteudoDuplicadoException();
+        if(gc.verificaDuplicacoes(c,t)) throw new ConteudoDuplicadoException();
 
 
 
 
     }
     private void listnerHandle(String key, Object value){
-            switch (key) {
-                case "album":
-                    album = (String) value;
-                    break;
+        switch (key) {
+            case "album":
+                album = (String) value;
+                break;
 
-                case "artist":
-                    artist = (String) value;
-                    break;
+            case "artist":
+                artist = (String) value;
+                break;
 
-                case "title":
-                    title = (String) value;
-                    break;
-                case "genre":
-                    categoria = (String) value;
-                    break;
-                case "duration":
-                    duracao = (int) ((Duration) value ).toMillis();
-                    break;
+            case "title":
+                title = (String) value;
+                break;
+            case "genre":
+                categoria = (String) value;
+                break;
+            case "duration":
+                duracao = (double) ((Duration) value ).toMillis();
+                break;
 
-            }
+        }
     }
 
 

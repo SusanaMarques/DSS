@@ -1,4 +1,5 @@
 package Presentation;
+import Business.ConteudoDuplicadoException;
 import Business.FormatoDesconhecidoException;
 import Business.MC;
 import javafx.event.ActionEvent;
@@ -9,7 +10,6 @@ import javafx.scene.Parent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
-import javafx.stage.Popup;
 
 import java.io.File;
 import java.io.IOException;
@@ -91,7 +91,9 @@ public class Controller_Regist {
             up.setM(this.model);
             up.setV(view);
             this.view.printPage((Node) event.getSource(), root);
-        } catch (FormatoDesconhecidoException e){}
+        }
+        catch (FormatoDesconhecidoException e){System.out.println("formatodesc");}
+        catch (ConteudoDuplicadoException e) { System.out.println("conteudoduplicado");}
     }
 
 
