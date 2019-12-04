@@ -40,8 +40,9 @@ public class MC {
         idType = -1;
     }
 
-    public void uploadConteudo(String p) throws FormatoDesconhecidoException, MalformedURLException {
-        //String path[] = f.toURI().toURL().toExternalForm().split(".", 2);
+    public void uploadConteudo(String p) throws FormatoDesconhecidoException, MalformedURLException, ConteudoDuplicadoException {
+        String path[] = f.toURI().toURL().toExternalForm().split(".", 2);
+        char type;
         Conteudo c;
         System.out.println(p);
 
@@ -62,12 +63,13 @@ public class MC {
         if(categoria== null) categoria = "Pop";
         if(album== null) album = "In The Zone";
 
+        if (path[1].equals("mp3")){type='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
+       else if (path[1].equals("mp4")){type='v'; c = new Video();}
+       else throw new FormatoDesconhecidoException();
 
-       /* if (path[1].equals("mp3")) */c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);
-       // else if (path[1].equals("mp4")) c = new Video();
-       // else throw new FormatoDesconhecidoException();
+        if(!gc.verificaDuplicacoes(c,type)) throw new ConteudoDuplicadoException();
 
-        //gc.verificaDuplicacoes();
+
 
 
     }
