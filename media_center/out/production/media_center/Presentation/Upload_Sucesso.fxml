@@ -8,47 +8,53 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_upload">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_upload">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="622.0" layoutX="248.0" layoutY="145.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="896.0" />
-      <Button layoutX="233.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleButtonAction_closepopup" prefHeight="57.0" prefWidth="220.0" style="-fx-background-color: #000000#000000; -fx-background-radius: 10;" text="Upload" textFill="WHITE">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="320.0" layoutX="247.0" layoutY="170.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="489.0" />
+      <Text fill="#c521ff" layoutX="399.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formato válido" wrappingWidth="232.14227294921875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#c521ff" layoutX="399.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Não existem duplicações" wrappingWidth="335.19232177734375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c521ff" height="37.0" layoutX="353.0" layoutY="392.0" stroke="#c521ff" strokeType="INSIDE" width="275.0" />
+      <Text fill="WHITE" layoutX="379.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carregamento Concluido" wrappingWidth="318.21644592285156">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#c521ff" layoutX="396.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conteúdo classificado" wrappingWidth="346.3981628417969">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="350.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-in-progress-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="350.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-in-progress-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="351.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icons8-in-progress-96.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="947.0" mnemonicParsing="false" onAction="#handleButtonAction_closepopup" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE">
          <font>
             <Font size="25.0" />
-         </font></Button>
-      <Text layoutX="628.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formato válido" wrappingWidth="232.14227294921875">
-         <font>
-            <Font size="30.0" />
          </font>
-      </Text>
-      <Text layoutX="625.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Não existe duplicado do conteúdo" wrappingWidth="335.19232177734375">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8d8a4" height="100.0" layoutX="385.0" layoutY="563.0" stroke="#c8d8a4" strokeType="INSIDE" width="627.0" />
-      <Text fill="#838383" layoutX="448.0" layoutY="624.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Carregamento Concluido" wrappingWidth="528.2164459228516">
-         <font>
-            <Font name="Avenir Next Bold" size="38.0" />
-         </font>
-      </Text>
-      <Text layoutX="628.0" layoutY="479.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conteúdo classificado" wrappingWidth="346.3981628417969">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="535.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="958.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@c.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="533.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@c.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="46.0" fitWidth="75.0" layoutX="535.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@c.png" />
+            <Image url="@img/icons8-undo-96.png" />
          </image>
       </ImageView>
    </children>
