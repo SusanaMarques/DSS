@@ -35,6 +35,7 @@ public class MC {
         idType = -1;
     }
 
+
     public void uploadConteudo(String p) throws FormatoDesconhecidoException, MalformedURLException, ConteudoDuplicadoException {
         System.out.println(p);
         StringTokenizer tokens = new StringTokenizer( p,".");
@@ -44,28 +45,24 @@ public class MC {
         char t;
         Conteudo c;
 
-        //----------------------------------------------------------------
+        /*--------------------------------------------------------------
         Media media = new Media(p);
         MediaPlayer player = new MediaPlayer(media);
         media.getMetadata().addListener((MapChangeListener<String, Object>) change -> {
                     if (change.wasAdded()) listnerHandle(change.getKey(),change.getValueAdded());
                 }
         );
-
-
-
-
-        //---------------------------------------------------------value------
+        *///---------------------------------------------------------value------
         if(title== null) title= "Toxic";
         if(artist == null)artist = "Britney Spears";
         if(categoria== null) categoria = "Pop";
         if(album== null) album = "In The Zone";
         if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
-        else if (type.equals("mp4")){t='v'; c = new Video();}
+        else if (type.equals("mp4")){t='v'; c = new Video(); c.setId(p.hashCode()); }
         else throw new FormatoDesconhecidoException();
 
         if(gc.verificaDuplicacoes(c,t)) throw new ConteudoDuplicadoException();
-
+        gc.uploadConteudo(c,t);
 
 
 
@@ -92,8 +89,6 @@ public class MC {
 
         }
     }
-
-
 
     public void setUserT(int idT) {
         idType = idT;

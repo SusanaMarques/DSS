@@ -1,11 +1,16 @@
 package Business;
 
+import Database.ProprietariosVideoDAO;
+
+import java.util.Map;
+
 /**
  * Representação da classe Video, subclasse de Conteudo
  **/
 public class Video extends Conteudo
 {
     private String realizador;
+    private Map<String,UtilizadorRegistado> proprietariosVideo = new ProprietariosVideoDAO();
 
     /**
      * Construtor da classe Video  sem parâmetros.

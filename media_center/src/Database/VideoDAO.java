@@ -52,12 +52,21 @@ public class VideoDAO implements Map<Integer, Video>
     @Override
     public boolean containsValue(Object o) {
         boolean res = false;
-
-        if(o.getClass().getName().equals("Business.Video")){
-            Video v = (Video) o;
-            int id = v.getId();
-            Video vd = this.get(id);
-            if(vd.equals(v)){ res = true; }
+        Video v = (Video) o;
+        try {
+            c = Connect.connect();
+            String sql = "SELECT count(*) FROM Musica WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
+            PreparedStatement stm = c.prepareStatement(sql);
+            stm.setString(1, v.getNome());
+            stm.setDouble(1, v.getDuracao());
+            stm.setString(1, v.getFormato());
+            stm.setString(1, v.getCategoria());
+            ResultSet rs = stm.executeQuery();
+            if((rs.getInt(1)) >0) res = true;
+        } catch (Exception e) {
+            throw new NullPointerException(e.getMessage());
+        } finally {
+            Connect.close(c);
         }
         return res;
     }

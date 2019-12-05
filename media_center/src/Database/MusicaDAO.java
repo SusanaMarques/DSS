@@ -1,6 +1,8 @@
 package Database;
 
 import Business.Musica;
+import Business.Video;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -57,14 +59,21 @@ public class MusicaDAO implements Map<Integer, Musica> {
     @Override
     public boolean containsValue(Object o) {
         boolean res = false;
-
-        if (o.getClass().getName().equals("Business.Musica")) {
-            Musica m = (Musica) o;
-            int id = m.getId();
-            Musica msc = this.get(id);
-            if (msc.equals(m)) {
-                res = true;
-            }
+        Musica v = (Musica) o;
+        try {
+            c = Connect.connect();
+            String sql = "SELECT count(*) FROM Musica WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
+            PreparedStatement stm = c.prepareStatement(sql);
+            stm.setString(1, v.getNome());
+            stm.setDouble(1, v.getDuracao());
+            stm.setString(1, v.getFormato());
+            stm.setString(1, v.getCategoria());
+            ResultSet rs = stm.executeQuery();
+            if((rs.getInt(1)) >0) res = true;
+        } catch (Exception e) {
+            throw new NullPointerException(e.getMessage());
+        } finally {
+            Connect.close(c);
         }
         return res;
     }

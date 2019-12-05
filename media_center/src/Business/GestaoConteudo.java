@@ -22,4 +22,9 @@ public class GestaoConteudo {
     }
 
 
+    public void uploadConteudo(Conteudo c, char type) {
+        if(type=='m') {musicas.put(c.getId(),(Musica) c); }
+        if(type=='v') {videos.put(c.getId(),(Video)c);}
+
+    }
 }

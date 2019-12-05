@@ -120,7 +120,7 @@ public class ProprietariosVideoDAO implements Map<String, UtilizadorRegistado>
 
     @Override
     public void putAll(Map<? extends String, ? extends UtilizadorRegistado> map) {
-        for(UtilizadorRegistado u : map.values()) { put(u.getEmail(), u); }
+        //Desnecessario
     }
 
     @Override

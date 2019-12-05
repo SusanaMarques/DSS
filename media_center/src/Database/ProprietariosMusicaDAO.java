@@ -4,13 +4,9 @@ import Business.UtilizadorRegistado;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
+public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegistado>>
 {
     private Connection c;
 
@@ -46,7 +42,7 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
             c = Connect.connect();
             String sql = "SELECT idUtilizador FROM Utilizador WHERE idUtilizador = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setString(1, (String) o);
+            stm.setInt(1, (Integer) o);
             ResultSet rs = stm.executeQuery();
             res = rs.next();
         } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
@@ -67,19 +63,15 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
     }
 
     @Override
-    public UtilizadorRegistado get(Object o) {
+    public List<UtilizadorRegistado> get(Object o) {
         UtilizadorRegistado u = new UtilizadorRegistado();
 
         try{
             PreparedStatement ps = null;
-            if(o instanceof String) {
-                ps = c.prepareStatement("SELECT * FROM UtilizadorRegistado WHERE email = ?");
-                ps.setString(1, (String) o);
-            }
-            if(o instanceof Integer) {
+
                 ps = c.prepareStatement("SELECT * FROM UtilizadorRegistado WHERE idUtilizador = ?");
                 ps.setInt(1, (Integer) o);
-            }
+
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 u.setId(rs.getInt("idUtilizador"));
@@ -97,7 +89,7 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
     }
 
     @Override
-    public UtilizadorRegistado put(String k, UtilizadorRegistado v) {
+    public UtilizadorRegistado put(Integer k, List<UtilizadorRegistado> v) {
         UtilizadorRegistado u;
 
         if(this.containsKey(k)){
@@ -107,8 +99,8 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
         try{
             c = Connect.connect();
 
-            PreparedStatement ps = c.prepareStatement("INSERT INTO UtilizadorRegistado (idAdministrador,Nome,Email,Password, idBiblioteca) VALUES (?,?,?,?,?)");
-            ps.setString(1,k);
+            PreparedStatement ps = c.prepareStatement("INSERT INTO ProprietariosMusica (idUtilizador,idMusica) VALUES (?,?)");
+            ps.setInt(1,k);
             ps.setString(2,v.getNome());
             ps.setString(3,v.getEmail());
             ps.setString(3,v.getPassword());
@@ -124,9 +116,11 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
     public UtilizadorRegistado remove(Object o) { throw new UnsupportedOperationException("Erro!"); }
 
     @Override
-    public void putAll(Map<? extends String, ? extends UtilizadorRegistado> map) {
-        for(UtilizadorRegistado u : map.values()) { put(u.getEmail(), u); }
+    public void putAll(Map<? extends Integer, ? extends List<UtilizadorRegistado>> map) {
+
     }
+
+
 
     @Override
     public void clear() {
@@ -158,7 +152,7 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
     }
 
     @Override
-    public Collection<UtilizadorRegistado> values()
+    public Collection<List<UtilizadorRegistado>> values()
     {
         Set<UtilizadorRegistado> u = new HashSet<>();
         Set<String> keys = new HashSet<>(this.keySet());
@@ -168,7 +162,7 @@ public class ProprietariosMusicaDAO implements Map<String, UtilizadorRegistado>
     }
 
     @Override
-    public Set<Entry<String, UtilizadorRegistado>> entrySet()
+    public Set<Entry<Integer, List<UtilizadorRegistado>>> entrySet()
     {
         Set<String> keys = new HashSet<>(this.keySet());
         Map<String,UtilizadorRegistado> map = new HashMap<>();
