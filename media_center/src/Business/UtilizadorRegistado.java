@@ -5,7 +5,8 @@ package Business;
  **/
 public class UtilizadorRegistado extends Utilizador
 {
-    private int idBiblioteca;
+    private int idBibliotecaMusica;
+    private int idBibliotecaVideo;
     /**
      * Construtor da classe UtilizadorRegistado sem parâmetros.
      */
@@ -13,7 +14,8 @@ public class UtilizadorRegistado extends Utilizador
     {
 
         super();
-        this.idBiblioteca = 0;
+        this.idBibliotecaMusica = this.hashCode();
+        this.idBibliotecaVideo = this.idBibliotecaMusica+1;
     }
 
     /**
@@ -23,11 +25,12 @@ public class UtilizadorRegistado extends Utilizador
      * @param email     email do administrador
      * @param password  password do administrador
      */
-    public UtilizadorRegistado(int id, String nome, String email, String password, int idBiblioteca)
+    public UtilizadorRegistado(int id, String nome, String email, String password, int idBibliotecaMusica, int idBibliotecaVideo)
 
     {
         super(id,nome,email,password);
-        this.idBiblioteca = idBiblioteca;
+        this.idBibliotecaMusica = idBibliotecaMusica;
+        this.idBibliotecaVideo = idBibliotecaVideo;
     }
 
     /**
@@ -38,20 +41,32 @@ public class UtilizadorRegistado extends Utilizador
     {
 
         super(u.getId(), u.getNome(), u.getEmail(), u.getPassword());
-        this.idBiblioteca = u.getIdBiblioteca();
+        this.idBibliotecaMusica = u.getIdBibliotecaMusica();
+        this.idBibliotecaVideo = u.getIdBibliotecaVideo();
     }
 
     /**
-     * Método que devolve o id da biblioteca pessoal do utilizador.
-     * @return     Id da biblioteca pessoal do utilizador.
+     * Método que devolve o id da biblioteca pessoal de videos do utilizador.
+     * @return     Id da biblioteca pessoal de Videos do utilizador.
      */
-    public int getIdBiblioteca(){return this.idBiblioteca;}
+    public int getIdBibliotecaVideo(){return this.idBibliotecaVideo;}
 
     /**
-     * Método que altera o id da biblioteca pessoal do utilizador
-     * @param id    Novo id do conteudo
+     * Método que devolve o id da biblioteca pessoal de musica do utilizador.
+     * @return     Id da biblioteca pessoal de musica do utilizador.
      */
-    public void setIdBiblioteca(int id){this.idBiblioteca = id;}
+    public int getIdBibliotecaMusica(){return this.idBibliotecaMusica;}
+
+    /**
+     * Método que altera o id da biblioteca pessoal de musica do utilizador
+     * @param id    Novo id da biblioteca pessoal de musica
+     */
+    public void setIdBibliotecaMusica(int id){this.idBibliotecaMusica = id;}
+    /**
+     * Método que altera o id da biblioteca pessoal de video do utilizador
+     * @param id    Novo id da biblioteca pessoal de video
+     */
+    public void setIdBibliotecaVideo(int id){this.idBibliotecaVideo = id;}
 
 
     /**

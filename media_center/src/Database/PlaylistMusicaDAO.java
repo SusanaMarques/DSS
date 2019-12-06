@@ -4,13 +4,71 @@ import Business.Musica;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-/**
-public class PlaylistMusicaDAO implements Map<Integer, Musica>
+import java.util.*;
+
+
+public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>{
+    @Override
+    public int size() {
+        return 0;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public boolean containsKey(Object o) {
+        return false;
+    }
+
+    @Override
+    public boolean containsValue(Object o) {
+        return false;
+    }
+
+    @Override
+    public List<Musica> get(Object o) {
+        return null;
+    }
+
+    @Override
+    public List<Musica> put(Integer integer, List<Musica> musicaList) {
+        return null;
+    }
+
+    @Override
+    public List<Musica> remove(Object o) {
+        return null;
+    }
+
+    @Override
+    public void putAll(Map<? extends Integer, ? extends List<Musica>> map) {
+
+    }
+
+    @Override
+    public void clear() {
+
+    }
+
+    @Override
+    public Set<Integer> keySet() {
+        return null;
+    }
+
+    @Override
+    public Collection<List<Musica>> values() {
+        return null;
+    }
+
+    @Override
+    public Set<Entry<Integer, List<Musica>>> entrySet() {
+        return null;
+    }
+}
+    /*
 {
     private Connection c;
 
@@ -168,4 +226,4 @@ public class PlaylistMusicaDAO implements Map<Integer, Musica>
         for(Integer k : keys){ map.put(k,this.get(k));}
         return map.entrySet();
     }
-} **/
+} */

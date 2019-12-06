@@ -47,7 +47,7 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
              ResultSet rs = ps.executeQuery();
              while(rs.next())
              {
-                 u = new UtilizadorRegistado(rs.getInt("idUtilizador"), rs.getString("nome"), rs.getString("email"), rs.getString("password"), rs.getInt("idBiblioteca"));
+                 u = new UtilizadorRegistado(rs.getInt("idUtilizador"), rs.getString("nome"), rs.getString("email"), rs.getString("password"), rs.getInt("idBibliotecaMusica"), rs.getInt("idBibliotecaVideo"));
                  array.add(u);
              }
         }

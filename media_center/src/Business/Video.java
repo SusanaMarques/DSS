@@ -10,7 +10,6 @@ import java.util.Map;
 public class Video extends Conteudo
 {
     private String realizador;
-    private Map<String,UtilizadorRegistado> proprietariosVideo = new ProprietariosVideoDAO();
 
     /**
      * Construtor da classe Video  sem parâmetros.

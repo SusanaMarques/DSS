@@ -3,71 +3,101 @@ package Business;
 import javafx.collections.MapChangeListener;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.StringTokenizer;
 
 
-public class MC
-{
+public class MC {
+    /** Instancia da gestao de conteudo**/
     private GestaoConteudo gc = new GestaoConteudo();
+    /** Instancia da gestao de utilizador**/
     private GestaoUtilizador gu = new GestaoUtilizador();
+    /** Id do utilizador atual**/
     private int idUtilizadorAtual;
+    /** Identificador do tipo de utilizador
+     * Administrador : 1
+     * Utilizador Registado : 2
+     **/
     private int idType;
-    private String album;
-    private String artist;
-    private String title;
-    private String categoria;
-    private double duracao=0.0;
-    //tipo de utilizador: administrador:1; registado:2
+    /** Metadados de conteudo a fazer upload **/
+    private volatile String album;
+    private volatile String artist;
+    private volatile String title;
+    private volatile String categoria;
+    private volatile double duracao=0.0;
 
-
+    /**Construtor do MC**/
     public MC() {
     }
+    /**Metodo de iniciar sessão
+     * @param mail Email do utilizador a autenticar
+     * @param pass Password do utilizador a autenticar **/
 
     public void iniciarSessao(String mail, String pass) throws CredenciaisInvalidasException {
-
+        if(mail == null||pass == null) throw new CredenciaisInvalidasException();
         gu.iniciarSessao(mail, pass, idType);
 
     }
-
+    /**Metodo de terminar sessão**/
     public void terminarSessao() {
         idUtilizadorAtual = -1;
         idType = -1;
     }
 
-
-    public void uploadConteudo(String p) throws FormatoDesconhecidoException, MalformedURLException, ConteudoDuplicadoException {
+    /**Metodo de upload de conteudo
+     * @param p Path do conteudo a fazer upload**/
+    public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException {
         System.out.println(p);
         StringTokenizer tokens = new StringTokenizer( p,".");
         tokens.nextToken();
         String type = tokens.nextToken();
-        System.out.println(type);
+        UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
         char t;
         Conteudo c;
+        //Verificar formato
+        if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
+        else if (type.equals("mp4")){t='v'; c = new Video(); c.setId(p.hashCode()); }
+        else throw new FormatoDesconhecidoException();
 
         /*--------------------------------------------------------------
+        //Extrair metadados
         Media media = new Media(p);
         MediaPlayer player = new MediaPlayer(media);
         media.getMetadata().addListener((MapChangeListener<String, Object>) change -> {
                     if (change.wasAdded()) listnerHandle(change.getKey(),change.getValueAdded());
                 }
         );
-        *///---------------------------------------------------------value------
+        *///--------------------------------------------------------------
+        //Salvaguardar metadados
         if(title== null) title= "Toxic";
         if(artist == null)artist = "Britney Spears";
         if(categoria== null) categoria = "Pop";
         if(album== null) album = "In The Zone";
-        if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
-        else if (type.equals("mp4")){t='v'; c = new Video(); c.setId(p.hashCode()); }
-        else throw new FormatoDesconhecidoException();
 
+        //Verificar duplicaçoes
         if(gc.verificaDuplicacoes(c,t)) throw new ConteudoDuplicadoException();
-        gc.uploadConteudo(c,t);
+        //Adicionar a bibliotecas
+        gc.uploadConteudo(c,t,u);
+        gu.uploadConteudo(c, t,u);
+        //Path building
+        Path fileDB=Paths.get( (new File("").getAbsolutePath())+"baseDeDados/Biblioteca"+c.getId());
+        Path temp = Files.move(Paths.get(p), fileDB);
+        if(temp == null) throw new IOException();
+
 
 
 
     }
+    /**Metodo de extração de metadados
+     * @param key chave descritora do tipo de metadado observado
+     * @param value valor do metadado **/
     private void listnerHandle(String key, Object value){
         switch (key) {
             case "album":
@@ -90,11 +120,14 @@ public class MC
 
         }
     }
-
+    /**Metodo que altera o tipo do utilizador a usar o sistema
+     * @param idT Tipo do utilizador**/
     public void setUserT(int idT) {
         idType = idT;
     }
 
+    /**Metodo que altera o tipo do utilizador a usar o sistema
+     * @return   Tipo do utilizador**/
     public int getUserT() {
         return idType;
     }
