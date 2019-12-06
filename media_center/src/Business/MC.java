@@ -8,7 +8,8 @@ import java.time.Duration;
 import java.util.StringTokenizer;
 
 
-public class MC {
+public class MC
+{
     private GestaoConteudo gc = new GestaoConteudo();
     private GestaoUtilizador gu = new GestaoUtilizador();
     private int idUtilizadorAtual;

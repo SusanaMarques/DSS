@@ -87,12 +87,11 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
                 u.setNome(rs.getNString("nome"));
                 u.setEmail(rs.getNString("email"));
                 u.setPassword(rs.getNString("password"));
-                u.setIdBiblioteca(rs.getInt("idBiblioteca"));
+                u.setIdBibliotecaMusica(rs.getInt("idBibliotecaMusica"));
+                u.setIdBibliotecaVideo(rs.getInt("idBibliotecaVideo"));
             }
         }
-        catch(Exception e){
-            System.out.printf(e.getMessage());
-        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return u;
     }
@@ -108,12 +107,13 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         try{
             c = Connect.connect();
 
-            PreparedStatement ps = c.prepareStatement("INSERT INTO UtilizadorRegistado (idUtilizador,Nome,Email,Password, idBiblioteca) VALUES (?,?,?,?,?)");
+            PreparedStatement ps = c.prepareStatement("INSERT INTO UtilizadorRegistado (idUtilizador,Nome,Email,Password, idBiblioteca) VALUES (?,?,?,?,?,?)");
             ps.setString(1,k);
             ps.setString(2,v.getNome());
             ps.setString(3,v.getEmail());
             ps.setString(3,v.getPassword());
-            ps.setInt(4, v.getIdBiblioteca());
+            ps.setInt(4, v.getIdBibliotecaMusica());
+            ps.setInt(5, v.getIdBibliotecaVideo());
             ps.executeUpdate();
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
