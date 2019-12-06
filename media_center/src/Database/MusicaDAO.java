@@ -65,9 +65,9 @@ public class MusicaDAO implements Map<Integer, Musica> {
             String sql = "SELECT count(*) FROM Musica WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
             PreparedStatement stm = c.prepareStatement(sql);
             stm.setString(1, v.getNome());
-            stm.setDouble(1, v.getDuracao());
-            stm.setString(1, v.getFormato());
-            stm.setString(1, v.getCategoria());
+            stm.setDouble(2, v.getDuracao());
+            stm.setString(3, v.getFormato());
+            stm.setString(4, v.getCategoria());
             ResultSet rs = stm.executeQuery();
             if((rs.getInt(1)) >0) res = true;
         } catch (Exception e) {

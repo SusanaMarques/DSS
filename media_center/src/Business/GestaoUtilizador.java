@@ -34,7 +34,7 @@ public class GestaoUtilizador {
       * @param idType Identificador do tipo de utilizador**/
     public Utilizador getUser(int idU,int idType){
         Utilizador ret;
-        if (idType == 1) ret = users.get(idU);
+        if (idType == 2) ret = users.get(idU);
         else ret = admins.get(idU);
         return ret;
     }

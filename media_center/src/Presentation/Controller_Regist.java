@@ -54,7 +54,6 @@ public class Controller_Regist {
         player = new MediaPlayer(media);
 
         player.play();
-
         FXMLLoader l=new FXMLLoader(getClass().getResource( "player.fxml"));
         Parent root = l.load();
 
@@ -92,8 +91,24 @@ public class Controller_Regist {
             up.setV(view);
             this.view.printPage((Node) event.getSource(), root);
         }
-        catch (FormatoDesconhecidoException e){System.out.println("formatodesc");}
-        catch (ConteudoDuplicadoException e) { System.out.println("conteudoduplicado");}
+        catch (FormatoDesconhecidoException e){
+            FXMLLoader l=new FXMLLoader(getClass().getResource( "Formato_Desconhecido.fxml"));
+            Parent root = l.load();
+            Controller_upload up = l.getController();
+            up.setM(this.model);
+            up.setV(view);
+            this.view.printPage((Node) event.getSource(), root);
+
+        }
+        catch (ConteudoDuplicadoException e) {
+            FXMLLoader l=new FXMLLoader(getClass().getResource( "Conteudo_Existente.fxml"));
+            Parent root = l.load();
+            Controller_upload up = l.getController();
+            up.setM(this.model);
+            up.setV(view);
+            this.view.printPage((Node) event.getSource(), root);
+
+        }
     }
 
 
@@ -106,6 +121,10 @@ public class Controller_Regist {
     private void handleButtonAction_logout_registado(ActionEvent event) throws IOException {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
         Parent root = l.load();
+        model.terminarSessao();
+        Controller c = l.getController();
+        c.setM(model);
+        c.setV(view);
         this.view.printPage((Node) event.getSource(),root);
     }
 

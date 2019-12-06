@@ -6,13 +6,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+
 import java.io.IOException;
 
-public class Controller_upload {
+public class Controller_credenciais {
+
 
     private MC model;
     private View view;
-
 
     public void setM(MC m){
         this.model=m;
@@ -24,13 +25,15 @@ public class Controller_upload {
 
     }
 
+
     @FXML
-    private void handleButtonAction_closepopup (ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
+    private void handleButtonAction_credenciais_erro (ActionEvent event) throws IOException {
+        FXMLLoader l = new FXMLLoader(getClass().getResource("login.fxml"));
         Parent root = l.load();
-        Controller_Regist control = l.getController();
-        control.setM(model);
-        control.setV(view);
-        this.view.printPage((Node) event.getSource(),root);
+        Controller_login control = l.getController();
+        control.setModell(model);
+        control.setVieww(view);
+        this.view.printPage((Node) event.getSource(), root);
     }
+
 }

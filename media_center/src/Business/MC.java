@@ -1,12 +1,12 @@
 package Business;
 
 import javafx.collections.MapChangeListener;
+import javafx.scene.input.KeyCode;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -41,7 +41,7 @@ public class MC {
      * @param pass Password do utilizador a autenticar **/
 
     public void iniciarSessao(String mail, String pass) throws CredenciaisInvalidasException {
-        if(mail == null||pass == null) throw new CredenciaisInvalidasException();
+        if(mail == null||pass == null || mail.isEmpty() || pass.isEmpty()) throw new CredenciaisInvalidasException();
         gu.iniciarSessao(mail, pass, idType);
 
     }

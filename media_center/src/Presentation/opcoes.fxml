@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Opcoes">
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Opcoes">
    <children>
       <Button layoutX="426.0" layoutY="213.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Reproduzir" textFill="#c521ff" />
       <Button layoutX="426.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Download" textFill="#c521ff" />
@@ -14,7 +14,7 @@
       <Button layoutX="426.0" layoutY="376.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Criar Playlist" textFill="#c521ff" />
       <Button layoutX="426.0" layoutY="417.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Alterar género" textFill="#c521ff" />
       <Button layoutX="426.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="             Remover da playlist" textFill="#c521ff" />
-      <Button layoutX="961.0" layoutY="-3.0" mnemonicParsing="false" onAction="#handleButtonAction_closepopup" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE">
+      <Button layoutX="961.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>

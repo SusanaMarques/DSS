@@ -7,7 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import java.io.IOException;
 
-public class Controller_Admin {
+public class    Controller_Admin {
 
     private MC model;
     private View view;
@@ -32,6 +32,10 @@ public class Controller_Admin {
     private void handleButtonAction_logout_admin(ActionEvent event) throws IOException {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
         Parent root = l.load();
+        model.terminarSessao();
+        Controller c = l.getController();
+        c.setM(model);
+        c.setV(view);
         this.view.printPage((Node) event.getSource(),root);
     }
 

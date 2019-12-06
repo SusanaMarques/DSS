@@ -9,6 +9,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Popup;
 
 import java.io.IOException;
@@ -36,13 +38,15 @@ public class Controller_login {
      * @param event
      */
     @FXML
-    private void handleButtonAction_Mail(ActionEvent event) throws IOException {
-        email =((TextField) event.getSource()).getText();
+    private void handleButtonAction_Mail(KeyEvent event)  {
+          email =((TextField) event.getSource()).getText();
+
         }
 
     @FXML
-    private void handleButtonAction_Pass(ActionEvent event) throws IOException {
-        pass =((TextField) event.getSource()).getText();
+    private void handleButtonAction_Pass(KeyEvent event)  {
+          pass =((TextField) event.getSource()).getText();
+
     }
 
 
@@ -61,20 +65,22 @@ public class Controller_login {
                 Controller_Regist control = l.getController();
                 control.setM(model);
                 control.setV(view);
-
                 this.view.printPage((Node) event.getSource(),root);}
             else{
                 FXMLLoader l=new FXMLLoader(getClass().getResource( "Administrador.fxml"));
                 Parent root = l.load();
-
                 // set model e view do Controller_Admin
                 Controller_Admin control = l.getController();
                 control.setM(model);
                 control.setV(view);
                 this.view.printPage((Node) event.getSource(),root);}
         } catch (CredenciaisInvalidasException e) {  FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Credenciais.fxml"));
-                Parent root = l.load();
-                this.view.printPage((Node) event.getSource(),root);
+                    Parent root = l.load();
+                    Controller_credenciais control = l.getController();
+                    control.setM(model);
+                    control.setV(view);
+                    this.view.printPage((Node) event.getSource(),root);
+
             }
     }
 

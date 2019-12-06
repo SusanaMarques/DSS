@@ -1,6 +1,8 @@
 package Presentation;
 import Business.MC;
 import javafx.application.Platform;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,6 +26,12 @@ public class Player {
     private MediaPlayer player;
 
     @FXML
+    private Slider time;
+
+    @FXML
+    private Slider vol;
+
+    @FXML
     private MediaView v;
 
     @FXML
@@ -40,6 +48,13 @@ public class Player {
     }
     public void setMPlayer(MediaPlayer pl) {
         this.player = pl;
+        player.currentTimeProperty().addListener(new InvalidationListener() {
+            public void invalidated(Observable ov)
+            {
+                updatesValues();
+            }
+        });
+
     }
 
     public void setText(File file){
@@ -74,8 +89,12 @@ public class Player {
     @FXML
     //Providing functionality to time slider
     private void handleButtonAction_timeslider(MouseEvent e) {
-        Slider time = (Slider) e.getSource();
-        updatesValues(time);
+        player.currentTimeProperty().addListener(new InvalidationListener() {
+            public void invalidated(Observable ov)
+            {
+                updatesValues();
+            }
+        });
         player.seek(player.getMedia().getDuration().multiply(time.getValue() / 100));
 
     }
@@ -83,12 +102,22 @@ public class Player {
     // providing functionality to volume slider
     @FXML
     private void handleButtonAction_volume(MouseEvent e) {
-        Slider vol = (Slider) e.getSource();
         player.setVolume(vol.getValue() / 100); // It would set the volume
 
     }
 
-    private void updatesValues(Slider time) {
+    @FXML
+    private void handleButton_soundoff(ActionEvent e) {
+        if(player.getVolume()==0) {
+            player.setVolume(vol.getValue() / 100);
+        }
+        else {
+            player.setVolume(0);
+        }
+
+    }
+
+    private void updatesValues() {
         Platform.runLater(new Runnable() {
             public void run() {
                 time.setValue(player.getCurrentTime().toMillis() / player.getTotalDuration().toMillis() * 100);

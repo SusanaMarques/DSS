@@ -12,7 +12,7 @@
    <children>
       <Button layoutX="939.0" layoutY="7.0" mnemonicParsing="false" onAction="#handleButtonAction_logout_conv" prefHeight="43.0" prefWidth="54.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE" />
       <ListView fx:id="list" layoutX="92.0" layoutY="180.0" onMouseClicked="#handleButtonAction_Reproduzir" prefHeight="462.0" prefWidth="831.0" />
-      <Button layoutX="945.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleButtonAction_logout_registado" prefHeight="36.0" prefWidth="45.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE" />
+      <Button layoutX="945.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleButtonAction_logout_conv" prefHeight="36.0" prefWidth="45.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE" />
       <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="952.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-undo-96.png" />

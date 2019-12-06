@@ -19,6 +19,16 @@ public class Controller implements Initializable
     private MC model = new MC();
     private View view = new View();
 
+    public void setM(MC m){
+        this.model=m;
+
+    }
+
+    public void setV(View v){
+        this.view=v;
+
+    }
+
 
     /**
      * método que trata do evento: clique no botão convidado na página inicial

@@ -82,7 +82,6 @@ public class AdministradorDAO implements Map<String,Administrador>
                 ps.setInt(1, (Integer) o);
             }
             ResultSet rs = ps.executeQuery();
-            System.out.println(rs.toString());
             if(rs.next()){
 
                 a.setId(rs.getInt("idAdministrador"));
