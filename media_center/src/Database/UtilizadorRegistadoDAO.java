@@ -25,12 +25,8 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
                 s = rs.getInt(1);
             }
         }
-        catch (Exception e) {
-            throw new NullPointerException(e.getMessage());
-        }
-        finally {
-            Connect.close(c);
-        }
+        catch (Exception e) { throw new NullPointerException(e.getMessage()); }
+        finally { Connect.close(c); }
         return s;
     }
 
@@ -152,9 +148,7 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
             while(rs.next()){ keys.add(rs.getString(1)); }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{
-            try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); }
-        }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return keys;
     }
 

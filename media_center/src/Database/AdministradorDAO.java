@@ -25,12 +25,8 @@ public class AdministradorDAO implements Map<String,Administrador>
                 s = rs.getInt(1);
             }
         }
-        catch (Exception e) {
-            throw new NullPointerException(e.getMessage());
-        }
-        finally {
-            Connect.close(c);
-        }
+        catch (Exception e) { throw new NullPointerException(e.getMessage()); }
+        finally { Connect.close(c); }
         return s;
     }
 
@@ -90,9 +86,7 @@ public class AdministradorDAO implements Map<String,Administrador>
                 a.setPassword(rs.getNString("password"));
             }
         }
-        catch(Exception e){
-            System.out.printf(e.getMessage());
-        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return a;
     }
@@ -151,9 +145,7 @@ public class AdministradorDAO implements Map<String,Administrador>
             while(rs.next()){ keys.add(rs.getString(1)); }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{
-            try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); }
-        }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return keys;
     }
 

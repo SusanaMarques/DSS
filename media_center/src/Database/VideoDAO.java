@@ -42,7 +42,7 @@ public class VideoDAO implements Map<Integer, Video>
             c = Connect.connect();
             String sql = "SELECT idVideo FROM Video WHERE idVideo = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setString(1, (String) o);
+            stm.setInt(1, (Integer) o);
             ResultSet rs = stm.executeQuery();
             res = rs.next();
         } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
@@ -55,19 +55,17 @@ public class VideoDAO implements Map<Integer, Video>
         Video v = (Video) o;
         try {
             c = Connect.connect();
-            String sql = "SELECT count(*) FROM Musica WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
+            String sql = "SELECT count(*) FROM Video WHERE idVideo = ? AND nome = ? AND duracao = ? AND formato = ? AND categoria = ? AND realizador = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setString(1, v.getNome());
-            stm.setDouble(1, v.getDuracao());
-            stm.setString(1, v.getFormato());
-            stm.setString(1, v.getCategoria());
+            stm.setInt(1, v.getId());
+            stm.setString(2, v.getNome());
+            stm.setDouble(3, v.getDuracao());
+            stm.setString(4, v.getFormato());
+            stm.setString(5, v.getCategoria());
+            stm.setString(6, v.getRealizador());
             ResultSet rs = stm.executeQuery();
-            if((rs.getInt(1)) >0) res = true;
-        } catch (Exception e) {
-            throw new NullPointerException(e.getMessage());
-        } finally {
-            Connect.close(c);
-        }
+            //if((rs.getInt(1)) > 0) res = true;
+        } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return res;
     }
 
@@ -88,9 +86,7 @@ public class VideoDAO implements Map<Integer, Video>
                 v.setCategoria(rs.getNString("categoria"));
                 v.setRealizador(rs.getNString("realizador"));
             }
-        } catch (Exception e) { System.out.printf(e.getMessage()); } finally {
-            try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); }
-        }
+        } catch (Exception e) { System.out.printf(e.getMessage()); } finally { try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); } }
         return v;
     }
 
@@ -109,9 +105,9 @@ public class VideoDAO implements Map<Integer, Video>
             ps.setInt(1,k);
             ps.setString(2,v.getNome());
             ps.setDouble(3,v.getDuracao());
-            ps.setString(3,v.getFormato());
-            ps.setString(4, v.getCategoria());
-            ps.setString(5, v.getRealizador());
+            ps.setString(4,v.getFormato());
+            ps.setString(5, v.getCategoria());
+            ps.setString(6, v.getRealizador());
             ps.executeUpdate();
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
@@ -150,9 +146,7 @@ public class VideoDAO implements Map<Integer, Video>
             while(rs.next()){ keys.add(rs.getInt(1)); }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{
-            try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); }
-        }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return keys;
     }
 

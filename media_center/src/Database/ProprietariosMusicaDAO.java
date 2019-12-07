@@ -36,7 +36,7 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
 
     @Override
     public List<UtilizadorRegistado> get(Object o) {
-        UtilizadorRegistado u = new UtilizadorRegistado();
+        UtilizadorRegistado u;
         ArrayList<UtilizadorRegistado> array = new ArrayList<UtilizadorRegistado>();
 
         try{

@@ -22,14 +22,8 @@ public class MusicaDAO implements Map<Integer, Musica> {
             c = Connect.connect();
             PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM Musica");
             ResultSet rs = stm.executeQuery();
-            if (rs.next()) {
-                s = rs.getInt(1);
-            }
-        } catch (Exception e) {
-            throw new NullPointerException(e.getMessage());
-        } finally {
-            Connect.close(c);
-        }
+            if (rs.next()) { s = rs.getInt(1); }
+        } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return s;
     }
 
@@ -45,36 +39,29 @@ public class MusicaDAO implements Map<Integer, Musica> {
             c = Connect.connect();
             String sql = "SELECT idMusica FROM Musica WHERE idMusica = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setString(1, (String) o);
+            stm.setInt(1, (Integer) o);
             ResultSet rs = stm.executeQuery();
             res = rs.next();
-        } catch (Exception e) {
-            throw new NullPointerException(e.getMessage());
-        } finally {
-            Connect.close(c);
-        }
+        } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return res;
     }
 
     @Override
     public boolean containsValue(Object o) {
         boolean res = false;
-        Musica v = (Musica) o;
+        Musica m = (Musica) o;
         try {
             c = Connect.connect();
-            String sql = "SELECT count(*) FROM Musica WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
+            String sql = "SELECT count(*) FROM Musica WHERE idMusica = ? AND nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setString(1, v.getNome());
-            stm.setDouble(2, v.getDuracao());
-            stm.setString(3, v.getFormato());
-            stm.setString(4, v.getCategoria());
+            stm.setInt(1, m.getId());
+            stm.setString(2, m.getNome());
+            stm.setDouble(3, m.getDuracao());
+            stm.setString(4, m.getFormato());
+            stm.setString(5, m.getCategoria());
             ResultSet rs = stm.executeQuery();
-            if((rs.getInt(1)) >0) res = true;
-        } catch (Exception e) {
-            throw new NullPointerException(e.getMessage());
-        } finally {
-            Connect.close(c);
-        }
+            //if((rs.getInt(1)) > 0) res = true;
+        } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return res;
     }
 
@@ -85,7 +72,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
         try {
             c = Connect.connect();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM Musica WHERE idMusica = ?");
-            ps.setString(1, (String) o);
+            ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 m.setId(rs.getInt("idMusica"));
@@ -94,9 +81,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
                 m.setFormato(rs.getNString("formato"));
                 m.setCategoria(rs.getNString("categoria"));
             }
-        } catch (Exception e) { System.out.printf(e.getMessage()); }
-        finally { try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); }
-        }
+        } catch (Exception e) { System.out.printf(e.getMessage()); } finally { try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); } }
         return m;
     }
 
@@ -104,13 +89,10 @@ public class MusicaDAO implements Map<Integer, Musica> {
     public Musica put(Integer k, Musica v) {
         Musica m;
 
-        if(this.containsKey(k)){
-            m = this.get(k);
-        }
+        if(this.containsKey(k)){ m = this.get(k); }
         else m = v;
         try{
             c = Connect.connect();
-
             PreparedStatement ps = c.prepareStatement("INSERT INTO Musica(idMusica,Nome,Duracao,Formato, Categoria) VALUES (?,?,?,?,?)");
             ps.setInt(1,k);
             ps.setString(2,v.getNome());
@@ -119,8 +101,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
             ps.setString(4, v.getCategoria());
             ps.executeUpdate();
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return m;
     }
 
@@ -146,12 +127,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
         } catch (Exception e) {
             System.out.printf(e.getMessage());
         } finally {
-            try {
-                Connect.close(c);
-            } catch (Exception e) {
-                System.out.printf(e.getMessage());
-            }
-        }
+            try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); } }
     }
 
     @Override
@@ -169,12 +145,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
         } catch (Exception e) {
             System.out.printf(e.getMessage());
         } finally {
-            try {
-                Connect.close(c);
-            } catch (Exception e) {
-                System.out.printf(e.getMessage());
-            }
-        }
+            try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); } }
         return keys;
     }
 
@@ -183,9 +154,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
         Set<Musica> u = new HashSet<>();
         Set<Integer> keys = new HashSet<>(this.keySet());
 
-        for (Integer k : keys) {
-            u.add(this.get(k));
-        }
+        for (Integer k : keys) { u.add(this.get(k)); }
         return u;
     }
 
@@ -194,9 +163,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
         Set<Integer> keys = new HashSet<>(this.keySet());
         Map<Integer, Musica> map = new HashMap<>();
 
-        for (Integer k : keys) {
-            map.put(k, this.get(k));
-        }
+        for (Integer k : keys) { map.put(k, this.get(k)); }
         return map.entrySet();
     }
 }
