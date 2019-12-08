@@ -4,25 +4,22 @@ import Database.ProprietariosVideoDAO;
 
 import java.util.Map;
 
-/**
- * Representação da classe Video, subclasse de Conteudo
- **/
 public class Video extends Conteudo
 {
+    /** Realizador do video **/
     private String realizador;
 
     /**
-     * Construtor da classe Video  sem parâmetros.
+     * Construtor da classe Video  sem parâmetros
      */
     public Video()
     {
-
         super();
-        this.realizador = "";
+        this.realizador = "N/D";
     }
 
     /**
-     * Construtor da classe Video  com paramêtros.
+     * Construtor da classe Video  com paramêtros
      * @param id          id do video
      * @param nome        nome do video
      * @param duracao     duracao do video
@@ -37,7 +34,7 @@ public class Video extends Conteudo
     }
 
     /**
-     * Construtor por cópia da classe Video.
+     * Construtor por cópia da classe Video
      * @param v    Video
      */
     public Video(Video v)
@@ -47,19 +44,19 @@ public class Video extends Conteudo
     }
 
     /**
-     * Método que devolve o realizador do video.
+     * Método que devolve o realizador do video
      * @return realizador do video
      */
     public String getRealizador() { return this.realizador; }
 
     /**
-     * Método que altera o realizador do conteudo
+     * Método que altera o realizador do video
      * @param r  Nova categoria do conteudo
      */
     public void setRealizador(String r){this.realizador = r;}
 
     /**
-     * Construtor por cópia da classe Video.
+     * Construtor por cópia da classe Video
      * @return    Cópia do objeto Video
      */
     public Video clone() {

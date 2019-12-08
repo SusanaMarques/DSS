@@ -1,21 +1,18 @@
 package Business;
 
-/**
- * Representação da classe Administrador, subclasse de Utilizador
- **/
 public class Administrador extends Utilizador
 {
     /**
-     * Construtor da classe Administrador sem parâmetros.
+     * Construtor da classe Administrador sem parâmetros
      */
     public Administrador() {super(); }
 
     /**
-     * Construtor da classe Administrador com paramêtros.
-     * @param id        id do administrador
-     * @param nome      nome do administrador
-     * @param email     email do administrador
-     * @param password  password do administrador
+     * Construtor da classe Administrador com paramêtros
+     * @param id         id do administrador
+     * @param nome       nome do administrador
+     * @param email      email do administrador
+     * @param password   password do administrador
      */
      public Administrador(int id, String nome, String email, String password)
      {
@@ -23,7 +20,7 @@ public class Administrador extends Utilizador
      }
 
     /**
-     * Construtor por cópia da classe Administrador.
+     * Construtor por cópia da classe Administrador
      * @param a     Administrador
      */
     public Administrador(Administrador a)

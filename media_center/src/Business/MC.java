@@ -4,7 +4,6 @@ import javafx.collections.MapChangeListener;
 import javafx.scene.input.KeyCode;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,45 +13,44 @@ import java.time.Duration;
 import java.util.StringTokenizer;
 
 
-public class MC {
+public class MC
+{
     /** Instancia da gestao de conteudo**/
     private GestaoConteudo gc = new GestaoConteudo();
     /** Instancia da gestao de utilizador**/
     private GestaoUtilizador gu = new GestaoUtilizador();
     /** Id do utilizador atual**/
     private int idUtilizadorAtual;
-    /** Identificador do tipo de utilizador
-     * Administrador : 1
-     * Utilizador Registado : 2
-     **/
+    /** Identificador do tipo de utilizador             Administrador : 1                Utilizador Registado : 2   **/
     private int idType;
     /** Metadados de conteudo a fazer upload **/
     private volatile String album;
     private volatile String artist;
     private volatile String title;
     private volatile String categoria;
-    private volatile double duracao=0.0;
+    private volatile double duracao ;
 
-    /**Construtor do MC**/
-    public MC() {
-    }
-    /**Metodo de iniciar sessão
-     * @param mail Email do utilizador a autenticar
-     * @param pass Password do utilizador a autenticar **/
+    /** Construtor da classe MC sem parâmetros **/
+    public MC() { }
 
+    /** Método que inicia uma sessão
+     * @param mail    Email do utilizador a autenticar
+     * @param pass    Password do utilizador a autenticar
+     */
     public void iniciarSessao(String mail, String pass) throws CredenciaisInvalidasException {
         if(mail == null||pass == null || mail.isEmpty() || pass.isEmpty()) throw new CredenciaisInvalidasException();
         gu.iniciarSessao(mail, pass, idType);
-
     }
-    /**Metodo de terminar sessão**/
+
+    /** Método que  termina uma sessão **/
     public void terminarSessao() {
         idUtilizadorAtual = -1;
         idType = -1;
     }
 
-    /**Metodo de upload de conteudo
-     * @param p Path do conteudo a fazer upload**/
+    /** Método que faz o upload de conteudo
+     * @param p   Path do conteudo a fazer upload
+     */
     public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException {
         System.out.println(p);
         StringTokenizer tokens = new StringTokenizer( p,".");
@@ -62,7 +60,7 @@ public class MC {
         char t;
         Conteudo c;
         //Verificar formato
-        if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, artist, duracao, "mp3", categoria);}
+        if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);}
         else if (type.equals("mp4")){t='v'; c = new Video(); c.setId(p.hashCode()); }
         else throw new FormatoDesconhecidoException();
 
@@ -76,10 +74,10 @@ public class MC {
         );
         *///--------------------------------------------------------------
         //Salvaguardar metadados
-        if(title== null) title= "Toxic";
-        if(artist == null)artist = "Britney Spears";
-        if(categoria== null) categoria = "Pop";
-        if(album== null) album = "In The Zone";
+        if(title == null) title= "N/D";
+        if(artist == null)artist = "N/D";
+        if(categoria == null) categoria = "N/D";
+        if(album == null) album = "N/D";
 
         //Verificar duplicaçoes
         if(gc.verificaDuplicacoes(c,t)) throw new ConteudoDuplicadoException();
@@ -90,14 +88,12 @@ public class MC {
         Path fileDB=Paths.get( (new File("").getAbsolutePath())+"baseDeDados/Biblioteca"+c.getId());
         Path temp = Files.move(Paths.get(p), fileDB);
         if(temp == null) throw new IOException();
-
-
-
-
     }
-    /**Metodo de extração de metadados
-     * @param key chave descritora do tipo de metadado observado
-     * @param value valor do metadado **/
+
+    /** Método de extração de metadados
+     * @param key     chave que descreve do tipo de metadado
+     * @param value   valor do metadado
+     */
     private void listnerHandle(String key, Object value){
         switch (key) {
             case "album":
@@ -117,17 +113,19 @@ public class MC {
             case "duration":
                 duracao = (double) ((Duration) value ).toMillis();
                 break;
-
         }
     }
-    /**Metodo que altera o tipo do utilizador a usar o sistema
-     * @param idT Tipo do utilizador**/
+
+    /** Método que altera o tipo do utilizador que está a usar o sistema
+     * @param idT    Tipo do utilizador
+     */
     public void setUserT(int idT) {
         idType = idT;
     }
 
-    /**Metodo que altera o tipo do utilizador a usar o sistema
-     * @return   Tipo do utilizador**/
+    /** Método que altera o tipo do utilizador a usar o sistema
+     * @return      Tipo do utilizador
+     */
     public int getUserT() {
         return idType;
     }

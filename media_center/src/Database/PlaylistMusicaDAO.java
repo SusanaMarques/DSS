@@ -8,29 +8,58 @@ import java.util.*;
 
 
 public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>{
+    private Connection c;
+
     @Override
     public int size() {
-        return 0;
+        int s = -1;
+        try {
+            c = Connect.connect();
+            PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM PlaylistMusica");
+            ResultSet rs = stm.executeQuery();
+            if(rs.next()) { s = rs.getInt(1); }
+        }
+        catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
+        return s;
     }
 
     @Override
-    public boolean isEmpty() {
-        return false;
-    }
+    public boolean isEmpty() { return (this.size() == 0); }
 
     @Override
     public boolean containsKey(Object o) {
-        return false;
+        boolean res = false;
+        try {
+            c = Connect.connect();
+            String sql = "SELECT idPlaylist FROM Playlistmusica WHERE idPlaylist = ?";
+            PreparedStatement stm = c.prepareStatement(sql);
+            stm.setInt(1, (Integer) o);
+            ResultSet rs = stm.executeQuery();
+            res = rs.next();
+        } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
+        return res;
     }
 
     @Override
-    public boolean containsValue(Object o) {
-        return false;
-    }
+    public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
     @Override
     public List<Musica> get(Object o) {
-        return null;
+        Musica m = new Musica();
+        ArrayList<Musica> array = new ArrayList<>();
+        try {
+            c = Connect.connect();
+
+            String sql = "SELECT idPlaylist FROM PlaylistMusica WHERE idPlaylist = ?";
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1, (Integer) o);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+               // m = new Musica(rs.get)
+                array.add(m);
+            }
+        } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
+        return array;
     }
 
     @Override

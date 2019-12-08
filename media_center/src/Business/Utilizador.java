@@ -1,9 +1,5 @@
 package Business;
 
-
-/**
- * Representação da classe Utilizador, subclasse de Utilizador
- **/
 public class Utilizador
 {
     /** Id do utilizador **/
@@ -16,18 +12,18 @@ public class Utilizador
     private String password;
 
     /**
-     * Construtor da classe Utilizador sem parâmetros.
+     * Construtor da classe Utilizador sem parâmetros
      */
     public Utilizador()
     {
         this.id = 0;
-        this.nome = "";
-        this.email = "";
-        this.password = "";
+        this.nome = "N/D";
+        this.email = "N/D";
+        this.password = "N/D";
     }
 
     /**
-     * Construtor da classe Utilizador com paramêtros.
+     * Construtor da classe Utilizador com paramêtros
      * @param id        id do utilizador
      * @param nome      nome do utilizador
      * @param email     email do utilizador
@@ -42,7 +38,7 @@ public class Utilizador
     }
 
     /**
-     * Construtor por cópia da classe Utilizador.
+     * Construtor por cópia da classe Utilizador
      * @param u     Utilizador
      */
     public Utilizador(Utilizador u)
@@ -54,25 +50,25 @@ public class Utilizador
     }
 
     /**
-     * Método que devolve o id do utilizador.
+     * Método que devolve o id do utilizador
      * @return id do utilizador.
      */
     public int getId(){return this.id;}
 
     /**
-     * Método que devolve o nome do utilizador.
+     * Método que devolve o nome do utilizador
      * @return nome do utilizador
      */
     public String getNome(){return this.nome;}
 
     /**
-     * Método que devolve o email do utilizador.
+     * Método que devolve o email do utilizador
      * @return email do utilizador
      */
     public String getEmail(){return this.email;}
 
     /**
-     * Método que devolve a password do utilizador.
+     * Método que devolve a password do utilizador
      * @return password do utilizador
      */
     public String getPassword(){return this.password;}
@@ -102,7 +98,7 @@ public class Utilizador
     public void setPassword(String p){this.password = p;}
 
     /**
-     * Método que cria a cópia de um objeto
+     * Método que cria a cópia de um Utilizador
      * @return    Cópia do utilizador
      */
     public Utilizador clone() {
@@ -111,7 +107,7 @@ public class Utilizador
     }
 
     /**
-     * Método equals da classe Componente.
+     * Método equals da classe Utilizador
      * @param o   Objecto
      * @return    true caso os objetos sejam iguais, false caso contrário
      */
@@ -124,7 +120,7 @@ public class Utilizador
     }
 
     /**
-     * Devolve String com a informação da classe Utilizador.
+     * Devolve String com a informação da classe Utilizador
      * @return String
      */
     public String toString(){

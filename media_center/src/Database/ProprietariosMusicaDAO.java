@@ -51,8 +51,7 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
                  array.add(u);
              }
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return array;
     }
 
@@ -94,8 +93,7 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
             PreparedStatement ps = c.prepareStatement("DELETE FROM UtilizadorRegistado");
             ps.executeUpdate();
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
     }
 
     @Override

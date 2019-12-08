@@ -38,7 +38,7 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
 
     @Override
     public List<UtilizadorRegistado> get(Object o) {
-        UtilizadorRegistado u = new UtilizadorRegistado();
+        UtilizadorRegistado u;
         ArrayList<UtilizadorRegistado> array = new ArrayList<UtilizadorRegistado>();
 
         try{
@@ -53,8 +53,7 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
                 array.add(u);
             }
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return array;
     }
 
@@ -73,13 +72,12 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
                 ps.setInt(2, user.getId());
             }
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return array;
     }
 
     @Override
-    public List<UtilizadorRegistado> remove(Object o) { throw new UnsupportedOperationException("Erro!"); }
+    public List<UtilizadorRegistado> remove(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
     @Override
     public void putAll(Map<? extends Integer, ? extends List<UtilizadorRegistado>> map) { throw new UnsupportedOperationException("Not Implemented"); }

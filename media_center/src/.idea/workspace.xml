@@ -3,17 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="8b45d85c-5f15-422f-8202-4c1182fe1d8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/AdministradorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/MusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/MusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Conteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/ConteudoDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/ConteudoDuplicadoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/CredenciaisInvalidasException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/CredenciaisInvalidasException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/FormatoDesconhecidoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/FormatoDesconhecidoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Utilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/VideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +63,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -102,6 +109,9 @@
       <updated>1575595415346</updated>
       <workItem from="1575595418660" duration="1937000" />
       <workItem from="1575739085246" duration="2775000" />
+      <workItem from="1575805867132" duration="39000" />
+      <workItem from="1575805934785" duration="415000" />
+      <workItem from="1575806386599" duration="3558000" />
     </task>
     <servers />
   </component>
@@ -109,30 +119,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1575742353965">
+    <state width="1440" height="224" key="GridCell.Tab.0.bottom" timestamp="1575806363439">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575742353965" />
+    <state width="1440" height="224" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575806363439" />
     <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1575741197939" />
-    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1575742353963">
+    <state width="1440" height="224" key="GridCell.Tab.0.center" timestamp="1575806363432">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575742353963" />
+    <state width="1440" height="224" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575806363432" />
     <state width="1440" height="251" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1575741197937" />
-    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1575742353963">
+    <state width="1440" height="224" key="GridCell.Tab.0.left" timestamp="1575806363431">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575742353963" />
+    <state width="1440" height="224" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575806363431" />
     <state width="1440" height="251" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1575741197936" />
-    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1575742353964">
+    <state width="1440" height="224" key="GridCell.Tab.0.right" timestamp="1575806363438">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575742353964" />
+    <state width="1440" height="224" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575806363438" />
     <state width="1440" height="251" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1575741197938" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1575739086936">
+    <state x="94" y="82" key="SettingsEditor" timestamp="1575806399111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575739086936" />
+    <state x="94" y="82" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575806399111" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1575806386365">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575806386365" />
   </component>
   <component name="masterDetails">
     <states>

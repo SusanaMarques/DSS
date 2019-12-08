@@ -1,29 +1,30 @@
 package Business;
 
-/**
- * Representação da classe UtilizadorRegistado, subclasse de Utilizador
- **/
 public class UtilizadorRegistado extends Utilizador
 {
+    /** id da bibliteca pessoal de musicas do utilizador **/
     private int idBibliotecaMusica;
+    /** id da bibliteca pessoal de videos do utilizador **/
     private int idBibliotecaVideo;
+
     /**
-     * Construtor da classe UtilizadorRegistado sem parâmetros.
+     * Construtor da classe UtilizadorRegistado sem parâmetros
      */
     public UtilizadorRegistado()
     {
-
         super();
         this.idBibliotecaMusica = this.hashCode();
         this.idBibliotecaVideo = this.idBibliotecaMusica+1;
     }
 
     /**
-     * Construtor da classe UtilizadorRegistado com paramêtros.
-     * @param id        id do administrador
-     * @param nome      nome do administrador
-     * @param email     email do administrador
-     * @param password  password do administrador
+     * Construtor da classe UtilizadorRegistado com paramêtros
+     * @param id                    id do administrador
+     * @param nome                  nome do administrador
+     * @param email                 email do administrador
+     * @param password              password do administrador
+     * @param idBibliotecaMusica    id da bibliteca pessoal de musicas do utilizador
+     * @param idBibliotecaVideo     id da bibliteca pessoal de videos do utilizador
      */
     public UtilizadorRegistado(int id, String nome, String email, String password, int idBibliotecaMusica, int idBibliotecaVideo)
 
@@ -34,7 +35,7 @@ public class UtilizadorRegistado extends Utilizador
     }
 
     /**
-     * Construtor por cópia da classe UtilizadorRegistado.
+     * Construtor por cópia da classe UtilizadorRegistado
      * @param u     Utilizador
      */
     public UtilizadorRegistado(UtilizadorRegistado u)
@@ -46,13 +47,13 @@ public class UtilizadorRegistado extends Utilizador
     }
 
     /**
-     * Método que devolve o id da biblioteca pessoal de videos do utilizador.
+     * Método que devolve o id da biblioteca pessoal de videos do utilizador
      * @return     Id da biblioteca pessoal de Videos do utilizador.
      */
     public int getIdBibliotecaVideo(){return this.idBibliotecaVideo;}
 
     /**
-     * Método que devolve o id da biblioteca pessoal de musica do utilizador.
+     * Método que devolve o id da biblioteca pessoal de musica do utilizador
      * @return     Id da biblioteca pessoal de musica do utilizador.
      */
     public int getIdBibliotecaMusica(){return this.idBibliotecaMusica;}
@@ -70,7 +71,7 @@ public class UtilizadorRegistado extends Utilizador
 
 
     /**
-     * Construtor por cópia da classe UtilizadorRegistado.
+     * Construtor por cópia da classe UtilizadorRegistado
      * @return    Cópia do utilizador
      */
     public UtilizadorRegistado clone() {

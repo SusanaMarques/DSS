@@ -1,23 +1,20 @@
 package Business;
 
-/**
- * Representação da classe Conteudo
- **/
 public class Conteudo
 {
     /** Id do conteudo **/
     private int id;
-    /** nome do conteudo **/
+    /** Nome do conteudo **/
     private String nome;
-    /** duração do conteudo **/
+    /** Duração do conteudo **/
     private double duracao;
-    /** formato do conteudo **/
+    /** Formato do conteudo **/
     private String formato;
-    /** categoria do conteudo **/
+    /** Categoria do conteudo **/
     private String categoria;
 
     /**
-     * Construtor da classe Conteudo sem parâmetros.
+     * Construtor da classe Conteudo sem parâmetros
      */
     public Conteudo()
     {
@@ -29,7 +26,7 @@ public class Conteudo
     }
 
     /**
-     * Construtor da classe Conteudo com paramêtros.
+     * Construtor da classe Conteudo com paramêtros
      * @param id          id do conteudo
      * @param nome        nome do conteudo
      * @param duracao     duracao do conteudo
@@ -46,7 +43,7 @@ public class Conteudo
     }
 
     /**
-     * Construtor por cópia da classe Conteudo.
+     * Construtor por cópia da classe Conteudo
      * @param c     Conteudo
      */
     public Conteudo(Conteudo c)
@@ -59,32 +56,32 @@ public class Conteudo
     }
 
     /**
-     * Método que devolve o id do conteudo.
+     * Método que devolve o id do conteudo
      * @return     Id do conteudo.
      */
     public int getId(){return this.id;}
 
     /**
-     * Método que devolve o nome do conteudo.
-     * @return     Nome do conteudo.
+     * Método que devolve o nome do conteudo
+     * @return     Nome do conteudo
      */
     public String getNome(){return this.nome;}
 
     /**
-     * Método que devolve a duracao do conteudo.
-     * @return     Duracao do conteudo.
+     * Método que devolve a duracao do conteudo
+     * @return     Duracao do conteudo
      */
     public double getDuracao(){return this.duracao;}
 
     /**
-     * Método que devolve o formato do conteudo.
-     * @return     Formato do conteudo.
+     * Método que devolve o formato do conteudo
+     * @return     Formato do conteudo
      */
     public String getFormato(){return this.formato;}
 
     /**
-     * Método que devolve a categoria do conteudo.
-     * @return     Categoria do conteudo.
+     * Método que devolve a categoria do conteudo
+     * @return     Categoria do conteudo
      */
     public String getCategoria(){return this.categoria;}
 
@@ -101,7 +98,7 @@ public class Conteudo
     public void setNome(String n){this.nome = n;}
 
     /**
-     * Método que altera a duracao do conteudo
+     * Método que altera a duracao do conteudo.
      * @param d    Nova duracao do conteudo
      */
     public void setDuracao(double d){this.duracao = d;}
@@ -128,7 +125,7 @@ public class Conteudo
     }
 
     /**
-     * Método equals da classe Componente.
+     * Método equals da classe Conteudo
      * @param o   Objecto
      * @return    true caso os objetos sejam iguais, false caso contrário
      */
@@ -142,7 +139,7 @@ public class Conteudo
     }
 
     /**
-     * Devolve String com a informação da classe Conteudo.
+     * Devolve String com a informação da classe Conteudo
      * @return String
      */
     public String toString(){
