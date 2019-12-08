@@ -71,7 +71,7 @@ public class MC
              }
              else throw new FormatoDesconhecidoException();
 
-        /*--------------------------------------------------------------
+
         //Extrair metadados
         Media media = new Media(p);
         MediaPlayer player = new MediaPlayer(media);
@@ -79,7 +79,7 @@ public class MC
                     if (change.wasAdded()) listnerHandle(change.getKey(),change.getValueAdded());
                 }
         );
-        *///--------------------------------------------------------------
+
         //Salvaguardar metadados
         if(title == null) title= "N/D";
         if(artist == null)artist = "N/D";

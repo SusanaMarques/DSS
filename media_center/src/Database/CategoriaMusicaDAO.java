@@ -1,4 +1,6 @@
 package Database;
 
-public class CategoriaMusicaDAO {
+public class CategoriaMusicaDAO
+{
+    
 }
