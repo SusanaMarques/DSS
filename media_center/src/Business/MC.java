@@ -60,9 +60,16 @@ public class MC
         char t;
         Conteudo c;
         //Verificar formato
-        if (type.equals("mp3")){t='m'; c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);}
-        else if (type.equals("mp4")){t='v'; c = new Video(); c.setId(p.hashCode()); }
-        else throw new FormatoDesconhecidoException();
+        if (type.equals("mp3")){
+            t = 'm';
+            c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);
+        }
+        else if (type.equals("mp4")){
+                    t='v';
+                    c = new Video();
+                    c.setId(p.hashCode());
+             }
+             else throw new FormatoDesconhecidoException();
 
         /*--------------------------------------------------------------
         //Extrair metadados
