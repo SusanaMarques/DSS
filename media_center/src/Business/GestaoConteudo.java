@@ -8,6 +8,7 @@ import Database.VideoDAO;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class GestaoConteudo
 {
@@ -46,4 +47,13 @@ public class GestaoConteudo
         propList.add(u);
         props.put(c.getId(),propList);
     }
+
+    public Set<Video> getBibliotecaVideo() {
+        return ((Set)videos.values());
+    }
+
+    public Set<Musica> getBibliotecaMusica() {
+        return ((Set)musicas.values());
+    }
+
 }

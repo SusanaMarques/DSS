@@ -5,6 +5,7 @@ import Business.Video;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.*;
 
 public class PlaylistVideoDAO implements Map<Integer, List<Video>>
@@ -46,7 +47,7 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
 
     @Override
     public List<Video> get(Object o) {
-        Video v = new Video();
+        Video m = new Video();
         ArrayList<Video> array = new ArrayList<>();
         try {
             c = Connect.connect();
@@ -56,9 +57,15 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
             ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                v = new Video(rs.getInt("idVideo"), rs.getString("nome"), rs.getDouble("duracao"), rs.getString("formato"), rs.getString("categoria"), rs.getString("realizador"));
-                array.add(v);
+                try {
+                    PreparedStatement pss = c.prepareStatement("SELECT * FROM Video WHERE idVideo = ?");
+                    pss.setInt(1, rs.getInt("idVideo"));
+                    ResultSet rss = ps.executeQuery();
+                    m = new Video(rss.getInt("idVideo"), rss.getString("nome"), rss.getDouble("duracao"), rss.getString("formato"), rss.getString("categoria"), rss.getString("realizador"));
+                    array.add(m);
+                } catch (SQLException ex) { ex.printStackTrace(); }
             }
+
         } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
         return array;
     }

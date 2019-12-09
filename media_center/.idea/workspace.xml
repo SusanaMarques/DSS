@@ -1,196 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc3bae7-a150-4685-b568-46f6b0384f58" name="Default Changelist" comment="">
+    <list default="true" id="34e5991e-79b7-43f7-ac37-0fec40beb81c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../baseDeDados/DSS.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb 2.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb 3.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb.beforefix" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../baseDeDados/povoamento.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/CategoriaMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/VideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_000d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_000f" beforeDir="false" afterPath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_000f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_001d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_002d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_003d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_004d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_005d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_006d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_007d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_008d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_009d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_010d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_011d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_012d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_013d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_014d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_015d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_016d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_017d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_018d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_019d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_020d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_021d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_022d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_023d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_024d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_025d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_026d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_000f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_030d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_031f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_032d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_033d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_034d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_035d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_036d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_037d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_038d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_039d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_040d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_041d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_042d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_043d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_044d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_045d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_046d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_047d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_048d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_049d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_050d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_051d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_052d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_053d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_054d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_055d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_056d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_057d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_058d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_059d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_000f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_001d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_002d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_003d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_004d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_005d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_006d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_007d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_008d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_009d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_010d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_000f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_001d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_002d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_003d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_004d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_005d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_006d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_007d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_008d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_009d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_010d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_011d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_012d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_013d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_014d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_015d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_016d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloPackage/Dpk.vpp.bak_000f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloPackage/Dpk.vpp.bak_001d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Alterar categoria do conteúdo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_000d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_000f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_001d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_002d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_003d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_004d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_005d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_006d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_007d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_008d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_009d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_010d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_011d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_012d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Remover conteúdo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller_Regist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/libraries/mysql_connector_java_8_0 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/misc 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/vcs 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/workspace 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Biblioteca/-1686844748.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Biblioteca/-2116644357.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Biblioteca/1612083396.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Biblioteca/1691885962.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Biblioteca/1942101703.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Biblioteca/474711816.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/Conteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/ConteudoDuplicadoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/CredenciaisInvalidasException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/FormatoDesconhecidoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/MC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/Musica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/Utilizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/UtilizadorRegistado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Business/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/AdministradorDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/CategoriaMusicaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/CategoriaVideoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/Connect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/MusicaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/PlaylistMusicaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/PlaylistVideoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/ProprietariosMusicaDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/ProprietariosVideoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/UtilizadorRegistadoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Database/VideoDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Conteudo_Existente 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller_Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller_Conv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller_credenciais.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Controller_upload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Erro_Género 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Player$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Player$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Player$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/View 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/79111620_2185462364887515_9070575070606262272_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-add-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-arrow-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-audio-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-audio-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-automatic-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-bulleted-list-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-cancel-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-check-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-checked-checkbox-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-checkmark-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-circled-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-conference-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-crown-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-darth-vader-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-dj-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-down-left-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-download-from-cloud-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-earbud-headphones-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-email-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-email-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-fast-forward-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-geometric-flowers-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-go-back-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-high-priority-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-in-progress-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-key-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-left-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-login-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-mp3-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-music-folder-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-pause-button-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-playlist-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-scroll-up-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-shuffle-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-shutdown-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-shutdown-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-skip-to-start-96 - cópia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-skip-to-start-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-speaker-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-star-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-stop-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-undo-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-undo-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/img/icons8-video-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/login 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/opcoes 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/Presentation/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/out/production/media_center/media_center.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>remove</find>
-      <find>string</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
-  <component name="ProjectId" id="1UURGEVfFG7EprnUWlmrGRwAWlE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575587398684" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Business" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Business" />
-    </key>
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -229,23 +197,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6cc3bae7-a150-4685-b568-46f6b0384f58" name="Default Changelist" comment="" />
-      <created>1575407543882</created>
+      <changelist id="34e5991e-79b7-43f7-ac37-0fec40beb81c" name="Default Changelist" comment="" />
+      <created>1575915448150</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575407543882</updated>
-      <workItem from="1575407547085" duration="216000" />
-      <workItem from="1575409090820" duration="8204000" />
-      <workItem from="1575482635497" duration="1679000" />
-      <workItem from="1575557261476" duration="352000" />
-      <workItem from="1575560428357" duration="3899000" />
-      <workItem from="1575576815267" duration="7893000" />
-      <workItem from="1575587435334" duration="588000" />
-      <workItem from="1575588160009" duration="34000" />
-      <workItem from="1575588221926" duration="308000" />
-      <workItem from="1575588704018" duration="1702000" />
-      <workItem from="1575591253002" duration="434000" />
-      <workItem from="1575913881631" duration="55000" />
+      <updated>1575915448150</updated>
+      <workItem from="1575915449719" duration="7672000" />
     </task>
     <servers />
   </component>
@@ -253,138 +210,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="872" y="75" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1575591515892">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="466" y="283" width="494" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575928354833">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
-    <state x="872" y="75" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1575591515892" />
-    <state x="556" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575591085368">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="466" y="283" width="494" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575928354833" />
+    <state width="1247" height="153" key="GridCell.Tab.0.bottom" timestamp="1575917207798">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
-    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1293.741@67.27.1293.741" timestamp="1575409119822" />
-    <state x="556" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1299.741@67.27.1299.741" timestamp="1575591085368" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575591129580">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1247" height="153" key="GridCell.Tab.0.bottom/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575917207798" />
+    <state width="1247" height="153" key="GridCell.Tab.0.center" timestamp="1575917207797">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1575591129580" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575591106781">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1247" height="153" key="GridCell.Tab.0.center/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575917207797" />
+    <state width="1247" height="153" key="GridCell.Tab.0.left" timestamp="1575917207797">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1575591106781" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom" timestamp="1575591686028">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1247" height="153" key="GridCell.Tab.0.left/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575917207797" />
+    <state width="1247" height="153" key="GridCell.Tab.0.right" timestamp="1575917207798">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
-    <state width="1247" height="67" key="GridCell.Tab.0.bottom/67.27.1293.741@67.27.1293.741" timestamp="1575415646843" />
-    <state width="1253" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1575591686028" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center" timestamp="1575591686027">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state width="1247" height="153" key="GridCell.Tab.0.right/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575917207798" />
+    <state x="376" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575926418720">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
-    <state width="1247" height="67" key="GridCell.Tab.0.center/67.27.1293.741@67.27.1293.741" timestamp="1575415646842" />
-    <state width="1253" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1575591686027" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left" timestamp="1575591686027">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1247" height="67" key="GridCell.Tab.0.left/67.27.1293.741@67.27.1293.741" timestamp="1575415646841" />
-    <state width="1253" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1575591686027" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right" timestamp="1575591686028">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1247" height="67" key="GridCell.Tab.0.right/67.27.1293.741@67.27.1293.741" timestamp="1575415646842" />
-    <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1575591686028" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1575913891836">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575913891836" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575569655621">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1575569655621" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>javafx</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>media_center</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>mysql-connector-java-8.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="376" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1575926418720" />
   </component>
 </project>

@@ -4,7 +4,23 @@ import javafx.collections.MapChangeListener;
 import javafx.scene.input.KeyCode;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import org.apache.tika.exception.TikaException;
+import org.apache.tika.metadata.Metadata;
+import org.apache.tika.parser.AutoDetectParser;
+import org.apache.tika.parser.ParseContext;
+import org.apache.tika.parser.Parser;
+import org.apache.tika.parser.mp3.ID3v1Handler;
+import org.apache.tika.parser.mp3.ID3v24Handler;
+import org.apache.tika.parser.mp3.ID3v2Frame;
+import org.apache.tika.parser.mp3.Mp3Parser;
+import org.apache.tika.parser.mp4.MP4Parser;
+import org.apache.tika.sax.BodyContentHandler;
+import org.xml.sax.SAXException;
+
+
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -12,7 +28,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
-import java.util.StringTokenizer;
+import java.util.*;
 
 
 public class MC
@@ -25,12 +41,7 @@ public class MC
     private int idUtilizadorAtual;
     /** Identificador do tipo de utilizador             Administrador : 1                Utilizador Registado : 2   **/
     private int idType;
-    /** Metadados de conteudo a fazer upload **/
-    private volatile String album;
-    private volatile String artist;
-    private volatile String title;
-    private volatile String categoria;
-    private volatile double duracao ;
+
 
     /** Construtor da classe MC sem parâmetros **/
     public MC() { }
@@ -53,10 +64,9 @@ public class MC
     /** Método que faz o upload de conteudo
      * @param p   Path do conteudo a fazer upload
      */
-    public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException, URISyntaxException {
-        System.out.println(p);
+    public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException, URISyntaxException, TikaException, SAXException {
         StringTokenizer tokens = new StringTokenizer( p,".");
-        tokens.nextToken();
+        String mp4Artist = tokens.nextToken();
         String type = tokens.nextToken();
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
         char t;
@@ -65,27 +75,41 @@ public class MC
 
 
         //Extrair metadados
-        Media media = new Media(p);
-        MediaPlayer player = new MediaPlayer(media);
-        media.getMetadata().addListener((MapChangeListener<String, Object>) change -> {
-                    if (change.wasAdded()) listnerHandle(change.getKey(),change.getValueAdded());
-                }
-        );
+        String album;
+        String artist;
+        String title;
+        String categoria;
+        double duracao ;
+        File origin = new File((new URI(p)).getPath());
+
 
         //Salvaguardar metadados
-        if(title == null) title= "N/D";
-        if(artist == null)artist = "N/D";
-        if(categoria == null) categoria = "N/D";
-        if(album == null) album = "N/D";
+
         //Verificar formato
         if (type.equals("mp3")){
+            ID3v24Handler m = extrairMetaMp3(origin);
+            duracao = getDuration(origin);
+            title = m.getTitle();
+            artist = m.getArtist();
+            categoria = m.getGenre();
+            album = m.getAlbum();
+
+            if(title == null) title= "N/D";
+            if(artist == null) artist = "N/D";
+            if(categoria == null) categoria = "N/D";
+            if(album == null) album = "N/D";
+
             t = 'm';
             c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);
         }
         else if (type.equals("mp4")){
+            Metadata m = extrairMetaMp4(origin);
+            duracao = Double.parseDouble(m.get("xmpDM:duration"));
             t='v';
             c = new Video();
             c.setId(p.hashCode());
+            c.setNome(mp4Artist);
+            c.setDuracao(duracao);
         }
         else throw new FormatoDesconhecidoException();
 
@@ -94,43 +118,37 @@ public class MC
         //Adicionar a bibliotecas
         gc.uploadConteudo(c,t,u);
         gu.uploadConteudo(c, t,u);
-        System.out.println("NAO");
         //Path building
-        String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
+        String path=(new File("").getAbsolutePath())+"/src/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
         File newFile = new File(path);
-        File origin = new File((new URI(p)).getPath());
+        System.out.println(path);
         newFile.createNewFile();
         origin.renameTo(newFile);
 
     }
 
-    /** Método de extração de metadados
-     * @param key     chave que descreve do tipo de metadado
-     * @param value   valor do metadado
-     */
-    private void listnerHandle(String key, Object value){
-        switch (key) {
-            case "album":
-                album = (String) value;
-                break;
-
-            case "artist":
-                artist = (String) value;
-                break;
-
-            case "title":
-                title = (String) value;
-                break;
-            case "genre":
-                categoria = (String) value;
-                break;
-            case "duration":
-                Long d = ((Duration) value ).toMillis();
-                System.out.println(d);
-                duracao = (double) d;
-                break;
-        }
+    private Metadata extrairMetaMp4(File origin) throws TikaException, SAXException, IOException {
+        BodyContentHandler handler = new BodyContentHandler();
+        Metadata metadata = new Metadata();
+        FileInputStream inputstream = new FileInputStream(origin);
+        ParseContext pcontext = new ParseContext();
+        MP4Parser mp4Parser = new MP4Parser();
+        mp4Parser.parse(inputstream, handler, metadata, pcontext);
+        return metadata;
     }
+
+    private double getDuration(File origin) throws TikaException, SAXException, IOException {
+        BodyContentHandler handler = new BodyContentHandler();
+        Metadata metadata = new Metadata();
+        FileInputStream inputstream = new FileInputStream(origin);
+        ParseContext pcontext = new ParseContext();
+
+        Mp3Parser  mp3Parser = new  Mp3Parser();
+        mp3Parser.parse(inputstream, handler, metadata, pcontext);
+        return (Double.parseDouble(metadata.get("xmpDM:duration")));
+    }
+
+
 
     /** Método que altera o tipo do utilizador que está a usar o sistema
      * @param idT    Tipo do utilizador
@@ -145,6 +163,28 @@ public class MC
     public int getUserT() {
         return idType;
     }
-}
 
+    private ID3v24Handler extrairMetaMp3(File file) throws IOException, TikaException, SAXException {
+        FileInputStream inputstream = new FileInputStream(file);
+        ID3v24Handler ret = new ID3v24Handler((ID3v2Frame) ID3v2Frame.createFrameIfPresent(inputstream));
+        return  ret;
+    }
+
+    public Set<Musica> showMusicas(){
+        return  gc.getBibliotecaMusica();
+    }
+    public Set<Video> showVideos(){
+        return  gc.getBibliotecaVideo();
+    }
+    public List<Musica> showMusicasPlaylist(int idPlaylist){
+        return gu.getPlaylistMusica(idPlaylist);
+
+
+    }
+    public List<Video> showVideosPlaylist(int idPlaylist){
+      return gu.getPlaylistVideo(idPlaylist);
+    }
+
+
+}
 

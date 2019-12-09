@@ -6,6 +6,7 @@ import Business.UtilizadorRegistado;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.*;
 
 
@@ -58,10 +59,16 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
             ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-               m = new Musica(rs.getInt("idMusica"), rs.getString("nome"), rs.getDouble("duracao"), rs.getString("formato"), rs.getString("categoria"), rs.getString("artista"));
-               array.add(m);
+                try {
+                    PreparedStatement pss = c.prepareStatement("SELECT * FROM Musica WHERE idMusica = ?");
+                    pss.setInt(1, rs.getInt("idMusica"));
+                    ResultSet rss = ps.executeQuery();
+                    m = new Musica(rs.getInt("idMusica"), rs.getString("nome"), rs.getDouble("duracao"), rs.getString("formato"), rs.getString("categoria"), rs.getString("artista"));
+                    array.add(m);
+                        } catch (SQLException ex) { ex.printStackTrace(); }
             }
-        } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
+
+            } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
         return array;
     }
 

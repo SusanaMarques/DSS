@@ -10,6 +10,8 @@ import javafx.scene.Parent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
+import org.apache.tika.exception.TikaException;
+import org.xml.sax.SAXException;
 
 import java.io.File;
 import java.io.IOException;
@@ -110,6 +112,10 @@ public class Controller_Regist {
             this.view.printPage((Node) event.getSource(), root);
 
         } catch (URISyntaxException e) {
+            e.printStackTrace();
+        } catch (TikaException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
             e.printStackTrace();
         }
     }

@@ -41,15 +41,15 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
 
         try{
             c = Connect.connect();
-             String sql = "SELECT * FROM UtilizadorRegistado WHERE idUtilizador = ?";
-             PreparedStatement ps = c.prepareStatement(sql);
-             ps.setInt(1, (Integer) o);
-             ResultSet rs = ps.executeQuery();
-             while(rs.next())
-             {
-                 u = new UtilizadorRegistado(rs.getInt("idUtilizador"), rs.getString("nome"), rs.getString("email"), rs.getString("password"), rs.getInt("idBibliotecaMusica"), rs.getInt("idBibliotecaVideo"));
-                 array.add(u);
-             }
+            String sql = "SELECT * FROM UtilizadorRegistado WHERE idUtilizador = ?";
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1, (Integer) o);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next())
+            {
+                u = new UtilizadorRegistado(rs.getInt("idUtilizador"), rs.getString("nome"), rs.getString("email"), rs.getString("password"), rs.getInt("idBibliotecaMusica"), rs.getInt("idBibliotecaVideo"));
+                array.add(u);
+            }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return array;

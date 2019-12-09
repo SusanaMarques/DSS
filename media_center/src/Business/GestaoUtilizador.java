@@ -7,6 +7,7 @@ import Database.UtilizadorRegistadoDAO;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class GestaoUtilizador
 {
@@ -61,5 +62,12 @@ public class GestaoUtilizador
             ls.add((Video) c);
             playlistsVideos.put(u.getIdBibliotecaVideo(),ls);
         }
+    }
+
+    public List<Musica> getPlaylistMusica(int idPlaylist) {
+        return playlistsMusicas.get(idPlaylist);
+    }
+    public List<Video> getPlaylistVideo( int idPlaylist) {
+        return playlistsVideos.get(idPlaylist);
     }
 }
