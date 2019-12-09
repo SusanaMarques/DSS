@@ -62,11 +62,9 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
                     pss.setInt(1, rs.getInt("idVideo"));
                     ResultSet rss = ps.executeQuery();
                     m = new Video(rss.getInt("idVideo"), rss.getString("nome"), rss.getDouble("duracao"), rss.getString("formato"), rss.getString("categoria"), rss.getString("realizador"));
-                    array.add(m);
-                } catch (SQLException ex) { ex.printStackTrace(); }
-            }
-
-        } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
+                    array.add(m); } catch (SQLException ex) { ex.printStackTrace(); }
+            } } 
+        catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
         return array;
     }
 

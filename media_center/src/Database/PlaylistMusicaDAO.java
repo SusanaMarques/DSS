@@ -49,7 +49,7 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
 
     @Override
     public List<Musica> get(Object o) {
-        Musica m = new Musica();
+        Musica m;
         ArrayList<Musica> array = new ArrayList<>();
         try {
             c = Connect.connect();
@@ -64,11 +64,9 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
                     pss.setInt(1, rs.getInt("idMusica"));
                     ResultSet rss = ps.executeQuery();
                     m = new Musica(rs.getInt("idMusica"), rs.getString("nome"), rs.getDouble("duracao"), rs.getString("formato"), rs.getString("categoria"), rs.getString("artista"));
-                    array.add(m);
-                        } catch (SQLException ex) { ex.printStackTrace(); }
-            }
-
-            } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
+                    array.add(m);}
+                catch (SQLException ex) { ex.printStackTrace(); }
+            } } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
         return array;
     }
 
@@ -83,8 +81,7 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
             PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica (idPlaylist,idMusica) VALUES (?,?)");
             for(Musica musica : v) {
                 ps.setInt(1,k);
-                ps.setInt(2, musica.getId());
-            }
+                ps.setInt(2, musica.getId());}
             }
             catch(Exception e){ System.out.printf(e.getMessage()); }
             finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }

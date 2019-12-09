@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b45d85c-5f15-422f-8202-4c1182fe1d8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/AdministradorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/VideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +43,8 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -100,6 +103,7 @@
       <workItem from="1575817930480" duration="1425000" />
       <workItem from="1575884734966" duration="7667000" />
       <workItem from="1575907698512" duration="3096000" />
+      <workItem from="1575931580071" duration="774000" />
     </task>
     <servers />
   </component>
@@ -111,25 +115,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="465" y="314" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1575894160790" />
-    <state width="1440" height="312" key="GridCell.Tab.0.bottom" timestamp="1575895361261">
+    <state width="1440" height="250" key="GridCell.Tab.0.bottom" timestamp="1575932457645">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="312" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575895361261" />
+    <state width="1440" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575932457645" />
     <state width="1440" height="250" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1575894280052" />
-    <state width="1440" height="312" key="GridCell.Tab.0.center" timestamp="1575895361259">
+    <state width="1440" height="250" key="GridCell.Tab.0.center" timestamp="1575932457640">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="312" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575895361259" />
+    <state width="1440" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575932457640" />
     <state width="1440" height="250" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1575894280046" />
-    <state width="1440" height="312" key="GridCell.Tab.0.left" timestamp="1575895361258">
+    <state width="1440" height="250" key="GridCell.Tab.0.left" timestamp="1575932457639">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="312" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575895361258" />
+    <state width="1440" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575932457639" />
     <state width="1440" height="250" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1575894280045" />
-    <state width="1440" height="312" key="GridCell.Tab.0.right" timestamp="1575895361260">
+    <state width="1440" height="250" key="GridCell.Tab.0.right" timestamp="1575932457641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="312" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575895361260" />
+    <state width="1440" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575932457641" />
     <state width="1440" height="250" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1575894280051" />
     <state width="1440" height="312" key="GridCell.Tab.1.bottom" timestamp="1575895361263">
       <screen x="0" y="0" width="1440" height="900" />
@@ -147,98 +151,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1440" height="312" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1575895361262" />
-    <state x="94" y="82" key="SettingsEditor" timestamp="1575806399111">
+    <state x="94" y="66" key="SettingsEditor" timestamp="1575932062598">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="94" y="82" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575806399111" />
-    <state x="374" y="283" key="com.intellij.ide.util.TipDialog" timestamp="1575907698975">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state x="94" y="66" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575932062598" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1575931580888">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575884743964" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575931580888" />
     <state x="374" y="283" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1575907698975" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>mysql-connector-java-8.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
