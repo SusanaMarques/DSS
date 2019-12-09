@@ -55,16 +55,16 @@ public class VideoDAO implements Map<Integer, Video>
         Video v = (Video) o;
         try {
             c = Connect.connect();
-            String sql = "SELECT count(*) FROM Video WHERE idVideo = ? AND nome = ? AND duracao = ? AND formato = ? AND categoria = ? AND realizador = ?";
+            String sql = "SELECT count(*) FROM Video WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ? AND realizador = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setInt(1, v.getId());
-            stm.setString(2, v.getNome());
-            stm.setDouble(3, v.getDuracao());
-            stm.setString(4, v.getFormato());
-            stm.setString(5, v.getCategoria());
-            stm.setString(6, v.getRealizador());
+            stm.setString(1, v.getNome());
+            stm.setDouble(2, v.getDuracao());
+            stm.setString(3, v.getFormato());
+            stm.setString(4, v.getCategoria());
+            stm.setString(5, v.getRealizador());
             ResultSet rs = stm.executeQuery();
-            //if((rs.getInt(1)) > 0) res = true;
+            rs.next();
+            if((rs.getInt(1)) > 0) res = true;
         } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return res;
     }

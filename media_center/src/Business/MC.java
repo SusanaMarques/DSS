@@ -6,6 +6,8 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -51,7 +53,7 @@ public class MC
     /** Método que faz o upload de conteudo
      * @param p   Path do conteudo a fazer upload
      */
-    public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException {
+    public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException, URISyntaxException {
         System.out.println(p);
         StringTokenizer tokens = new StringTokenizer( p,".");
         tokens.nextToken();
@@ -59,17 +61,7 @@ public class MC
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
         char t;
         Conteudo c;
-        //Verificar formato
-        if (type.equals("mp3")){
-            t = 'm';
-            c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);
-        }
-        else if (type.equals("mp4")){
-                    t='v';
-                    c = new Video();
-                    c.setId(p.hashCode());
-             }
-             else throw new FormatoDesconhecidoException();
+
 
 
         //Extrair metadados
@@ -85,16 +77,31 @@ public class MC
         if(artist == null)artist = "N/D";
         if(categoria == null) categoria = "N/D";
         if(album == null) album = "N/D";
+        //Verificar formato
+        if (type.equals("mp3")){
+            t = 'm';
+            c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);
+        }
+        else if (type.equals("mp4")){
+            t='v';
+            c = new Video();
+            c.setId(p.hashCode());
+        }
+        else throw new FormatoDesconhecidoException();
 
         //Verificar duplicaçoes
         if(gc.verificaDuplicacoes(c,t)) throw new ConteudoDuplicadoException();
         //Adicionar a bibliotecas
         gc.uploadConteudo(c,t,u);
         gu.uploadConteudo(c, t,u);
+        System.out.println("NAO");
         //Path building
-        Path fileDB=Paths.get( (new File("").getAbsolutePath())+"baseDeDados/Biblioteca"+c.getId());
-        Path temp = Files.move(Paths.get(p), fileDB);
-        if(temp == null) throw new IOException();
+        String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
+        File newFile = new File(path);
+        File origin = new File((new URI(p)).getPath());
+        newFile.createNewFile();
+        origin.renameTo(newFile);
+
     }
 
     /** Método de extração de metadados

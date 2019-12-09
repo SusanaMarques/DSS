@@ -39,8 +39,9 @@ public class GestaoConteudo
      **/
     public void uploadConteudo(Conteudo c, char tipo, UtilizadorRegistado u) {
         Map<Integer, List<UtilizadorRegistado>> props = null;
-        if(tipo == 'm') {musicas.put(c.getId(),(Musica) c);props=proprietariosMusica;}
-        if(tipo == 'v') {videos.put(c.getId(),(Video)c);props=proprietariosVideo;}
+        if(tipo == 'm') {musicas.put(c.getId(),(Musica) c);props = proprietariosMusica;}
+        else{
+        if(tipo == 'v') {videos.put(c.getId(),(Video)c);props = proprietariosVideo;} else {System.out.println("LOL NAO insere nao");}}
         List<UtilizadorRegistado> propList = new ArrayList<>();
         propList.add(u);
         props.put(c.getId(),propList);

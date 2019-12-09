@@ -52,15 +52,16 @@ public class MusicaDAO implements Map<Integer, Musica> {
         Musica m = (Musica) o;
         try {
             c = Connect.connect();
-            String sql = "SELECT count(*) FROM Musica WHERE idMusica = ? AND nome = ? AND duracao = ? AND formato = ? AND categoria = ?";
+            String sql = "SELECT count(*) FROM Musica WHERE nome = ? AND duracao = ? AND formato = ? AND categoria = ? AND artista = ?";
             PreparedStatement stm = c.prepareStatement(sql);
-            stm.setInt(1, m.getId());
-            stm.setString(2, m.getNome());
-            stm.setDouble(3, m.getDuracao());
-            stm.setString(4, m.getFormato());
-            stm.setString(5, m.getCategoria());
+            stm.setString(1, m.getNome());
+            stm.setDouble(2, m.getDuracao());
+            stm.setString(3, m.getFormato());
+            stm.setString(4, m.getCategoria());
+            stm.setString(5, m.getArtista());
             ResultSet rs = stm.executeQuery();
-            //if((rs.getInt(1)) > 0) res = true;
+            rs.next();
+            if((rs.getInt(1)) > 0) res = true;
         } catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return res;
     }
@@ -80,6 +81,7 @@ public class MusicaDAO implements Map<Integer, Musica> {
                 m.setDuracao(rs.getDouble("duracao"));
                 m.setFormato(rs.getNString("formato"));
                 m.setCategoria(rs.getNString("categoria"));
+                m.setArtista(rs.getNString("artista"));
             }
         } catch (Exception e) { System.out.printf(e.getMessage()); } finally { try { Connect.close(c); } catch (Exception e) { System.out.printf(e.getMessage()); } }
         return m;
@@ -93,12 +95,13 @@ public class MusicaDAO implements Map<Integer, Musica> {
         else m = v;
         try{
             c = Connect.connect();
-            PreparedStatement ps = c.prepareStatement("INSERT INTO Musica(idMusica,Nome,Duracao,Formato, Categoria) VALUES (?,?,?,?,?)");
+            PreparedStatement ps = c.prepareStatement("INSERT INTO Musica(idMusica,Nome,Duracao,Formato, Categoria,Artista) VALUES (?,?,?,?,?,?)");
             ps.setInt(1,k);
             ps.setString(2,v.getNome());
             ps.setDouble(3,v.getDuracao());
-            ps.setString(3,v.getFormato());
-            ps.setString(4, v.getCategoria());
+            ps.setString(4,v.getFormato());
+            ps.setString(5, v.getCategoria());
+            ps.setString(6, v.getArtista());
             ps.executeUpdate();
         }
         catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }

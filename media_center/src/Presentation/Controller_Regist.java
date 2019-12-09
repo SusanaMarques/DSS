@@ -13,6 +13,7 @@ import javafx.stage.FileChooser;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class Controller_Regist {
 
@@ -108,6 +109,8 @@ public class Controller_Regist {
             up.setV(view);
             this.view.printPage((Node) event.getSource(), root);
 
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
         }
     }
 
