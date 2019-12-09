@@ -125,7 +125,9 @@ public class MC
                 categoria = (String) value;
                 break;
             case "duration":
-                duracao = (double) ((Duration) value ).toMillis();
+                Long d = ((Duration) value ).toMillis();
+                System.out.println(d);
+                duracao = (double) d;
                 break;
         }
     }
