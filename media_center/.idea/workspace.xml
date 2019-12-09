@@ -2,31 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cc3bae7-a150-4685-b568-46f6b0384f58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/Connect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/GestaoConteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/GestaoUtilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/MC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/UtilizadorRegistado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Business/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/PlaylistMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/PlaylistVideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ProprietariosMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ProprietariosVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../baseDeDados/DSS.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb 2.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb 3.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb.beforefix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseDeDados/DSS.mwb.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baseDeDados/povoamento.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/AdministradorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/CategoriaMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/VideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_000d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_000f" beforeDir="false" afterPath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_000f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_001d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_002d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_003d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_004d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_005d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_006d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_007d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_008d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_009d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_010d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_011d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_012d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_013d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_014d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_015d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_016d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_017d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_018d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_019d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_020d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_021d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_022d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_023d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_024d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_025d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloClasses/Dclass.vpp.bak_026d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_000f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_030d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_031f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_032d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_033d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_034d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_035d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_036d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_037d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_038d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_039d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_040d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_041d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_042d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_043d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_044d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_045d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_046d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_047d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_048d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_049d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_050d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_051d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_052d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_053d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_054d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_055d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_056d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_057d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_058d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/Dimpl.vpp.bak_059d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_000f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_001d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_002d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_003d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_004d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_005d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_006d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_007d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_008d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_009d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloImplementacao/DimplORM.vpp.bak_010d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_000f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_001d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_002d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_003d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_004d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_005d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_006d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_007d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_008d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_009d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_010d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_011d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_012d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_013d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_014d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_015d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloORM/Dorm.vpp.bak_016d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloPackage/Dpk.vpp.bak_000f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloPackage/Dpk.vpp.bak_001d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Alterar categoria do conteúdo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_000d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_000f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_001d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_002d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_003d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_004d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_005d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_006d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_007d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_008d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_009d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_010d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_011d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Dsubsist.vpp.bak_012d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modeloSubsistemas/Remover conteúdo.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +245,7 @@
       <workItem from="1575588221926" duration="308000" />
       <workItem from="1575588704018" duration="1702000" />
       <workItem from="1575591253002" duration="434000" />
+      <workItem from="1575913881631" duration="55000" />
     </task>
     <servers />
   </component>
@@ -199,6 +290,10 @@
     </state>
     <state width="1247" height="67" key="GridCell.Tab.0.right/67.27.1293.741@67.27.1293.741" timestamp="1575415646842" />
     <state width="1253" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1575591686028" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1575913891836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1575913891836" />
     <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1575569655621">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

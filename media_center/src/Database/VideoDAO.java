@@ -21,12 +21,9 @@ public class VideoDAO implements Map<Integer, Video>
             c = Connect.connect();
             PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM Video");
             ResultSet rs = stm.executeQuery();
-            if(rs.next()) {
-                s = rs.getInt(1);
-            }
+            if(rs.next()) { s = rs.getInt(1); }
         }
-        catch (Exception e) { throw new NullPointerException(e.getMessage()); }
-        finally { Connect.close(c); }
+        catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return s;
     }
 
@@ -101,7 +98,7 @@ public class VideoDAO implements Map<Integer, Video>
         try{
             c = Connect.connect();
 
-            PreparedStatement ps = c.prepareStatement("INSERT INTO Musica(idVideo,Nome,Duracao,Formato, Categoria,Realizador) VALUES (?,?,?,?,?,?)");
+            PreparedStatement ps = c.prepareStatement("INSERT INTO Video(idVideo,Nome,Duracao,Formato, Categoria,Realizador) VALUES (?,?,?,?,?,?)");
             ps.setInt(1,k);
             ps.setString(2,v.getNome());
             ps.setDouble(3,v.getDuracao());

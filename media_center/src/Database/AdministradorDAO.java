@@ -25,8 +25,7 @@ public class AdministradorDAO implements Map<String,Administrador>
                 s = rs.getInt(1);
             }
         }
-        catch (Exception e) { throw new NullPointerException(e.getMessage()); }
-        finally { Connect.close(c); }
+        catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return s;
     }
 
