@@ -178,6 +178,10 @@ public class MC
       return gu.getPlaylistVideo(idPlaylist);
     }
 
+    public void alterarCategoria(String newCat, int idCont, char type) {
+        //gu.
+    }
+
 
 }
 

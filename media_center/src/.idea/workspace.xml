@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1552dbe5-93a4-4b93-883e-a5afc815a689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-903150245.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/VideoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-903150245.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistVideoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../tika-app-1.23.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +88,7 @@
       <updated>1575935381548</updated>
       <workItem from="1575935385024" duration="3344000" />
       <workItem from="1575977491671" duration="1682000" />
-      <workItem from="1575983791861" duration="1220000" />
+      <workItem from="1575983791861" duration="2492000" />
     </task>
     <servers />
   </component>
@@ -113,22 +100,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1575977548152" />
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1575991959757">
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1575995203638">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575991959757" />
-    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1575991959755">
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575995203638" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1575995203637">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575991959755" />
-    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1575991959752">
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575995203637" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1575995203636">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575991959752" />
-    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1575991959756">
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575995203636" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1575995203638">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575991959756" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575995203638" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1575977553097">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

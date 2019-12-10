@@ -1,9 +1,6 @@
 package Business;
 
-import Database.MusicaDAO;
-import Database.ProprietariosMusicaDAO;
-import Database.ProprietariosVideoDAO;
-import Database.VideoDAO;
+import Database.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +17,11 @@ public class GestaoConteudo
     private Map<Integer, List<UtilizadorRegistado>> proprietariosMusica = new ProprietariosMusicaDAO();
     /** Proprietarios dos Videos **/
     private Map<Integer, List<UtilizadorRegistado>> proprietariosVideo = new ProprietariosVideoDAO();
+
+    //private Map<Integer,List<String>> categoriasMusica = new CategoriaMusicaDAO();
+
+    //private Map<Integer,List<String>> categoriasVideo = new CategoriaVideoDAO();
+
 
     /** Método que verifica duplicacoes de conteudo
      * @param c      Conteudo a comparar
