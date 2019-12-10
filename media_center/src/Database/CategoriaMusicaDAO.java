@@ -1,12 +1,12 @@
 package Database;
 
+import Business.Musica;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.sql.SQLException;
+import java.util.*;
 
 public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
 {
@@ -17,7 +17,7 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
         int s = -1;
         try {
             c = Connect.connect();
-            PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM Administrador");
+            PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM CategoriaMusica");
             ResultSet rs = stm.executeQuery();
             if(rs.next()) { s = rs.getInt(1); }
         }
@@ -47,11 +47,37 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
     @Override
     public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
-    @Override //returns null se a categoria da música não tiver sido alterada
-    public Map<Integer, String> get(Object o){ throw new UnsupportedOperationException("Erro!"); }
+    @Override
+    public Map<Integer, String> get(Object o){
+        Map<Integer, String> mp = new HashMap<>();
+        try {
+            c = Connect.connect();
+
+            String sql = "SELECT idUtilizador, categoria FROM CategoriaMusica WHERE idMusica = ?";
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.setInt(1, (Integer) o);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                try { mp.put(rs.getInt("idUtilizador"), rs.getString("categoria")); } catch (SQLException ex) { ex.printStackTrace(); } }
+        } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
+        return mp;
+    }
 
     @Override
-    public Map<Integer, String> put(Integer k, Map<Integer,String> v) { throw new UnsupportedOperationException("Erro!"); }
+    public Map<Integer, String> put(Integer k, Map<Integer,String> v) {
+        Map<Integer, String> mp = new HashMap<>();
+
+        try{
+            c = Connect.connect();
+
+            PreparedStatement ps = c.prepareStatement("INSERT INTO CategoriaMusica (idMusica,idUtilizador, categoria) VALUES (?,?,?)");
+            for(Map.Entry<Integer, String> entry : v.entrySet()) {
+                ps.setInt(1, entry.getKey());
+                ps.setString(2, entry.getValue());}
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return mp;
+    }
 
     @Override
     public Map<Integer,String> remove(Object o) { throw new UnsupportedOperationException("Erro!"); }
