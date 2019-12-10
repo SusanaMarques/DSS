@@ -1,10 +1,8 @@
 package Business;
 
-import Database.AdministradorDAO;
-import Database.PlaylistMusicaDAO;
-import Database.PlaylistVideoDAO;
-import Database.UtilizadorRegistadoDAO;
+import Database.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -19,6 +17,10 @@ public class GestaoUtilizador
     private Map<Integer, List<Musica>> playlistsMusicas = new PlaylistMusicaDAO();
     /** Playlists de video exitentes no media center **/
     private Map<Integer, List<Video>> playlistsVideos = new PlaylistVideoDAO();
+
+    private Map<Integer,Map<Integer,String>> categoriasMusica = new CategoriaMusicaDAO();
+
+    private Map<Integer,Map<Integer,String>> categoriasVideo = new CategoriaVideoDAO();
 
     /** Método que incia a sessão
      * @param email    Email do utilizador a autenticar
@@ -69,5 +71,30 @@ public class GestaoUtilizador
     }
     public List<Video> getPlaylistVideo( int idPlaylist) {
         return playlistsVideos.get(idPlaylist);
+    }
+
+
+
+
+    public void alterarCategoriaM(String newCat, int idCont,int idU) throws CategoriaIgualException {
+        Map<Integer,String> cats=null;
+        if(categoriasMusica.containsKey(idCont))
+            cats= categoriasMusica.get(idCont);
+        else cats=new HashMap<>();
+        if(cats.containsKey(idU)) if(cats.get(idU).equals(newCat)) throw new CategoriaIgualException();
+        else cats.remove(idU);
+        cats.put(idU,newCat);
+        categoriasMusica.put(idCont,cats);
+    }
+
+    public void alterarCategoriaV(String newCat, int idCont,int idU) throws CategoriaIgualException {
+        Map<Integer,String> cats=null;
+        if(categoriasVideo.containsKey(idCont))
+            cats= categoriasVideo.get(idCont);
+           else cats=new HashMap<>();
+        if(cats.containsKey(idU)) if(cats.get(idU).equals(newCat)) throw new CategoriaIgualException();
+                                    else cats.remove(idU);
+        cats.put(idU,newCat);
+        categoriasVideo.put(idCont,cats);
     }
 }

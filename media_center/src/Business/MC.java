@@ -178,8 +178,9 @@ public class MC
       return gu.getPlaylistVideo(idPlaylist);
     }
 
-    public void alterarCategoria(String newCat, int idCont, char type) {
-        //gu.
+    public void alterarCategoria(String newCat, int idCont, char type) throws CategoriaIgualException {
+        if(type=='m') gu.alterarCategoriaM(newCat,idCont,idUtilizadorAtual);
+        if(type=='v') gu.alterarCategoriaV(newCat,idCont,idUtilizadorAtual);
     }
 
 

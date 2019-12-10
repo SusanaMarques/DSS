@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1552dbe5-93a4-4b93-883e-a5afc815a689" name="Default Changelist" comment="">
+    <list default="true" id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +17,13 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -24,7 +33,9 @@
     <option name="height" value="795" />
   </component>
   <component name="ProjectId" id="1Un1K9KjhWP0facXgfgDYJsPVgD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -40,6 +51,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Business" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -86,7 +102,7 @@
       <workItem from="1575935385024" duration="3344000" />
       <workItem from="1575977491671" duration="1682000" />
       <workItem from="1575983791861" duration="2492000" />
-      <workItem from="1576008928690" duration="2286000" />
+      <workItem from="1576008928690" duration="2477000" />
     </task>
     <servers />
   </component>
@@ -98,26 +114,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1576010697971" />
+    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576012056885">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576012056885" />
     <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1575977548152">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1575977548152" />
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1575995203638">
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1576011656656">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1575995203638" />
-    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1575995203637">
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576011656656" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1576011656654">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1575995203637" />
-    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1575995203636">
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576011656654" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1576011656653">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1575995203636" />
-    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1575995203638">
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576011656653" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1576011656655">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1575995203638" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576011656655" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1575977553097">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
