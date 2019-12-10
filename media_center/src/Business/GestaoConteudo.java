@@ -42,7 +42,8 @@ public class GestaoConteudo
         Map<Integer, List<UtilizadorRegistado>> props = null;
         if(tipo == 'm') {musicas.put(c.getId(),(Musica) c);props = proprietariosMusica;}
         else{
-        if(tipo == 'v') {videos.put(c.getId(),(Video)c);props = proprietariosVideo;} else {System.out.println("LOL NAO insere nao");}}
+        if(tipo == 'v') {System.out.println("1");videos.put(c.getId(),(Video)c);props = proprietariosVideo;System.out.println("2");}
+            else {System.out.println("LOL NAO insere nao");}}
         List<UtilizadorRegistado> propList = new ArrayList<>();
         propList.add(u);
         props.put(c.getId(),propList);

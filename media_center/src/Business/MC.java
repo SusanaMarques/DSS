@@ -15,7 +15,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
 import java.util.*;
 
 
@@ -55,10 +54,11 @@ public class MC
     public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException, URISyntaxException, TikaException, SAXException {
         StringTokenizer tokens = new StringTokenizer( p,".");
         String mp4Artist = tokens.nextToken();
+        System.out.println(mp4Artist);
         String type = tokens.nextToken();
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
         char t;
-        Conteudo c;
+        Conteudo c = new Conteudo();
 
 
 
@@ -76,19 +76,11 @@ public class MC
         //Verificar formato
         if (type.equals("mp3")){
             ID3v24Handler m = extrairMetaMp3(origin);
-            Metadata meta = extrairMetaMp4(origin);
-            String strtmp = meta.get("xmpDM:duration");
-            duracao = Double.parseDouble((strtmp == null? "0" : strtmp ));
-
-            System.out.println(title = m.getTitle());
+            duracao = getDuration(origin);
+            title = m.getTitle();
             artist = m.getArtist();
             categoria = m.getGenre();
             album = m.getAlbum();
-            if(title == null) title= meta.get("xmpDM:title");
-            if(artist == null) artist = meta.get("xmpDM:artist");
-            if(categoria == null) categoria = meta.get("xmpDM:genre");
-            if(album == null) album = meta.get("xmpDM:album");
-
 
             if(title == null) title= "N/D";
             if(artist == null) artist = "N/D";
@@ -101,11 +93,17 @@ public class MC
         else if (type.equals("mp4")){
             Metadata m = extrairMetaMp4(origin);
             duracao = Double.parseDouble(m.get("xmpDM:duration"));
+            String realizador = m.get("xmpDM:artist");
+            if (realizador== null) realizador="N/D";
             t='v';
-            c = new Video();
-            c.setId(p.hashCode());
-            c.setNome(mp4Artist);
-            c.setDuracao(duracao);
+            System.out.println(t);
+            Video v = new Video();
+            v.setId(p.hashCode());
+            v.setNome(Integer.toString(c.getId()));
+            v.setDuracao(duracao);
+            v.setCategoria("N/D");
+            v.setRealizador(realizador);
+            c=v;
         }
         else throw new FormatoDesconhecidoException();
 
@@ -118,9 +116,8 @@ public class MC
         String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
         File newFile = new File(path);
         System.out.println(path);
-        //newFile.createNewFile();
-        Files.copy(origin.toPath(),newFile.toPath());
-        //origin.renameTo(newFile);
+        newFile.createNewFile();
+        origin.renameTo(newFile);
 
     }
 
@@ -134,7 +131,7 @@ public class MC
         return metadata;
     }
 
-    private Metadata extrairMetadadosMp3(File origin) throws TikaException, SAXException, IOException {
+    private double getDuration(File origin) throws TikaException, SAXException, IOException {
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
         FileInputStream inputstream = new FileInputStream(origin);
@@ -142,7 +139,7 @@ public class MC
 
         Mp3Parser  mp3Parser = new  Mp3Parser();
         mp3Parser.parse(inputstream, handler, metadata, pcontext);
-        return (metadata);
+        return (Double.parseDouble(metadata.get("xmpDM:duration")));
     }
 
 
@@ -170,14 +167,13 @@ public class MC
     public Set<Musica> showMusicas(){
         return  gc.getBibliotecaMusica();
     }
+
     public Set<Video> showVideos(){
         return  gc.getBibliotecaVideo();
     }
-    public List<Musica> showMusicasPlaylist(int idPlaylist){
-        return gu.getPlaylistMusica(idPlaylist);
 
+    public List<Musica> showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
 
-    }
     public List<Video> showVideosPlaylist(int idPlaylist){
       return gu.getPlaylistVideo(idPlaylist);
     }

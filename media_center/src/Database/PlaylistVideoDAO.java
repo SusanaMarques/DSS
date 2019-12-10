@@ -63,14 +63,26 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
                     ResultSet rss = ps.executeQuery();
                     m = new Video(rss.getInt("idVideo"), rss.getString("nome"), rss.getDouble("duracao"), rss.getString("formato"), rss.getString("categoria"), rss.getString("realizador"));
                     array.add(m); } catch (SQLException ex) { ex.printStackTrace(); }
-            } } 
+            } }
         catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
         return array;
     }
 
-    @Override //INCOMPLETO
-    public List<Video> put(Integer integer, List<Video> videos) {
-        return null;
+    @Override
+    public List<Video> put(Integer k, List<Video> v) {
+        ArrayList<Video> array = new ArrayList<>();
+
+        try{
+            c = Connect.connect();
+
+            PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistVideo (idPlaylist,idVideo) VALUES (?,?)");
+            for(Video vd : v) {
+                ps.setInt(1,k);
+                ps.setInt(2, vd.getId());}
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return array;
     }
 
     @Override

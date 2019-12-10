@@ -73,7 +73,7 @@ public class VideoDAO implements Map<Integer, Video>
         try {
             c = Connect.connect();
             PreparedStatement ps = c.prepareStatement("SELECT * FROM Video WHERE idVideo = ?");
-            ps.setString(1, (String) o);
+            ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 v.setId(rs.getInt("idVideo"));

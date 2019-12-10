@@ -70,22 +70,21 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
         return array;
     }
 
-    @Override //INCOMPLETE
+    @Override
     public List<Musica> put(Integer k, List<Musica> v){
-        Musica m;
         ArrayList<Musica> array = new ArrayList<>();
 
-            try{
+        try{
             c = Connect.connect();
 
             PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica (idPlaylist,idMusica) VALUES (?,?)");
             for(Musica musica : v) {
                 ps.setInt(1,k);
                 ps.setInt(2, musica.getId());}
-            }
-            catch(Exception e){ System.out.printf(e.getMessage()); }
-            finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
-            return array;
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return array;
     }
 
     @Override
