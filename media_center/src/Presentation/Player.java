@@ -75,12 +75,10 @@ public class Player {
         if (status == MediaPlayer.Status.PLAYING) {
             //If the status is Video playing
             player.pause();
-            b.setText(">");
         }
 
         if (status == MediaPlayer.Status.HALTED || status == MediaPlayer.Status.STOPPED || status == MediaPlayer.Status.PAUSED) {
             player.play(); //Start
-            b.setText("||");
         }
 
 

@@ -1,4 +1,8 @@
 package Presentation;
+import Business.MC;
+import Business.Musica;
+
+import Business.Video;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -6,24 +10,53 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
+import javafx.util.Callback;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
+import java.util.Set;
 
 public class Controller_Conv {
 
     private int i=1;
     private View view = new View();
+    private MC model = new MC();
+
 
     @FXML
-    private ListView<String> list;
+    private TableView<Musica> table1;
 
-    private ObservableList<String> items = FXCollections.observableArrayList();
+
+    @FXML
+    private TableColumn<Musica, String> nome_m;
+
+    @FXML
+    private TableColumn<Musica, String> artista;
+
+    @FXML
+    private TableColumn<Musica, String> cat_m;
+
+    @FXML
+    private TableView<Video> table2;
+
+
+    @FXML
+    private TableColumn<Video, String> nome_v;
+
+    @FXML
+    private TableColumn<Video, String > realizador;
+
+    @FXML
+    private TableColumn<Video, String> cat_v;
+
 
 
 
@@ -79,16 +112,34 @@ public class Controller_Conv {
      * inicializa o Controller_conv já com a lista de id das músicas e vídeos
      */
     @FXML private void initialize () {
-        list.setItems(items);
 
-        while(i <= 9){
-            items.add(i+".  "+"Música:                    " + "                            Artista:                    ");
-            i++;
+        nome_m.setCellValueFactory( new PropertyValueFactory<>("nome"));
+        artista.setCellValueFactory( new PropertyValueFactory<>("artista"));
+        cat_m.setCellValueFactory( new PropertyValueFactory<>("categoria"));
+
+
+
+        nome_v.setCellValueFactory( new PropertyValueFactory<>("nome"));
+        realizador.setCellValueFactory( new PropertyValueFactory<>("realizador"));
+        cat_v.setCellValueFactory( new PropertyValueFactory<>("categoria"));
+
+        Set<Musica> mus=  model.showMusicas();
+
+        Set<Video> vid = model.showVideos();
+        ObservableList<Musica> m = FXCollections.observableArrayList();
+        m.addAll(mus);
+        table1.getItems().setAll(m);
+
+
+        ObservableList<Video> v = FXCollections.observableArrayList();
+        v.addAll(vid);
+        table2.getItems().setAll(v);
+
+
+
+
+
+
         }
-        while(i <= 50 && i>9){
-            items.add(i+". "+"Música:                    " + "                            Artista:                    ");
-            i++;
-        }
-    }
 
 }

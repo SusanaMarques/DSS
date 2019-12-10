@@ -15,6 +15,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
 import java.util.*;
 
 
@@ -75,11 +76,19 @@ public class MC
         //Verificar formato
         if (type.equals("mp3")){
             ID3v24Handler m = extrairMetaMp3(origin);
-            duracao = getDuration(origin);
-            title = m.getTitle();
+            Metadata meta = extrairMetaMp4(origin);
+            String strtmp = meta.get("xmpDM:duration");
+            duracao = Double.parseDouble((strtmp == null? "0" : strtmp ));
+
+            System.out.println(title = m.getTitle());
             artist = m.getArtist();
             categoria = m.getGenre();
             album = m.getAlbum();
+            if(title == null) title= meta.get("xmpDM:title");
+            if(artist == null) artist = meta.get("xmpDM:artist");
+            if(categoria == null) categoria = meta.get("xmpDM:genre");
+            if(album == null) album = meta.get("xmpDM:album");
+
 
             if(title == null) title= "N/D";
             if(artist == null) artist = "N/D";
@@ -106,11 +115,12 @@ public class MC
         gc.uploadConteudo(c,t,u);
         gu.uploadConteudo(c, t,u);
         //Path building
-        String path=(new File("").getAbsolutePath())+"/src/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
+        String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
         File newFile = new File(path);
         System.out.println(path);
-        newFile.createNewFile();
-        origin.renameTo(newFile);
+        //newFile.createNewFile();
+        Files.copy(origin.toPath(),newFile.toPath());
+        //origin.renameTo(newFile);
 
     }
 
@@ -124,7 +134,7 @@ public class MC
         return metadata;
     }
 
-    private double getDuration(File origin) throws TikaException, SAXException, IOException {
+    private Metadata extrairMetadadosMp3(File origin) throws TikaException, SAXException, IOException {
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
         FileInputStream inputstream = new FileInputStream(origin);
@@ -132,7 +142,7 @@ public class MC
 
         Mp3Parser  mp3Parser = new  Mp3Parser();
         mp3Parser.parse(inputstream, handler, metadata, pcontext);
-        return (Double.parseDouble(metadata.get("xmpDM:duration")));
+        return (metadata);
     }
 
 

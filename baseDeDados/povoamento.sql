@@ -8,4 +8,7 @@ INSERT INTO UtilizadorRegistado(idUtilizador, email, nome, password, idBibliotec
 
 INSERT INTO UtilizadorRegistado(idUtilizador, email, nome, password, idBibliotecaMusica, idBibliotecaVideo) VALUES (2120, 'e', 'User2', 'p',300,300);
 
-select * from UtilizadorRegistado;
+#select * from UtilizadorRegistado;-903150245
+select * from Musica;
+delete from Musica where idMusica = -903150245;
+delete from Musica where formato = 'mp3';
