@@ -1,6 +1,5 @@
 package Presentation;
 import Business.MC;
-import Business.Musica;
 import Business.Video;
 import javafx.application.Platform;
 import javafx.beans.InvalidationListener;
@@ -125,12 +124,12 @@ public class PLayer_video {
         this.view.printPage((Node) e.getSource(),root);
 
 
-        //set model e view do Player
+        //set model e view do Player_video
         PLayer_video pl = l.getController();
-        pl.setModel(model);
         pl.setV(view);
-        pl.sett();
         pl.setMPlayer(player);
+        pl.sett();
+        pl.setModel(model);
         pl.setVid(model.showVideos());
         pl.setId(v.getId());
 
