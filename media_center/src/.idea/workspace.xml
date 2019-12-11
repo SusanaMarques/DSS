@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/AdministradorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Database/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Connect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/Connect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/MusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/MusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/VideoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +84,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -115,17 +119,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MC@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MC@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2069a542" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -137,7 +131,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1552dbe5-93a4-4b93-883e-a5afc815a689" name="Default Changelist" comment="" />
+      <changelist id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="" />
       <created>1575935381548</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -146,6 +140,7 @@
       <workItem from="1575977491671" duration="1682000" />
       <workItem from="1575983791861" duration="2492000" />
       <workItem from="1576008928690" duration="2477000" />
+      <workItem from="1576077309347" duration="17000" />
     </task>
     <servers />
   </component>
@@ -153,6 +148,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="117" key="#Project_Structure" timestamp="1576077324873">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="117" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1576077324873" />
     <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576024161416">
       <screen x="67" y="27" width="1293" height="741" />
     </state>
@@ -197,9 +196,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575977553097" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576008928452">
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576077309267">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576008928452" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576077309267" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/src$Main.ic" NAME="Main Coverage Results" MODIFIED="1576077384226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Presentation.*</FILTER>
+    </SUITE>
   </component>
 </project>

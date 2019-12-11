@@ -11,6 +11,7 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
 {
     private Connection c;
 
+
     @Override
     public int size() { throw new NullPointerException("Not implemented!");}
 
@@ -19,6 +20,12 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
         throw new NullPointerException("Not implemented!");
     }
 
+    /**
+     * Método que verifica se um utilizador é proprietário do conteudo
+     * @param o                      Objeto a verficar
+     * @return                       True se for proprietário do conteudo
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -36,6 +43,12 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
     @Override
     public boolean containsValue(Object o) { throw new NullPointerException("Not implemented!"); }
 
+    /**
+     * Método que verifica se um determinado utilizador é proprietário de algum conteudo
+     * @param o                      Objeto a verficar
+     * @return                       True se o utilizador for proprietário de algum conteúdo
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public List<UtilizadorRegistado> get(Object o) {
         UtilizadorRegistado u;
@@ -57,6 +70,13 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
         return array;
     }
 
+
+    /**
+     * Método que insere um novo proprietário de conteudos na base de dados
+     * @param k      id do conteudo
+     * @param v      lista proprietarios
+     * @return
+     */
     @Override
     public List<UtilizadorRegistado> put(Integer k, List<UtilizadorRegistado> v) {
         UtilizadorRegistado u;

@@ -2,16 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/AdministradorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/MusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/MusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/VideoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MC@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MC@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MC@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="MC: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -42,12 +78,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -94,7 +131,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1552dbe5-93a4-4b93-883e-a5afc815a689" name="Default Changelist" comment="" />
+      <changelist id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="" />
       <created>1575935381548</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -103,6 +140,7 @@
       <workItem from="1575977491671" duration="1682000" />
       <workItem from="1575983791861" duration="2492000" />
       <workItem from="1576008928690" duration="2477000" />
+      <workItem from="1576077309347" duration="17000" />
     </task>
     <servers />
   </component>
@@ -110,6 +148,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="117" key="#Project_Structure" timestamp="1576077324873">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="117" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1576077324873" />
+    <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576024161416">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024161416" />
     <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1576010697971">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -122,29 +168,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1575977548152" />
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1576011656656">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576024110562">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024110562" />
+    <state width="856" height="272" key="GridCell.Tab.0.bottom" timestamp="1576024236263">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
     <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576011656656" />
-    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1576011656654">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="856" height="272" key="GridCell.Tab.0.bottom/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236263" />
+    <state width="856" height="272" key="GridCell.Tab.0.center" timestamp="1576024236263">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
     <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576011656654" />
-    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1576011656653">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="856" height="272" key="GridCell.Tab.0.center/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236263" />
+    <state width="856" height="272" key="GridCell.Tab.0.left" timestamp="1576024236262">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
     <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576011656653" />
-    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1576011656655">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="856" height="272" key="GridCell.Tab.0.left/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236262" />
+    <state width="856" height="272" key="GridCell.Tab.0.right" timestamp="1576024236263">
+      <screen x="67" y="27" width="1293" height="741" />
     </state>
     <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576011656655" />
+    <state width="856" height="272" key="GridCell.Tab.0.right/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236263" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1575977553097">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575977553097" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576008928452">
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576077309267">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576008928452" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576077309267" />
   </component>
 </project>

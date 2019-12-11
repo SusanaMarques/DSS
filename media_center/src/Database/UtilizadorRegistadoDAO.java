@@ -14,6 +14,11 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
 {
     private Connection c;
 
+    /**
+     * Método que retorna o número de entradas na base de dados
+     * @return s                       número de entradas
+     * @throws NullPointerException    Não há conexão com a base de dados
+     */
     @Override
     public int size() {
         int s = -1;
@@ -30,11 +35,21 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         return s;
     }
 
+    /**
+     * Método que verifica se a base de dados está vazia
+     * @return  True caso a base de dados esteja vazia, false caso contrário
+     */
     @Override
     public boolean isEmpty() {
         return (this.size() == 0);
     }
 
+    /**
+     * Método que verifica se o id de um determinado utilizador existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se o utilizador existir
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -49,6 +64,11 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         return res;
     }
 
+    /**
+     * Método que verifica se um determinado utilizador existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se o utilizador existir
+     */
     @Override
     public boolean containsValue(Object o) {
         boolean res = false;
@@ -62,6 +82,11 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         return res;
     }
 
+    /**
+     * Método que retorna um utilizador da base de dados
+     * @param o    Objeto em causa
+     * @return     Utilizador
+     */
     @Override
     public UtilizadorRegistado get(Object o) {
         UtilizadorRegistado u = new UtilizadorRegistado();
@@ -92,6 +117,12 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         return u;
     }
 
+    /**
+     * Método que insere um utilizador na base de dados
+     * @param k      id do utilizador
+     * @param v      Utilizador
+     * @return
+     */
     @Override
     public UtilizadorRegistado put(String k, UtilizadorRegistado v) {
         UtilizadorRegistado u;
@@ -120,11 +151,19 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
     @Override
     public UtilizadorRegistado remove(Object o) { throw new UnsupportedOperationException("Erro!"); }
 
+    /**
+     * Método que insere vários utilizadores na base dados
+     * @param map    Map de todos os utilizadores
+     */
     @Override
     public void putAll(Map<? extends String, ? extends UtilizadorRegistado> map) {
         for(UtilizadorRegistado u : map.values()) { put(u.getEmail(), u); }
     }
 
+    /**
+     * Método que apaga todos os utilizadores existentes na base de dados
+     * @throws NullPointerException    Não existe conexão com a base de dados
+     */
     @Override
     public void clear() {
         try{
@@ -132,10 +171,14 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
             PreparedStatement ps = c.prepareStatement("DELETE FROM UtilizadorRegistado");
             ps.executeUpdate();
         }
-        catch(Exception e){ System.out.printf(e.getMessage()); }
-        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
     }
 
+    /**
+     * Método que retorna o conjunto de ids dos utilizadores da base de dados
+     * @return                        Set de chaves(ids dos  utilizadores)
+     * @throws NullPointerException   Não existe conexão com a base de dados
+     */
     @Override
     public Set<String> keySet() {
         Set<String> keys = null;
@@ -152,6 +195,10 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         return keys;
     }
 
+    /**
+     * Método que obtém uma coleção com todos os utilizadores do sistema
+     * @return  coleção de todos os utilizadores
+     */
     @Override
     public Collection<UtilizadorRegistado> values()
     {
@@ -162,6 +209,10 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
         return u;
     }
 
+    /**
+     * Método que obtém uma set com todos os utilizadores do sistema
+     * @return    set de utilizadores do sistema
+     */
     @Override
     public Set<Entry<String, UtilizadorRegistado>> entrySet()
     {

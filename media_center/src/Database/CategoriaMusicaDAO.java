@@ -12,6 +12,11 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
 {
     private Connection c;
 
+    /**
+     * Método que retorna o número de entradas na base de dados
+     * @return s                       número de entradas
+     * @throws NullPointerException    Não há conexão com a base de dados
+     */
     @Override
     public int size() {
         int s = -1;
@@ -25,11 +30,21 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
         return s;
     }
 
+    /**
+     * Método que verifica se a base de dados está vazia
+     * @return  True caso a base de dados esteja vazia, false caso contrário
+     */
     @Override
     public boolean isEmpty() {
         return (this.size() == 0);
     }
 
+    /**
+     * Método que verifica se a categoria de uma determinada música foi alterada
+     * @param o                      Objeto a verficar
+     * @return                       True se a categoria da musica tiver sido alterada
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -47,6 +62,11 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
     @Override
     public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
+    /**
+     * Método que retorna um mapa de utilizadores e as categorias alteradas para o conteúdo passado como parametro
+     * @param o    Objeto em causa
+     * @return     mapa de utilizadores e categorias
+     */
     @Override
     public Map<Integer, String> get(Object o){
         Map<Integer, String> mp = new HashMap<>();
@@ -63,6 +83,12 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
         return mp;
     }
 
+    /**
+     * Método que insere uma nova alteração de categoria na base de dados
+     * @param k      Map de id de conteúdo, utilizador e categoria alterada
+     * @param v      mapa de utilizadores e categorias
+     * @return
+     */
     @Override
     public Map<Integer, String> put(Integer k, Map<Integer,String> v) {
         Map<Integer, String> mp = new HashMap<>();
@@ -85,6 +111,10 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
     @Override
     public void putAll(Map<? extends Integer, ? extends Map<Integer,String>> map) { throw new UnsupportedOperationException("Erro!"); }
 
+    /**
+     * Método que apaga todos as alterações de categorias existentes na base de dados
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public void clear() {
         try{
@@ -96,6 +126,11 @@ public class CategoriaMusicaDAO implements Map<Integer, Map<Integer, String>>
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
     }
 
+    /**
+     * Método que retorna o conjunto de ids das musicas cujas categorias foram alteradas
+     * @return                        Set de chaves(ids das músicas cuja categoria foi alterada)
+     * @throws NullPointerException   Não existe conexão com a base de dados
+     */
     @Override
     public Set<Integer> keySet() {
         Set<Integer> k = null;

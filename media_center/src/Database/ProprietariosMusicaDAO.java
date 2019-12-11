@@ -17,6 +17,12 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
     @Override
     public boolean isEmpty() { throw new NullPointerException("Not implemented!"); }
 
+    /**
+     * Método que verifica se um utilizador é proprietário do conteudo
+     * @param o                      Objeto a verficar
+     * @return                       True se for proprietário do conteudo
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -34,6 +40,12 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
     @Override
     public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
+    /**
+     * Método que verifica se um determinado utilizador é proprietário de algum conteudo
+     * @param o                      Objeto a verficar
+     * @return                       True se o utilizador for proprietário de algum conteúdo
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public List<UtilizadorRegistado> get(Object o) {
         UtilizadorRegistado u;
@@ -56,7 +68,12 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
     }
 
 
-
+    /**
+     * Método que insere um novo proprietário de conteudos na base de dados
+     * @param k      id do conteúdo
+     * @param v      lista de proprietarios
+     * @return
+     */
     @Override
     public ArrayList<UtilizadorRegistado> put(Integer k, List<UtilizadorRegistado> v) {
         UtilizadorRegistado u;
@@ -86,6 +103,10 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
     public void putAll(Map<? extends Integer, ? extends List<UtilizadorRegistado>> map){ throw new UnsupportedOperationException("Not Implemented"); }
 
 
+    /**
+     * Método que apaga todos os proprietarios de conteudo existentes na base de dados
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public void clear() {
         try{

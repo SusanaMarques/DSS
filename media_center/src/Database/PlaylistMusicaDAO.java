@@ -14,6 +14,11 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
 {
     private Connection c;
 
+    /**
+     * Método que retorna o número de entradas na base de dados
+     * @return s                       número de entradas
+     * @throws NullPointerException    Não há conexão com a base de dados
+     */
     @Override
     public int size() {
         int s = -1;
@@ -27,9 +32,19 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
         return s;
     }
 
+    /**
+     * Método que verifica se a base de dados está vazia
+     * @return  True caso a base de dados esteja vazia, false caso contrário
+     */
     @Override
     public boolean isEmpty() { return (this.size() == 0); }
 
+    /**
+     * Método que verifica se o id de uma playlist existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se a playlist existir
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -47,6 +62,12 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
     @Override
     public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
+    /**
+     * Método que verifica se o id de uma determinada playlist existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se a playlist existir
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public List<Musica> get(Object o) {
         Musica m;
@@ -70,6 +91,12 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
         return array;
     }
 
+    /**
+     * Método que insere uma nova playlist na base de dados
+     * @param k      id da playlist
+     * @param v      lista de musicas
+     * @return
+     */
     @Override
     public List<Musica> put(Integer k, List<Musica> v){
         ArrayList<Musica> array = new ArrayList<>();

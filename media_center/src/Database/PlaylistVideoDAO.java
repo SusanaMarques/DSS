@@ -12,6 +12,11 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
 {
     private Connection c;
 
+    /**
+     * Método que retorna o número de entradas na base de dados
+     * @return s                       número de entradas
+     * @throws NullPointerException    Não há conexão com a base de dados
+     */
     @Override
     public int size() {
         int s = -1;
@@ -25,9 +30,19 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
         return s;
     }
 
+    /**
+     * Método que verifica se a base de dados está vazia
+     * @return  True caso a base de dados esteja vazia, false caso contrário
+     */
     @Override
     public boolean isEmpty() { return (this.size() == 0); }
 
+    /**
+     * Método que verifica se o id de uma playlist existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se a playlist existir
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -45,6 +60,12 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
     @Override
     public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
+    /**
+     * Método que verifica se o id de uma determinada playlist existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se a playlist existir
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public List<Video> get(Object o) {
         Video m = new Video();
@@ -68,6 +89,12 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
         return array;
     }
 
+    /**
+     * Método que insere uma nova playlist na base de dados
+     * @param k      id da playlist
+     * @param v      lista de videos
+     * @return
+     */
     @Override
     public List<Video> put(Integer k, List<Video> v) {
         ArrayList<Video> array = new ArrayList<>();

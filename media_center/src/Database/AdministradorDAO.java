@@ -14,6 +14,11 @@ public class AdministradorDAO implements Map<String,Administrador>
 {
     private Connection c;
 
+    /**
+     * Método que retorna o número de entradas na base de dados
+     * @return s                       número de entradas
+     * @throws NullPointerException    Não há conexão com a base de dados
+     */
     @Override
     public int size() {
         int s = -1;
@@ -29,11 +34,21 @@ public class AdministradorDAO implements Map<String,Administrador>
         return s;
     }
 
+    /**
+     * Método que verifica se a base de dados está vazia
+     * @return  True caso a base de dados esteja vazia, false caso contrário
+     */
     @Override
     public boolean isEmpty() {
         return (this.size() == 0);
     }
 
+    /**
+     * Método que verifica se o id de um determinado administrador existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se o administrador existir
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public boolean containsKey(Object o) {
         boolean res = false;
@@ -48,6 +63,11 @@ public class AdministradorDAO implements Map<String,Administrador>
         return res;
     }
 
+    /**
+     * Método que verifica se um determinado administrador existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se o administrador existir
+     */
     @Override
     public boolean containsValue(Object o) {
         boolean res = false;
@@ -61,6 +81,11 @@ public class AdministradorDAO implements Map<String,Administrador>
         return res;
     }
 
+    /**
+     * Método que retorna um administrador da base de dados
+     * @param o    Objeto em causa
+     * @return     Administrador
+     */
     @Override
     public Administrador get(Object o) {
         Administrador a = new Administrador();
@@ -90,6 +115,12 @@ public class AdministradorDAO implements Map<String,Administrador>
         return a;
     }
 
+    /**
+     * Método que insere um novo administrador na base de dados
+     * @param k      id do administrador
+     * @param v      administrador
+     * @return
+     */
     @Override
     public Administrador put(String k, Administrador v) {
         Administrador admin;
@@ -116,11 +147,19 @@ public class AdministradorDAO implements Map<String,Administrador>
     @Override
     public Administrador remove(Object o) { throw new UnsupportedOperationException("Erro!"); }
 
+    /**
+     * Método que insere vários administradores na base dados
+     * @param map    Map de todos os administradores
+     */
     @Override
     public void putAll(Map<? extends String, ? extends Administrador> map) {
         for(Administrador admin : map.values()) { put(admin.getEmail(), admin); }
     }
 
+    /**
+     * Método que apaga todos os administradores existentes na base de dados
+     * @throws NullPointerException  Não existe conexão com a base de dados
+     */
     @Override
     public void clear() {
         try{
@@ -132,6 +171,11 @@ public class AdministradorDAO implements Map<String,Administrador>
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
     }
 
+    /**
+     * Método que retorna o conjunto de ids dos administradores da base de dados
+     * @return                        Set de chaves(ids dos administradores)
+     * @throws NullPointerException   Não existe conexão com a base de dados
+     */
     @Override
     public Set<String> keySet() {
         Set<String> keys = null;
@@ -148,6 +192,10 @@ public class AdministradorDAO implements Map<String,Administrador>
         return keys;
     }
 
+    /**
+     * Método que obtém uma coleção com todos os administradores do sistema
+     * @return  coleção de todos os administradores
+     */
     @Override
     public Collection<Administrador> values()
     {
@@ -158,6 +206,10 @@ public class AdministradorDAO implements Map<String,Administrador>
         return admin;
     }
 
+    /**
+     * Método que obtém uma set com todos os administradores do sistema
+     * @return    set de administradores do sistema
+     */
     @Override
     public Set<Entry<String, Administrador>> entrySet()
     {

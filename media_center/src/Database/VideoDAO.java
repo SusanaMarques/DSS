@@ -14,6 +14,11 @@ public class VideoDAO implements Map<Integer, Video>
 {
     Connection c;
 
+    /**
+     * Método que retorna o número de entradas na base de dados
+     * @return s                       número de entradas
+     * @throws NullPointerException    Não há conexão com a base de dados
+     */
     @Override
     public int size() {
         int s = -1;
@@ -27,6 +32,11 @@ public class VideoDAO implements Map<Integer, Video>
         return s;
     }
 
+
+    /**
+     * Método que verifica se a base de dados está vazia
+     * @return  True caso a base de dados esteja vazia, false caso contrário
+     */
     @Override
     public boolean isEmpty() {
         return (this.size() == 0);
@@ -46,6 +56,11 @@ public class VideoDAO implements Map<Integer, Video>
         return res;
     }
 
+    /**
+     * Método que verifica se um determinado video existe na base de dados
+     * @param o                      Objeto a verficar
+     * @return                       True se o video existir
+     */
     @Override
     public boolean containsValue(Object o) {
         boolean res = false;
@@ -66,6 +81,11 @@ public class VideoDAO implements Map<Integer, Video>
         return res;
     }
 
+    /**
+     * Método que retorna um video da base de dados
+     * @param o    objeto em causa
+     * @return     video
+     */
     @Override
     public Video get(Object o) {
         Video v = new Video();
@@ -87,6 +107,12 @@ public class VideoDAO implements Map<Integer, Video>
         return v;
     }
 
+    /**
+     * Método que insere um novo video na base de dados
+     * @param k      id do video
+     * @param v      video
+     * @return
+     */
     @Override
     public Video put(Integer k, Video v) {
         Video video;
@@ -115,11 +141,19 @@ public class VideoDAO implements Map<Integer, Video>
     @Override
     public Video remove(Object o) { throw new UnsupportedOperationException("Erro!"); }
 
+    /**
+     * Método que insere vários videos na base dados
+     * @param map    Map de todos videos
+     */
     @Override
     public void putAll(Map<? extends Integer, ? extends Video> map) {
         for(Video v : map.values()) { put(v.getId(), v); }
     }
 
+    /**
+     * Método que apaga todos os videos existentes na base de dados
+     * @throws NullPointerException   Não existe conexão com a base de dados
+     */
     @Override
     public void clear() {
         try{
@@ -131,6 +165,11 @@ public class VideoDAO implements Map<Integer, Video>
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
     }
 
+    /**
+     * Método que retorna o conjunto de ids dos videos da base de dados
+     * @return                        Set de chaves(ids dos videos)
+     * @throws NullPointerException   Não existe conexão com a base de dados
+     */
     @Override
     public Set<Integer> keySet() {
         Set<Integer> keys = null;
@@ -147,6 +186,10 @@ public class VideoDAO implements Map<Integer, Video>
         return keys;
     }
 
+    /**
+     * Método que obtém uma coleção com todos os videos do sistema
+     * @return  coleção de todos os videos da base de dados
+     */
     @Override
     public Collection<Video> values()
     {
@@ -157,6 +200,10 @@ public class VideoDAO implements Map<Integer, Video>
         return u;
     }
 
+    /**
+     * Método que obtém uma set com todos os videos do sistema
+     * @return    set de videos existentes na base de dados
+     */
     @Override
     public Set<Entry<Integer, Video>> entrySet()
     {
