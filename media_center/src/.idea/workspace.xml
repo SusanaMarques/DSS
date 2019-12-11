@@ -1,91 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="">
+    <list default="true" id="a84da538-6a96-47cb-924d-e34377780447" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Alterar_Genero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Alterar_Genero.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_Conv.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Conv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Regist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Presentation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/convidado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/img/icons8-skip-to-start-96 - cópia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/opcoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/opcoes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Presentation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/79111620_2185462364887515_9070575070606262272_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-add-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-arrow-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-audio-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-automatic-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-bulleted-list-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-cancel-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-check-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-checked-checkbox-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-checkmark-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-circled-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-conference-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-crown-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-darth-vader-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-dj-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-down-left-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-download-from-cloud-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-earbud-headphones-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-email-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-fast-forward-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-geometric-flowers-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-go-back-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-high-priority-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-in-progress-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-key-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-left-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-login-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-mp3-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-music-folder-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-pause-button-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-playlist-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-scroll-up-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-shuffle-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-shutdown-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-skip-to-start-96 - cópia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-skip-to-start-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-speaker-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-star-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-stop-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-undo-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/img/icons8-video-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/out/production/Presentation/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/player.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/libraries/mysql_connector_java_8_0 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/libraries/tika_app_1_23 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/misc 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/modules 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/vcs 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Administrador 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/CategoriaIgualException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/ConteudoDuplicadoException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/CredenciaisInvalidasException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/FormatoDesconhecidoException 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Player 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Video 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaMusicaDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaVideoDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/Connect 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistVideoDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/misc 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/vcs 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Alterar_Genero.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Alterar_Genero.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Conteudo_Existente 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Admin 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_credenciais 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_upload 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Erro_Género 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Formato_Desconhecido 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Main 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Model 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Presentation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/View 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-audio-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-down-left-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-download-from-cloud-64 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-shutdown-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-skip-to-start-96 - cópia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-skip-to-start-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/opcoes 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/opcoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/opcoes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/.idea/vcs 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Administrador 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Administrador.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Alterar_Genero 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Alterar_Genero.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Conteudo_Existente.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Erro_Credenciais.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Erro_Género.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Formato_Desconhecido.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Presentation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Upload_Sucesso.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/Utilizador_Registado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/convidado.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/79111620_2185462364887515_9070575070606262272_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-add-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-arrow-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-audio-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-automatic-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-bulleted-list-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-cancel-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-check-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-checked-checkbox-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-checkmark-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-circled-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-conference-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-crown-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-darth-vader-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-dj-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-down-left-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-download-from-cloud-64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-earbud-headphones-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-email-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-email-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-fast-forward-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-geometric-flowers-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-go-back-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-high-priority-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-in-progress-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-key-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-left-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-login-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-mp3-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-music-folder-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-pause-button-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-play-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-playlist-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-scroll-up-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-shuffle-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-shutdown-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-skip-to-start-96 - cópia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-skip-to-start-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-speaker-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-star-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-stop-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-undo-96 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-undo-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/img/icons8-video-file-96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/mediacenter 2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/mediacenter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/opcoes.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/player.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/out/production/Presentation/playlist.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="205" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MC@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MC@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MC@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="MC: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Presentation/Controller_genero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="90" column="45" lean-forward="true" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Business/MC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="212" column="63" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Business/MC.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="795" />
   </component>
-  <component name="ProjectId" id="1Un1K9KjhWP0facXgfgDYJsPVgD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Presentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Business" />
-    </key>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -107,112 +363,105 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a4d0970e-8587-4100-9791-a541dcef3ed9" name="Default Changelist" comment="" />
-      <created>1575935381548</created>
+      <changelist id="a84da538-6a96-47cb-924d-e34377780447" name="Default Changelist" comment="" />
+      <created>1576084168355</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1575935381548</updated>
-      <workItem from="1575935385024" duration="3344000" />
-      <workItem from="1575977491671" duration="1682000" />
-      <workItem from="1575983791861" duration="2492000" />
-      <workItem from="1576008928690" duration="2477000" />
-      <workItem from="1576077309347" duration="398000" />
+      <updated>1576084168355</updated>
+      <workItem from="1576084172130" duration="430000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="430000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="795" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32859176" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="117" key="#Project_Structure" timestamp="1576077324873">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="117" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1576077324873" />
-    <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576024161416">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="311" y="58" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024161416" />
-    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1576010697971">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1576010697971" />
-    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576012056885">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="554" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576012056885" />
-    <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1575977548152">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1575977548152" />
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576024110562">
-      <screen x="67" y="27" width="1293" height="741" />
-    </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024110562" />
-    <state width="1440" height="2" key="GridCell.Tab.0.bottom" timestamp="1576081998960">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="2" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576081998960" />
-    <state width="856" height="272" key="GridCell.Tab.0.bottom/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236263" />
-    <state width="1440" height="2" key="GridCell.Tab.0.center" timestamp="1576081998959">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="2" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576081998959" />
-    <state width="856" height="272" key="GridCell.Tab.0.center/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236263" />
-    <state width="1440" height="2" key="GridCell.Tab.0.left" timestamp="1576081998959">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="2" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576081998959" />
-    <state width="856" height="272" key="GridCell.Tab.0.left/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236262" />
-    <state width="1440" height="2" key="GridCell.Tab.0.right" timestamp="1576081998960">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="2" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576081998960" />
-    <state width="856" height="272" key="GridCell.Tab.0.right/67.27.1293.741/67.27.1293.741@67.27.1293.741" timestamp="1576024236263" />
-    <state width="1440" height="312" key="GridCell.Tab.1.bottom" timestamp="1576081992609">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="312" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576081992609" />
-    <state width="1440" height="312" key="GridCell.Tab.1.center" timestamp="1576081992608">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="312" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576081992608" />
-    <state width="1440" height="312" key="GridCell.Tab.1.left" timestamp="1576081992607">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="312" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576081992607" />
-    <state width="1440" height="312" key="GridCell.Tab.1.right" timestamp="1576081992609">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1440" height="312" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576081992609" />
-    <state x="208" y="33" key="SettingsEditor" timestamp="1575977553097">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1575977553097" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576077309267">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576077309267" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_genero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="90" column="45" lean-forward="true" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/MC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="212" column="63" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/src$Main.ic" NAME="Main Coverage Results" MODIFIED="1576081992546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>Presentation.*</FILTER>
-    </SUITE>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -13,6 +13,7 @@ import org.xml.sax.SAXException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -21,7 +22,7 @@ import java.nio.file.Paths;
 import java.util.*;
 
 
-public class MC
+public class  MC
 {
     /** Instancia da gestao de conteudo**/
     private GestaoConteudo gc = new GestaoConteudo();
@@ -211,6 +212,15 @@ public class MC
     public void alterarCategoria(String newCat, int idCont, char type) throws CategoriaIgualException {
         if(type=='m') gu.alterarCategoriaM(newCat,idCont,idUtilizadorAtual);
         if(type=='v') gu.alterarCategoriaV(newCat,idCont,idUtilizadorAtual);
+    }
+
+    public String getPath(char type, int idCont) throws MalformedURLException {
+        File pathFinder = new File("");
+        String s = pathFinder.toURI().toURL().toExternalForm()+"/Biblioteca/"+idCont;
+        if(type=='m') s+=".mp3";
+        else s+=".mp4";
+        return s;
+
     }
 
 

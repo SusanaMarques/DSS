@@ -21,8 +21,7 @@ public class Controller_Regist {
 
     private MC model;
     private View view;
-    private MediaPlayer player ;
-    private Media media;
+
 
 
     public void setM(MC m){
@@ -43,34 +42,23 @@ public class Controller_Regist {
      */
 
     @FXML
-    private void handleButtonAction_Reproduzir(ActionEvent event) throws IOException {
-
-        Node node = (Node) event.getSource();
-        FileChooser fileChooser;
-
-
-        fileChooser = new FileChooser();
-        File file = fileChooser.showOpenDialog(node.getScene().getWindow());
-
-        //inicialização do player
-        media = new Media(file.toURI().toURL().toExternalForm());
-        player = new MediaPlayer(media);
-
-        player.play();
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player.fxml"));
+    private void handleButtonAction_Geral(ActionEvent event) throws IOException {
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "geral.fxml"));
         Parent root = l.load();
-
-
-        //set model e view do Player
-        Player pl = l.getController();
+        this.view.printPage((Node) event.getSource(),root);
+        Controller_geral pl = l.getController();
         pl.setM(model);
         pl.setV(view);
-        pl.setMPlayer(player);
-        pl.setText(file);
-        pl.sett();
+    }
 
+    @FXML
+    private void handleButtonAction_Pessoal(ActionEvent event) throws IOException {
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "pessoal.fxml"));
+        Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
-
+        Controller_pessoal pl = l.getController();
+        pl.setM(model);
+        pl.setV(view);
     }
 
 

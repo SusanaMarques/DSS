@@ -105,7 +105,7 @@ public class GestaoUtilizador
      * **/
     public void alterarCategoriaV(String newCat, int idCont,int idU) throws CategoriaIgualException {
         Map<Integer,String> cats=null;
-        if(categoriasVideo.containsKey(idCont))
+        if(categoriasMusica.containsKey(idCont))
             cats= categoriasVideo.get(idCont);
            else cats=new HashMap<>();
         if(cats.containsKey(idU)) if(cats.get(idU).equals(newCat)) throw new CategoriaIgualException();

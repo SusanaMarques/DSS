@@ -34,21 +34,21 @@
             <Font size="39.0" />
          </font>
       </Text>
-      <TableView fx:id="table1" layoutX="61.0" layoutY="82.0" prefHeight="242.0" prefWidth="878.0">
+      <TableView fx:id="table1" layoutX="61.0" layoutY="82.0" onMouseClicked="#handleButtonAction_Reproduzir" prefHeight="242.0" prefWidth="878.0">
         <columns>
           <TableColumn fx:id="nome_m" minWidth="300.0" prefWidth="300.0" text="Nome" />
           <TableColumn fx:id="artista" maxWidth="40.0" minWidth="300.0" prefWidth="300.0" text="Artista" />
             <TableColumn fx:id="cat_m" minWidth="300.0" prefWidth="300.0" text="Categoria" />
         </columns>
       </TableView>
-      <TableView fx:id="table2" layoutX="63.0" layoutY="408.0" prefHeight="253.0" prefWidth="871.0">
+      <TableView fx:id="table2" layoutX="63.0" layoutY="408.0" onMouseClicked="#handleButtonAction_Reproduzir_Video" prefHeight="253.0" prefWidth="871.0">
         <columns>
           <TableColumn fx:id="nome_v" minWidth="300.0" prefWidth="300.0" text="Nome" />
           <TableColumn fx:id="realizador" minWidth="300.0" prefWidth="300.0" text="Realizador" />
             <TableColumn fx:id="cat_v" minWidth="300.0" prefWidth="300.0" text="Categoria" />
         </columns>
       </TableView>
-      <Text fill="#c521ff" layoutX="76.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vídeos" wrappingWidth="198.9619903564453">
+      <Text fill="#c521ff" layoutX="76.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vídeo" wrappingWidth="198.9619903564453">
          <font>
             <Font size="39.0" />
          </font>
@@ -59,8 +59,8 @@
             <Image url="@img/icons8-circled-play-96.png" />
          </image>
       </ImageView>
-      <Button layoutX="282.0" layoutY="356.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
-      <ImageView disable="true" fitHeight="32.0" fitWidth="33.0" layoutX="282.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="292.0" layoutY="356.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
+      <ImageView disable="true" fitHeight="32.0" fitWidth="33.0" layoutX="299.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-shuffle-96.png" />
          </image>

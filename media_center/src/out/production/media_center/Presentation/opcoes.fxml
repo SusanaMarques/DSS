@@ -6,20 +6,20 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Opcoes">
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_opt">
    <children>
-      <Button layoutX="426.0" layoutY="213.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Reproduzir" textFill="#c521ff" />
-      <Button layoutX="426.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Download" textFill="#c521ff" />
-      <Button layoutX="426.0" layoutY="295.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="             Adicionar a playlist" textFill="#c521ff" />
-      <Button layoutX="426.0" layoutY="376.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Criar Playlist" textFill="#c521ff" />
-      <Button layoutX="426.0" layoutY="417.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="Alterar género" textFill="#c521ff" />
-      <Button layoutX="426.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #ffffff;" text="             Remover da playlist" textFill="#c521ff" />
-      <Button layoutX="961.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE">
+      <Button layoutX="426.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonAction_Reproduzir" prefHeight="34.0" prefWidth="193.0" style="-fx-background-color: #ffffff;" text="Reproduzir" textFill="#c521ff" />
+      <Button layoutX="426.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="193.0" style="-fx-background-color: #ffffff;" text="Download" textFill="#c521ff" />
+      <Button layoutX="426.0" layoutY="295.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="201.0" style="-fx-background-color: #ffffff;" text="             Adicionar a playlist" textFill="#c521ff" />
+      <Button layoutX="426.0" layoutY="376.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="211.0" style="-fx-background-color: #ffffff;" text="Criar Playlist" textFill="#c521ff" />
+      <Button layoutX="426.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleButtonAction_alteracat" prefHeight="34.0" prefWidth="225.0" style="-fx-background-color: #ffffff;" text="Alterar género" textFill="#c521ff" />
+      <Button layoutX="426.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="201.0" style="-fx-background-color: #ffffff;" text="             Remover da playlist" textFill="#c521ff" />
+      <Button layoutX="950.0" layoutY="-3.0" mnemonicParsing="false" onAction="#handleButtonAction_goback" prefHeight="26.0" prefWidth="52.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" textFill="WHITE">
          <font>
             <Font size="25.0" />
          </font>
       </Button>
-      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="972.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="961.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-undo-96.png" />
          </image>

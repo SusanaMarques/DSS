@@ -1,7 +1,7 @@
 package Presentation;
+
 import Business.MC;
 import Business.Musica;
-
 import Business.Video;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,17 +16,26 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.Set;
 
-public class Controller_Conv {
+public class Controller_geral {
+
+    private MC model=new MC();
+    private View view= new View();
 
 
-    private View view = new View();
-    private MC model = new MC();
 
+    public void setM(MC m){
+        this.model=m;
+
+    }
+
+    public void setV(View v){
+        this.view=v;
+
+    }
 
     @FXML
     private TableView<Musica> table1;
@@ -55,54 +64,26 @@ public class Controller_Conv {
     private TableColumn<Video, String> cat_v;
 
 
-
-
-    /**
-     * método que trata do evento: clique no botão logout na página inicial do convidado
-     * @param event
-     */
-    @FXML
-    private void handleButtonAction_logout_conv(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
-
-    }
-
-
     /**
      * método que trata do evento: clique no botão de uma música na listView do convidado
      * este método inicia o player
      * @param event
      */
     @FXML
-    private void handleButtonAction_Reproduzir(MouseEvent event) throws IOException {
+    private void handleButtonAction_Musica(MouseEvent event) throws IOException {
 
         Musica m =table1.getSelectionModel().selectedItemProperty().getValue();
 
-        //inicialização do player
-        Media media = new Media(model.getPath('m',m.getId()));
-        MediaPlayer player = new MediaPlayer(media);
-      //  player.seek(player.getMedia().getDuration().multiply(time.getValue() / 100));
-        player.play();
-
-
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player.fxml"));
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "opcoes.fxml"));
         Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
 
 
-        //set model e view do Player
-        Player pl = l.getController();
+        Controller_opt pl = l.getController();
         pl.setV(view);
-        pl.sett();
-        pl.setMPlayer(player);
-        pl.setText(m.getNome());
-        pl.setModel(model);
-        pl.setMus(model.showMusicas());
-        pl.setId(m.getId());
-        pl.inic();
-
+        pl.setM(model);
+        pl.setIdd(1);
+        pl.setMusica(m);
 
 
     }
@@ -113,33 +94,46 @@ public class Controller_Conv {
      * @param event
      */
     @FXML
-    private void handleButtonAction_Reproduzir_Video(MouseEvent event) throws IOException {
+    private void handleButtonAction_Video(MouseEvent event) throws IOException {
 
         Video v =table2.getSelectionModel().selectedItemProperty().getValue();
 
-        //inicialização do player
-        Media media = new Media(model.getPath('v',v.getId()));
-        MediaPlayer player = new MediaPlayer(media);
-        player.play();
-
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player_video.fxml"));
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "opcoes.fxml"));
         Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
 
 
-        //set model e view do Player_video
-        PLayer_video pl = l.getController();
+        Controller_opt pl = l.getController();
         pl.setV(view);
-        pl.setMPlayer(player);
-        pl.sett();
-        pl.setModel(model);
-        pl.setVid(model.showVideos());
-        pl.setId(v.getId());
+        pl.setM(model);
+        pl.setIdd(2);
+        pl.setVideo(v);
+
 
     }
 
+
     /**
-     * inicializa o Controller_conv já com a lista das músicas e vídeos
+     * método que trata do evento: clique no botão logout na página inicial do convidado
+     * @param event
+     */
+    @FXML
+    private void handleButtonAction_goback(ActionEvent event) throws IOException {
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
+        Parent root = l.load();
+        this.view.printPage((Node) event.getSource(),root);
+
+        Controller_Regist pl=l.getController();
+        pl.setV(view);
+        pl.setM(model);
+
+    }
+
+
+
+
+    /**
+     * inicializa a biblioteca geral já com a lista das músicas e vídeos
      */
     @FXML private void initialize () {
 
@@ -167,7 +161,7 @@ public class Controller_Conv {
         table2.getItems().setAll(v);
 
 
+    }
 
-        }
 
 }
