@@ -70,10 +70,14 @@ public class GestaoConteudo {
         propList.add(u);
         props.put(c.getId(), propList);
     }
-
+    /**Método para apresentar a Biblioteca geral dos Videos
+     * @return Set com todas as instancias de video da biblioteca geral
+     * **/
     public Set<Video> getBibliotecaVideo() {
         return ((Set) videos.values());
     }
-
+    /**Método para apresentar a Biblioteca geral das Musicas
+     * @return Set com todas as instancias de musica da biblioteca geral
+     * **/
     public Set<Musica> getBibliotecaMusica() { return ((Set) musicas.values()); }
 }

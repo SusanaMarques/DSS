@@ -15,6 +15,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 
@@ -112,14 +115,16 @@ public class MC
         //Adicionar a bibliotecas
         gc.uploadConteudo(c,t,u);
         gu.uploadConteudo(c, t,u);
-        //Path building
+        //Path building & copiar para a biblioteca
         String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
         File newFile = new File(path);
-        System.out.println(path);
-        newFile.createNewFile();
-        origin.renameTo(newFile);
+        Files.copy(origin.toPath(),newFile.toPath());
 
     }
+    /**Método para extrair os metadados dos mp4
+     * @param origin File com a instancia do mp4 a extrair
+     * @return Instancia com os metadados do mp4
+     * **/
 
     private Metadata extrairMetaMp4(File origin) throws TikaException, SAXException, IOException {
         BodyContentHandler handler = new BodyContentHandler();
@@ -131,6 +136,10 @@ public class MC
         return metadata;
     }
 
+    /**Método para extrair a duração das musicas
+     * @param origin File com a instancia do mp3 a extrair
+     * @return Duração do mp3
+     * **/
     private double getDuration(File origin) throws TikaException, SAXException, IOException {
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
@@ -142,7 +151,15 @@ public class MC
         return (Double.parseDouble(metadata.get("xmpDM:duration")));
     }
 
-
+    /**Método para extrair a maioria dos metadados das musicas
+     * @param file File com a instancia do mp3 a extrair
+     * @return Instancia do handler dos metadados do mp3
+     * **/
+    private ID3v24Handler extrairMetaMp3(File file) throws IOException, TikaException, SAXException {
+        FileInputStream inputstream = new FileInputStream(file);
+        ID3v24Handler ret = new ID3v24Handler((ID3v2Frame) ID3v2Frame.createFrameIfPresent(inputstream));
+        return  ret;
+    }
 
     /** Método que altera o tipo do utilizador que está a usar o sistema
      * @param idT    Tipo do utilizador
@@ -151,33 +168,46 @@ public class MC
         idType = idT;
     }
 
-    /** Método que altera o tipo do utilizador a usar o sistema
+    /** Método retorna o tipo do utilizador a usar o sistema
      * @return      Tipo do utilizador
      */
     public int getUserT() {
         return idType;
     }
 
-    private ID3v24Handler extrairMetaMp3(File file) throws IOException, TikaException, SAXException {
-        FileInputStream inputstream = new FileInputStream(file);
-        ID3v24Handler ret = new ID3v24Handler((ID3v2Frame) ID3v2Frame.createFrameIfPresent(inputstream));
-        return  ret;
-    }
 
+    /**Método para apresentar a Biblioteca geral das Musicas
+     * @return Set com todas as instancias de musica da biblioteca geral
+     * **/
     public Set<Musica> showMusicas(){
         return  gc.getBibliotecaMusica();
     }
 
+    /**Método para apresentar a Biblioteca geral dos Videos
+     * @return Set com todas as instancias de video da biblioteca geral
+     * **/
     public Set<Video> showVideos(){
         return  gc.getBibliotecaVideo();
     }
 
-    public List<Musica> showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
 
+    /**Método para apresentar uma playlist de musicas
+     * @param idPlaylist Id da playlist
+     * @return List com todas as musicas da playlist
+     * **/
+    public List<Musica> showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
+    /**Método para apresentar uma playlist de videos
+     * @param idPlaylist Id da playlist
+     * @return List com todas os videos da playlist
+     * **/
     public List<Video> showVideosPlaylist(int idPlaylist){
       return gu.getPlaylistVideo(idPlaylist);
     }
-
+    /**Método para alterar a categoria de um conteudo de um utilizador
+     * @param idCont Id do conteudo a alterar
+     * @param newCat Nova categoria do conteudo
+     * @param type Tipo do conteudo a alterar: m para musicas e v para videos
+     * **/
     public void alterarCategoria(String newCat, int idCont, char type) throws CategoriaIgualException {
         if(type=='m') gu.alterarCategoriaM(newCat,idCont,idUtilizadorAtual);
         if(type=='v') gu.alterarCategoriaV(newCat,idCont,idUtilizadorAtual);
