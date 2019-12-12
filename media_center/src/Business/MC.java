@@ -112,15 +112,20 @@ public class  MC
         else throw new FormatoDesconhecidoException();
 
         //Verificar duplicaçoes
-        if(gc.verificaDuplicacoes(c,t)) throw new ConteudoDuplicadoException();
+        int dupId = gc.verificaDuplicacoes(c,t);
+        if(dupId == -1) {
+            //Path building & copiar para a biblioteca
+            String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
+            File newFile = new File(path);
+            Files.copy(origin.toPath(),newFile.toPath());
+        }
+        else c=gc.getConteudo(dupId,t);
         //Adicionar a bibliotecas
-        gc.uploadConteudo(c,t,u);
+        gc.uploadConteudo(c,t,u, dupId);
         gu.uploadConteudo(c, t,u);
-        //Path building & copiar para a biblioteca
-        String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
-        File newFile = new File(path);
-        Files.copy(origin.toPath(),newFile.toPath());
-
+    
+     
+        if (dupId == -1) throw new ConteudoDuplicadoException();
     }
     /**Método para extrair os metadados dos mp4
      * @param origin File com a instancia do mp4 a extrair

@@ -3,6 +3,7 @@ package Business;
 import Database.*;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -31,18 +32,66 @@ public class GestaoConteudo {
      *
      * @param c    Conteudo a comparar
      * @param type Tipo do conteudo
-     * @return true caso existam duplicacoes, false caso contrario
+     * @return id do conteudo caso seja repetido, -1 caso não hajam repetiçoes
      */
-    public boolean verificaDuplicacoes(Conteudo c, char type) {
-        boolean ret = true;
+    public int verificaDuplicacoes(Conteudo c, char type) {
+        int ret = -2;
         if (type == 'm') {
-            ret = musicas.containsValue(c);
+            ret = (musicas.containsValue(c) ? (this.getValueM((Musica) c)) : -1);
         }
         if (type == 'v') {
-            ret = videos.containsValue(c);
+            ret = (videos.containsValue(c) ? (this.getValueV((Video) c)) : -1);
         }
         return ret;
     }
+    /**
+     * Método para obter um conteudo da biblioteca geral
+     *
+     * @param idC   id do conteudo
+     * @param type tipo do conteudo a obter
+     * @return Conteudo
+     */
+   public Conteudo getConteudo(int idC, char type){
+       Conteudo ret= null;
+       if(type=='m') ret=musicas.get(idC);
+       
+       if(type=='v') ret=videos.get(idC);
+       return ret;
+   } 
+     /**
+     * Método para unificar id de Musica repetido
+     *
+     * @param c    Conteudo a comparar
+     * @return id do conteudo
+     */
+    int getValueM(Musica c){
+       Collection<Musica> ms = musicas.values();
+       for(Musica m : ms){
+           if(m.getArtista(). equals(c.getArtista()) &&
+            m.getCategoria().equals(c.getCategoria()) &&
+            m.getNome().equals(c.getNome()))
+                return m.getId();
+           
+       }
+       return -1;
+    }
+/**
+     * Método para unificar id de Video repetido
+     *
+     * @param c    Conteudo a comparar
+     * @return id do conteudo
+     */
+    int getValueV(Video c){
+        Collection<Video> ms = videos.values();
+        for(Video m : ms){
+            if(m.getRealizador(). equals(c.getRealizador()) &&
+             m.getCategoria().equals(c.getCategoria()) &&
+             m.getNome().equals(c.getNome()))
+                 return m.getId();
+            
+        }
+        return -1;
+     }
 
     /**
      * Método que adiciona o conteudo à biblioteca geral e atualiza o seu proprietario
@@ -51,19 +100,17 @@ public class GestaoConteudo {
      * @param tipo Tipo do conteudo a adicionar
      * @param u    Utilizador que está a carregar o conteudo
      **/
-    public void uploadConteudo(Conteudo c, char tipo, UtilizadorRegistado u) {
+    public void uploadConteudo(Conteudo c, char tipo, UtilizadorRegistado u, int dupId) {
         Map<Integer, List<UtilizadorRegistado>> props = null;
         if (tipo == 'm') {
-            musicas.put(c.getId(), (Musica) c);
+            if(dupId == -1) musicas.put(c.getId(), (Musica) c);
             props = proprietariosMusica;
         } else {
             if (tipo == 'v') {
-                System.out.println("1");
-                videos.put(c.getId(), (Video) c);
+                
+            if(dupId == -1) videos.put(c.getId(), (Video) c);
                 props = proprietariosVideo;
                 System.out.println("2");
-            } else {
-                System.out.println("LOL NAO insere nao");
             }
         }
         List<UtilizadorRegistado> propList = new ArrayList<>();
