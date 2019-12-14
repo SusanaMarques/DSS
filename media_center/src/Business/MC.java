@@ -114,14 +114,15 @@ public class  MC
             File newFile = new File(path);
             Files.copy(origin.toPath(),newFile.toPath());
         }
-        else c = gc.getConteudo(dupId,t);
+        else {
+            c = gc.getConteudo(dupId,t);
+            throw new ConteudoDuplicadoException();
+        }
 
         //Adicionar a bibliotecas
         gc.uploadConteudo(c,t,u, dupId);
         gu.uploadConteudo(c, t,u);
-    
-     
-        if (dupId == -1) throw new ConteudoDuplicadoException();
+
     }
 
     /** Método que extrai os metadados dos ficheiros mp4
