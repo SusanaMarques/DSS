@@ -2,38 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ec3927-3404-40cc-840d-893859e4f51f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-155509929.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-1644967565.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-51803904.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-71643275.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/838565435.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1021089120.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1323395469.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-197838234.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-2062804315.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-218202655.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-692283955.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/1138826046.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/2063556180.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/2143103325.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/815800994.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/937131542.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Biblioteca/937131542.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaVideoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-155509929.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1644967565.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-51803904.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-71643275.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/838565435.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1323395469.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-197838234.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-218202655.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/1031788928.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/1138826046.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/2063556180.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/2143103325.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/815800994.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/937131542.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Biblioteca/937131542.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaMusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaVideoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,22 +41,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -68,49 +51,15 @@
     <option name="height" value="795" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -132,6 +81,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -146,73 +107,37 @@
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="976000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="795" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32859176" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1576356603281">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576356603281" />
+    <state width="1440" height="2" key="GridCell.Tab.0.bottom" timestamp="1576359225836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="2" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576359225836" />
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1576356655872" />
+    <state width="1440" height="2" key="GridCell.Tab.0.center" timestamp="1576359225835">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="2" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576359225835" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1576356655870" />
+    <state width="1440" height="2" key="GridCell.Tab.0.left" timestamp="1576359225834">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="2" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576359225834" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1576356655869" />
+    <state width="1440" height="2" key="GridCell.Tab.0.right" timestamp="1576359225835">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="2" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576359225835" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1576356655871" />
+    <state x="208" y="33" key="SettingsEditor" timestamp="1576356605845">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576356605845" />
   </component>
 </project>

@@ -96,8 +96,12 @@ public class CategoriaVideoDAO implements Map<Integer, Map<Integer, String>>
 
             PreparedStatement ps = c.prepareStatement("INSERT INTO CategoriaVideo (idVideo,idUtilizador, categoria) VALUES (?,?,?)");
             for(Map.Entry<Integer, String> entry : v.entrySet()) {
-                ps.setInt(1, entry.getKey());
-                ps.setString(2, entry.getValue());}
+                ps.setInt(1, k);
+                ps.setInt(2, entry.getKey());
+                ps.setString(3, entry.getValue());
+                ps.executeUpdate();
+            }
+
         }
         catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return mp;

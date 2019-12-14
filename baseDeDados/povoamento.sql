@@ -9,17 +9,18 @@ INSERT INTO UtilizadorRegistado(idUtilizador, email, nome, password, idBibliotec
 INSERT INTO UtilizadorRegistado(idUtilizador, email, nome, password, idBibliotecaMusica, idBibliotecaVideo) VALUES (2222, 'susana@gmail.com', 'Susana', 'password', 302, 402);
 
 
-
 select * from musica; 
-#delete from Musica where idMusica = -689926072;
+#delete from Musica where idMusica = 1734882928;
 
-#select * from Video;
-#delete from Video where idVideo = 937131542;
+select * from Video;
+#delete from Video where idVideo = -197838234;
 
-select * from CategoriaVideo;
+select * from ProprietariosVideo;
 
-#select * from PlaylistVideo;
 
-select * from ProprietariosMusica;
+#select * from CategoriaMusica; 
 
-insert into CategoriaVideo(idVideo, idUtilizador, categoria) values (123,432, 'asd');
+#select * from CategoriaVideo;
+
+#select * from PlaylistMusica
+
