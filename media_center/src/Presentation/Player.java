@@ -32,8 +32,10 @@ public class Player {
     private MC model;
     private View view;
     private MediaPlayer player;
-    private Set<Musica> mus;
+    //private Set<Musica> mus;
     private int id;
+
+    List<Musica> ml= new ArrayList<>();
 
     @FXML
     private Slider time;
@@ -60,7 +62,12 @@ public class Player {
     }
 
     public void setMus(Set<Musica> mus){
-        this.mus = mus;
+
+
+        for(Musica m2: mus) {
+            ml.add(m2);
+        }
+       ml.sort( new MusicaComparator());
     }
 
 
@@ -92,10 +99,6 @@ public class Player {
     }
 
     public void inic(){
-        List<Musica> ml= new ArrayList<>();
-        for(Musica m2: mus) {
-            ml.add(m2);
-        }
 
         ObservableList<Musica> l =FXCollections.observableArrayList();
         l.addAll(ml);
@@ -170,36 +173,41 @@ public class Player {
     private void handleButtonAction_proxima (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
-        List<Musica> ml= new ArrayList<>();
-        for(Musica m2: mus) {
-            ml.add(m2);
-        }
+        Musica m;
+
         for(; i<ml.size();i++){
-            if(ml.get(i).getId()==id) i=ml.size();
+            if(ml.get(i).getId()==id) break;
         }
-        Musica m = ml.get((i%ml.size())+1);
+        if((i % ml.size()) + 1 != ml.size()) {
+            m = ml.get((i % ml.size()) + 1);
 
 
-        //inicialização do player
-        Media media = new Media(model.getPath('m',m.getId()));
-        MediaPlayer player = new MediaPlayer(media);
-        player.play();
+            //inicialização do player
+            Media media = new Media(model.getPath('m', m.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
 
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) e.getSource(),root);
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
 
 
-        //set model e view do Player
-        Player pl = l.getController();
-        pl.setModel(model);
-        pl.setV(view);
-        pl.sett();
-        pl.setMPlayer(player);
-        pl.setText(m.getNome());
-        pl.setMus(model.showMusicas());
-        pl.setId(m.getId());
-        pl.inic();
+            //set model e view do Player
+            Player pl = l.getController();
+            pl.setModel(model);
+            pl.setV(view);
+            pl.sett();
+            pl.setMPlayer(player);
+            pl.setText(m.getNome());
+            pl.setMus(model.showMusicas());
+            pl.setId(m.getId());
+            pl.inic();
+
+        }
+
+        else {
+           goback(e);
+        }
 
     }
 
@@ -207,36 +215,37 @@ public class Player {
     private void handleButtonAction_anterior (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
-        List<Musica> ml= new ArrayList<>();
-        for(Musica m2: mus) {
-            ml.add(m2);
-        }
+        Musica m;
+
         for(; i<ml.size();i++){
-            if(ml.get(i).getId()==id) i=ml.size();
+            if(ml.get(i).getId()==id) break;
         }
-        Musica m = ml.get((i%ml.size())-1);
+        if((i % ml.size()) - 1 != -1) {
+            m = ml.get((i % ml.size()) - 1);
 
 
-        //inicialização do player
-        Media media = new Media(model.getPath('m',m.getId()));
-        MediaPlayer player = new MediaPlayer(media);
-        player.play();
+                //inicialização do player
+                Media media = new Media(model.getPath('m', m.getId()));
+                MediaPlayer player = new MediaPlayer(media);
+                player.play();
 
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) e.getSource(),root);
+                FXMLLoader l = new FXMLLoader(getClass().getResource("player.fxml"));
+                Parent root = l.load();
+                this.view.printPage((Node) e.getSource(), root);
 
 
-        //set model e view do Player
-        Player pl = l.getController();
-        pl.setModel(model);
-        pl.setV(view);
-        pl.sett();
-        pl.setMPlayer(player);
-        pl.setText(m.getNome());
-        pl.setMus(model.showMusicas());
-        pl.setId(m.getId());
-        pl.inic();
+                //set model e view do Player
+                Player pl = l.getController();
+                pl.setModel(model);
+                pl.setV(view);
+                pl.sett();
+                pl.setMPlayer(player);
+                pl.setText(m.getNome());
+                pl.setMus(model.showMusicas());
+                pl.setId(m.getId());
+                pl.inic();
+            }
+            else player.pause();
 
     }
 
@@ -288,6 +297,11 @@ public class Player {
      */
     @FXML
     private void handleButtonAction_goback_player(ActionEvent event) throws IOException {
+        goback(event);
+
+    }
+
+    private void goback(ActionEvent event) throws IOException {
         MediaPlayer.Status status = player.getStatus(); //get status of player
         if (status == MediaPlayer.Status.PLAYING) {
             //If the status is Video playing

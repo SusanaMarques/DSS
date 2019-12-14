@@ -154,11 +154,13 @@ public class Controller_geral {
         ObservableList<Musica> m = FXCollections.observableArrayList();
         m.addAll(mus);
         table1.getItems().setAll(m);
+        table1.getSortOrder().add(nome_m);
 
 
         ObservableList<Video> v = FXCollections.observableArrayList();
         v.addAll(vid);
         table2.getItems().setAll(v);
+        table2.getSortOrder().add(nome_v);
 
 
     }

@@ -16,6 +16,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -26,8 +27,9 @@ public class PLayer_video {
     private MC model;
     private View view;
     private MediaPlayer player;
-    private Set<Video> vid;
     private int id;
+
+    List<Video> ml= new ArrayList<>();
 
     @FXML
     private Slider time;
@@ -59,7 +61,12 @@ public class PLayer_video {
     }
 
     public void setVid(Set<Video> vid){
-            this.vid = vid;
+
+        for(Video m2: vid) {
+            ml.add(m2);
+        }
+        ml.sort( new VideoComparator());
+
     }
 
 
@@ -104,34 +111,40 @@ public class PLayer_video {
     private void handleButtonAction_proxima (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
-        List<Video> ml= new ArrayList<>();
-        for(Video m2: vid) {
-            ml.add(m2);
-        }
+        Video v;
+
         for(; i<ml.size();i++){
-            if(ml.get(i).getId()==id) i=ml.size();
+            if(ml.get(i).getId()==id) break;
         }
-        Video v = ml.get((i%ml.size())+1);
+
+        if((i % ml.size()) + 1 != ml.size()) {
+            v = ml.get((i % ml.size()) + 1);
 
 
-        //inicialização do player
-        Media media = new Media(model.getPath('v',v.getId()));
-        MediaPlayer player = new MediaPlayer(media);
-        player.play();
+            //inicialização do player
+            Media media = new Media(model.getPath('v', v.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
 
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player_video.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) e.getSource(),root);
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player_video.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
 
 
-        //set model e view do Player_video
-        PLayer_video pl = l.getController();
-        pl.setV(view);
-        pl.setMPlayer(player);
-        pl.sett();
-        pl.setModel(model);
-        pl.setVid(model.showVideos());
-        pl.setId(v.getId());
+            //set model e view do Player_video
+            PLayer_video pl = l.getController();
+            pl.setV(view);
+            pl.setMPlayer(player);
+            pl.sett();
+            pl.setModel(model);
+            pl.setVid(model.showVideos());
+            pl.setId(v.getId());
+
+        }
+
+        else {
+            goback(e);
+        }
 
     }
 
@@ -139,34 +152,36 @@ public class PLayer_video {
     private void handleButtonAction_anterior (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
-        List<Video> ml= new ArrayList<>();
-        for(Video m2: vid) {
-            ml.add(m2);
-        }
+        Video v;
+
         for(; i<ml.size();i++){
-            if(ml.get(i).getId()==id) i=ml.size();
+            if(ml.get(i).getId()==id) break;
         }
-        Video v = ml.get((i%ml.size())-1);
+
+        if((i % ml.size()) - 1 != -1) {
+            v = ml.get((i % ml.size()) - 1);
 
 
-        //inicialização do player
-        Media media = new Media(model.getPath('v',v.getId()));
-        MediaPlayer player = new MediaPlayer(media);
-        player.play();
+            //inicialização do player
+            Media media = new Media(model.getPath('v', v.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
 
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "player_video.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) e.getSource(),root);
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player_video.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
 
 
-        //set model e view do Player_video
-        PLayer_video pl = l.getController();
-        pl.setV(view);
-        pl.setMPlayer(player);
-        pl.sett();
-        pl.setModel(model);
-        pl.setVid(model.showVideos());
-        pl.setId(v.getId());
+            //set model e view do Player_video
+            PLayer_video pl = l.getController();
+            pl.setV(view);
+            pl.setMPlayer(player);
+            pl.sett();
+            pl.setModel(model);
+            pl.setVid(model.showVideos());
+            pl.setId(v.getId());
+        }
+        else player.pause();
 
     }
 
@@ -219,6 +234,10 @@ public class PLayer_video {
      */
     @FXML
     private void handleButtonAction_goback_player(ActionEvent event) throws IOException {
+       goback(event);
+    }
+
+    private void goback(ActionEvent event) throws IOException {
         MediaPlayer.Status status = player.getStatus(); //get status of player
         if (status == MediaPlayer.Status.PLAYING) {
             //If the status is Video playing
@@ -241,6 +260,7 @@ public class PLayer_video {
             Parent root = l.load();
             this.view.printPage((Node) event.getSource(), root);
         }
+
     }
 
 
