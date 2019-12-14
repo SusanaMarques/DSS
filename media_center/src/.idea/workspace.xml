@@ -2,23 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84da538-6a96-47cb-924d-e34377780447" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1021089120.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1201865622.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1419027019.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1624294241.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-2062804315.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-692283955.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-81602901.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/704854696.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Alt_gen_sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Alt_gen_sucesso.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/mediacenter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-81602901.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +32,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="795" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -103,26 +99,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576246339768" />
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1576334078130">
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1576344580991">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576334078130" />
-    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1576262709275" />
-    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1576334078128">
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576344580991" />
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1576343808516" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1576344580989">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576334078128" />
-    <state width="1440" height="251" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1576262709274" />
-    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1576334078126">
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576344580989" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1576343808514" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1576344580988">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576334078126" />
-    <state width="1440" height="251" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1576262709270" />
-    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1576334078129">
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576344580988" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1576343808513" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1576344580990">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576334078129" />
-    <state width="1440" height="251" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1576262709275" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576344580990" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1576343808515" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1576246366933">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

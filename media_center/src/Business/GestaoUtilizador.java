@@ -65,28 +65,29 @@ public class GestaoUtilizador
         }
     }
 
-    /**Método para apresentar uma playlist de musicas
+    /** Método que apresenta uma playlist de musicas
      * @param idPlaylist Id da playlist
      * @return List com todas as musicas da playlist
-     * **/
+     */
     public List<Musica> getPlaylistMusica(int idPlaylist) {
         return playlistsMusicas.get(idPlaylist);
     }
-    /**Método para apresentar uma playlist de videos
+
+    /** Método que apresenta uma playlist de videos
      * @param idPlaylist Id da playlist
      * @return List com todas os videos da playlist
-     * **/
+     */
     public List<Video> getPlaylistVideo( int idPlaylist) {
         return playlistsVideos.get(idPlaylist);
     }
 
 
 
-    /**Método para alterar a categoria de uma musica de um utilizador
-     * @param idCont Id da musica a alterar
-     * @param newCat Nova categoria da musica
-     * @param idU Id do utilizador
-     * **/
+    /** Método que altera a categoria de uma musica de um utilizador
+     * @param idCont   Id da musica a alterar
+     * @param newCat   Nova categoria da musica
+     * @param idU      Id do utilizador
+     */
     public void alterarCategoriaM(String newCat, int idCont,int idU) throws CategoriaIgualException {
         Map<Integer,String> cats=null;
         if(categoriasMusica.containsKey(idCont))
@@ -97,11 +98,12 @@ public class GestaoUtilizador
         cats.put(idU,newCat);
         categoriasMusica.put(idCont,cats);
     }
-    /**Método para alterar a categoria de um video de um utilizador
-     * @param idCont Id do video a alterar
-     * @param newCat Nova categoria do video
-     * @param idU Id do utilizador
-     * **/
+
+    /** Método que altera a categoria de um video de um utilizador
+     * @param idCont   Id do video a alterar
+     * @param newCat   Nova categoria do video
+     * @param idU      Id do utilizador
+     */
     public void alterarCategoriaV(String newCat, int idCont,int idU) throws CategoriaIgualException {
         Map<Integer,String> cats=null;
         if(categoriasMusica.containsKey(idCont))

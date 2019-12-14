@@ -74,9 +74,6 @@ public class  MC
         double duracao ;
         File origin = new File((new URI(p)).getPath());
 
-
-        //Salvaguardar metadados
-
         //Verificar formato
         if (type.equals("mp3")){
             ID3v24Handler m = extrairMetaMp3(origin);
@@ -119,7 +116,8 @@ public class  MC
             File newFile = new File(path);
             Files.copy(origin.toPath(),newFile.toPath());
         }
-        else c=gc.getConteudo(dupId,t);
+        else c = gc.getConteudo(dupId,t);
+
         //Adicionar a bibliotecas
         gc.uploadConteudo(c,t,u, dupId);
         gu.uploadConteudo(c, t,u);
@@ -127,11 +125,11 @@ public class  MC
      
         if (dupId == -1) throw new ConteudoDuplicadoException();
     }
-    /**Método para extrair os metadados dos mp4
-     * @param origin File com a instancia do mp4 a extrair
-     * @return Instancia com os metadados do mp4
-     * **/
 
+    /** Método que extrai os metadados dos ficheiros mp4
+     * @param origin       File com a instancia do mp4 a extrair
+     * @return             Instancia com os metadados do mp4
+     */
     private Metadata extrairMetaMp4(File origin) throws TikaException, SAXException, IOException {
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
@@ -142,10 +140,10 @@ public class  MC
         return metadata;
     }
 
-    /**Método para extrair a duração das musicas
-     * @param origin File com a instancia do mp3 a extrair
-     * @return Duração do mp3
-     * **/
+    /** Método para extrair a duração das musicas
+     * @param origin     File com a instancia do mp3 a extrair
+     * @return           Duração do mp3
+     */
     private double getDuration(File origin) throws TikaException, SAXException, IOException {
         BodyContentHandler handler = new BodyContentHandler();
         Metadata metadata = new Metadata();
@@ -157,10 +155,10 @@ public class  MC
         return (Double.parseDouble(metadata.get("xmpDM:duration")));
     }
 
-    /**Método para extrair a maioria dos metadados das musicas
-     * @param file File com a instancia do mp3 a extrair
-     * @return Instancia do handler dos metadados do mp3
-     * **/
+    /** Método que extrai os metadados dos ficheiros mp3
+     * @param file     File com a instancia do mp3 a extrair
+     * @return        Instancia do handler dos metadados do mp3
+     */
     private ID3v24Handler extrairMetaMp3(File file) throws IOException, TikaException, SAXException {
         FileInputStream inputstream = new FileInputStream(file);
         ID3v24Handler ret = new ID3v24Handler((ID3v2Frame) ID3v2Frame.createFrameIfPresent(inputstream));
@@ -174,7 +172,7 @@ public class  MC
         idType = idT;
     }
 
-    /** Método retorna o tipo do utilizador a usar o sistema
+    /** Método que retorna o tipo do utilizador a usar o sistema
      * @return      Tipo do utilizador
      */
     public int getUserT() {
@@ -182,42 +180,45 @@ public class  MC
     }
 
 
-    /**Método para apresentar a Biblioteca geral das Musicas
-     * @return Set com todas as instancias de musica da biblioteca geral
-     * **/
+    /** Método que apresenta a Biblioteca geral das Musicas
+     * @return        Set com todas as instancias de musica da biblioteca geral
+     */
     public Set<Musica> showMusicas(){
         return  gc.getBibliotecaMusica();
     }
 
-    /**Método para apresentar a Biblioteca geral dos Videos
-     * @return Set com todas as instancias de video da biblioteca geral
-     * **/
+    /** Método que apresenta a Biblioteca geral dos Videos
+     * @return        Set com todas as instancias de video da biblioteca geral
+     */
     public Set<Video> showVideos(){
         return  gc.getBibliotecaVideo();
     }
 
 
-    /**Método para apresentar uma playlist de musicas
-     * @param idPlaylist Id da playlist
-     * @return List com todas as musicas da playlist
-     * **/
+    /** Método que apresenta uma playlist de musicas
+     * @param idPlaylist     Id da playlist
+     * @return               List com todas as musicas da playlist
+     */
     public List<Musica> showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
-    /**Método para apresentar uma playlist de videos
-     * @param idPlaylist Id da playlist
-     * @return List com todas os videos da playlist
-     * **/
+
+    /** Método que apresenta uma playlist de videos
+     * @param idPlaylist    Id da playlist
+     * @return              List com todas os videos da playlist
+     */
     public List<Video> showVideosPlaylist(int idPlaylist){
       return gu.getPlaylistVideo(idPlaylist);
     }
-    /**Método para alterar a categoria de um conteudo de um utilizador
+
+    /** Método que altera a categoria de um conteudo de um utilizador
      * @param idCont Id do conteudo a alterar
      * @param newCat Nova categoria do conteudo
      * @param type Tipo do conteudo a alterar: m para musicas e v para videos
-     * **/
+     */
     public void alterarCategoria(String newCat, int idCont, char type) throws CategoriaIgualException {
         if(type=='m') gu.alterarCategoriaM(newCat,idCont,idUtilizadorAtual);
         if(type=='v') gu.alterarCategoriaV(newCat,idCont,idUtilizadorAtual);
     }
+
 
     public String getPath(char type, int idCont) throws MalformedURLException {
         File pathFinder = new File("");
@@ -225,7 +226,6 @@ public class  MC
         if(type=='m') s+=".mp3";
         else s+=".mp4";
         return s;
-
     }
 
 

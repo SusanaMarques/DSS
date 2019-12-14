@@ -13,5 +13,13 @@ INSERT INTO UtilizadorRegistado(idUtilizador, email, nome, password, idBibliotec
 select * from musica; 
 #delete from Musica where idMusica = -689926072;
 
-select * from Video;
+#select * from Video;
 #delete from Video where idVideo = 937131542;
+
+select * from CategoriaVideo;
+
+#select * from PlaylistVideo;
+
+select * from ProprietariosMusica;
+
+insert into CategoriaVideo(idVideo, idUtilizador, categoria) values (123,432, 'asd');

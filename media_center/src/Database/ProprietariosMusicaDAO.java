@@ -41,7 +41,7 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
     public boolean containsValue(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
     /**
-     * Método que verifica se um determinado utilizador é proprietário de algum conteudo
+     * Método
      * @param o                      Objeto a verficar
      * @return                       True se o utilizador for proprietário de algum conteúdo
      * @throws NullPointerException  Não existe conexão com a base de dados
@@ -76,17 +76,19 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
      */
     @Override
     public ArrayList<UtilizadorRegistado> put(Integer k, List<UtilizadorRegistado> v) {
-        UtilizadorRegistado u;
         ArrayList<UtilizadorRegistado> array = new ArrayList<UtilizadorRegistado>();
 
         try{
             c = Connect.connect();
 
             PreparedStatement ps = c.prepareStatement("INSERT INTO ProprietariosMusica (idMusica,idUtilizador) VALUES (?,?)");
+            System.out.println("CUTE BUT NO");
             for(UtilizadorRegistado user : v)
             {
                 ps.setInt(1,k);
+                System.out.println("NO");
                 ps.setInt(2, user.getId());
+                System.out.println("NOP");
             }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
