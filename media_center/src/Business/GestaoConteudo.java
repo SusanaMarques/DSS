@@ -92,6 +92,7 @@ public class GestaoConteudo {
         if (tipo == 'm') {
             if(dupId == -1)
             {
+                System.out.println(u.getId());
                 musicas.put(c.getId(), (Musica) c);
                 List<UtilizadorRegistado> prop = new ArrayList<>();
                 prop.add(u);

@@ -26,13 +26,14 @@ public class GestaoUtilizador
      * @param pass     Password do utilizador a autenticar
      * @param idOp     Identificador do tipo de utilizador
      */
-    public void iniciarSessao(String email, String pass, int idOp) throws CredenciaisInvalidasException {
+    public Utilizador iniciarSessao(String email, String pass, int idOp) throws CredenciaisInvalidasException {
         Utilizador u;
-        if(idOp == 1) u=admins.get(email);
-            else u=users.get(email);
+        if(idOp == 1) u = admins.get(email);
+            else u = users.get(email);
             boolean e = u.getEmail().equals(email);
             boolean p = u.getPassword().equals(pass);
         if( !(e && p) ) throw new CredenciaisInvalidasException();
+        return u;
     }
 
      /** Método que devolve os utilizadores

@@ -90,6 +90,7 @@ public class ProprietariosVideoDAO implements Map<Integer, List<UtilizadorRegist
             {
                 ps.setInt(1,k);
                 ps.setInt(2, user.getId());
+                ps.executeUpdate();
             }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); } finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }

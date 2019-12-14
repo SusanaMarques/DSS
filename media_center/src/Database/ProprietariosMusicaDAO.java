@@ -82,13 +82,12 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
             c = Connect.connect();
 
             PreparedStatement ps = c.prepareStatement("INSERT INTO ProprietariosMusica (idMusica,idUtilizador) VALUES (?,?)");
-            System.out.println("CUTE BUT NO");
             for(UtilizadorRegistado user : v)
             {
                 ps.setInt(1,k);
-                System.out.println("NO");
                 ps.setInt(2, user.getId());
-                System.out.println("NOP");
+                System.out.println(user.getId());
+                ps.executeUpdate();
             }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }

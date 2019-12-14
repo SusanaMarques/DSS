@@ -34,16 +34,14 @@ public class  MC
     private int idType;
 
 
-    /** Construtor da classe MC sem parâmetros **/
-    public MC() { }
-
     /** Método que inicia uma sessão
      * @param mail    Email do utilizador a autenticar
      * @param pass    Password do utilizador a autenticar
      */
     public void iniciarSessao(String mail, String pass) throws CredenciaisInvalidasException {
         if(mail == null||pass == null || mail.isEmpty() || pass.isEmpty()) throw new CredenciaisInvalidasException();
-        gu.iniciarSessao(mail, pass, idType);
+        Utilizador u = gu.iniciarSessao(mail, pass, idType);
+        this.idUtilizadorAtual = u.getId();
     }
 
     /** Método que  termina uma sessão **/
