@@ -65,7 +65,7 @@ CREATE TABLE `Musica` (
 
 LOCK TABLES `Musica` WRITE;
 /*!40000 ALTER TABLE `Musica` DISABLE KEYS */;
-INSERT INTO `Musica` VALUES (-2062804315,'Hotline Bling',232295.671875,'mp3','R&B','Drake'),(-1624294241,'7 rings',179732.171875,'mp3','Pop','Ariana Grande'),(-1419027019,'Why do you only call me when you\'re high',265761.78125,'mp3','Rock','Arctic Monkeys'),(-1323395469,'You Need to Calm Down',177407.046875,'mp3','Pop','Taylor Swift'),(-1021089120,'Centuries',228246.296875,'mp3','Rock','Fall Out Boy'),(-692283955,'Teeth ',205073.421875,'mp3','Punk','5 Seconds of Summer ');
+INSERT INTO `Musica` VALUES (-2062804315,'Hotline Bling',232295.671875,'mp3','R&B','Drake'),(-1323395469,'You Need to Calm Down',177407.046875,'mp3','Pop','Taylor Swift'),(-1021089120,'Centuries',228246.296875,'mp3','Rock','Fall Out Boy'),(-692283955,'Teeth ',205073.421875,'mp3','Punk','5 Seconds of Summer ');
 /*!40000 ALTER TABLE `Musica` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -231,7 +231,7 @@ CREATE TABLE `Video` (
 
 LOCK TABLES `Video` WRITE;
 /*!40000 ALTER TABLE `Video` DISABLE KEYS */;
-INSERT INTO `Video` VALUES (815800994,'Finally // Beautiful Stranger',238.42,'mp4','Pop','Halsey'),(937131542,'Graveyard',235.45,'mp4','Pop','Halsey'),(2143103325,'Dont\' Start Now',261.06,'mp4','Pop','Dua Lipa');
+INSERT INTO `Video` VALUES (815800994,'Finally // Beautiful Stranger',238.42,'mp4','Pop','Halsey'),(937131542,'Graveyard',235.45,'mp4','Pop','Halsey'),(2143103325,'Radioactive',261.06,'mp4','Pop','Imagine Dragons');
 /*!40000 ALTER TABLE `Video` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
