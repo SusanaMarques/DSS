@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Regist">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Regist">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="99.0" layoutX="-27.0" layoutY="77.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="1033.0" />
       <Button layoutX="192.0" layoutY="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #c521ff;" text="Amigos" textFill="WHITE" />
@@ -39,7 +39,7 @@
       </Pane>
       <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="952.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img/icons8-undo-96.png" />
+            <Image url="@img/icons8-shutdown-96.png" />
          </image>
       </ImageView>
       <Text fill="#c521ff" layoutX="192.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">

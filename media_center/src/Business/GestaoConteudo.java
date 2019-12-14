@@ -123,6 +123,7 @@ public class GestaoConteudo {
     public Set<Video> getBibliotecaVideo() {
         return ((Set) videos.values());
     }
+
     /**Método para apresentar a Biblioteca geral das Musicas
      * @return Set com todas as instancias de musica da biblioteca geral
      * **/

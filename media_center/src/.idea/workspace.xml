@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84da538-6a96-47cb-924d-e34377780447" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/PLayer_video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PLayer_video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Administrador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Alt_gen_sucesso.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Alt_gen_sucesso.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/mediacenter.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,60 +29,8 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Presentation/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1668">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Presentation/PLayer_video.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="201" column="9" lean-forward="true" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Presentation/Controller_Conv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="138" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Business/MC.java" />
-        <option value="$PROJECT_DIR$/Business/GestaoUtilizador.java" />
-        <option value="$PROJECT_DIR$/Presentation/PLayer_video.java" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -77,49 +38,15 @@
     <option name="height" value="795" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Presentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -141,6 +68,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -156,115 +95,37 @@
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2025000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="795" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32859176" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32859176" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Business/MC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="212" column="63" selection-start-line="212" selection-start-column="63" selection-end-line="212" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/Controller_genero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1668">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/Controller_Conv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="138" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/PLayer_video.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="201" column="9" lean-forward="true" selection-start-line="201" selection-start-column="9" selection-end-line="201" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1576246339768">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576246339768" />
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom" timestamp="1576334078130">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576334078130" />
+    <state width="1440" height="251" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1576262709275" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center" timestamp="1576334078128">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576334078128" />
+    <state width="1440" height="251" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1576262709274" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left" timestamp="1576334078126">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576334078126" />
+    <state width="1440" height="251" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1576262709270" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right" timestamp="1576334078129">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576334078129" />
+    <state width="1440" height="251" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1576262709275" />
+    <state x="208" y="33" key="SettingsEditor" timestamp="1576246366933">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576246366933" />
   </component>
 </project>

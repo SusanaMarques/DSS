@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Admin">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Admin">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="314.0" layoutX="111.0" layoutY="259.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="775.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="99.0" layoutX="-37.0" layoutY="67.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="1063.0" />
@@ -24,7 +24,7 @@
       <Button layoutX="103.0" layoutY="246.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="162.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissões" textFill="WHITE" />
       <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="953.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@img/icons8-undo-96.png" />
+            <Image url="@img/icons8-shutdown-96.png" />
          </image>
       </ImageView>
       <Text fill="#c521ff" layoutX="187.0" layoutY="796.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permissões">
@@ -37,8 +37,8 @@
       <Button layoutX="420.0" layoutY="326.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 3" textFill="WHITE" />
       <Button layoutX="420.0" layoutY="390.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 4" textFill="WHITE" />
       <Button layoutX="419.0" layoutY="455.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 5" textFill="WHITE" />
-      <Button layoutX="618.0" layoutY="324.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão6" textFill="WHITE" />
-      <Button layoutX="618.0" layoutY="388.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 6" textFill="WHITE" />
-      <Button layoutX="617.0" layoutY="453.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 7" textFill="WHITE" />
+      <Button layoutX="618.0" layoutY="324.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 6" textFill="WHITE" />
+      <Button layoutX="618.0" layoutY="388.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 7" textFill="WHITE" />
+      <Button layoutX="617.0" layoutY="453.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="Permissão 8" textFill="WHITE" />
    </children>
 </Pane>
