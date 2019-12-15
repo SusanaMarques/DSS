@@ -26,7 +26,8 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
             c = Connect.connect();
             PreparedStatement stm = c.prepareStatement("SELECT count(*) FROM PlaylistMusica");
             ResultSet rs = stm.executeQuery();
-            if(rs.next()) { s = rs.getInt(1); }
+            if(rs.next()) { s = rs.getInt(1);
+            }
         }
         catch (Exception e) { throw new NullPointerException(e.getMessage()); } finally { Connect.close(c); }
         return s;
@@ -107,12 +108,15 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
             PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica (idPlaylist,idMusica) VALUES (?,?)");
             for(Musica musica : v) {
                 ps.setInt(1,k);
-                ps.setInt(2, musica.getId());}
+                ps.setInt(2, musica.getId());
+                ps.executeUpdate();
+            }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
         return array;
     }
+
 
     @Override
     public List<Musica> remove(Object o) { throw new UnsupportedOperationException("Not Implemented"); }

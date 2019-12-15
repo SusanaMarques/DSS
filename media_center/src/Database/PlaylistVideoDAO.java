@@ -105,7 +105,9 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
             PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistVideo (idPlaylist,idVideo) VALUES (?,?)");
             for(Video vd : v) {
                 ps.setInt(1,k);
-                ps.setInt(2, vd.getId());}
+                ps.setInt(2, vd.getId());
+                ps.executeUpdate();
+            }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }

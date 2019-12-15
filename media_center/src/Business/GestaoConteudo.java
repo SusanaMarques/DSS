@@ -18,6 +18,8 @@ public class GestaoConteudo {
     private Map<Integer, List<UtilizadorRegistado>> proprietariosMusica = new ProprietariosMusicaDAO();
     /** Proprietarios dos Videos **/
     private Map<Integer, List<UtilizadorRegistado>> proprietariosVideo = new ProprietariosVideoDAO();
+    /** Playlists de Musicas do sistema **/
+    private Map<Integer, List<Musica>> playlistMusica = new PlaylistMusicaDAO();
 
 
     /**
@@ -38,7 +40,7 @@ public class GestaoConteudo {
     }
 
     /**
-     * Método para obter um conteudo da biblioteca geral
+     * Método que obtem um conteudo da biblioteca geral
      * @param idC   id do conteudo
      * @param type  tipo do conteudo a obter
      * @return      conteudo
@@ -92,11 +94,15 @@ public class GestaoConteudo {
         if (tipo == 'm') {
             if(dupId == -1)
             {
-                System.out.println(u.getId());
                 musicas.put(c.getId(), (Musica) c);
                 List<UtilizadorRegistado> prop = new ArrayList<>();
                 prop.add(u);
                 proprietariosMusica.put(c.getId(), prop);
+                //adicionar à biblioteca pessoal
+                int id = u.getIdBibliotecaMusica();
+                List<Musica> lm = playlistMusica.get(c);
+                lm.add((Musica) c);
+                playlistMusica.put(id, lm);
             }
             else
             {
