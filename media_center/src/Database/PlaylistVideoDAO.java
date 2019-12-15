@@ -1,6 +1,7 @@
 package Database;
 
 import Business.Musica;
+import Business.Playlist;
 import Business.Video;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
-public class PlaylistVideoDAO implements Map<Integer, List<Video>>
+public class PlaylistVideoDAO implements Map<Integer, Playlist>
 {
     private Connection c;
 
@@ -67,26 +68,28 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
      * @throws NullPointerException  Não existe conexão com a base de dados
      */
     @Override
-    public List<Video> get(Object o) {
-        Video m = new Video();
-        ArrayList<Video> array = new ArrayList<>();
-        try {
-            c = Connect.connect();
+    public Playlist get(Object o) {
+        Playlist p = new Playlist();
+        ArrayList<Integer> l = new ArrayList<>();
 
-            String sql = "SELECT idPlaylist FROM PlaylistVideo WHERE idPlaylist = ?";
-            PreparedStatement ps = c.prepareStatement(sql);
+        try{
+            c = Connect.connect();
+            PreparedStatement ps = null;
+            ps = c.prepareStatement("SELECT * FROM PlaylistVideo WHERE idPlaylist = ?");
             ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
-                try {
-                    PreparedStatement pss = c.prepareStatement("SELECT * FROM Video WHERE idVideo = ?");
-                    pss.setInt(1, rs.getInt("idVideo"));
-                    ResultSet rss = ps.executeQuery();
-                    m = new Video(rss.getInt("idVideo"), rss.getString("nome"), rss.getDouble("duracao"), rss.getString("formato"), rss.getString("categoria"), rss.getString("realizador"));
-                    array.add(m); } catch (SQLException ex) { ex.printStackTrace(); }
-            } }
-        catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
-        return array;
+
+            if(rs.next()){
+                p.setIdPlaylist(rs.getInt("idPlaylist"));
+                p.setNome(rs.getNString("nomePlaylist"));
+                p.setIdUser(rs.getInt("idUtilizador"));
+                l.add(rs.getInt("idVideo"));
+            }
+            p.setLst(l);
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return p;
     }
 
     /**
@@ -96,29 +99,36 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
      * @return
      */
     @Override
-    public List<Video> put(Integer k, List<Video> v) {
-        ArrayList<Video> array = new ArrayList<>();
+    public Playlist put(Integer k, Playlist v) {
+        Playlist p = new Playlist();
+        ArrayList<Integer> l = new ArrayList<>();
 
+        if(this.containsKey(k)){ p = this.get(k);}
+        else p = v;
         try{
             c = Connect.connect();
 
-            PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistVideo (idPlaylist,idVideo) VALUES (?,?)");
-            for(Video vd : v) {
+            PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistVideo (idPlaylist,nomePlaylist,idUtilizador, idVideo) VALUES (?,?,?,?)");
+            ArrayList<Integer> lst = v.getlst();
+            for(Integer i : lst)
+            {
                 ps.setInt(1,k);
-                ps.setInt(2, vd.getId());
+                ps.setString(2, v.getNome());
+                ps.setInt(3, v.getUser());
+                ps.setInt(4, i);
                 ps.executeUpdate();
             }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
-        return array;
+        return p;
     }
 
     @Override
-    public List<Video> remove(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
+    public Playlist remove(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
 
     @Override
-    public void putAll(Map<? extends Integer, ? extends List<Video>> map) { throw new UnsupportedOperationException("Not Implemented"); }
+    public void putAll(Map<? extends Integer, ? extends Playlist> map) { throw new UnsupportedOperationException("Not Implemented"); }
 
     @Override
     public void clear() {throw new UnsupportedOperationException("Not Implemented");}
@@ -129,12 +139,12 @@ public class PlaylistVideoDAO implements Map<Integer, List<Video>>
     }
 
     @Override
-    public Collection<List<Video>> values() {
+    public Collection<Playlist> values() {
         throw new UnsupportedOperationException("Not Implemented");
     }
 
     @Override
-    public Set<Entry<Integer, List<Video>>> entrySet() {
+    public Set<Entry<Integer, Playlist>> entrySet() {
         throw new UnsupportedOperationException("Not Implemented");
     }
 }

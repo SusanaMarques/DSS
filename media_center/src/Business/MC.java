@@ -120,8 +120,8 @@ public class  MC
         }
 
         //Adicionar a bibliotecas
-        gc.uploadConteudo(c,t,u, dupId);
-        gu.uploadConteudo(c, t,u);
+        gc.addBibliotecaGeral(c,t,u, dupId);
+        gu.addBibiliotecaPessoal(c, t,u);
 
     }
 
@@ -198,20 +198,20 @@ public class  MC
      * @param idPlaylist     Id da playlist
      * @return               List com todas as musicas da playlist
      */
-    public List<Musica> showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
+    public Playlist showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
 
     /** Método que apresenta uma playlist de videos
      * @param idPlaylist    Id da playlist
      * @return              List com todas os videos da playlist
      */
-    public List<Video> showVideosPlaylist(int idPlaylist){
+    public Playlist showVideosPlaylist(int idPlaylist){
       return gu.getPlaylistVideo(idPlaylist);
     }
 
     /** Método que altera a categoria de um conteudo de um utilizador
-     * @param idCont Id do conteudo a alterar
-     * @param newCat Nova categoria do conteudo
-     * @param type Tipo do conteudo a alterar: m para musicas e v para videos
+     * @param idCont    Id do conteudo a alterar
+     * @param newCat    Nova categoria do conteudo
+     * @param type      Tipo do conteudo a alterar: m para musicas e v para videos
      */
     public void alterarCategoria(String newCat, int idCont, char type) throws CategoriaIgualException {
         if(type=='m') gu.alterarCategoriaM(newCat,idCont,idUtilizadorAtual);

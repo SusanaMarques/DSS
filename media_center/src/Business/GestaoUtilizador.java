@@ -1,6 +1,8 @@
 package Business;
 
 import Database.*;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,9 +15,9 @@ public class GestaoUtilizador
     /** Utilizadores registados no media center **/
     private Map<String,UtilizadorRegistado> users = new UtilizadorRegistadoDAO();
     /** Playlists de musica exitentes no media center **/
-    private Map<Integer, List<Musica>> playlistsMusicas = new PlaylistMusicaDAO();
+    private Map<Integer, Playlist> playlistsMusicas = new PlaylistMusicaDAO();
     /** Playlists de video exitentes no media center **/
-    private Map<Integer, List<Video>> playlistsVideos = new PlaylistVideoDAO();
+    private Map<Integer, Playlist> playlistsVideos = new PlaylistVideoDAO();
     /** Mapa da categoria das musicas quando alteradas pelos utilizadores **/
     private Map<Integer,Map<Integer,String>> categoriasMusica = new CategoriaMusicaDAO();
     /** Mapa da categoria das videos quando alteradas pelos utilizadores **/
@@ -52,17 +54,23 @@ public class GestaoUtilizador
      * @param t    Identificador do tipo de Conteudo
      * @param u    Utilizdor a atualizar
      **/
-    public void uploadConteudo(Conteudo c, char t, UtilizadorRegistado u) {
+    public void addBibiliotecaPessoal(Conteudo c, char t, UtilizadorRegistado u) {
         if(t == 'm') {
-            List<Musica> ls = playlistsMusicas.get(u.getIdBibliotecaMusica());
-            ls.add((Musica) c);
-            playlistsMusicas.put(u.getIdBibliotecaMusica(),ls);
+            Playlist p = playlistsMusicas.get(u.getIdBibliotecaMusica());
+            p.setIdUser(u.getId());
+            ArrayList<Integer> l = p.getlst();
+            l.add(c.getId());
+            p.setLst(l);
+            playlistsMusicas.put(u.getIdBibliotecaMusica(),p);
 
         }
         if(t=='v') {
-            List<Video> ls =  playlistsVideos.get(u.getIdBibliotecaVideo());
-            ls.add((Video) c);
-            playlistsVideos.put(u.getIdBibliotecaVideo(),ls);
+            Playlist p =  playlistsVideos.get(u.getIdBibliotecaVideo());
+            p.setIdUser(u.getId());
+            ArrayList<Integer> l = p.getlst();
+            l.add(c.getId());
+            p.setLst(l);
+            playlistsVideos.put(u.getIdBibliotecaVideo(),p);
         }
     }
 
@@ -70,7 +78,7 @@ public class GestaoUtilizador
      * @param idPlaylist Id da playlist
      * @return List com todas as musicas da playlist
      */
-    public List<Musica> getPlaylistMusica(int idPlaylist) {
+    public Playlist getPlaylistMusica(int idPlaylist) {
         return playlistsMusicas.get(idPlaylist);
     }
 
@@ -78,7 +86,7 @@ public class GestaoUtilizador
      * @param idPlaylist Id da playlist
      * @return List com todas os videos da playlist
      */
-    public List<Video> getPlaylistVideo( int idPlaylist) {
+    public Playlist getPlaylistVideo( int idPlaylist) {
         return playlistsVideos.get(idPlaylist);
     }
 

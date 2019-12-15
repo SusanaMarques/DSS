@@ -8,7 +8,7 @@ public class Musica extends Conteudo
     /**
      * Construtor da classe Musica sem parâmetros
      */
-    public Musica ()
+    public Musica()
     {
         super();
         this.artista = "N/D";

@@ -19,7 +19,7 @@ public class GestaoConteudo {
     /** Proprietarios dos Videos **/
     private Map<Integer, List<UtilizadorRegistado>> proprietariosVideo = new ProprietariosVideoDAO();
     /** Playlists de Musicas do sistema **/
-    private Map<Integer, List<Musica>> playlistMusica = new PlaylistMusicaDAO();
+    private Map<Integer, Playlist> playlistMusica = new PlaylistMusicaDAO();
 
 
     /**
@@ -90,7 +90,7 @@ public class GestaoConteudo {
      * @param tipo  Tipo do conteudo a adicionar
      * @param u     Utilizador que está a carregar o conteudo
      */
-    public void uploadConteudo(Conteudo c, char tipo, UtilizadorRegistado u, int dupId) {
+    public void addBibliotecaGeral(Conteudo c, char tipo, UtilizadorRegistado u, int dupId) {
         if (tipo == 'm') {
             if(dupId == -1)
             {
@@ -98,11 +98,6 @@ public class GestaoConteudo {
                 List<UtilizadorRegistado> prop = new ArrayList<>();
                 prop.add(u);
                 proprietariosMusica.put(c.getId(), prop);
-                //adicionar à biblioteca pessoal
-                int id = u.getIdBibliotecaMusica();
-                List<Musica> lm = playlistMusica.get(c);
-                lm.add((Musica) c);
-                playlistMusica.put(id, lm);
             }
             else
             {

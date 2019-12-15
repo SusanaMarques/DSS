@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="133d9ba2-a9bf-4e9b-80cc-c84e30221482" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Modelo dominio/v3.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Modelo dominio/v3.vpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1184699503.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1187946753.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1854316821.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1898773355.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-21419265.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-774940677.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-98060875.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/1734882928.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/27793163.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/937131542.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +28,13 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -82,7 +104,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576364377563</updated>
       <workItem from="1576364381176" duration="115000" />
-      <workItem from="1576365300827" duration="52000" />
+      <workItem from="1576365300827" duration="3310000" />
+      <workItem from="1576370055216" duration="4577000" />
     </task>
     <servers />
   </component>
@@ -94,13 +117,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576365352302" />
+    <state width="1440" height="32" key="GridCell.Tab.0.bottom" timestamp="1576369252692">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="32" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576369252692" />
+    <state width="1440" height="32" key="GridCell.Tab.0.center" timestamp="1576369252689">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="32" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576369252689" />
+    <state width="1440" height="32" key="GridCell.Tab.0.left" timestamp="1576369252689">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="32" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576369252689" />
+    <state width="1440" height="32" key="GridCell.Tab.0.right" timestamp="1576369252691">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1440" height="32" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576369252691" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1576365355189">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576365355189" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576365303611">
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576370056805">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576365303611" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576370056805" />
   </component>
 </project>

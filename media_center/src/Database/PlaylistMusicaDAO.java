@@ -1,6 +1,8 @@
 package Database;
 
+import Business.Administrador;
 import Business.Musica;
+import Business.Playlist;
 import Business.UtilizadorRegistado;
 
 import java.sql.Connection;
@@ -10,7 +12,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 
-public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
+public class PlaylistMusicaDAO implements Map<Integer, Playlist>
 {
     private Connection c;
 
@@ -70,59 +72,68 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
      * @throws NullPointerException  Não existe conexão com a base de dados
      */
     @Override
-    public List<Musica> get(Object o) {
-        Musica m;
-        ArrayList<Musica> array = new ArrayList<>();
-        try {
-            c = Connect.connect();
+    public Playlist get(Object o) {
+        Playlist p = new Playlist();
+        ArrayList<Integer> l = new ArrayList<>();
 
-            String sql = "SELECT idPlaylist FROM PlaylistMusica WHERE idPlaylist = ?";
-            PreparedStatement ps = c.prepareStatement(sql);
+        try{
+            c = Connect.connect();
+            PreparedStatement ps = null;
+            ps = c.prepareStatement("SELECT * FROM PlaylistMusica WHERE idPlaylist = ?");
             ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
-                try {
-                    PreparedStatement pss = c.prepareStatement("SELECT * FROM Musica WHERE idMusica = ?");
-                    pss.setInt(1, rs.getInt("idMusica"));
-                    ResultSet rss = ps.executeQuery();
-                    m = new Musica(rs.getInt("idMusica"), rs.getString("nome"), rs.getDouble("duracao"), rs.getString("formato"), rs.getString("categoria"), rs.getString("artista"));
-                    array.add(m);}
-                catch (SQLException ex) { ex.printStackTrace(); }
-            } } catch (Exception e) { e.printStackTrace(); } finally { Connect.close(c); }
-        return array;
+
+            if(rs.next()){
+                p.setIdPlaylist(rs.getInt("idPlaylist"));
+                p.setNome(rs.getNString("nomePlaylist"));
+                p.setIdUser(rs.getInt("idUtilizador"));
+                l.add(rs.getInt("idMusica"));
+            }
+            p.setLst(l);
+        }
+        catch(Exception e){ System.out.printf(e.getMessage()); }
+        finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
+        return p;
     }
 
     /**
      * Método que insere uma nova playlist na base de dados
      * @param k      id da playlist
-     * @param v      lista de musicas
+     * @param v      playlist
      * @return
      */
     @Override
-    public List<Musica> put(Integer k, List<Musica> v){
-        ArrayList<Musica> array = new ArrayList<>();
+    public Playlist put(Integer k, Playlist v){
+        Playlist p = new Playlist();
+        ArrayList<Integer> l = new ArrayList<>();
 
+        if(this.containsKey(k)){ p = this.get(k);}
+        else p = v;
         try{
             c = Connect.connect();
-
-            PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica (idPlaylist,idMusica) VALUES (?,?)");
-            for(Musica musica : v) {
+            PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica (idPlaylist,nomePlaylist,idUtilizador, idMusica) VALUES (?,?,?,?)");
+            ArrayList<Integer> lst = v.getlst();
+            for(Integer i : lst)
+            {
                 ps.setInt(1,k);
-                ps.setInt(2, musica.getId());
+                ps.setString(2, v.getNome());
+                ps.setInt(3, v.getUser());
+                ps.setInt(4, i);
+                System.out.println(i);
                 ps.executeUpdate();
             }
         }
         catch(Exception e){ System.out.printf(e.getMessage()); }
         finally{ try{ Connect.close(c); } catch(Exception e){ System.out.printf(e.getMessage()); } }
-        return array;
+        return p;
     }
 
 
     @Override
-    public List<Musica> remove(Object o) { throw new UnsupportedOperationException("Not Implemented"); }
+    public Playlist remove(Object o) { throw new UnsupportedOperationException("Not Implemented");}
 
     @Override
-    public void putAll(Map<? extends Integer, ? extends List<Musica>> map) { throw new UnsupportedOperationException("Not Implemented"); }
+    public void putAll(Map<? extends Integer, ? extends Playlist> map) { throw new UnsupportedOperationException("Not Implemented"); }
 
     @Override
     public void clear() { throw new UnsupportedOperationException("Not Implemented"); }
@@ -133,12 +144,12 @@ public class PlaylistMusicaDAO implements Map<Integer, List<Musica>>
     }
 
     @Override
-    public Collection<List<Musica>> values() {
+    public Collection<Playlist> values() {
         throw new UnsupportedOperationException("Not Implemented");
     }
 
     @Override
-    public Set<Entry<Integer, List<Musica>>> entrySet() {
+    public Set<Entry<Integer, Playlist>> entrySet() {
         throw new UnsupportedOperationException("Not Implemented");
     }
 }
