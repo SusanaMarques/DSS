@@ -64,7 +64,9 @@ public class  MC
      */
     public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException, URISyntaxException, TikaException, SAXException {
         StringTokenizer tokens = new StringTokenizer( p,".");
-        String mp4Artist = tokens.nextToken();
+        StringTokenizer tokensName = new StringTokenizer(tokens.nextToken(), "/");
+        while(tokensName.countTokens()>1) tokensName.nextToken();
+        String mp4Artist = tokensName.nextToken();
         System.out.println(mp4Artist);
         String type = tokens.nextToken();
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
@@ -107,8 +109,9 @@ public class  MC
             t='v';
             System.out.println(t);
             Video v = new Video();
+            for(int i=0;i<2; i++) System.out.println("RANDOM Y U NO WORK " + r.nextInt());
             v.setId(r.nextInt());
-            v.setNome(Integer.toString(v.getId()));
+            v.setNome(mp4Artist);
             v.setFormato("mp4");
             v.setDuracao(duracao);
             v.setCategoria("N/D");
@@ -119,6 +122,7 @@ public class  MC
 
         //Verificar duplicaçoes
         int dupId = gc.verificaDuplicacoes(c,t);
+        System.out.println("VERIFICA DUPS Y U NO WORK " + dupId);
         if(dupId == -1) {
             //Path building & copiar para a biblioteca
             String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
@@ -208,8 +212,17 @@ public class  MC
      * @param idPlaylist     Id da playlist
      * @return               List com todas as musicas da playlist
      */
-    public Playlist showMusicasPlaylist(int idPlaylist){
-        return gu.getPlaylistMusica(idPlaylist);
+    public Set<Musica> showMusicasPlaylist(int idPlaylist){
+        Map<Integer,String> idCats = gu.aux1(idUtilizadorAtual,idPlaylist);
+        Set<Musica> ret= new HashSet<>();
+        Musica m = null;
+        for(int id : idCats.keySet()){
+            m =((Musica) gc.getConteudo(id,'m')).clone();
+            if(idCats.get(id)!=null) m.setCategoria(idCats.get(id));
+            ret.add(m);
+        }
+
+        return ret;
 
        }
 
@@ -217,8 +230,18 @@ public class  MC
      * @param idPlaylist    Id da playlist
      * @return              List com todas os videos da playlist
      */
-    public Playlist showVideosPlaylist(int idPlaylist){
-      return gu.getPlaylistVideo(idPlaylist);
+    public Set<Video> showVideosPlaylist(int idPlaylist){
+        Map<Integer,String> idCats = gu.aux2(idUtilizadorAtual,idPlaylist);
+        Set<Video> ret= new HashSet<>();
+        Video m = null;
+        for(int id : idCats.keySet()){
+            m =((Video) gc.getConteudo(id,'v')).clone();
+            if(idCats.get(id)!=null) m.setCategoria(idCats.get(id));
+            ret.add(m);
+        }
+
+        return ret;
+
     }
 
     public int getidPessoalM(){

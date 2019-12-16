@@ -111,15 +111,17 @@ public class GestaoConteudo {
                 videos.put(c.getId(), (Video) c);
                 List<UtilizadorRegistado> prop = new ArrayList<>();
                 prop.add(u);
+                System.out.println("GEST CONTEUDO :"+c.getId() );
                 proprietariosVideo.put(c.getId(), prop);
             }
             else
             {
-                List<UtilizadorRegistado> prop = proprietariosVideo.get(c);
+                List<UtilizadorRegistado> prop = proprietariosVideo.get(c.getId());
                 prop.add(u);
                 proprietariosVideo.put(c.getId(), prop);
             }
-        }}
+        }
+        }
     }
 
     /** Método que apresenta a Biblioteca geral dos Videos

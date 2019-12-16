@@ -71,6 +71,7 @@ public class GestaoUtilizador
             l.add(c.getId());
             p.setLst(l);
             playlistsVideos.put(u.getIdBibliotecaVideo(),p);
+
         }
     }
 
@@ -150,5 +151,28 @@ public class GestaoUtilizador
 
 
         return u.getIdBibliotecaVideo();
+    }
+
+
+    public Map<Integer,String> aux1(int idU, int idBib){
+        List<Integer> bibIds = playlistsMusicas.get(idBib).getlst();
+        Map<Integer,String> idCats = new HashMap<>();
+        for(int id : bibIds){
+            if(categoriasMusica.containsKey(id)) {
+                if(categoriasMusica.get(id).containsKey(idU)) idCats.put(id,categoriasMusica.get(id).get(idU));
+            }else idCats.put(id,null);
+        }
+        return idCats;
+    }
+
+    public Map<Integer,String> aux2(int idU, int idBib){
+        List<Integer> bibIds = playlistsVideos.get(idBib).getlst();
+        Map<Integer,String> idCats = new HashMap<>();
+        for(int id : bibIds){
+            if(categoriasVideo.containsKey(id)) {
+                if(categoriasVideo.get(id).containsKey(idU)) idCats.put(id,categoriasVideo.get(id).get(idU));
+            }else idCats.put(id,null);
+        }
+        return idCats;
     }
 }

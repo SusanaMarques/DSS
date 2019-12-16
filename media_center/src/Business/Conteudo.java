@@ -89,7 +89,9 @@ public class Conteudo
      * Método que altera o id do conteudo
      * @param id    Novo id do conteudo
      */
-    public void setId(int id){this.id = id;}
+    public void setId(int id){
+        System.out.println("SETTIN ID @ Conteudo: " + id);
+        this.id = id;}
 
     /**
      * Método que altera o nome do conteudo

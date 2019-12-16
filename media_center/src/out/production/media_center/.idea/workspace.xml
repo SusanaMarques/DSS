@@ -2,39 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d4d7ff-da74-4f44-90de-81f1f181c6b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/DSS.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../baseDeDados/DSS.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-1425021721.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-1429139704.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-134655529.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1625320966.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/306021025.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Regist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Controller_genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_genero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Controller_geral.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_geral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Controller_opt.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_opt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Controller_pessoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_pessoal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/pessoal.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1425021721.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1429139704.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-134655529.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1625320966.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/306021025.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,11 +44,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Presentation/Controller_pessoal.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+            <state relative-caret-position="150">
+              <caret line="165" selection-start-line="165" selection-end-line="165" />
+              <folding>
+                <element signature="e#3653#3654#0" expanded="true" />
+                <element signature="e#3707#3708#0" expanded="true" />
+                <element signature="e#3769#3770#0" expanded="true" />
+                <element signature="e#3823#3824#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Presentation/Controller_Regist.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,19 +72,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Presentation/Controller_geral.java">
+        <entry file="file://$PROJECT_DIR$/Presentation/Controller_pessoal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-532">
-              <caret line="215" selection-start-line="215" selection-end-line="215" />
+            <state relative-caret-position="229">
+              <caret line="149" column="7" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Business/cac.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Business/MC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="159">
+              <caret line="228" column="57" selection-start-line="228" selection-start-column="57" selection-end-line="228" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7101#7102#0" expanded="true" />
+                <element signature="e#7149#7150#0" expanded="true" />
+                <element signature="e#9684#9685#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,6 +131,11 @@
       <find>alter</find>
       <find>get</find>
       <find>pla</find>
+      <find>getC</find>
+      <find>getPla</find>
+      <find>sho</find>
+      <find>mus</find>
+      <find>getPlayl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,12 +150,12 @@
         <option value="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" />
         <option value="$PROJECT_DIR$/Presentation/Controller_genero.java" />
         <option value="$PROJECT_DIR$/Business/cac.java" />
-        <option value="$PROJECT_DIR$/Business/GestaoUtilizador.java" />
-        <option value="$PROJECT_DIR$/Business/MC.java" />
         <option value="$PROJECT_DIR$/Presentation/Controller_geral.java" />
-        <option value="$PROJECT_DIR$/Presentation/Controller_opt.java" />
         <option value="$PROJECT_DIR$/Presentation/Controller_Regist.java" />
+        <option value="$PROJECT_DIR$/Presentation/Controller_opt.java" />
+        <option value="$PROJECT_DIR$/Business/GestaoUtilizador.java" />
         <option value="$PROJECT_DIR$/Presentation/Controller_pessoal.java" />
+        <option value="$PROJECT_DIR$/Business/MC.java" />
       </list>
     </option>
   </component>
@@ -171,12 +181,7 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Biblioteca" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -242,12 +247,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576495465617</updated>
-      <workItem from="1576495467042" duration="22054000" />
+      <workItem from="1576495467042" duration="26663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22054000" />
+    <option name="totallyTimeSpent" value="26663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="795" extended-state="0" />
@@ -258,7 +263,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32859176" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -269,7 +274,7 @@
       <window_info anchor="bottom" id="Database Console" order="6" weight="0.22048365" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32859176" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.371266" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.371266" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3997155" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -494,13 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Business/GestaoConteudo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1130">
-          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Business/cac.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -515,42 +513,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_geral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-810">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Presentation/Controller_opt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+        <state relative-caret-position="24">
+          <caret line="102" column="81" selection-start-line="102" selection-start-column="81" selection-end-line="102" selection-end-column="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Business/MC.java">
+    <entry file="file://$PROJECT_DIR$/Business/GestaoConteudo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="198" column="28" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7101#7102#0" expanded="true" />
-            <element signature="e#7149#7150#0" expanded="true" />
-            <element signature="e#7891#7892#0" expanded="true" />
-            <element signature="e#7943#7944#0" expanded="true" />
-            <element signature="e#9047#9048#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392">
-          <caret line="100" column="3" selection-start-line="100" selection-start-column="3" selection-end-line="102" selection-end-column="5" />
-          <folding>
-            <element signature="e#3653#3654#0" expanded="true" />
-            <element signature="e#3707#3708#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Presentation/Controller_Regist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="106">
           <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -558,19 +544,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/Controller_geral.java">
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_pessoal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        <state relative-caret-position="229">
+          <caret line="149" column="7" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Presentation/Controller_pessoal.java">
+    <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+        <state relative-caret-position="150">
+          <caret line="165" selection-start-line="165" selection-end-line="165" />
+          <folding>
+            <element signature="e#3653#3654#0" expanded="true" />
+            <element signature="e#3707#3708#0" expanded="true" />
+            <element signature="e#3769#3770#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/MC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="228" column="57" selection-start-line="228" selection-start-column="57" selection-end-line="228" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#7101#7102#0" expanded="true" />
+            <element signature="e#7149#7150#0" expanded="true" />
+            <element signature="e#9684#9685#0" expanded="true" />
           </folding>
         </state>
       </provider>

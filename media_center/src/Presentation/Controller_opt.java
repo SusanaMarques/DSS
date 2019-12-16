@@ -125,7 +125,7 @@ public class Controller_opt {
             pl.setMusica(m);
             pl.setText(m.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
-                    "Pop", "Rock", "Jazz", "Country", "Classic","Acid Jazz","Punk","R&B"));
+                    "Pop", "Rock", "Jazz", "Country", "Classic","Acid Jazz","Punk","R&B","PunkRock"));
             this.view.printPage((Node) event.getSource(), root);
         }
 
@@ -139,7 +139,7 @@ public class Controller_opt {
             pl.setVideo(v);
             pl.setText(v.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
-                    "Pop", "Rock", "Jazz", "Country", "Season1","Season2","Season3"));
+                    "Pop", "Rock", "Jazz","PunkRock","Country", "Thriller","Comédia","Romance","Fantasia"));
             this.view.printPage((Node) event.getSource(), root);
         }
 

@@ -18,6 +18,7 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Set;
 
 
 public class Controller_pessoal {
@@ -131,14 +132,13 @@ public class Controller_pessoal {
 
 
     /**
-     * inicializa a biblioteca geral já com a lista das músicas e vídeos
+     * inicializa a biblioteca pessoal já com a lista das músicas e vídeos
      */
     @FXML private void initialize () {
 
         Platform.runLater(()-> {
-        Playlist mus=model.showMusicasPlaylist(model.getidPessoalM());
-        System.out.println(model.getidPessoalM());
-        Playlist vid =model.showVideosPlaylist(model.getidPessoalV());
+        Set<Musica> idmus=model.showMusicasPlaylist(model.getidPessoalM());
+        Set<Video> vid =model.showVideosPlaylist(model.getidPessoalV());
         nome_m.setCellValueFactory( new PropertyValueFactory<>("nome"));
         artista.setCellValueFactory( new PropertyValueFactory<>("artista"));
         cat_m.setCellValueFactory( new PropertyValueFactory<>("categoria"));
@@ -146,20 +146,14 @@ public class Controller_pessoal {
         nome_v.setCellValueFactory( new PropertyValueFactory<>("nome"));
         realizador.setCellValueFactory( new PropertyValueFactory<>("realizador"));
         cat_v.setCellValueFactory( new PropertyValueFactory<>("categoria"));
-        ArrayList<Integer> idmus=  mus.getlst();
-        ArrayList<Integer> idvid = vid.getlst();
-        ArrayList<Musica> mu = new ArrayList<>();
-        ArrayList<Video> vi=  new ArrayList<>();
 
         ObservableList<Musica> m = FXCollections.observableArrayList();
-        for(int idm: idmus) {mu.add((Musica) model.getCont(idm,'m'));  }
-        m.addAll(mu);
+        m.addAll(idmus);
         table1.getItems().setAll(m);
 
 
         ObservableList<Video> v = FXCollections.observableArrayList();
-        for(int idv: idvid) {vi.add((Video) model.getCont(idv,'v'));}
-        v.addAll(vi);
+        v.addAll(vid);
         table2.getItems().setAll(v);
 
       });
