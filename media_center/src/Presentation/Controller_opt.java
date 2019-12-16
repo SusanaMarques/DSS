@@ -66,7 +66,6 @@ public class Controller_opt {
             //set model e view do Player
             Player pl = l.getController();
             pl.setV(view);
-            pl.sett();
             pl.setMPlayer(player);
             pl.setText(m.getNome());
             pl.setModel(model);
@@ -117,7 +116,7 @@ public class Controller_opt {
 
         if(idd==1) {
 
-            FXMLLoader l = new FXMLLoader(getClass().getResource("Alterar_Genero.fxml"));
+            FXMLLoader l = new FXMLLoader(getClass().getResource("Alterar_Categoria.fxml"));
             Parent root = l.load();
             this.view.printPage((Node) event.getSource(), root);
             Controller_genero pl = l.getController();
@@ -127,11 +126,11 @@ public class Controller_opt {
             pl.setMusica(m);
             pl.setText(m.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
-                    "Pop", "Rock", "Jazz", "Country", "Classic","Punk","R&B"));
+                    "Pop", "Rock", "Jazz", "Country", "Classic","Acid Jazz","Punk","R&B"));
         }
 
         if(idd==2){
-            FXMLLoader l = new FXMLLoader(getClass().getResource("Alterar_Genero.fxml"));
+            FXMLLoader l = new FXMLLoader(getClass().getResource("Alterar_Categoria.fxml"));
             Parent root = l.load();
             this.view.printPage((Node) event.getSource(), root);
             Controller_genero pl = l.getController();

@@ -2,6 +2,7 @@ package Presentation;
 
 import Business.MC;
 import Business.Musica;
+import Business.Playlist;
 import Business.Video;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,7 +17,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
-import java.util.Set;
+import java.util.ArrayList;
+
 
 public class Controller_pessoal {
 
@@ -138,23 +140,28 @@ public class Controller_pessoal {
         artista.setCellValueFactory( new PropertyValueFactory<>("artista"));
         cat_m.setCellValueFactory( new PropertyValueFactory<>("categoria"));
 
-
+        System.out.println(model.getUserT());
 
         nome_v.setCellValueFactory( new PropertyValueFactory<>("nome"));
         realizador.setCellValueFactory( new PropertyValueFactory<>("realizador"));
         cat_v.setCellValueFactory( new PropertyValueFactory<>("categoria"));
 
-       // Set<Musica> mus=  model.showMusicasPlaylist(kml);
-       // Set<Video> vid = model.showVideosPlaylist(nkjnk);
-
+        Playlist mus=model.showMusicasPlaylist(model.getidPessoalM());
+        Playlist vid = model.showVideosPlaylist(model.getidPessoalV());
+        ArrayList<Integer> idmus=  mus.getlst();
+        ArrayList<Integer> idvid = vid.getlst();
+        ArrayList<Musica> mu = new ArrayList<>();
+        ArrayList<Video> vi=  new ArrayList<>();
 
         ObservableList<Musica> m = FXCollections.observableArrayList();
-     //   m.addAll(mus);
+        for(int idm : idmus) mu.add((Musica) model.getCont(idm,'m'));
+        m.addAll(mu);
         table1.getItems().setAll(m);
 
 
         ObservableList<Video> v = FXCollections.observableArrayList();
-      //  v.addAll(vid);
+        for(int idv : idvid) vi.add((Video) model.getCont(idv,'v'));
+        v.addAll(vi);
         table2.getItems().setAll(v);
 
 

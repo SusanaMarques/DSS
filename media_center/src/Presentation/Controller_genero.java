@@ -70,14 +70,14 @@ public void setText(String a){
         String neww = n_gen.getSelectionModel().getSelectedItem();
         try {
             model.alterarCategoria(neww, m.getId(), 'm');
-            FXMLLoader l = new FXMLLoader(getClass().getResource("Alt_gen_sucesso.fxml"));
+            FXMLLoader l = new FXMLLoader(getClass().getResource("Alt_cat_sucesso.fxml"));
             Parent root = l.load();
             Controller_upload up = l.getController();
             up.setM(this.model);
             up.setV(view);
             this.view.printPage((Node) event.getSource(), root);
         } catch (CategoriaIgualException e) {
-            FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Género.fxml"));
+            FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Categoria.fxml"));
             Parent root = l.load();
             Controller_upload up = l.getController();
             up.setM(this.model);
@@ -89,14 +89,14 @@ public void setText(String a){
         String neww = n_gen.getSelectionModel().getSelectedItem();
         try {
             model.alterarCategoria(neww, v.getId(), 'v');
-            FXMLLoader l = new FXMLLoader(getClass().getResource("Alt_gen_sucesso.fxml"));
+            FXMLLoader l = new FXMLLoader(getClass().getResource("Alt_cat_sucesso.fxml"));
             Parent root = l.load();
             Controller_upload up = l.getController();
             up.setM(this.model);
             up.setV(view);
             this.view.printPage((Node) event.getSource(), root);
         } catch (CategoriaIgualException e) {
-            FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Género.fxml"));
+            FXMLLoader l=new FXMLLoader(getClass().getResource( "Erro_Categoria.fxml"));
             Parent root = l.load();
             Controller_upload up = l.getController();
             up.setM(this.model);

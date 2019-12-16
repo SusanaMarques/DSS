@@ -129,4 +129,14 @@ public class GestaoUtilizador
         cats.put(idU,newCat);
         categoriasVideo.put(idCont,cats);
     }
+
+    public int getPlaylistPessoalM(int idUtilizadorAtual) {
+        UtilizadorRegistado u = users.get(idUtilizadorAtual);
+        return u.getIdBibliotecaMusica();
+    }
+
+    public int getPlaylistPessoalV(int idUtilizadorAtual) {
+        UtilizadorRegistado u = users.get(idUtilizadorAtual);
+        return u.getIdBibliotecaVideo();
+    }
 }

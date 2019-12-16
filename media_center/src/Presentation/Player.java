@@ -24,6 +24,7 @@ import javafx.util.Callback;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 
@@ -34,6 +35,7 @@ public class Player {
     private MediaPlayer player;
     //private Set<Musica> mus;
     private int id;
+    private int aleatorio; //sequencial=0;
 
     List<Musica> ml= new ArrayList<>();
 
@@ -46,8 +48,6 @@ public class Player {
     @FXML
     private ListView<Musica> lv;
 
-    @FXML
-    private MediaView v;
 
 
     @FXML
@@ -59,6 +59,10 @@ public class Player {
 
     public void setModel(MC m){
         this.model=m;
+    }
+
+    public void setAl(int x){
+        this.aleatorio=x;
     }
 
     public void setMus(Set<Musica> mus){
@@ -90,9 +94,7 @@ public class Player {
         });
     }
 
-    public void sett() {
-        v.setMediaPlayer(player);
-    }
+
 
     public void setText(String a){
         t.setText(a);
@@ -158,7 +160,6 @@ public class Player {
         //set model e view do Player
         Player pl = l.getController();
         pl.setV(view);
-        pl.sett();
         pl.setMPlayer(player);
         pl.setText(m.getNome());
         pl.setModel(model);
@@ -178,8 +179,11 @@ public class Player {
         for(; i<ml.size();i++){
             if(ml.get(i).getId()==id) break;
         }
-        if((i % ml.size()) + 1 != ml.size()) {
+
+
+        if(((i % ml.size()) + 1 != ml.size()) && aleatorio==0) {
             m = ml.get((i % ml.size()) + 1);
+
 
 
             //inicialização do player
@@ -196,14 +200,43 @@ public class Player {
             Player pl = l.getController();
             pl.setModel(model);
             pl.setV(view);
-            pl.sett();
             pl.setMPlayer(player);
             pl.setText(m.getNome());
             pl.setMus(model.showMusicas());
             pl.setId(m.getId());
             pl.inic();
+            pl.setAl(0);
 
         }
+
+        else if(aleatorio==1) {
+            Random r = new Random(System.currentTimeMillis());
+            m = ml.get(r.nextInt(ml.size()));
+
+
+            //inicialização do player
+            Media media = new Media(model.getPath('m', m.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
+
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
+
+
+            //set model e view do Player
+            Player pl = l.getController();
+            pl.setModel(model);
+            pl.setV(view);
+            pl.setMPlayer(player);
+            pl.setText(m.getNome());
+            pl.setMus(model.showMusicas());
+            pl.setId(m.getId());
+            pl.inic();
+            pl.setAl(1);
+
+        }
+
 
         else {
            goback(e);
@@ -220,7 +253,7 @@ public class Player {
         for(; i<ml.size();i++){
             if(ml.get(i).getId()==id) break;
         }
-        if((i % ml.size()) - 1 != -1) {
+        if((i % ml.size()) - 1 != -1 && aleatorio==0) {
             m = ml.get((i % ml.size()) - 1);
 
 
@@ -238,13 +271,41 @@ public class Player {
                 Player pl = l.getController();
                 pl.setModel(model);
                 pl.setV(view);
-                pl.sett();
                 pl.setMPlayer(player);
                 pl.setText(m.getNome());
                 pl.setMus(model.showMusicas());
                 pl.setId(m.getId());
                 pl.inic();
+                pl.setAl(0);
+
             }
+            else if (aleatorio==1) {
+            Random r = new Random(System.currentTimeMillis());
+            m = ml.get(r.nextInt(ml.size()));
+
+
+            //inicialização do player
+            Media media = new Media(model.getPath('m', m.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
+
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
+
+
+            //set model e view do Player
+            Player pl = l.getController();
+            pl.setModel(model);
+            pl.setV(view);
+            pl.setMPlayer(player);
+            pl.setText(m.getNome());
+            pl.setMus(model.showMusicas());
+            pl.setId(m.getId());
+            pl.inic();
+            pl.setAl(1);
+
+        }
             else player.pause();
 
     }

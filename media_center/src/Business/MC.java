@@ -50,6 +50,12 @@ public class  MC
         idType = -1;
     }
 
+    /** Método que retorna o nome do utilizador registado **/
+    public String getNome(String email,String pass) throws CredenciaisInvalidasException {
+        Utilizador u= gu.iniciarSessao(email, pass, idType);
+        return u.getNome();
+    }
+
     /** Método que faz o upload de conteudo
      * @param p   Path do conteudo a fazer upload
      */
@@ -60,6 +66,7 @@ public class  MC
         String type = tokens.nextToken();
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
         char t;
+        Random  r = new Random();
         Conteudo c = new Conteudo();
 
 
@@ -81,13 +88,13 @@ public class  MC
             categoria = m.getGenre();
             album = m.getAlbum();
 
-            if(title == null) title= "N/D";
+            if(title == null) title= mp4Artist.substring(0,Math.min(mp4Artist.length(),44));
             if(artist == null) artist = "N/D";
             if(categoria == null) categoria = "N/D";
             if(album == null) album = "N/D";
 
             t = 'm';
-            c = new Musica(p.hashCode(), title, duracao, "mp3", categoria, artist);
+            c = new Musica(r.nextInt(), title, duracao, "mp3", categoria, artist);
         }
         else if (type.equals("mp4")){
             Metadata m = extrairMetaMp4(origin);
@@ -97,7 +104,7 @@ public class  MC
             t='v';
             System.out.println(t);
             Video v = new Video();
-            v.setId(p.hashCode());
+            v.setId(r.nextInt());
             v.setNome(Integer.toString(v.getId()));
             v.setFormato("mp4");
             v.setDuracao(duracao);
@@ -207,6 +214,17 @@ public class  MC
       return gu.getPlaylistVideo(idPlaylist);
     }
 
+    public int getidPessoalM(){
+        System.out.println("\ntest2 :"+idUtilizadorAtual);
+        return gu.getPlaylistPessoalM(idUtilizadorAtual);
+
+    }
+
+    public int getidPessoalV(){
+        return gu.getPlaylistPessoalV(idUtilizadorAtual);
+
+    }
+
     /** Método que altera a categoria de um conteudo de um utilizador
      * @param idCont    Id do conteudo a alterar
      * @param newCat    Nova categoria do conteudo
@@ -227,5 +245,8 @@ public class  MC
     }
 
 
+    public Conteudo getCont(int idm, char m) {
+       return gc.getConteudo(idm,m);
+    }
 }
 

@@ -7,8 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import org.apache.tika.exception.TikaException;
 import org.xml.sax.SAXException;
@@ -22,6 +21,8 @@ public class Controller_Regist {
     private MC model;
     private View view;
 
+    @FXML
+    private Text username;
 
 
     public void setM(MC m){
@@ -32,6 +33,10 @@ public class Controller_Regist {
     public void setV(View v){
         this.view=v;
 
+    }
+
+    public void setText(String a){
+        this.username.setText(a);
     }
 
 

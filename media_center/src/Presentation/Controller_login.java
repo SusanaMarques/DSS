@@ -65,6 +65,7 @@ public class Controller_login {
                 Controller_Regist control = l.getController();
                 control.setM(model);
                 control.setV(view);
+                control.setText(model.getNome(email,pass));
                 this.view.printPage((Node) event.getSource(),root);}
             else{
                 FXMLLoader l=new FXMLLoader(getClass().getResource( "Administrador.fxml"));

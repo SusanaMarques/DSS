@@ -1,5 +1,4 @@
 package Presentation;
-
 import Business.MC;
 import Business.Musica;
 import Business.Video;
@@ -111,6 +110,131 @@ public class Controller_geral {
 
 
     }
+
+    /**
+     * método que trata do evento: clique no botão
+     * este método inicia o player
+     * @param event
+     */
+    @FXML
+    private void handleButtonAction_ReproduzirSequencial(ActionEvent event) throws IOException {
+
+        Musica m = table1.getItems().get(0);
+        //inicialização do player
+        Media media = new Media(model.getPath('m', m.getId()));
+        MediaPlayer player = new MediaPlayer(media);
+        player.play();
+
+        FXMLLoader l = new FXMLLoader(getClass().getResource("player.fxml"));
+        Parent root = l.load();
+        this.view.printPage((Node) event.getSource(), root);
+
+
+        //set model e view do Player
+        Player pl = l.getController();
+        pl.setModel(model);
+        pl.setV(view);
+        pl.setMPlayer(player);
+        pl.setText(m.getNome());
+        pl.setMus(model.showMusicas());
+        pl.setId(m.getId());
+        pl.inic();
+        pl.setAl(0);
+    }
+
+    /**
+     * método que trata do evento: clique no botão
+     * este método inicia o player
+     * @param event
+     */
+    @FXML
+    private void handleButtonAction_ReproduzirSequencialVid(ActionEvent event) throws IOException {
+
+        Video v = table2.getItems().get(0);
+        //inicialização do player
+        Media media = new Media(model.getPath('v', v.getId()));
+        MediaPlayer player = new MediaPlayer(media);
+        player.play();
+
+        FXMLLoader l = new FXMLLoader(getClass().getResource("player_video.fxml"));
+        Parent root = l.load();
+        this.view.printPage((Node) event.getSource(), root);
+
+
+        //set model e view do Player
+        PLayer_video pl = l.getController();
+        pl.setV(view);
+        pl.setMPlayer(player);
+        pl.sett();
+        pl.setModel(model);
+        pl.setVid(model.showVideos());
+        pl.setId(v.getId());
+        pl.setAl(0);
+    }
+
+
+
+    /**
+     * método que trata do evento: clique no botão
+     * este método inicia o player
+     * @param event
+     */
+    @FXML
+    private void handleButtonAction_ReproduzirAleat(ActionEvent event) throws IOException {
+
+        Musica m = table1.getItems().get(0);
+        //inicialização do player
+        Media media = new Media(model.getPath('m', m.getId()));
+        MediaPlayer player = new MediaPlayer(media);
+        player.play();
+
+        FXMLLoader l = new FXMLLoader(getClass().getResource("player.fxml"));
+        Parent root = l.load();
+        this.view.printPage((Node) event.getSource(), root);
+
+
+        //set model e view do Player
+        Player pl = l.getController();
+        pl.setModel(model);
+        pl.setV(view);
+        pl.setMPlayer(player);
+        pl.setText(m.getNome());
+        pl.setMus(model.showMusicas());
+        pl.setId(m.getId());
+        pl.inic();
+        pl.setAl(1);
+    }
+
+    /**
+     * método que trata do evento: clique no botão
+     * este método inicia o player
+     * @param event
+     */
+    @FXML
+    private void handleButtonAction_ReproduzirAleatVid(ActionEvent event) throws IOException {
+
+        Video v = table2.getItems().get(0);
+        //inicialização do player
+        Media media = new Media(model.getPath('v', v.getId()));
+        MediaPlayer player = new MediaPlayer(media);
+        player.play();
+
+        FXMLLoader l = new FXMLLoader(getClass().getResource("player_video.fxml"));
+        Parent root = l.load();
+        this.view.printPage((Node) event.getSource(), root);
+
+
+        //set model e view do Player
+        PLayer_video pl = l.getController();
+        pl.setV(view);
+        pl.setMPlayer(player);
+        pl.sett();
+        pl.setModel(model);
+        pl.setVid(model.showVideos());
+        pl.setId(v.getId());
+        pl.setAl(1);
+    }
+
 
 
     /**

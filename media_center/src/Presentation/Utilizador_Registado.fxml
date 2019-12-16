@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Regist">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.Controller_Regist">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="99.0" layoutX="-27.0" layoutY="77.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="1033.0" />
       <Button layoutX="192.0" layoutY="131.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" style="-fx-background-color: #c521ff;" text="Amigos" textFill="WHITE" />
@@ -24,17 +24,17 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITESMOKE" height="285.0" layoutX="71.0" layoutY="13.0" stroke="WHITE" strokeType="INSIDE" style="-fx-stroke-width: 3;" width="841.0" />
             <Button layoutX="89.0" layoutY="1.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: #c521ff; -fx-background-radius: 10;" text="As minhas playlists" textFill="WHITE" />
             <Button layoutX="187.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleButtonAction_Geral" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Geral" textFill="WHITE" />
-            <Button layoutX="187.0" layoutY="131.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist2" textFill="WHITE" />
-            <Button layoutX="188.0" layoutY="183.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist6" textFill="WHITE" />
+            <Button layoutX="187.0" layoutY="131.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="HIMYM" textFill="WHITE" />
+            <Button layoutX="188.0" layoutY="183.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist2" textFill="WHITE" />
             <Button layoutX="340.0" layoutY="79.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Pop" textFill="WHITE" />
-            <Button layoutX="340.0" layoutY="130.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist3" textFill="WHITE" />
-            <Button layoutX="341.0" layoutY="182.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist7" textFill="WHITE" />
+            <Button layoutX="340.0" layoutY="130.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Game of Thrones" textFill="WHITE" />
+            <Button layoutX="341.0" layoutY="182.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist3" textFill="WHITE" />
             <Button layoutX="491.0" layoutY="78.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Rock" textFill="WHITE" />
-            <Button layoutX="491.0" layoutY="129.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist4" textFill="WHITE" />
-            <Button layoutX="492.0" layoutY="181.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist8" textFill="WHITE" />
-            <Button layoutX="644.0" layoutY="77.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist1" textFill="WHITE" />
-            <Button layoutX="644.0" layoutY="128.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist5" textFill="WHITE" />
-            <Button layoutX="645.0" layoutY="180.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist9" textFill="WHITE" />
+            <Button layoutX="491.0" layoutY="129.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Eye Candy" textFill="WHITE" />
+            <Button layoutX="492.0" layoutY="181.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist4" textFill="WHITE" />
+            <Button layoutX="644.0" layoutY="77.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="AcidJazz" textFill="WHITE" />
+            <Button layoutX="644.0" layoutY="128.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist1" textFill="WHITE" />
+            <Button layoutX="645.0" layoutY="180.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #c521ff;" text="Playlist5" textFill="WHITE" />
          </children>
       </Pane>
       <ImageView disable="true" fitHeight="30.0" fitWidth="33.0" layoutX="952.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
@@ -42,7 +42,7 @@
             <Image url="@img/icons8-shutdown-96.png" />
          </image>
       </ImageView>
-      <Text fill="#c521ff" layoutX="192.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+      <Text fx:id="username" fill="#c521ff" layoutX="192.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
             <Font size="23.0" />
          </font>

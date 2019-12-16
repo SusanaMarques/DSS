@@ -17,14 +17,14 @@
             <Image url="@img/icons8-undo-96.png" />
          </image>
       </ImageView>
-      <Button layoutX="234.0" layoutY="34.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
-      <Button layoutX="292.0" layoutY="33.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
-      <ImageView fitHeight="41.0" fitWidth="38.0" layoutX="228.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <Button layoutX="234.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleButtonAction_ReproduzirSequencial" prefHeight="33.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
+      <Button layoutX="292.0" layoutY="33.0" mnemonicParsing="false" onAction="#handleButtonAction_ReproduzirAleat" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
+      <ImageView disable="true" fitHeight="41.0" fitWidth="38.0" layoutX="228.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-circled-play-96.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="298.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="32.0" fitWidth="33.0" layoutX="298.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-shuffle-96.png" />
          </image>
@@ -53,13 +53,13 @@
             <Font size="39.0" />
          </font>
       </Text>
-      <Button layoutX="225.0" layoutY="358.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
+      <Button layoutX="225.0" layoutY="358.0" mnemonicParsing="false" onAction="#handleButtonAction_ReproduzirSequencialVid" prefHeight="33.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
       <ImageView disable="true" fitHeight="41.0" fitWidth="38.0" layoutX="228.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-circled-play-96.png" />
          </image>
       </ImageView>
-      <Button layoutX="292.0" layoutY="356.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
+      <Button layoutX="292.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleButtonAction_ReproduzirAleatVid" prefHeight="37.0" prefWidth="45.0" style="-fx-background-color: #ffffff;" />
       <ImageView disable="true" fitHeight="32.0" fitWidth="33.0" layoutX="299.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-shuffle-96.png" />

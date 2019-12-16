@@ -19,6 +19,7 @@ import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 
@@ -28,6 +29,7 @@ public class PLayer_video {
     private View view;
     private MediaPlayer player;
     private int id;
+    private int aleatorio; //sequencial=0;
 
     List<Video> ml= new ArrayList<>();
 
@@ -58,6 +60,10 @@ public class PLayer_video {
 
     public void setModel(MC m){
             this.model=m;
+    }
+
+    public void setAl(int x){
+        this.aleatorio=x;
     }
 
     public void setVid(Set<Video> vid){
@@ -117,7 +123,7 @@ public class PLayer_video {
             if(ml.get(i).getId()==id) break;
         }
 
-        if((i % ml.size()) + 1 != ml.size()) {
+        if((i % ml.size()) + 1 != ml.size()&& aleatorio==0) {
             v = ml.get((i % ml.size()) + 1);
 
 
@@ -139,7 +145,34 @@ public class PLayer_video {
             pl.setModel(model);
             pl.setVid(model.showVideos());
             pl.setId(v.getId());
+            pl.setAl(0);
 
+        }
+
+        else if(aleatorio==1){
+            Random r = new Random(System.currentTimeMillis());
+            v = ml.get(r.nextInt(ml.size()));
+
+
+            //inicialização do player
+            Media media = new Media(model.getPath('v', v.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
+
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player_video.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
+
+
+            //set model e view do Player_video
+            PLayer_video pl = l.getController();
+            pl.setV(view);
+            pl.setMPlayer(player);
+            pl.sett();
+            pl.setModel(model);
+            pl.setVid(model.showVideos());
+            pl.setId(v.getId());
+            pl.setAl(1);
         }
 
         else {
@@ -158,7 +191,7 @@ public class PLayer_video {
             if(ml.get(i).getId()==id) break;
         }
 
-        if((i % ml.size()) - 1 != -1) {
+        if((i % ml.size()) - 1 != -1 && aleatorio==0) {
             v = ml.get((i % ml.size()) - 1);
 
 
@@ -180,6 +213,32 @@ public class PLayer_video {
             pl.setModel(model);
             pl.setVid(model.showVideos());
             pl.setId(v.getId());
+        }
+
+        else if(aleatorio==1) {
+            Random r = new Random(System.currentTimeMillis());
+            v = ml.get(r.nextInt(ml.size()));
+
+
+            //inicialização do player
+            Media media = new Media(model.getPath('v', v.getId()));
+            MediaPlayer player = new MediaPlayer(media);
+            player.play();
+
+            FXMLLoader l = new FXMLLoader(getClass().getResource("player_video.fxml"));
+            Parent root = l.load();
+            this.view.printPage((Node) e.getSource(), root);
+
+
+            //set model e view do Player_video
+            PLayer_video pl = l.getController();
+            pl.setV(view);
+            pl.setMPlayer(player);
+            pl.sett();
+            pl.setModel(model);
+            pl.setVid(model.showVideos());
+            pl.setId(v.getId());
+            pl.setAl(1);
         }
         else player.pause();
 
