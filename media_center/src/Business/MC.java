@@ -98,7 +98,8 @@ public class  MC
             System.out.println(t);
             Video v = new Video();
             v.setId(p.hashCode());
-            v.setNome(Integer.toString(c.getId()));
+            v.setNome(Integer.toString(v.getId()));
+            v.setFormato("mp4");
             v.setDuracao(duracao);
             v.setCategoria("N/D");
             v.setRealizador(realizador);
@@ -108,16 +109,14 @@ public class  MC
 
         //Verificar duplicaçoes
         int dupId = gc.verificaDuplicacoes(c,t);
+        System.out.println("MC :"+dupId);
         if(dupId == -1) {
             //Path building & copiar para a biblioteca
             String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
             File newFile = new File(path);
             Files.copy(origin.toPath(),newFile.toPath());
         }
-        else {
-            c = gc.getConteudo(dupId,t);
-
-        }
+        else { c = gc.getConteudo(dupId,t); }
 
         //Adicionar a bibliotecas
         gc.addBibliotecaGeral(c,t,u, dupId);

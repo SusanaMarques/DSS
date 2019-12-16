@@ -56,12 +56,19 @@ public class GestaoUtilizador
      **/
     public void addBibiliotecaPessoal(Conteudo c, char t, UtilizadorRegistado u) {
         if(t == 'm') {
+            System.out.println("1");
             Playlist p = playlistsMusicas.get(u.getIdBibliotecaMusica());
+            System.out.println("2");
             p.setIdUser(u.getId());
+            System.out.println("3");
             ArrayList<Integer> l = p.getlst();
+            System.out.println("4");
             l.add(c.getId());
+            System.out.println("5");
             p.setLst(l);
+            System.out.println("6");
             playlistsMusicas.put(u.getIdBibliotecaMusica(),p);
+            System.out.println("7");
         }
         if(t=='v') {
             Playlist p =  playlistsVideos.get(u.getIdBibliotecaVideo());
