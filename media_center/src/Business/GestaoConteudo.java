@@ -101,7 +101,7 @@ public class GestaoConteudo {
             }
             else
             {
-                List<UtilizadorRegistado> prop = proprietariosMusica.get(c);
+                List<UtilizadorRegistado> prop = proprietariosMusica.get(c.getId());
                 prop.add(u);
                 proprietariosMusica.put(c.getId(), prop);
             }

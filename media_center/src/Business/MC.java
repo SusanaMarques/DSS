@@ -116,13 +116,13 @@ public class  MC
         }
         else {
             c = gc.getConteudo(dupId,t);
-            throw new ConteudoDuplicadoException();
+
         }
 
         //Adicionar a bibliotecas
         gc.addBibliotecaGeral(c,t,u, dupId);
         gu.addBibiliotecaPessoal(c, t,u);
-
+        if(dupId!=-1) throw new ConteudoDuplicadoException();
     }
 
     /** Método que extrai os metadados dos ficheiros mp4

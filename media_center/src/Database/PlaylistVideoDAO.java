@@ -79,7 +79,7 @@ public class PlaylistVideoDAO implements Map<Integer, Playlist>
             ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
 
-            if(rs.next()){
+            while(rs.next()){
                 p.setIdPlaylist(rs.getInt("idPlaylist"));
                 p.setNome(rs.getNString("nomePlaylist"));
                 p.setIdUser(rs.getInt("idUtilizador"));

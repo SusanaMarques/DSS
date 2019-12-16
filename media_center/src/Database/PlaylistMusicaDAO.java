@@ -5,10 +5,7 @@ import Business.Musica;
 import Business.Playlist;
 import Business.UtilizadorRegistado;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.*;
 
 
@@ -83,7 +80,7 @@ public class PlaylistMusicaDAO implements Map<Integer, Playlist>
             ps.setInt(1, (Integer) o);
             ResultSet rs = ps.executeQuery();
 
-            if(rs.next()){
+            while(rs.next()){
                 p.setIdPlaylist(rs.getInt("idPlaylist"));
                 p.setNome(rs.getNString("nomePlaylist"));
                 p.setIdUser(rs.getInt("idUtilizador"));
@@ -111,6 +108,11 @@ public class PlaylistMusicaDAO implements Map<Integer, Playlist>
         else p = v;
         try{
             c = Connect.connect();
+
+            PreparedStatement psd = c.prepareStatement("DELETE FROM PlaylistMusica WHERE idPlaylist = ? ");
+            psd.setInt(1, k);
+            psd.executeUpdate();
+
             PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistMusica (idPlaylist,nomePlaylist,idUtilizador, idMusica) VALUES (?,?,?,?)");
             ArrayList<Integer> lst = v.getlst();
             for(Integer i : lst)

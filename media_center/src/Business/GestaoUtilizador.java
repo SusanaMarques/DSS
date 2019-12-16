@@ -62,7 +62,6 @@ public class GestaoUtilizador
             l.add(c.getId());
             p.setLst(l);
             playlistsMusicas.put(u.getIdBibliotecaMusica(),p);
-
         }
         if(t=='v') {
             Playlist p =  playlistsVideos.get(u.getIdBibliotecaVideo());
