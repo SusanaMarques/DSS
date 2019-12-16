@@ -18,8 +18,7 @@ public class GestaoConteudo {
     private Map<Integer, List<UtilizadorRegistado>> proprietariosMusica = new ProprietariosMusicaDAO();
     /** Proprietarios dos Videos **/
     private Map<Integer, List<UtilizadorRegistado>> proprietariosVideo = new ProprietariosVideoDAO();
-    /** Playlists de Musicas do sistema **/
-    private Map<Integer, Playlist> playlistMusica = new PlaylistMusicaDAO();
+
 
 
     /**

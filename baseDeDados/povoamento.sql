@@ -10,17 +10,17 @@ INSERT INTO UtilizadorRegistado(idUtilizador, email, nome, password, idBibliotec
 
 
 select * from musica; 
-#delete from Musica where idMusica = 1734882928;
+delete from Musica where idMusica = -903150245;
 
 select * from Video;
 #delete from Video where idVideo = -197838234;
 
-select * from ProprietariosVideo;
+select * from ProprietariosMusica;
 
 
-#select * from CategoriaMusica; 
+select * from CategoriaMusica; 
 
 #select * from CategoriaVideo;
 
-#select * from PlaylistMusica
+select * from PlaylistMusica
 

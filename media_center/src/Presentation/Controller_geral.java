@@ -2,6 +2,7 @@ package Presentation;
 import Business.MC;
 import Business.Musica;
 import Business.Video;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -21,8 +22,8 @@ import java.util.Set;
 
 public class Controller_geral {
 
-    private MC model=new MC();
-    private View view= new View();
+    private MC model;
+    private View view;
 
 
 
@@ -245,11 +246,10 @@ public class Controller_geral {
     private void handleButtonAction_goback(ActionEvent event) throws IOException {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
         Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
-
         Controller_Regist pl=l.getController();
         pl.setV(view);
         pl.setM(model);
+        this.view.printPage((Node) event.getSource(),root);
 
     }
 
@@ -261,32 +261,32 @@ public class Controller_geral {
      */
     @FXML private void initialize () {
 
-        nome_m.setCellValueFactory( new PropertyValueFactory<>("nome"));
-        artista.setCellValueFactory( new PropertyValueFactory<>("artista"));
-        cat_m.setCellValueFactory( new PropertyValueFactory<>("categoria"));
+        Platform.runLater(()-> {
+            Set<Musica> mus = model.showMusicas();
+            Set<Video> vid = model.showVideos();
+
+            nome_m.setCellValueFactory(new PropertyValueFactory<>("nome"));
+            artista.setCellValueFactory(new PropertyValueFactory<>("artista"));
+            cat_m.setCellValueFactory(new PropertyValueFactory<>("categoria"));
 
 
-
-        nome_v.setCellValueFactory( new PropertyValueFactory<>("nome"));
-        realizador.setCellValueFactory( new PropertyValueFactory<>("realizador"));
-        cat_v.setCellValueFactory( new PropertyValueFactory<>("categoria"));
-
-        Set<Musica> mus=  model.showMusicas();
-        Set<Video> vid = model.showVideos();
+            nome_v.setCellValueFactory(new PropertyValueFactory<>("nome"));
+            realizador.setCellValueFactory(new PropertyValueFactory<>("realizador"));
+            cat_v.setCellValueFactory(new PropertyValueFactory<>("categoria"));
 
 
-        ObservableList<Musica> m = FXCollections.observableArrayList();
-        m.addAll(mus);
-        table1.getItems().setAll(m);
-        table1.getSortOrder().add(nome_m);
+            ObservableList<Musica> m = FXCollections.observableArrayList();
+            m.addAll(mus);
+            table1.getItems().setAll(m);
+            table1.getSortOrder().add(nome_m);
 
 
-        ObservableList<Video> v = FXCollections.observableArrayList();
-        v.addAll(vid);
-        table2.getItems().setAll(v);
-        table2.getSortOrder().add(nome_v);
+            ObservableList<Video> v = FXCollections.observableArrayList();
+            v.addAll(vid);
+            table2.getItems().setAll(v);
+            table2.getSortOrder().add(nome_v);
 
-
+        });
     }
 
 

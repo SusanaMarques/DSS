@@ -13,8 +13,8 @@ public class UtilizadorRegistado extends Utilizador
     public UtilizadorRegistado()
     {
         super();
-        this.idBibliotecaMusica = this.hashCode();
-        this.idBibliotecaVideo = this.idBibliotecaMusica+1;
+        this.idBibliotecaMusica = -7;
+        this.idBibliotecaVideo = this.idBibliotecaMusica;
     }
 
     /**
@@ -56,13 +56,16 @@ public class UtilizadorRegistado extends Utilizador
      * Método que devolve o id da biblioteca pessoal de musica do utilizador
      * @return     Id da biblioteca pessoal de musica do utilizador.
      */
-    public int getIdBibliotecaMusica(){return this.idBibliotecaMusica;}
+    public int getIdBibliotecaMusica(){
+       return this.idBibliotecaMusica;}
 
     /**
      * Método que altera o id da biblioteca pessoal de musica do utilizador
      * @param id    Novo id da biblioteca pessoal de musica
      */
-    public void setIdBibliotecaMusica(int id){this.idBibliotecaMusica = id;}
+    public void setIdBibliotecaMusica(int id){this.idBibliotecaMusica = id;
+
+       }
     /**
      * Método que altera o id da biblioteca pessoal de video do utilizador
      * @param id    Novo id da biblioteca pessoal de video

@@ -1,7 +1,5 @@
 package Presentation;
-import Business.ConteudoDuplicadoException;
-import Business.FormatoDesconhecidoException;
-import Business.MC;
+import Business.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,10 +9,10 @@ import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import org.apache.tika.exception.TikaException;
 import org.xml.sax.SAXException;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+
 
 public class Controller_Regist {
 
@@ -47,23 +45,26 @@ public class Controller_Regist {
      */
 
     @FXML
-    private void handleButtonAction_Geral(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "geral.fxml"));
-        Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
-        Controller_geral pl = l.getController();
-        pl.setM(model);
-        pl.setV(view);
-    }
-
-    @FXML
     private void handleButtonAction_Pessoal(ActionEvent event) throws IOException {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "pessoal.fxml"));
         Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
         Controller_pessoal pl = l.getController();
         pl.setM(model);
         pl.setV(view);
+        this.view.printPage((Node) event.getSource(),root);
+
+
+
+    }
+
+    @FXML
+    private void handleButtonAction_Geral(ActionEvent event) throws IOException {
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "geral.fxml"));
+        Parent root = l.load();
+        Controller_geral pl = l.getController();
+        pl.setM(model);
+        pl.setV(view);
+        this.view.printPage((Node) event.getSource(),root);
     }
 
 

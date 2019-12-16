@@ -1,9 +1,9 @@
 package Presentation;
-
 import Business.MC;
 import Business.Musica;
 import Business.Playlist;
 import Business.Video;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,7 +24,6 @@ public class Controller_pessoal {
 
     private MC model;
     private View view;
-
 
 
     public void setM(MC m){
@@ -77,7 +76,6 @@ public class Controller_pessoal {
 
         FXMLLoader l=new FXMLLoader(getClass().getResource( "opcoes.fxml"));
         Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
 
 
         Controller_opt pl = l.getController();
@@ -85,6 +83,7 @@ public class Controller_pessoal {
         pl.setM(model);
         pl.setIdd(1);
         pl.setMusica(m);
+        this.view.printPage((Node) event.getSource(),root);
 
 
     }
@@ -101,7 +100,6 @@ public class Controller_pessoal {
 
         FXMLLoader l=new FXMLLoader(getClass().getResource( "opcoes.fxml"));
         Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
 
 
         Controller_opt pl = l.getController();
@@ -109,6 +107,7 @@ public class Controller_pessoal {
         pl.setM(model);
         pl.setIdd(2);
         pl.setVideo(v);
+        this.view.printPage((Node) event.getSource(),root);
 
 
     }
@@ -122,11 +121,11 @@ public class Controller_pessoal {
     private void handleButtonAction_goback(ActionEvent event) throws IOException {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
         Parent root = l.load();
-        this.view.printPage((Node) event.getSource(),root);
 
         Controller_Regist pl=l.getController();
         pl.setV(view);
         pl.setM(model);
+        this.view.printPage((Node) event.getSource(),root);
 
     }
 
@@ -136,34 +135,34 @@ public class Controller_pessoal {
      */
     @FXML private void initialize () {
 
+        Platform.runLater(()-> {
+        Playlist mus=model.showMusicasPlaylist(model.getidPessoalM());
+        System.out.println(model.getidPessoalM());
+        Playlist vid =model.showVideosPlaylist(model.getidPessoalV());
         nome_m.setCellValueFactory( new PropertyValueFactory<>("nome"));
         artista.setCellValueFactory( new PropertyValueFactory<>("artista"));
         cat_m.setCellValueFactory( new PropertyValueFactory<>("categoria"));
 
-        System.out.println(model.getUserT());
-
         nome_v.setCellValueFactory( new PropertyValueFactory<>("nome"));
         realizador.setCellValueFactory( new PropertyValueFactory<>("realizador"));
         cat_v.setCellValueFactory( new PropertyValueFactory<>("categoria"));
-
-        Playlist mus=model.showMusicasPlaylist(model.getidPessoalM());
-        Playlist vid = model.showVideosPlaylist(model.getidPessoalV());
         ArrayList<Integer> idmus=  mus.getlst();
         ArrayList<Integer> idvid = vid.getlst();
         ArrayList<Musica> mu = new ArrayList<>();
         ArrayList<Video> vi=  new ArrayList<>();
 
         ObservableList<Musica> m = FXCollections.observableArrayList();
-        for(int idm : idmus) mu.add((Musica) model.getCont(idm,'m'));
+        for(int idm: idmus) {mu.add((Musica) model.getCont(idm,'m'));  }
         m.addAll(mu);
         table1.getItems().setAll(m);
 
 
         ObservableList<Video> v = FXCollections.observableArrayList();
-        for(int idv : idvid) vi.add((Video) model.getCont(idv,'v'));
+        for(int idv: idvid) {vi.add((Video) model.getCont(idv,'v'));}
         v.addAll(vi);
         table2.getItems().setAll(v);
 
+      });
 
     }
 

@@ -100,11 +100,11 @@ public class Controller_opt {
 
     @FXML
     private void handleButtonAction_goback(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "geral.fxml"));
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
         Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
 
-        Controller_geral control = l.getController();
+        Controller_Regist control = l.getController();
         control.setM(model);
         control.setV(view);
 
@@ -118,7 +118,6 @@ public class Controller_opt {
 
             FXMLLoader l = new FXMLLoader(getClass().getResource("Alterar_Categoria.fxml"));
             Parent root = l.load();
-            this.view.printPage((Node) event.getSource(), root);
             Controller_genero pl = l.getController();
             pl.setV(view);
             pl.setM(model);
@@ -127,12 +126,12 @@ public class Controller_opt {
             pl.setText(m.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
                     "Pop", "Rock", "Jazz", "Country", "Classic","Acid Jazz","Punk","R&B"));
+            this.view.printPage((Node) event.getSource(), root);
         }
 
         if(idd==2){
             FXMLLoader l = new FXMLLoader(getClass().getResource("Alterar_Categoria.fxml"));
             Parent root = l.load();
-            this.view.printPage((Node) event.getSource(), root);
             Controller_genero pl = l.getController();
             pl.setV(view);
             pl.setM(model);
@@ -141,6 +140,7 @@ public class Controller_opt {
             pl.setText(v.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
                     "Pop", "Rock", "Jazz", "Country", "Season1","Season2","Season3"));
+            this.view.printPage((Node) event.getSource(), root);
         }
 
     }

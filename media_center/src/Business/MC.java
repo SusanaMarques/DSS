@@ -17,8 +17,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
 import java.util.*;
 
 
@@ -41,7 +40,9 @@ public class  MC
     public void iniciarSessao(String mail, String pass) throws CredenciaisInvalidasException {
         if(mail == null||pass == null || mail.isEmpty() || pass.isEmpty()) throw new CredenciaisInvalidasException();
         Utilizador u = gu.iniciarSessao(mail, pass, idType);
-        this.idUtilizadorAtual = u.getId();
+        idUtilizadorAtual= u.getId();
+
+
     }
 
     /** Método que  termina uma sessão **/
@@ -55,6 +56,8 @@ public class  MC
         Utilizador u= gu.iniciarSessao(email, pass, idType);
         return u.getNome();
     }
+
+
 
     /** Método que faz o upload de conteudo
      * @param p   Path do conteudo a fazer upload
@@ -116,7 +119,6 @@ public class  MC
 
         //Verificar duplicaçoes
         int dupId = gc.verificaDuplicacoes(c,t);
-        System.out.println("MC :"+dupId);
         if(dupId == -1) {
             //Path building & copiar para a biblioteca
             String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
@@ -177,6 +179,8 @@ public class  MC
         idType = idT;
     }
 
+
+
     /** Método que retorna o tipo do utilizador a usar o sistema
      * @return      Tipo do utilizador
      */
@@ -204,7 +208,10 @@ public class  MC
      * @param idPlaylist     Id da playlist
      * @return               List com todas as musicas da playlist
      */
-    public Playlist showMusicasPlaylist(int idPlaylist){ return gu.getPlaylistMusica(idPlaylist);}
+    public Playlist showMusicasPlaylist(int idPlaylist){
+        return gu.getPlaylistMusica(idPlaylist);
+
+       }
 
     /** Método que apresenta uma playlist de videos
      * @param idPlaylist    Id da playlist
@@ -215,11 +222,9 @@ public class  MC
     }
 
     public int getidPessoalM(){
-        System.out.println("\ntest2 :"+idUtilizadorAtual);
         return gu.getPlaylistPessoalM(idUtilizadorAtual);
 
     }
-
     public int getidPessoalV(){
         return gu.getPlaylistPessoalV(idUtilizadorAtual);
 

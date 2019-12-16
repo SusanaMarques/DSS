@@ -48,13 +48,13 @@
          </font>
       </Text>
       <Button layoutX="104.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleButtonAction_Pessoal" prefHeight="27.0" prefWidth="187.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="   Os meus carregamentos" textFill="#c521ff" />
-      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="106.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="27.0" fitWidth="27.0" layoutX="106.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-music-folder-96.png" />
          </image>
       </ImageView>
       <Button layoutX="296.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleButtonAction_upload" prefHeight="27.0" prefWidth="169.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="    Upload de conteúdo" textFill="#c521ff" />
-      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="303.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView disable="true" fitHeight="25.0" fitWidth="25.0" layoutX="303.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@img/icons8-scroll-up-96.png" />
          </image>

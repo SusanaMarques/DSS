@@ -56,19 +56,13 @@ public class GestaoUtilizador
      **/
     public void addBibiliotecaPessoal(Conteudo c, char t, UtilizadorRegistado u) {
         if(t == 'm') {
-            System.out.println("1");
             Playlist p = playlistsMusicas.get(u.getIdBibliotecaMusica());
-            System.out.println("2");
             p.setIdUser(u.getId());
-            System.out.println("3");
             ArrayList<Integer> l = p.getlst();
-            System.out.println("4");
             l.add(c.getId());
-            System.out.println("5");
             p.setLst(l);
-            System.out.println("6");
             playlistsMusicas.put(u.getIdBibliotecaMusica(),p);
-            System.out.println("7");
+
         }
         if(t=='v') {
             Playlist p =  playlistsVideos.get(u.getIdBibliotecaVideo());
@@ -84,9 +78,21 @@ public class GestaoUtilizador
      * @param idPlaylist Id da playlist
      * @return List com todas as musicas da playlist
      */
-    public Playlist getPlaylistMusica(int idPlaylist) {
-        return playlistsMusicas.get(idPlaylist);
-    }
+    /*public Map<Integer,String> getPlaylistMusica(int idPlaylist,int idU) {
+
+
+        Playlist p = playlistsMusicas.get(idPlaylist);
+        Map<Integer,String> mp = new HashMap<>();
+        mp.put(idPlaylist,p.getNome());
+        for(int idm : (p.getlst())){
+            if(categoriasMusica.containsKey(idm)) mp.put(idm,categoriasMusica.get(idm).get(idU));
+        }
+
+        return mp;
+    }*/
+
+
+
 
     /** Método que apresenta uma playlist de videos
      * @param idPlaylist Id da playlist
@@ -94,6 +100,10 @@ public class GestaoUtilizador
      */
     public Playlist getPlaylistVideo( int idPlaylist) {
         return playlistsVideos.get(idPlaylist);
+    }
+
+    public Playlist getPlaylistMusica( int idPlaylist) {
+        return playlistsMusicas.get(idPlaylist);
     }
 
 
@@ -137,6 +147,8 @@ public class GestaoUtilizador
 
     public int getPlaylistPessoalV(int idUtilizadorAtual) {
         UtilizadorRegistado u = users.get(idUtilizadorAtual);
+
+
         return u.getIdBibliotecaVideo();
     }
 }

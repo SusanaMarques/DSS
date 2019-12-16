@@ -70,8 +70,10 @@ public class PlaylistMusicaDAO implements Map<Integer, Playlist>
      */
     @Override
     public Playlist get(Object o) {
+
         Playlist p = new Playlist();
         ArrayList<Integer> l = new ArrayList<>();
+
 
         try{
             c = Connect.connect();
@@ -84,7 +86,9 @@ public class PlaylistMusicaDAO implements Map<Integer, Playlist>
                 p.setIdPlaylist(rs.getInt("idPlaylist"));
                 p.setNome(rs.getNString("nomePlaylist"));
                 p.setIdUser(rs.getInt("idUtilizador"));
-                l.add(rs.getInt("idMusica"));
+                int intt= rs.getInt("idMusica");
+                l.add(intt);
+
             }
             p.setLst(l);
         }

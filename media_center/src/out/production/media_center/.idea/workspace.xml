@@ -2,116 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d4d7ff-da74-4f44-90de-81f1f181c6b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../baseDeDados/DSS.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../baseDeDados/DSS.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-2106547603.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1425021721.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-1429139704.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Alt_gen_sucesso.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Alterar_Genero.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Controller_Conv.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Conv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Regist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Controller_genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_genero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Controller_geral.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_geral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Controller_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Controller_opt.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_opt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Controller_pessoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_pessoal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Erro_Género.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/PLayer_video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PLayer_video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/convidado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/geral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/geral.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/opcoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/opcoes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/pessoal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/misc 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/modules 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/vcs 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace 2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-2106547603.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Administrador 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/CategoriaIgualException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/ConteudoDuplicadoException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/CredenciaisInvalidasException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/FormatoDesconhecidoException 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1425021721.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-1429139704.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Player 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaVideoDAO 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/Connect 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/misc 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/modules 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/vcs 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/workspace 2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Administrador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Administrador.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Alt_gen_sucesso.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Alterar_Genero.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Admin 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist 2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal 2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_upload 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Erro_Género.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Utilizador_Registado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/View 2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/convidado.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/geral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/geral.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-audio-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-checked-checkbox-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-checkmark-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-circled-play-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-down-left-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-download-from-cloud-64 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-music-folder-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-shutdown-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-skip-to-start-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-speaker-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/img/icons8-star-96 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/opcoes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/opcoes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,40 +43,90 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Presentation/Controller_Regist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Presentation/Controller_pessoal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+            <state relative-caret-position="91">
+              <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Presentation/Controller_geral.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-532">
+              <caret line="215" selection-start-line="215" selection-end-line="215" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Business/cac.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Ge</find>
+      <find>test2</find>
+      <find>model</find>
+      <find>UtilizadorRegistado()</find>
+      <find>set</find>
+      <find>setIdBib</find>
+      <find>new</find>
+      <find>0</find>
+      <find>idUtiliza</find>
+      <find>idUtili</find>
+      <find>idUtilizadorAtual</find>
+      <find>faca</find>
+      <find>302</find>
+      <find>2</find>
+      <find>System.out.println</find>
+      <find>print</find>
+      <find>@</find>
+      <find>getB</find>
+      <find>show</find>
+      <find>alter</find>
+      <find>get</find>
+      <find>pla</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -161,6 +134,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ac9a9ad-5c66-418e-b93f-f4f0e21ea20b/console.sql" />
+        <option value="$PROJECT_DIR$/Business/GestaoConteudo.java" />
+        <option value="$PROJECT_DIR$/Business/UtilizadorRegistado.java" />
+        <option value="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" />
+        <option value="$PROJECT_DIR$/Presentation/Controller_genero.java" />
+        <option value="$PROJECT_DIR$/Business/cac.java" />
+        <option value="$PROJECT_DIR$/Business/GestaoUtilizador.java" />
+        <option value="$PROJECT_DIR$/Business/MC.java" />
+        <option value="$PROJECT_DIR$/Presentation/Controller_geral.java" />
+        <option value="$PROJECT_DIR$/Presentation/Controller_opt.java" />
+        <option value="$PROJECT_DIR$/Presentation/Controller_Regist.java" />
         <option value="$PROJECT_DIR$/Presentation/Controller_pessoal.java" />
       </list>
     </option>
@@ -187,6 +171,16 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Presentation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -197,11 +191,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,52 +242,240 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576495465617</updated>
-      <workItem from="1576495467042" duration="71000" />
+      <workItem from="1576495467042" duration="22054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71000" />
+    <option name="totallyTimeSpent" value="22054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="795" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32859176" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32859176" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32859176" />
+      <window_info anchor="bottom" id="Database Changes" order="3" weight="0.32859176" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32859176" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32859176" />
+      <window_info anchor="bottom" id="Database Console" order="6" weight="0.22048365" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32859176" />
+      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.371266" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.3997155" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" weight="0.3297568" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32859176" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="3" weight="0.32859176" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32859176" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32859176" />
+      <window_info anchor="bottom" id="Database Console" order="6" weight="0.22048365" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.371266" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" weight="0.3297568" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/event/CompositeEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/pessoal.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/VideoComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Utilizador_Registado.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="25" column="107" selection-start-line="25" selection-start-column="105" selection-end-line="25" selection-end-column="107" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/event/EventHandlerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="237" column="34" selection-start-line="237" selection-start-column="34" selection-end-line="237" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="1740" column="21" selection-start-line="1740" selection-start-column="16" selection-end-line="1740" selection-end-column="21" />
+          <folding>
+            <element signature="e#66921#66922#0" expanded="true" />
+            <element signature="e#66966#66967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/event/EventDispatchChainImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/glass/ui/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="554" column="25" selection-start-line="554" selection-start-column="25" selection-end-line="554" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/event/BasicEventDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/event/CompositeEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+          <folding>
+            <element signature="e#6461#6462#0" expanded="true" />
+            <element signature="e#6511#6512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/geral.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ac9a9ad-5c66-418e-b93f-f4f0e21ea20b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="90" column="46" lean-forward="true" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/Utilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Conteudo_Existente.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="55" column="22" lean-forward="true" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/UtilizadorRegistado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/Playlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/PlaylistMusicaDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_upload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/mediacenter.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Presentation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -298,17 +483,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Alterar_Categoria.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_genero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/GestaoConteudo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1130">
+          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/cac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_opt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/MC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="198" column="28" selection-start-line="198" selection-start-column="28" selection-end-line="198" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7101#7102#0" expanded="true" />
+            <element signature="e#7149#7150#0" expanded="true" />
+            <element signature="e#7891#7892#0" expanded="true" />
+            <element signature="e#7943#7944#0" expanded="true" />
+            <element signature="e#9047#9048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Business/GestaoUtilizador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="100" column="3" selection-start-line="100" selection-start-column="3" selection-end-line="102" selection-end-column="5" />
+          <folding>
+            <element signature="e#3653#3654#0" expanded="true" />
+            <element signature="e#3707#3708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Presentation/Controller_Regist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+        <state relative-caret-position="139">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Presentation/Controller_geral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-532">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Presentation/Controller_pessoal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+        <state relative-caret-position="91">
+          <caret line="138" column="33" selection-start-line="138" selection-start-column="33" selection-end-line="138" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -83,6 +83,7 @@ public void setText(String a){
             up.setM(this.model);
             up.setV(view);
             this.view.printPage((Node) event.getSource(), root);
+
         }
     }
     if(idd==2){
