@@ -53,9 +53,9 @@ public class GestaoConteudo {
    }
 
      /**
-     * Método para unificar id de Musica repetido
-     * @param c    Conteudo a comparar
-     * @return id do conteudo
+     * Método que unifica o id de uma Musica repetido
+     * @param c    conteudo a comparar
+     * @return     id do conteudo
      */
     int getValueM(Musica c){
        Collection<Musica> ms = musicas.values();
@@ -67,18 +67,15 @@ public class GestaoConteudo {
     }
 
     /**
-     * Método para unificar id de Video repetido
+     * Método que unifica id de um Video repetido
      * @param c    conteudo a comparar
      * @return     id do conteudo
      */
     int getValueV(Video c){
-        Collection<Video> ms = videos.values();
-        for(Video m : ms){
-            if(m.getRealizador(). equals(c.getRealizador()) &&
-             m.getCategoria().equals(c.getCategoria()) &&
-             m.getNome().equals(c.getNome()))
-                 return m.getId();
-            
+        Collection<Video> vs = videos.values();
+        for(Video v : vs){
+            if(v.getRealizador(). equals(c.getRealizador()) && v.getCategoria().equals(c.getCategoria()) && v.getNome().equals(c.getNome()))
+                 return v.getId();
         }
         return -1;
      }
@@ -111,7 +108,6 @@ public class GestaoConteudo {
                 videos.put(c.getId(), (Video) c);
                 List<UtilizadorRegistado> prop = new ArrayList<>();
                 prop.add(u);
-                System.out.println("GEST CONTEUDO :"+c.getId() );
                 proprietariosVideo.put(c.getId(), prop);
             }
             else

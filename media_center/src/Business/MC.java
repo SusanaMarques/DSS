@@ -51,18 +51,25 @@ public class  MC
         idType = -1;
     }
 
-    /** Método que retorna o nome do utilizador registado **/
+    /** Método que retorna o nome do utilizador registado
+     * @param email    email do utilizador
+     * @param pass     password do utilizador
+     * @return         nome do utilizador
+     */
     public String getNome(String email,String pass) throws CredenciaisInvalidasException {
         Utilizador u= gu.iniciarSessao(email, pass, idType);
         return u.getNome();
     }
 
 
-
     /** Método que faz o upload de conteudo
      * @param p   Path do conteudo a fazer upload
      */
     public void uploadConteudo(String p) throws FormatoDesconhecidoException, IOException, ConteudoDuplicadoException, URISyntaxException, TikaException, SAXException {
+        char t;
+        Random  r = new Random();
+        Conteudo c = new Conteudo();
+
         StringTokenizer tokens = new StringTokenizer( p,".");
         StringTokenizer tokensName = new StringTokenizer(tokens.nextToken(), "/");
         while(tokensName.countTokens()>1) tokensName.nextToken();
@@ -70,10 +77,6 @@ public class  MC
         System.out.println(mp4Artist);
         String type = tokens.nextToken();
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
-        char t;
-        Random  r = new Random();
-        Conteudo c = new Conteudo();
-
 
 
         //Extrair metadados
@@ -183,8 +186,6 @@ public class  MC
         idType = idT;
     }
 
-
-
     /** Método que retorna o tipo do utilizador a usar o sistema
      * @return      Tipo do utilizador
      */
@@ -213,7 +214,7 @@ public class  MC
      * @return               List com todas as musicas da playlist
      */
     public Set<Musica> showMusicasPlaylist(int idPlaylist){
-        Map<Integer,String> idCats = gu.aux1(idUtilizadorAtual,idPlaylist);
+        Map<Integer,String> idCats = gu.getPlaylistPessoalM(idUtilizadorAtual,idPlaylist);
         Set<Musica> ret= new HashSet<>();
         Musica m = null;
         for(int id : idCats.keySet()){
@@ -221,37 +222,34 @@ public class  MC
             if(idCats.get(id)!=null) m.setCategoria(idCats.get(id));
             ret.add(m);
         }
-
         return ret;
-
-       }
+    }
 
     /** Método que apresenta uma playlist de videos
      * @param idPlaylist    Id da playlist
      * @return              List com todas os videos da playlist
      */
     public Set<Video> showVideosPlaylist(int idPlaylist){
-        Map<Integer,String> idCats = gu.aux2(idUtilizadorAtual,idPlaylist);
+        Map<Integer,String> idCats = gu.getPlaylistPessoalV(idUtilizadorAtual,idPlaylist);
         Set<Video> ret= new HashSet<>();
-        Video m = null;
+        Video v = null;
         for(int id : idCats.keySet()){
-            m =((Video) gc.getConteudo(id,'v')).clone();
-            if(idCats.get(id)!=null) m.setCategoria(idCats.get(id));
-            ret.add(m);
+            v =((Video) gc.getConteudo(id,'v')).clone();
+            if(idCats.get(id)!=null) v.setCategoria(idCats.get(id));
+            ret.add(v);
         }
-
         return ret;
-
     }
 
-    public int getidPessoalM(){
-        return gu.getPlaylistPessoalM(idUtilizadorAtual);
+    /** Método que devolve o id da playlist pessoal de musicas de um utilizador
+     * @return             id da playlist pessoal de musicas de um utilizador
+     */
+    public int getidPessoalM(){ return gu.getPlaylistPessoalM(idUtilizadorAtual); }
 
-    }
-    public int getidPessoalV(){
-        return gu.getPlaylistPessoalV(idUtilizadorAtual);
-
-    }
+    /** Método que devolve o id da playlist pessoal de videos de um utilizador
+     * @return             id da playlist pessoal de videos de um utilizador
+     */
+    public int getidPessoalV(){ return gu.getPlaylistPessoalV(idUtilizadorAtual); }
 
     /** Método que altera a categoria de um conteudo de um utilizador
      * @param idCont    Id do conteudo a alterar
@@ -263,15 +261,16 @@ public class  MC
         if(type=='v') gu.alterarCategoriaV(newCat,idCont,idUtilizadorAtual);
     }
 
-
+    /** Método que devolve o path de um conteúdo
+     * @return          path de um conteúdo
+     */
     public String getPath(char type, int idCont) throws MalformedURLException {
         File pathFinder = new File("");
         String s = pathFinder.toURI().toURL().toExternalForm()+"/Biblioteca/"+idCont;
-        if(type=='m') s+=".mp3";
+        if(type == 'm') s+=".mp3";
         else s+=".mp4";
         return s;
     }
-
 
     public Conteudo getCont(int idm, char m) {
        return gc.getConteudo(idm,m);

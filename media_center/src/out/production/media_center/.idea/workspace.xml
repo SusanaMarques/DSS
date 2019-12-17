@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d4d7ff-da74-4f44-90de-81f1f181c6b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0ac9a9ad-5c66-418e-b93f-f4f0e21ea20b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0ac9a9ad-5c66-418e-b93f-f4f0e21ea20b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modeloClasses/Dclass.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../modeloClasses/Dclass.vpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modeloPackage/Dpk.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../modeloPackage/Dpk.vpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modeloSequencia/DSS.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../modeloSequencia/DSS.vpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../modeloSubsistemas/Dsubsist.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../modeloSubsistemas/Dsubsist.vpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/cac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +75,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="795" />
-  </component>
   <component name="ProjectId" id="1V59OOhefRT6ojzhdLqAQZJbaKQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -144,7 +139,10 @@
       <option name="presentableId" value="Default" />
       <updated>1576495465617</updated>
       <workItem from="1576495467042" duration="30121000" />
-      <workItem from="1576532057643" duration="67000" />
+      <workItem from="1576532057643" duration="3266000" />
+      <workItem from="1576542967124" duration="189000" />
+      <workItem from="1576584267129" duration="184000" />
+      <workItem from="1576589724927" duration="1611000" />
     </task>
     <servers />
   </component>
@@ -152,29 +150,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576532882000">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1576532882000" />
     <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1576532123272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576532123272" />
-    <state width="1398" height="129" key="GridCell.Tab.0.bottom" timestamp="1576532053139">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576584679315">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="129" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576532053139" />
-    <state width="1398" height="129" key="GridCell.Tab.0.center" timestamp="1576532053137">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576584679315" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576584679314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="129" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576532053137" />
-    <state width="1398" height="129" key="GridCell.Tab.0.left" timestamp="1576532053136">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576584679314" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576584679313">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="129" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576532053135" />
-    <state width="1398" height="129" key="GridCell.Tab.0.right" timestamp="1576532053138">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576584679313" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576584679315">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="129" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576532053138" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576584679315" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1576532126864">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576532126864" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576542966087">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576542966087" />
   </component>
 </project>

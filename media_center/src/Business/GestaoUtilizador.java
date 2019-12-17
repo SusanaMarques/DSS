@@ -70,40 +70,25 @@ public class GestaoUtilizador
             ArrayList<Integer> l = p.getlst();
             l.add(c.getId());
             p.setLst(l);
-            System.out.println("PLAYLISTVideoPessoal set:");
             playlistsVideos.put(u.getIdBibliotecaVideo(),p);
 
         }
     }
 
-    /** Método que apresenta uma playlist de musicas
-     * @param idPlaylist Id da playlist
-     * @return List com todas as musicas da playlist
-     */
-    /*public Map<Integer,String> getPlaylistMusica(int idPlaylist,int idU) {
-
-
-        Playlist p = playlistsMusicas.get(idPlaylist);
-        Map<Integer,String> mp = new HashMap<>();
-        mp.put(idPlaylist,p.getNome());
-        for(int idm : (p.getlst())){
-            if(categoriasMusica.containsKey(idm)) mp.put(idm,categoriasMusica.get(idm).get(idU));
-        }
-
-        return mp;
-    }*/
-
-
-
 
     /** Método que apresenta uma playlist de videos
-     * @param idPlaylist Id da playlist
-     * @return List com todas os videos da playlist
+     * @param idPlaylist      Id da playlist
+     * @return                List com todos os videos da playlist
      */
     public Playlist getPlaylistVideo( int idPlaylist) {
         return playlistsVideos.get(idPlaylist);
     }
 
+
+    /** Método que apresenta uma playlist de musicas
+     * @param idPlaylist      Id da playlist
+     * @return                List com todas as musicas da playlist
+     */
     public Playlist getPlaylistMusica( int idPlaylist) {
         return playlistsMusicas.get(idPlaylist);
     }
@@ -116,10 +101,10 @@ public class GestaoUtilizador
      * @param idU      Id do utilizador
      */
     public void alterarCategoriaM(String newCat, int idCont,int idU) throws CategoriaIgualException {
-        Map<Integer,String> cats=null;
+        Map<Integer,String> cats = null;
         if(categoriasMusica.containsKey(idCont))
-            cats= categoriasMusica.get(idCont);
-        else cats=new HashMap<>();
+            cats = categoriasMusica.get(idCont);
+        else cats = new HashMap<>();
         if(cats.containsKey(idU)) if(cats.get(idU).equals(newCat)) throw new CategoriaIgualException();
         else cats.remove(idU);
         cats.put(idU,newCat);
@@ -132,30 +117,41 @@ public class GestaoUtilizador
      * @param idU      Id do utilizador
      */
     public void alterarCategoriaV(String newCat, int idCont,int idU) throws CategoriaIgualException {
-        Map<Integer,String> cats=null;
+        Map<Integer,String> cats = null;
         if(categoriasMusica.containsKey(idCont))
-            cats= categoriasVideo.get(idCont);
+            cats = categoriasVideo.get(idCont);
            else cats=new HashMap<>();
-        if(cats.containsKey(idU)) if(cats.get(idU).equals(newCat)) throw new CategoriaIgualException();
-                                    else cats.remove(idU);
+        if(cats.containsKey(idU))
+            if(cats.get(idU).equals(newCat)) throw new CategoriaIgualException();
+            else cats.remove(idU);
         cats.put(idU,newCat);
         categoriasVideo.put(idCont,cats);
     }
 
+    /** Método que retornar o id da playlist pessoal de musicas do utilizador atual
+     * @param idUtilizadorAtual     Id do utilizador atual
+     * @return                      id da playlist pessoal de musicas do utilizador atual
+     */
     public int getPlaylistPessoalM(int idUtilizadorAtual) {
         UtilizadorRegistado u = users.get(idUtilizadorAtual);
         return u.getIdBibliotecaMusica();
     }
 
+    /** Método que retornar o id da playlist pessoal de videos do utilizador atual
+     * @param idUtilizadorAtual     Id do utilizador atual
+     * @return                      Id da playlist pessoal de musicas do utilizador atual
+     */
     public int getPlaylistPessoalV(int idUtilizadorAtual) {
         UtilizadorRegistado u = users.get(idUtilizadorAtual);
-
-
         return u.getIdBibliotecaVideo();
     }
 
-
-    public Map<Integer,String> aux1(int idU, int idBib){
+    /** Método que organiza a playlist pessoal de musicas do utilizador atual, incluindo categorias alteradas
+     * @param idU                   Id do utilizador atual
+     * @param idBib                 Id da biblioteca geral do utilizador
+     * @return                      map de musicas da playlist pessoal e as suas categorias
+     */
+    public Map<Integer,String> getPlaylistPessoalM(int idU, int idBib){
         List<Integer> bibIds = playlistsMusicas.get(idBib).getlst();
         Map<Integer,String> idCats = new HashMap<>();
         for(int id : bibIds){
@@ -166,7 +162,12 @@ public class GestaoUtilizador
         return idCats;
     }
 
-    public Map<Integer,String> aux2(int idU, int idBib){
+    /** Método que organiza a playlist pessoal de videos do utilizador atual, incluindo categorias alteradas
+     * @param idU                   Id do utilizador atual
+     * @param idBib                 Id da biblioteca geral do utilizador
+     * @return                      map de videos da playlist pessoal e as suas categorias
+     */
+    public Map<Integer,String> getPlaylistPessoalV(int idU, int idBib){
         List<Integer> bibIds = playlistsVideos.get(idBib).getlst();
         Map<Integer,String> idCats = new HashMap<>();
         for(int id : bibIds){
