@@ -1,6 +1,6 @@
 package Database;
 
-import Business.UtilizadorRegistado;
+import Business.Utilizadores.UtilizadorRegistado;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -73,7 +73,7 @@ public class UtilizadorRegistadoDAO implements Map<String, UtilizadorRegistado>
     public boolean containsValue(Object o) {
         boolean res = false;
 
-        if(o.getClass().getName().equals("Business.UtilizadorRegistado")){
+        if(o.getClass().getName().equals("Business.Utilizadores.UtilizadorRegistado")){
             UtilizadorRegistado u = (UtilizadorRegistado) o;
             int id = u.getId();
             UtilizadorRegistado ur = this.get(id);

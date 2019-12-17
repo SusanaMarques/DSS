@@ -1,9 +1,9 @@
 package Presentation;
 
-import Business.CategoriaIgualException;
+import Business.Exceptions.CategoriaIgualException;
 import Business.MC;
-import Business.Musica;
-import Business.Video;
+import Business.Media.Musica;
+import Business.Media.Video;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

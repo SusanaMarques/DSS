@@ -1,7 +1,7 @@
 package Presentation;
 
 
-import Business.CredenciaisInvalidasException;
+import Business.Exceptions.CredenciaisInvalidasException;
 import Business.MC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,9 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import javafx.stage.Popup;
 
 import java.io.IOException;
 

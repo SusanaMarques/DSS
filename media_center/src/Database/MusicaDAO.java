@@ -1,7 +1,6 @@
 package Database;
 
-import Business.Musica;
-import Business.Video;
+import Business.Media.Musica;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,7 +1,7 @@
 package Database;
 
 
-import Business.UtilizadorRegistado;
+import Business.Utilizadores.UtilizadorRegistado;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

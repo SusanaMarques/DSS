@@ -1,5 +1,5 @@
 package Presentation;
-import Business.Video;
+import Business.Media.Video;
 import java.util.Comparator;
 
 public class VideoComparator implements Comparator<Video> {

@@ -1,12 +1,10 @@
 package Database;
 
-import Business.Musica;
-import Business.Playlist;
-import Business.Video;
+import Business.Media.Playlist;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.*;
 
 public class PlaylistVideoDAO implements Map<Integer, Playlist>

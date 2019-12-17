@@ -1,6 +1,6 @@
 package Database;
 
-import Business.Administrador;
+import Business.Utilizadores.Administrador;
 import java.util.Map;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class AdministradorDAO implements Map<String,Administrador>
+public class AdministradorDAO implements Map<String, Administrador>
 {
     private Connection c;
 
@@ -72,7 +72,7 @@ public class AdministradorDAO implements Map<String,Administrador>
     public boolean containsValue(Object o) {
         boolean res = false;
 
-        if(o.getClass().getName().equals("Business.Administrador")){
+        if(o.getClass().getName().equals("Business.Utilizadores.Utilizador.Administrador")){
             Administrador a = (Administrador) o;
             int id = a.getId();
             Administrador admin = this.get(id);
@@ -214,7 +214,7 @@ public class AdministradorDAO implements Map<String,Administrador>
     public Set<Entry<String, Administrador>> entrySet()
     {
         Set<String> keys = new HashSet<>(this.keySet());
-        Map<String,Administrador> map = new HashMap<>();
+        Map<String, Administrador> map = new HashMap<>();
 
         for(String k : keys){ map.put(k,this.get(k));}
         return map.entrySet();

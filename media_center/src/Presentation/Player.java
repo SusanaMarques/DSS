@@ -1,6 +1,6 @@
 package Presentation;
 import Business.MC;
-import Business.Musica;
+import Business.Media.Musica;
 import javafx.application.Platform;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;

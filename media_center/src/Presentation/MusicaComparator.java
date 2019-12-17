@@ -1,5 +1,5 @@
 package Presentation;
-import Business.Musica;
+import Business.Media.Musica;
 import java.util.Comparator;
 
 public class MusicaComparator implements Comparator<Musica> {

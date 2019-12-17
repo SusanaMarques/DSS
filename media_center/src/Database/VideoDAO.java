@@ -1,6 +1,6 @@
 package Database;
 
-import Business.Video;
+import Business.Media.Video;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

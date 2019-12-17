@@ -1,5 +1,7 @@
 package Presentation;
 import Business.*;
+import Business.Exceptions.ConteudoDuplicadoException;
+import Business.Exceptions.FormatoDesconhecidoException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,15 @@
 package Business;
+import Business.Exceptions.CategoriaIgualException;
+import Business.Exceptions.ConteudoDuplicadoException;
+import Business.Exceptions.CredenciaisInvalidasException;
+import Business.Exceptions.FormatoDesconhecidoException;
+import Business.Media.Conteudo;
+import Business.Media.GestaoConteudo;
+import Business.Media.Musica;
+import Business.Media.Video;
+import Business.Utilizadores.GestaoUtilizador;
+import Business.Utilizadores.Utilizador;
+import Business.Utilizadores.UtilizadorRegistado;
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;

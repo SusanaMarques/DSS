@@ -1,9 +1,6 @@
 package Database;
 
-import Business.Administrador;
-import Business.Musica;
-import Business.Playlist;
-import Business.UtilizadorRegistado;
+import Business.Media.Playlist;
 
 import java.sql.*;
 import java.util.*;

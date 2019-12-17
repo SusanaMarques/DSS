@@ -1,18 +1,16 @@
 package Presentation;
 
 import Business.MC;
-import Business.Musica;
-import Business.Video;
+import Business.Media.Musica;
+import Business.Media.Video;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.util.Set;

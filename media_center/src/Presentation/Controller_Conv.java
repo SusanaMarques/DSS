@@ -1,8 +1,8 @@
 package Presentation;
 import Business.MC;
-import Business.Musica;
+import Business.Media.Musica;
 
-import Business.Video;
+import Business.Media.Video;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,8 +16,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.text.Text;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.Set;
