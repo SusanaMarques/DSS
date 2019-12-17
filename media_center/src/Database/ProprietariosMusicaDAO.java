@@ -86,7 +86,6 @@ public class ProprietariosMusicaDAO implements Map<Integer, List<UtilizadorRegis
             {
                 ps.setInt(1,k);
                 ps.setInt(2, user.getId());
-                System.out.println(user.getId());
                 ps.executeUpdate();
             }
         }

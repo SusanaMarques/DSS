@@ -1,130 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39d4d7ff-da74-4f44-90de-81f1f181c6b9" name="Default Changelist" comment="">
+    <list default="true" id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0ac9a9ad-5c66-418e-b93f-f4f0e21ea20b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoConteudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Conteudo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/cac.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/META-INF/media_center.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/META-INF/media_center.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_upload.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_upload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Business/MC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Ge</find>
-      <find>test2</find>
-      <find>model</find>
-      <find>UtilizadorRegistado()</find>
-      <find>set</find>
-      <find>setIdBib</find>
-      <find>new</find>
-      <find>0</find>
-      <find>idUtiliza</find>
-      <find>idUtili</find>
-      <find>idUtilizadorAtual</find>
-      <find>faca</find>
-      <find>302</find>
-      <find>2</find>
       <find>System.out.println</find>
-      <find>print</find>
-      <find>@</find>
-      <find>getB</find>
-      <find>show</find>
-      <find>alter</find>
-      <find>get</find>
-      <find>pla</find>
-      <find>getC</find>
-      <find>getPla</find>
-      <find>sho</find>
-      <find>mus</find>
-      <find>getPlayl</find>
-      <find>countr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1V59OOhefRT6ojzhdLqAQZJbaKQ" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" />
+        <option value="$PROJECT_DIR$/Business/MC.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="795" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Biblioteca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Presentation.Main" />
-      <module name="media_center" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Presentation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -133,54 +133,78 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="39d4d7ff-da74-4f44-90de-81f1f181c6b9" name="Default Changelist" comment="" />
-      <created>1576495465617</created>
+      <changelist id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="" />
+      <created>1576599986580</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576495465617</updated>
-      <workItem from="1576495467042" duration="30121000" />
-      <workItem from="1576532057643" duration="3266000" />
-      <workItem from="1576542967124" duration="189000" />
-      <workItem from="1576584267129" duration="184000" />
-      <workItem from="1576589724927" duration="1611000" />
+      <updated>1576599986580</updated>
+      <workItem from="1576599988027" duration="86000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="86000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="795" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576532882000">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1576532882000" />
-    <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1576532123272">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576532123272" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576593090560">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576593090560" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576593090558">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576593090558" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576593090555">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576593090555" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576593090559">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576593090559" />
-    <state x="208" y="33" key="SettingsEditor" timestamp="1576532126864">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576532126864" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576542966087">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576542966087" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Business/MC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

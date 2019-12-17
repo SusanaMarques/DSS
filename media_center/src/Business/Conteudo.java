@@ -90,7 +90,6 @@ public class Conteudo
      * @param id    Novo id do conteudo
      */
     public void setId(int id){
-        System.out.println("SETTIN ID @ Conteudo: " + id);
         this.id = id;}
 
     /**

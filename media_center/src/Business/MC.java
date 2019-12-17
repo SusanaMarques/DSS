@@ -1,5 +1,4 @@
 package Business;
-
 import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.ParseContext;
@@ -9,7 +8,6 @@ import org.apache.tika.parser.mp3.Mp3Parser;
 import org.apache.tika.parser.mp4.MP4Parser;
 import org.apache.tika.sax.BodyContentHandler;
 import org.xml.sax.SAXException;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,7 +15,6 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
-
 import java.util.*;
 
 
@@ -56,8 +53,8 @@ public class  MC
      * @param pass     password do utilizador
      * @return         nome do utilizador
      */
-    public String getNome(String email,String pass) throws CredenciaisInvalidasException {
-        Utilizador u= gu.iniciarSessao(email, pass, idType);
+    public String getNome() {
+        Utilizador u= gu.getUser(idUtilizadorAtual,idType);
         return u.getNome();
     }
 
@@ -74,7 +71,7 @@ public class  MC
         StringTokenizer tokensName = new StringTokenizer(tokens.nextToken(), "/");
         while(tokensName.countTokens()>1) tokensName.nextToken();
         String mp4Artist = tokensName.nextToken();
-        System.out.println(mp4Artist);
+
         String type = tokens.nextToken();
         UtilizadorRegistado u =(UtilizadorRegistado) gu.getUser(idUtilizadorAtual,idType);
 
@@ -110,9 +107,7 @@ public class  MC
             String realizador = m.get("xmpDM:artist");
             if (realizador== null) realizador="N/D";
             t='v';
-            System.out.println(t);
             Video v = new Video();
-            for(int i=0;i<2; i++) System.out.println("RANDOM Y U NO WORK " + r.nextInt());
             v.setId(r.nextInt());
             v.setNome(mp4Artist);
             v.setFormato("mp4");
@@ -125,7 +120,6 @@ public class  MC
 
         //Verificar duplicaçoes
         int dupId = gc.verificaDuplicacoes(c,t);
-        System.out.println("VERIFICA DUPS Y U NO WORK " + dupId);
         if(dupId == -1) {
             //Path building & copiar para a biblioteca
             String path=(new File("").getAbsolutePath())+"/Biblioteca/"+c.getId()+ (t=='m'? ".mp3":".mp4" );
