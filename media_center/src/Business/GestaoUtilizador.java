@@ -70,6 +70,7 @@ public class GestaoUtilizador
             ArrayList<Integer> l = p.getlst();
             l.add(c.getId());
             p.setLst(l);
+            System.out.println("PLAYLISTVideoPessoal set:");
             playlistsVideos.put(u.getIdBibliotecaVideo(),p);
 
         }
@@ -159,7 +160,7 @@ public class GestaoUtilizador
         Map<Integer,String> idCats = new HashMap<>();
         for(int id : bibIds){
             if(categoriasMusica.containsKey(id)) {
-                if(categoriasMusica.get(id).containsKey(idU)) idCats.put(id,categoriasMusica.get(id).get(idU));
+                if(categoriasMusica.get(id).containsKey(idU)) idCats.put(id,categoriasMusica.get(id).get(idU)); else idCats.put(id,null);
             }else idCats.put(id,null);
         }
         return idCats;
@@ -170,7 +171,7 @@ public class GestaoUtilizador
         Map<Integer,String> idCats = new HashMap<>();
         for(int id : bibIds){
             if(categoriasVideo.containsKey(id)) {
-                if(categoriasVideo.get(id).containsKey(idU)) idCats.put(id,categoriasVideo.get(id).get(idU));
+                if(categoriasVideo.get(id).containsKey(idU)) idCats.put(id,categoriasVideo.get(id).get(idU)); else idCats.put(id,null);
             }else idCats.put(id,null);
         }
         return idCats;

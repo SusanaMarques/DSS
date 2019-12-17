@@ -108,6 +108,10 @@ public class PlaylistVideoDAO implements Map<Integer, Playlist>
         try{
             c = Connect.connect();
 
+            PreparedStatement psd = c.prepareStatement("DELETE FROM PlaylistVideo WHERE idPlaylist = ? ");
+            psd.setInt(1, k);
+            psd.executeUpdate();
+
             PreparedStatement ps = c.prepareStatement("INSERT INTO PlaylistVideo (idPlaylist,nomePlaylist,idUtilizador, idVideo) VALUES (?,?,?,?)");
             ArrayList<Integer> lst = v.getlst();
             for(Integer i : lst)
@@ -116,6 +120,7 @@ public class PlaylistVideoDAO implements Map<Integer, Playlist>
                 ps.setString(2, v.getNome());
                 ps.setInt(3, v.getUser());
                 ps.setInt(4, i);
+                System.out.println(i);
                 ps.executeUpdate();
             }
         }
