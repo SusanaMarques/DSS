@@ -16,6 +16,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.util.Set;
@@ -25,6 +26,7 @@ public class Controller_geral {
     private MC model;
     private View view;
 
+    private String nomeplaylist ="Geral";
 
 
     public void setM(MC m){
@@ -84,7 +86,8 @@ public class Controller_geral {
         pl.setM(model);
         pl.setIdd(1);
         pl.setMusica(m);
-
+        pl.setMus(model.showMusicas());
+        pl.setnomeP(nomeplaylist);
 
     }
 
@@ -108,6 +111,8 @@ public class Controller_geral {
         pl.setM(model);
         pl.setIdd(2);
         pl.setVideo(v);
+        pl.setVid(model.showVideos());
+
 
 
     }
@@ -141,6 +146,7 @@ public class Controller_geral {
         pl.setId(m.getId());
         pl.inic();
         pl.setAl(0);
+        pl.setnomeP(nomeplaylist);
     }
 
     /**
@@ -204,6 +210,7 @@ public class Controller_geral {
         pl.setId(m.getId());
         pl.inic();
         pl.setAl(1);
+        pl.setnomeP(nomeplaylist);
     }
 
     /**
@@ -249,6 +256,7 @@ public class Controller_geral {
         Controller_Regist pl=l.getController();
         pl.setV(view);
         pl.setM(model);
+        pl.setText(model.getNome());
         this.view.printPage((Node) event.getSource(),root);
 
     }

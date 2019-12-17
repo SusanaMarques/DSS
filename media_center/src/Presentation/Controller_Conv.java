@@ -16,6 +16,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -26,6 +27,8 @@ public class Controller_Conv {
 
     private View view = new View();
     private MC model = new MC();
+
+    private String nomeplaylist = "Geral";
 
 
     @FXML
@@ -97,6 +100,7 @@ public class Controller_Conv {
         pl.setId(m.getId());
         pl.inic();
         pl.setAl(0);
+        pl.setnomeP(nomeplaylist);
     }
 
     /**
@@ -190,6 +194,7 @@ public class Controller_Conv {
         pl.setId(m.getId());
         pl.inic();
         pl.setAl(1);
+        pl.setnomeP(nomeplaylist);
     }
 
 
@@ -229,6 +234,7 @@ public class Controller_Conv {
         pl.setId(m.getId());
         pl.inic();
         pl.setAl(0);
+        pl.setnomeP(nomeplaylist);
 
 
 

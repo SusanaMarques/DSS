@@ -18,7 +18,6 @@ import javafx.scene.control.Slider;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.media.MediaView;
 import javafx.scene.text.Text;
 import javafx.util.Callback;
 import java.io.IOException;
@@ -33,7 +32,7 @@ public class Player {
     private MC model;
     private View view;
     private MediaPlayer player;
-    //private Set<Musica> mus;
+    private Set<Musica> ma;
     private int id;
     private int aleatorio; //sequencial=0;
 
@@ -48,6 +47,8 @@ public class Player {
     @FXML
     private ListView<Musica> lv;
 
+    @FXML
+    private Text nomeplaylist;
 
 
     @FXML
@@ -65,8 +66,11 @@ public class Player {
         this.aleatorio=x;
     }
 
+
+
     public void setMus(Set<Musica> mus){
 
+        ma=mus;
 
         for(Musica m2: mus) {
             ml.add(m2);
@@ -100,6 +104,10 @@ public class Player {
         t.setText(a);
     }
 
+    public void setnomeP(String a){
+        nomeplaylist.setText(a);
+    }
+
     public void inic(){
 
         ObservableList<Musica> l =FXCollections.observableArrayList();
@@ -125,6 +133,7 @@ public class Player {
     }
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_buttonreproduz(ActionEvent e) {
         Button b = (Button) e.getSource();
         MediaPlayer.Status status = player.getStatus(); //get status of player
@@ -142,6 +151,7 @@ public class Player {
     }
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_Reproduzirr(MouseEvent event) throws IOException {
         player.pause();
        Musica m = lv.getSelectionModel().selectedItemProperty().getValue();
@@ -163,14 +173,16 @@ public class Player {
         pl.setMPlayer(player);
         pl.setText(m.getNome());
         pl.setModel(model);
-        pl.setMus(model.showMusicas());
+        pl.setMus(ma);
         pl.setId(m.getId());
         pl.inic();
+        pl.setnomeP(nomeplaylist.getText());
 
 
     }
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_proxima (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
@@ -202,10 +214,11 @@ public class Player {
             pl.setV(view);
             pl.setMPlayer(player);
             pl.setText(m.getNome());
-            pl.setMus(model.showMusicas());
+            pl.setMus(ma);
             pl.setId(m.getId());
             pl.inic();
             pl.setAl(0);
+            pl.setnomeP(nomeplaylist.getText());
 
         }
 
@@ -230,10 +243,11 @@ public class Player {
             pl.setV(view);
             pl.setMPlayer(player);
             pl.setText(m.getNome());
-            pl.setMus(model.showMusicas());
+            pl.setMus(ma);
             pl.setId(m.getId());
             pl.inic();
             pl.setAl(1);
+            pl.setnomeP(nomeplaylist.getText());
 
         }
 
@@ -245,6 +259,7 @@ public class Player {
     }
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_anterior (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
@@ -273,10 +288,12 @@ public class Player {
                 pl.setV(view);
                 pl.setMPlayer(player);
                 pl.setText(m.getNome());
-                pl.setMus(model.showMusicas());
+                pl.setMus(ma);
                 pl.setId(m.getId());
                 pl.inic();
                 pl.setAl(0);
+                pl.setnomeP(nomeplaylist.getText());
+
 
             }
             else if (aleatorio==1) {
@@ -300,10 +317,11 @@ public class Player {
             pl.setV(view);
             pl.setMPlayer(player);
             pl.setText(m.getNome());
-            pl.setMus(model.showMusicas());
+            pl.setMus(ma);
             pl.setId(m.getId());
             pl.inic();
             pl.setAl(1);
+            pl.setnomeP(nomeplaylist.getText());
 
         }
             else player.pause();
@@ -357,11 +375,13 @@ public class Player {
      * @param event
      */
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_goback_player(ActionEvent event) throws IOException {
         goback(event);
 
     }
 
+    @SuppressWarnings("Duplicates")
     private void goback(ActionEvent event) throws IOException {
         MediaPlayer.Status status = player.getStatus(); //get status of player
         if (status == MediaPlayer.Status.PLAYING) {
@@ -377,6 +397,7 @@ public class Player {
             Controller_Regist control = l.getController();
             control.setM(model);
             control.setV(view);
+            control.setText(model.getNome());
             this.view.printPage((Node) event.getSource(), root);
         }
         else {

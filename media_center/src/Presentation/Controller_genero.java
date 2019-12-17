@@ -25,16 +25,19 @@ public class Controller_genero {
     @FXML
     private TextField g_atual;
 
+    @FXML
+    private TextField conteudo;
 
     @FXML
     private ChoiceBox<String> n_gen;
 
 
 
+    public void setTextt(String a){
+        conteudo.setText(a);
+    }
 
-
-
-public void setText(String a){
+    public void setText(String a){
         g_atual.setText(a);
     }
 
@@ -64,7 +67,9 @@ public void setText(String a){
       n_gen.setItems(av);
     }
 
+
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_alterar(ActionEvent event) throws IOException {
     if(idd==1) {
         String neww = n_gen.getSelectionModel().getSelectedItem();

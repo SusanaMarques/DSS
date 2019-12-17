@@ -51,6 +51,7 @@ public class Controller_Regist {
         Controller_pessoal pl = l.getController();
         pl.setM(model);
         pl.setV(view);
+
         this.view.printPage((Node) event.getSource(),root);
 
 
@@ -121,6 +122,7 @@ public class Controller_Regist {
      * @param event
      */
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_logout_registado(ActionEvent event) throws IOException {
         FXMLLoader l=new FXMLLoader(getClass().getResource( "mediacenter.fxml"));
         Parent root = l.load();

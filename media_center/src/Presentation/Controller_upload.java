@@ -31,6 +31,7 @@ public class Controller_upload {
         Controller_Regist control = l.getController();
         control.setM(model);
         control.setV(view);
+        control.setText(model.getNome());
         this.view.printPage((Node) event.getSource(),root);
     }
 }

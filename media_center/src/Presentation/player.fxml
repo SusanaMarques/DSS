@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.SplitPane?>
@@ -18,23 +17,23 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1000.0">
                <children>
-                  <ListView fx:id="lv" layoutX="-7.0" layoutY="63.0" onMouseClicked="#handleButtonAction_Reproduzirr" prefHeight="641.0" prefWidth="202.0" />
-                  <Label layoutX="29.0" layoutY="4.0" prefHeight="59.0" prefWidth="190.0" text="Geral" textFill="#c521ff">
+                  <Text fx:id="nomeplaylist" fill="#c521ff" layoutX="24.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="142.0">
                      <font>
-                        <Font size="45.0" />
+                        <Font size="30.0" />
                      </font>
-                  </Label>
+                  </Text>
+                  <ListView fx:id="lv" layoutX="-7.0" layoutY="63.0" onMouseClicked="#handleButtonAction_Reproduzirr" prefHeight="641.0" prefWidth="202.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1000.0">
                <children>
-                  <Button layoutX="331.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleButtonAction_anterior" prefHeight="59.0" prefWidth="46.0" style="-fx-background-color: #ffffff;" textFill="WHITE" />
-                  <Button layoutX="377.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleButtonAction_buttonreproduz" prefHeight="59.0" prefWidth="46.0" style="-fx-background-color: #ffffff;" textFill="WHITE">
+                  <Button layoutX="331.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleButtonAction_anterior" prefHeight="59.0" prefWidth="38.0" style="-fx-background-color: #ffffff;" textFill="WHITE" />
+                  <Button layoutX="379.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleButtonAction_buttonreproduz" prefHeight="59.0" prefWidth="38.0" style="-fx-background-color: #ffffff;" textFill="WHITE">
                      <font>
                         <Font size="30.0" />
                      </font>
                   </Button>
-                  <Button layoutX="423.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleButtonAction_proxima" prefHeight="59.0" prefWidth="46.0" style="-fx-background-color: #ffffff;" textFill="WHITE" />
+                  <Button layoutX="431.0" layoutY="427.0" mnemonicParsing="false" onAction="#handleButtonAction_proxima" prefHeight="59.0" prefWidth="38.0" style="-fx-background-color: #ffffff;" textFill="WHITE" />
                   <Slider fx:id="time" layoutX="128.0" layoutY="491.0" onMouseDragged="#handleButtonAction_timeslider" onMousePressed="#handleButtonAction_timeslider" prefHeight="31.0" prefWidth="562.0" />
                   <Slider fx:id="vol" layoutX="696.0" layoutY="181.0" majorTickUnit="10.0" minorTickCount="1" onMouseDragged="#handleButtonAction_volume" onMousePressed="#handleButtonAction_volume" orientation="VERTICAL" prefHeight="158.0" prefWidth="89.0" value="100.0" />
                   <Text fx:id="t" fill="#c521ff" layoutX="265.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="275.2333409833741" />
@@ -58,7 +57,7 @@
                         <Image url="@img/icons8-skip-to-start-96.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="play" disable="true" fitHeight="82.0" fitWidth="46.0" layoutX="377.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="play" disable="true" fitHeight="46.0" fitWidth="46.0" layoutX="377.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@img/icons8-pause-button-96.png" />
                      </image>

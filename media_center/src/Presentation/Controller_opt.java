@@ -12,8 +12,10 @@ import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
+import java.util.Set;
 
 public class Controller_opt {
 
@@ -22,8 +24,17 @@ public class Controller_opt {
     private View view;
     private Musica m;
     private Video v;
+    private String nomeplaylist;
+
+    Set<Musica> ma;
+
+    Set<Video> va;
 
 
+
+    public void setnomeP(String a){
+        nomeplaylist=a;
+    }
 
     public void setIdd(int a){
         this.idd=a;
@@ -39,6 +50,14 @@ public class Controller_opt {
 
     }
 
+    public void setMus(Set<Musica> m) {
+        ma =m;
+    }
+
+    public void setVid(Set<Video> v) {
+       va = v;
+    }
+
     public void setMusica(Musica mm){
         this.m=mm;
     }
@@ -49,6 +68,7 @@ public class Controller_opt {
 
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_Reproduzir(ActionEvent event) throws IOException {
 
         if(idd==1) {
@@ -69,9 +89,10 @@ public class Controller_opt {
             pl.setMPlayer(player);
             pl.setText(m.getNome());
             pl.setModel(model);
-            pl.setMus(model.showMusicas());
+            pl.setMus(ma);
             pl.setId(m.getId());
             pl.inic();
+            pl.setnomeP(nomeplaylist);
         }
 
         if(idd==2) {
@@ -91,7 +112,7 @@ public class Controller_opt {
             pl.setMPlayer(player);
             pl.sett();
             pl.setModel(model);
-            pl.setVid(model.showVideos());
+            pl.setVid(va);
             pl.setId(v.getId());
         }
 
@@ -107,6 +128,7 @@ public class Controller_opt {
         Controller_Regist control = l.getController();
         control.setM(model);
         control.setV(view);
+        control.setText(model.getNome());
 
     }
 
@@ -123,9 +145,10 @@ public class Controller_opt {
             pl.setM(model);
             pl.setIdd(1);
             pl.setMusica(m);
+            pl.setTextt(m.getNome());
             pl.setText(m.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
-                    "Pop", "Rock", "Jazz", "Country", "Classic","Acid Jazz","Punk","R&B","PunkRock"));
+                    "Pop", "Rock", "Jazz", "Country","Disco", "Classic","Acid Jazz","Punk","R&B","PunkRock"));
             this.view.printPage((Node) event.getSource(), root);
         }
 
@@ -137,9 +160,10 @@ public class Controller_opt {
             pl.setM(model);
             pl.setIdd(2);
             pl.setVideo(v);
+            pl.setTextt(v.getNome());
             pl.setText(v.getCategoria());
             pl.setChoice(FXCollections.observableArrayList(
-                    "Pop", "Rock", "Jazz","PunkRock","Country", "Thriller","Comédia","Romance","Fantasia"));
+                    "Pop", "Rock", "Jazz","PunkRock","Country","Disco", "Thriller","Comédia","Romance","Fantasia"));
             this.view.printPage((Node) event.getSource(), root);
         }
 

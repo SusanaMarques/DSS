@@ -1,5 +1,6 @@
 package Presentation;
 import Business.MC;
+import Business.Musica;
 import Business.Video;
 import javafx.application.Platform;
 import javafx.beans.InvalidationListener;
@@ -30,6 +31,7 @@ public class PLayer_video {
     private MediaPlayer player;
     private int id;
     private int aleatorio; //sequencial=0;
+    private Set<Video> va;
 
     List<Video> ml= new ArrayList<>();
 
@@ -68,6 +70,8 @@ public class PLayer_video {
 
     public void setVid(Set<Video> vid){
 
+        va=vid;
+
         for(Video m2: vid) {
             ml.add(m2);
         }
@@ -96,6 +100,7 @@ public class PLayer_video {
 
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_buttonreproduz(ActionEvent e) {
         Button b = (Button) e.getSource();
         MediaPlayer.Status status = player.getStatus(); //get status of player
@@ -114,6 +119,7 @@ public class PLayer_video {
 
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_proxima (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
@@ -143,7 +149,7 @@ public class PLayer_video {
             pl.setMPlayer(player);
             pl.sett();
             pl.setModel(model);
-            pl.setVid(model.showVideos());
+            pl.setVid(va);
             pl.setId(v.getId());
             pl.setAl(0);
 
@@ -170,7 +176,7 @@ public class PLayer_video {
             pl.setMPlayer(player);
             pl.sett();
             pl.setModel(model);
-            pl.setVid(model.showVideos());
+            pl.setVid(va);
             pl.setId(v.getId());
             pl.setAl(1);
         }
@@ -182,6 +188,7 @@ public class PLayer_video {
     }
 
     @FXML
+    @SuppressWarnings("Duplicates")
     private void handleButtonAction_anterior (ActionEvent e) throws IOException {
         player.pause();
         int i=0;
@@ -211,7 +218,7 @@ public class PLayer_video {
             pl.setMPlayer(player);
             pl.sett();
             pl.setModel(model);
-            pl.setVid(model.showVideos());
+            pl.setVid(va);
             pl.setId(v.getId());
         }
 
@@ -236,7 +243,7 @@ public class PLayer_video {
             pl.setMPlayer(player);
             pl.sett();
             pl.setModel(model);
-            pl.setVid(model.showVideos());
+            pl.setVid(va);
             pl.setId(v.getId());
             pl.setAl(1);
         }
@@ -296,6 +303,7 @@ public class PLayer_video {
        goback(event);
     }
 
+    @SuppressWarnings("Duplicates")
     private void goback(ActionEvent event) throws IOException {
         MediaPlayer.Status status = player.getStatus(); //get status of player
         if (status == MediaPlayer.Status.PLAYING) {
@@ -311,6 +319,7 @@ public class PLayer_video {
             Controller_Regist control = l.getController();
             control.setM(model);
             control.setV(view);
+            control.setText(model.getNome());
             this.view.printPage((Node) event.getSource(), root);
         }
         else {
