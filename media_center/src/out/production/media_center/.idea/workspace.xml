@@ -1,7 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="" />
+    <list default="true" id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Utilizadores/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/CategoriaIgualException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Exceptions/CategoriaIgualException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Media/Conteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/ConteudoDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Exceptions/ConteudoDuplicadoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/CredenciaisInvalidasException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Exceptions/CredenciaisInvalidasException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/FormatoDesconhecidoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Exceptions/FormatoDesconhecidoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoConteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Media/GestaoConteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Utilizadores/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Musica.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Media/Musica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Media/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Utilizadores/Utilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/UtilizadorRegistado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Utilizadores/UtilizadorRegistado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Media/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/AdministradorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/AdministradorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/CategoriaMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/MusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/MusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/PlaylistVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosMusicaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/ProprietariosVideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/UtilizadorRegistadoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/VideoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Database/VideoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_Conv.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Conv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_Regist.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_Regist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_genero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_geral.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_geral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_opt.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_opt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Controller_pessoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Controller_pessoal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/MusicaComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/MusicaComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/PLayer_video.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/PLayer_video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/VideoComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/VideoComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/dataSources/0ac9a9ad-5c66-418e-b93f-f4f0e21ea20b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/CategoriaIgualException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Conteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/ConteudoDuplicadoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/CredenciaisInvalidasException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/FormatoDesconhecidoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoConteudo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/GestaoUtilizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Business/MC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Musica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Playlist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Utilizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/UtilizadorRegistado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Business/Video.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/AdministradorDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/CategoriaMusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/MusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistMusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/PlaylistVideoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosMusicaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/ProprietariosVideoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/UtilizadorRegistadoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Database/VideoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/META-INF/media_center.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/META-INF/media_center.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Alterar_Categoria.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Alterar_Categoria.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Conv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_Regist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_genero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_geral.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_opt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Controller_pessoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/MusicaComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/MusicaComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/PLayer_video.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/VideoComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/VideoComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/geral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/geral.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/player.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +128,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -80,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576599986580</updated>
       <workItem from="1576599988027" duration="86000" />
-      <workItem from="1576600432928" duration="87000" />
+      <workItem from="1576600432928" duration="874000" />
     </task>
     <servers />
   </component>
@@ -88,17 +181,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576600878324">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1576600878324" />
     <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1576600478683">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576600478683" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576601465764">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576601465764" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576601465762">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576601465762" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576601465757">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576601465757" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576601465763">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576601465763" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1576600522172">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576600522172" />
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576600433228">
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1576693510310">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576600433228" />
+    <state x="374" y="284" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576693510310" />
   </component>
 </project>

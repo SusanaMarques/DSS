@@ -116,13 +116,14 @@ public class Controller_genero {
 
     @FXML
     private void handleButtonAction_goback(ActionEvent event) throws IOException {
-        FXMLLoader l=new FXMLLoader(getClass().getResource( "geral.fxml"));
+        FXMLLoader l=new FXMLLoader(getClass().getResource( "Utilizador_Registado.fxml"));
         Parent root = l.load();
         this.view.printPage((Node) event.getSource(),root);
 
-        Controller_geral control = l.getController();
+        Controller_Regist control = l.getController();
         control.setM(model);
         control.setV(view);
+        control.setText(model.getNome());
 
     }
 
