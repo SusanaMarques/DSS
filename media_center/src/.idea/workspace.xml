@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/DSS.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/DSS.mwb.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/dumpFINAL.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../baseDeDados/povoamento.sql" beforeDir="false" />
+    <list default="true" id="e5d59b83-f89b-4162-b606-45a7a45fe1d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Base de Dados/forward.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/tika_app_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-589968216.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-658549155.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/-872243061.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/1236703577.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/1568567707.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/1934225301.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/2141257497.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biblioteca/945251496.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/MC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/MC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/Utilizadores/GestaoUtilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Utilizadores/GestaoUtilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/geral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/geral.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/pessoal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/media_center.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-589968216.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-658549155.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/-872243061.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/1236703577.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/1568567707.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/1934225301.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/2141257497.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/media_center/Biblioteca/945251496.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/geral.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/geral.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/Presentation/pessoal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/media_center/media_center.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/media_center.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="795" />
-  </component>
-  <component name="ProjectId" id="1V7Ny1PWwaJ01F4jN4Q8uls5fLv" />
+  <component name="ProjectId" id="1VIzyODkoAxUmrUunipqY9IRufJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,15 +32,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -96,18 +75,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="" />
-      <created>1576599986580</created>
+      <changelist id="e5d59b83-f89b-4162-b606-45a7a45fe1d8" name="Default Changelist" comment="" />
+      <created>1576955651989</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576599986580</updated>
-      <workItem from="1576599988027" duration="86000" />
-      <workItem from="1576600432928" duration="874000" />
-      <workItem from="1576693510629" duration="1008000" />
-      <workItem from="1576927705794" duration="816000" />
-      <workItem from="1576934727885" duration="956000" />
-      <workItem from="1576940089268" duration="229000" />
-      <workItem from="1576940608004" duration="3869000" />
+      <updated>1576955651989</updated>
+      <workItem from="1576955657033" duration="2062000" />
     </task>
     <servers />
   </component>
@@ -115,37 +88,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576600878324">
+    <state x="482" y="172" key="DetectedRootsChooserDialog" timestamp="1576955804643">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="484" y="339" width="471" height="225" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1576600878324" />
-    <state x="482" y="162" key="DetectedRootsChooserDialog" timestamp="1576600478683">
+    <state x="482" y="172" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576955804643" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576959943415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576600478683" />
-    <state width="1398" height="411" key="GridCell.Tab.0.bottom" timestamp="1576954995863">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576959943415" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576959943414">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="411" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576954995863" />
-    <state width="1398" height="411" key="GridCell.Tab.0.center" timestamp="1576954995858">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576959943414" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576959943413">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="411" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576954995858" />
-    <state width="1398" height="411" key="GridCell.Tab.0.left" timestamp="1576954995857">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576959943413" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576959943415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="411" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576954995857" />
-    <state width="1398" height="411" key="GridCell.Tab.0.right" timestamp="1576954995859">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576959943415" />
+    <state x="208" y="63" key="SettingsEditor" timestamp="1576955837688">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="411" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576954995859" />
-    <state x="208" y="33" key="SettingsEditor" timestamp="1576600522172">
+    <state x="208" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576955837688" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576955657485">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576600522172" />
-    <state x="374" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576940611010">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="374" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576940611010" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576955657485" />
   </component>
 </project>
