@@ -50,7 +50,6 @@ public class  MC
         Utilizador u = gu.iniciarSessao(mail, pass, idType);
         idUtilizadorAtual= u.getId();
 
-
     }
 
     /** Método que  termina uma sessão **/

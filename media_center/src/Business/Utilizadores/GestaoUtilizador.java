@@ -176,7 +176,9 @@ public class GestaoUtilizador
         Map<Integer,String> idCats = new HashMap<>();
         for(int id : bibIds){
             if(categoriasVideo.containsKey(id)) {
-                if(categoriasVideo.get(id).containsKey(idU)) idCats.put(id,categoriasVideo.get(id).get(idU)); else idCats.put(id,null);
+                if(categoriasVideo.get(id).containsKey(idU)) {
+                    System.out.println("1"); idCats.put(id,categoriasVideo.get(id).get(idU)); System.out.println("2");
+                } else idCats.put(id,null);
             }else idCats.put(id,null);
         }
         return idCats;

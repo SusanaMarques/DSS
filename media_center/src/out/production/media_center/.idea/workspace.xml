@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee773ad2-630a-4048-8025-74886e776dbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../baseDeDados/dumpFINAL.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Presentation/mediacenter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Presentation/mediacenter.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-589968216.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-658549155.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/-872243061.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/1236703577.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/1568567707.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/1934225301.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/2141257497.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biblioteca/945251496.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/media_center/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +35,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -83,6 +92,8 @@
       <workItem from="1576600432928" duration="874000" />
       <workItem from="1576693510629" duration="1008000" />
       <workItem from="1576927705794" duration="816000" />
+      <workItem from="1576934727885" duration="956000" />
+      <workItem from="1576940089268" duration="229000" />
     </task>
     <servers />
   </component>
@@ -98,29 +109,29 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="162" key="DetectedRootsChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576600478683" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576934184384">
+    <state width="1398" height="428" key="GridCell.Tab.0.bottom" timestamp="1576940326765">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576934184384" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576934184383">
+    <state width="1398" height="428" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576940326765" />
+    <state width="1398" height="428" key="GridCell.Tab.0.center" timestamp="1576940326761">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576934184383" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576934184382">
+    <state width="1398" height="428" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576940326761" />
+    <state width="1398" height="428" key="GridCell.Tab.0.left" timestamp="1576940326760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576934184382" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576934184384">
+    <state width="1398" height="428" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576940326760" />
+    <state width="1398" height="428" key="GridCell.Tab.0.right" timestamp="1576940326764">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576934184384" />
+    <state width="1398" height="428" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576940326764" />
     <state x="208" y="33" key="SettingsEditor" timestamp="1576600522172">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="33" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576600522172" />
-    <state x="374" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576934727806">
+    <state x="374" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576940611010">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="374" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576934727806" />
+    <state x="374" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576940611010" />
   </component>
 </project>
