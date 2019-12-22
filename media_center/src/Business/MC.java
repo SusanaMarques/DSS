@@ -25,7 +25,9 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.*;
 
 
@@ -88,7 +90,8 @@ public class  MC
         String title;
         String categoria;
         double duracao ;
-        File origin = new File((new URI(p)).getPath());
+        URI res = new URL(p) .toURI();
+        File origin = Paths.get(res).toFile();
 
         //Verificar formato
         if (type.equals("mp3")){
@@ -265,10 +268,9 @@ public class  MC
      * @return          path de um conteúdo
      */
     public String getPath(char type, int idCont) throws MalformedURLException {
-        File pathFinder = new File("");
         String s;
         if(type == 'm') s= getClass().getResource("/Biblioteca/"+idCont+".mp3").toExternalForm();
-        else s= pathFinder.getClass().getResource("/Biblioteca/"+idCont+".mp4").toExternalForm();
+        else s= getClass().getResource("/Biblioteca/"+idCont+".mp4").toExternalForm();
         return s;
     }
 
