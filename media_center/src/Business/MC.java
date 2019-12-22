@@ -58,11 +58,7 @@ public class  MC
         idType = -1;
     }
 
-    /** Método que retorna o nome do utilizador registado
-     * @param email    email do utilizador
-     * @param pass     password do utilizador
-     * @return         nome do utilizador
-     */
+    /** Método que retorna o nome do utilizador registado **/
     public String getNome() {
         Utilizador u= gu.getUser(idUtilizadorAtual,idType);
         return u.getNome();
@@ -270,9 +266,9 @@ public class  MC
      */
     public String getPath(char type, int idCont) throws MalformedURLException {
         File pathFinder = new File("");
-        String s = pathFinder.toURI().toURL().toExternalForm()+"/Biblioteca/"+idCont;
-        if(type == 'm') s+=".mp3";
-        else s+=".mp4";
+        String s;
+        if(type == 'm') s= getClass().getResource("/Biblioteca/"+idCont+".mp3").toExternalForm();
+        else s= pathFinder.getClass().getResource("/Biblioteca/"+idCont+".mp4").toExternalForm();
         return s;
     }
 
