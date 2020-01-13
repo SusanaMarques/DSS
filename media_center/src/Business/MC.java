@@ -102,13 +102,13 @@ public class  MC
             categoria = m.getGenre();
             album = m.getAlbum();
 
-            if(title == null) title= mp4Artist.substring(0,Math.min(mp4Artist.length(),44));
+            if(title == null) title= mp4Artist;
             if(artist == null) artist = "N/D";
             if(categoria == null) categoria = "N/D";
             if(album == null) album = "N/D";
 
             t = 'm';
-            c = new Musica(r.nextInt(), title, duracao, "mp3", categoria, artist);
+            c = new Musica(r.nextInt(), title.substring(0,Math.min(title.length(),40)), duracao, "mp3", categoria.substring(0,Math.min(categoria.length(),40)), artist.substring(0,Math.min(artist.length(),40)));
         }
         else if (type.equals("mp4")){
             Metadata m = extrairMetaMp4(origin);
@@ -118,11 +118,11 @@ public class  MC
             t='v';
             Video v = new Video();
             v.setId(r.nextInt());
-            v.setNome(mp4Artist);
+            v.setNome(mp4Artist.substring(0,Math.min(mp4Artist.length(),40)));
             v.setFormato("mp4");
             v.setDuracao(duracao);
             v.setCategoria("N/D");
-            v.setRealizador(realizador);
+            v.setRealizador(realizador.substring(0,Math.min(realizador.length(),40)));
             c=v;
         }
         else throw new FormatoDesconhecidoException();
@@ -169,7 +169,7 @@ public class  MC
 
         Mp3Parser  mp3Parser = new  Mp3Parser();
         mp3Parser.parse(inputstream, handler, metadata, pcontext);
-        return (Double.parseDouble(metadata.get("xmpDM:duration")));
+        return ((Double.parseDouble(metadata.get("xmpDM:duration")))/60000);
     }
 
     /** Método que extrai os metadados dos ficheiros mp3
@@ -268,9 +268,10 @@ public class  MC
      * @return          path de um conteúdo
      */
     public String getPath(char type, int idCont) throws MalformedURLException {
-        String s;
-        if(type == 'm') s= getClass().getResource("/Biblioteca/"+idCont+".mp3").toExternalForm();
-        else s= getClass().getResource("/Biblioteca/"+idCont+".mp4").toExternalForm();
+        File pathFinder = new File("");
+        String s = pathFinder.toURI().toURL().toExternalForm()+"/Biblioteca/"+idCont;
+        if(type == 'm') s+=".mp3";
+        else s+=".mp4";
         return s;
     }
 

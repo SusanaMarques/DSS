@@ -118,7 +118,6 @@ public class PlaylistVideoDAO implements Map<Integer, Playlist>
                 ps.setString(2, v.getNome());
                 ps.setInt(3, v.getUser());
                 ps.setInt(4, i);
-                System.out.println(i);
                 ps.executeUpdate();
             }
         }

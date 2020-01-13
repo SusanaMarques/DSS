@@ -19,10 +19,10 @@ public class Conteudo
     public Conteudo()
     {
         this.id = 0;
-        this.nome = "";
+        this.nome = "ND";
         this.duracao = 0;
         this.formato = "";
-        this.categoria ="";
+        this.categoria ="ND";
     }
 
     /**
